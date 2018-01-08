@@ -246,7 +246,7 @@ a {
 }
 .site_search, #store_search_results {
     position: absolute;
-    top: 13px;//6px;
+    top: 20px;//6px;
     right: 0;
     z-index: 999;
 }
