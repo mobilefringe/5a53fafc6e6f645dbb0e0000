@@ -187,7 +187,7 @@
                 url: "http://www.stvitalcentrespark.com/index,article.rss",
                 dataType: "xml",
                 success: function (xml) {
-                    $xml = $( xmlDoc );
+                    $(xml).find = $( xmlDoc );
                     console.log("blog", $title);
                 }
                 });
