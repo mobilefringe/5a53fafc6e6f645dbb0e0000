@@ -182,7 +182,13 @@
             //     renderPromotions("#promo_container","#promo_template", published_promos);
             // }
             // http://www.stvitalcentrespark.com/index,article.rss
-                var xml = "http://www.stvitalcentrespark.com/index,article.rss",
+            $.ajax({
+type: "GET",
+url: "books.xml",
+dataType: "xml",
+success: xmlParser
+});
+            var xml = "http://www.stvitalcentrespark.com/index,article.rss",
               xmlDoc = $.parseXML( xml ),
               $xml = $( xmlDoc ),
               $title = $xml.find( "title" );
