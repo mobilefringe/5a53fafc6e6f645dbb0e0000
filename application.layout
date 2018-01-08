@@ -64,14 +64,14 @@
         setEndPoint('//cornwall.mallmaverick.com/api/v4/cornwall/all.json');
     </script>
     
-    // <script type="text/javascript">
-    //     var CaptchaCallback = function() {
-    //         widgetId1 = grecaptcha.render('RecaptchaField1', {'sitekey' : '6LeQFDEUAAAAAIyoQARU6DiPg7g6ay5Oo2FCHNBZ'});
-    //         widgetId2 = grecaptcha.render('RecaptchaField2', {'sitekey' : '6LeQFDEUAAAAAIyoQARU6DiPg7g6ay5Oo2FCHNBZ'});
-    //     };
-    // </script>
+    <script type="text/javascript">
+        var CaptchaCallback = function() {
+            widgetId1 = grecaptcha.render('RecaptchaField1', {'sitekey' : '6LeQFDEUAAAAAIyoQARU6DiPg7g6ay5Oo2FCHNBZ'});
+            widgetId2 = grecaptcha.render('RecaptchaField2', {'sitekey' : '6LeQFDEUAAAAAIyoQARU6DiPg7g6ay5Oo2FCHNBZ'});
+        };
+    </script>
     
-    <!--<script src="https://www.google.com/recaptcha/api.js?onload=CaptchaCallback&render=explicit" async defer></script>-->
+    <script src="https://www.google.com/recaptcha/api.js?onload=CaptchaCallback&render=explicit" async defer></script>
 </head>
 
 <body>
