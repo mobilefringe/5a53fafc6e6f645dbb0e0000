@@ -188,6 +188,7 @@
                 dataType: "xml",
                 success: function () {
                     $xml = $( xmlDoc ),
+                    console.log("blog", $title);
                 }
                 });
             // var xml = "http://www.stvitalcentrespark.com/index,article.rss",
