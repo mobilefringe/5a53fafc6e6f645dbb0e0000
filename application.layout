@@ -61,7 +61,7 @@
     <script src="/helper.js" type="text/javascript"></script>
     
     <script>
-        setEndPoint('//cornwall.mallmaverick.com/api/v4/cornwall/all.json');
+        setEndPoint('//svc.mallmaverick.com/api/v4/svc/all.json');
     </script>
     
 <!--    <script type="text/javascript">-->
