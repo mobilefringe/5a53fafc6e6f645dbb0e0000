@@ -1,0 +1,221 @@
+<div class="home_banner">   
+    <div class="flexslider">
+        <ul class="slides" id="home_banner">
+            <script id="banner_template" type="x-tmpl-mustache/text">
+                <li>
+                    <a href="{{url}}" {{css}} onclick="{{noLink}}">
+                        <div class="banner_img" style="background-image: url({{image_url}});"
+                    </a>
+                </li>
+            </script>
+        </ul>
+    </div>
+</div>
+<!--<div class="home_banner">   -->
+<!--    <div class="flexslider">-->
+<!--        <ul class="slides">-->
+<!--            <li>-->
+<!--                <a href="{{url}}">-->
+<!--                    <div class="banner_img" style="background-image: url('//codecloud.cdn.speedyrails.net/sites/5a53fafc6e6f645dbb0e0000/image/png/1510775101000/banner2.png');"></div>-->
+<!--                </a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--                <a href="{{url}}">-->
+<!--                    <div class="banner_img" style="background-image: url('//codecloud.cdn.speedyrails.net/sites/5a53fafc6e6f645dbb0e0000/image/png/1510775102000/banner4.png');"></div>-->
+<!--                </a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--                <a href="{{url}}">-->
+<!--                    <div class="banner_img" style="background-image: url('//codecloud.cdn.speedyrails.net/sites/5a53fafc6e6f645dbb0e0000/image/png/1510775102000/banner3.png');"></div>-->
+<!--                </a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--                <a href="{{url}}">-->
+<!--                    <div class="banner_img" style="background-image: url('//codecloud.cdn.speedyrails.net/sites/5a53fafc6e6f645dbb0e0000/image/png/1510775101000/banner1.png');"></div>-->
+<!--                </a>-->
+<!--            </li>-->
+<!--        </ul>-->
+<!--    </div>-->
+<!--</div>-->
+<div class="feature_container">
+    <div class="content_container">
+        <!--<div class="flex_container">-->
+        <!--    <div id="feature_container">-->
+        <!--        <script id="feature_template" type="x-tmpl-mustache/text">-->
+        <!--            <div class="width_30">-->
+        <!--                <a href="{{url}}">-->
+        <!--                    <img src="{{image_url}}" alt="{{name}}"/>-->
+        <!--                </a>-->
+        <!--            </div>-->
+        <!--        </script>-->
+        <!--    </div>-->
+        <!--</div>-->
+        <div class="flex_container">
+            <div class="width_30">
+                <a href="/stores">
+                    <img src="//codecloud.cdn.speedyrails.net/sites/5a53fafc6e6f645dbb0e0000/image/png/1510776675000/storesicon.png" alt="Stores"/>
+                </a>
+            </div>
+            <div class="width_30">
+                <a href="/promotions">
+                    <img src="//codecloud.cdn.speedyrails.net/sites/5a53fafc6e6f645dbb0e0000/image/png/1510776675000/saleicon.png" alt="Sales & Promos"/>
+                </a>
+            </div>
+            <div class="width_30">
+                <a href="/find_us">
+                    <img src="//codecloud.cdn.speedyrails.net/sites/5a53fafc6e6f645dbb0e0000/image/png/1510776675000/locationicon.png" alt="Location"/>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content_container">
+    <div class="flex_container">
+        <!--<div id="single_feature_container">-->
+        <!--    <script id="single_feature_template" type="x-tmpl-mustache/text">-->
+        <!--        <div class="width_50">-->
+        <!--            <img src="{{image_url}}" alt="Promotional Image">-->
+        <!--        </div>-->
+        <!--    </script>-->
+        <!--</div>-->
+        
+        <div class="width_50">
+            <img src="//codecloud.cdn.speedyrails.net/sites/5a53fafc6e6f645dbb0e0000/image/png/1513635417498/promo_placeholder.png" class="" alt="">
+        </div>
+        <div class="width_50">
+            <div class="home_promos">
+                <!--<h2 class="details_title">Restaurants & Eateries</h2>-->
+                <div id="home_promo_container" class="dine_container margin_20">
+                    <script id="home_promo_template" type="x-tmpl-mustache/text">
+                        <div class="margin_30">
+                            <h3 class="home_store_name"> {{store_name}} </h3>
+                            <h2 class="home_promo_name"> {{name}} </h2>
+                            <p class="home_promo_dates"> {{dates }} <span style="font-style: italic;color:red;"> {{days_left}}</span></p>
+                            <a class="home_read_more" href="/stores/{{slug}}"><p>See Store Details</p></a>
+                        </div>
+                    </script>
+                </div>
+                <p class="home_see_all"><a href="/promotions">See all sales & promotions </a> <i class="fa fa-angle-right" aria-hidden="true"></i></p>
+            </div>
+        </div>
+    </div>
+    <div class="flex_container">
+        <!--<div id="single_feature_container">-->
+        <!--    <script id="single_feature_template" type="x-tmpl-mustache/text">-->
+        <!--        <div class="width_50">-->
+        <!--            <img src="{{image_url}}" alt="Promotional Image">-->
+        <!--        </div>-->
+        <!--    </script>-->
+        <!--</div>-->
+        
+        
+        <div class="width_50">
+            <div class="home_promos">
+                <!--<h2 class="details_title">Restaurants & Eateries</h2>-->
+                <div id="home_blog_container" class="dine_container margin_20">
+                    <script id="home_blog_template" type="x-tmpl-mustache/text">
+                        <div class="margin_30">
+                            <h2 class="home_promo_name"> {{title}} </h2>
+                            <p class="home_promo_dates"> {{publish_date}}</p>
+                            <a class="home_read_more" href="/posts/{{slug}}"><p>Read Full Article</p></a>
+                        </div>
+                    </script>
+                </div>
+                <p class="home_see_all"><a href="/posts">See all news articles </a> <i class="fa fa-angle-right" aria-hidden="true"></i></p>
+            </div>
+        </div>
+        <div class="width_50">
+            <img src="//codecloud.cdn.speedyrails.net/sites/5a53fafc6e6f645dbb0e0000/image/png/1513635428533/blog_placeholder.png" class="" alt="">
+        </div>
+    </div>
+    <div class="instafeed_container">
+        <div id="instafeed"></div> 
+    </div>
+</div>
+<div class="feature_container">
+    <div class="logo_scroll">
+        <div id="slider_container">
+            <!-- Slides Container -->
+            <div id="logo_container" class="logo_slides" u="slides">
+                <script id="logo_template" type="x-tmpl-mustache/text">
+                    <div><img u="image" alt="amazon" src="{{store_logo}}" /></div>
+                </script>
+            </div>
+        </div>
+    </div> 
+</div>
+<script>
+    $(document).ready(function(e) {
+        init(e);
+        function renderAll (){
+            // renderPopup();
+            
+            var banners = getBanners();
+            renderBanner('#banner_template','#home_banner', banners);
+            
+            var all_feature_items = getFeatureList();
+            var three_items = all_feature_items.slice(0, 3);
+            var single_item = all_feature_items.slice(3, 5);
+            renderGeneral('#feature_container','#feature_template', three_items);
+            renderGeneral('#single_feature_container','#single_feature_template', single_item);
+
+            // RESTAURANTS LIST //
+            var cat_one = getStoresListByCategoryID(1600);
+            var cat_two = getStoresListByCategoryID(1686);
+            var cat_three = getStoresListByCategoryID(2146);
+            var cat_four = getStoresListByCategoryID(3030);
+            var cat_five = getStoresListByCategoryID(3024);
+            var cat_six = getStoresListByCategoryID(2144);
+            
+            // var dine_list = cat_one.concat(cat_two, cat_three, cat_four, cat_five, cat_six).sortBy(function(o){ return o.name});
+            // var sorted_list = _.uniq(dine_list, function(o){ return o.name; });
+            var promotions = getPromotionsList().sortBy(function(o){ return o.end_date });
+            var published_promos = [];
+            $.each(promotions, function(key, val){
+                today = moment();
+                webDate = moment(val.show_on_web_date)
+                if (today.tz(getPropertyTimeZone()) >= webDate.tz(getPropertyTimeZone())) {
+                    published_promos.push(val);
+                }
+            });
+            // if(published_promos.length > 0){
+            //     renderPromotions("#promo_container","#promo_template", published_promos);
+            // }
+            http://www.stvitalcentrespark.com/index,article.rss/
+            renderPromotions('#home_promo_container','#home_promo_template', published_promos);
+            var blog_posts = getBlogByName("main").sortBy(function(o){return o.publish_date;}).reverse().slice(1, 15);;
+            renderPosts('#home_blog_container','#home_blog_template', blog_posts);
+            console.log(blog_posts);
+            // LOGO SCROLL //
+            var stores = getStoresList();
+            renderLogoScroll('#logo_container','#logo_template', stores);
+
+            show_content();
+            
+            $('.flexslider').flexslider({
+                animation: "slide",
+            });
+            
+            var logo_options = {
+                $AutoPlay: true,
+                $AutoPlaySteps: 1,                                 
+                $AutoPlayInterval: 0,                            
+                $PauseOnHover: 4,                               
+                $ArrowKeyNavigation: true,   			            
+                $SlideEasing: $JssorEasing$.$EaseLinear,          
+                $SlideDuration: 3000,                                
+                $MinDragOffsetToSlide: 20,                          
+                $SlideWidth: 160,                                                                  
+                $SlideSpacing: 50, 					                
+                $DisplayPieces: 7,                                 
+                $ParkingPosition: 0,                              
+                $UISearchMode: 1,                                  
+                $PlayOrientation: 1,                                
+                $DragOrientation: 1                               
+            };
+
+            var logo_slider = new $JssorSlider$("slider_container", logo_options);
+        }
+        loadMallDataCached(renderAll); 
+    })
+</script>
