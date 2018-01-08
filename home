@@ -186,7 +186,7 @@
                 type: "GET",
                 url: "http://www.stvitalcentrespark.com/index,article.rss",
                 dataType: "xml",
-                success: function () {
+                success: function (xml) {
                     $xml = $( xmlDoc );
                     console.log("blog", $title);
                 }
