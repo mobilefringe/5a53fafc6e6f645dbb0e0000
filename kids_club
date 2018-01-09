@@ -24,15 +24,15 @@
                 <input id="contest_id" name="contest[contest_id]" type="hidden"  value="{{id}}" />
                 <input type="hidden" name="cm-name" id="cm-name" />
                 <div class="row">
-                    <div class="col-md-4 col-sm-6">
+                    <div class="col-sm-6">
                         <label for="notes">Child's First Name</label> <span style="color:red"> *</span>
                         <input class="form-control" id="notes" name="contest[notes]" type="text" required data-validation="required" tabindex="1"/>
                     </div>
-                    <div class="col-md-4 col-sm-6">
+                    <div class="col-sm-6">
                         <label for="birthday">Child's Birthday (yyyy-mm-dd) </label>  <span style="color:red"> *</span>
                         <input class="form-control" id="birthday" name="contest[birthday]" type="text" required data-validation="required" tabindex="2"/>    
                     </div>
-                    <div class="col-md-4 col-sm-6 margin_30">
+                    <div class="col-sm-6 margin_30">
                         <label for="phone">Phone Number</label>  <span style="color:red"> *</span>
                         <input class="form-control" id="phone" name="contest[phone]" type="text" required data-validation="required" tabindex="3"/>    
                     </div>
@@ -40,15 +40,15 @@
                 </div>
                 <br class="hidden_phone">
                 <div class="row ">
-                    <div class="col-md-4 col-sm-6 margin_30">
+                    <div class="col-sm-6 margin_30">
                         <label for="first_name">Guardian's First Name</label>  <span style="color:red"> *</span>
                         <input class="form-control" id="first_name" name="contest[first_name]" type="text" required data-validation="required" tabindex="4"/>
                     </div>
-                    <div class="col-md-4 col-sm-6 margin_30">
+                    <div class="col-sm-6 margin_30">
                         <label for="last_name">Guardian's Last Name</label>  <span style="color:red"> *</span>
                         <input class="form-control" id="last_name" name="contest[last_name]" type="text" required data-validation="required" tabindex="2"/>
                     </div>
-                    <div class="col-md-4 col-sm-6">
+                    <div class="col-sm-6">
                         <label for="email">Email</label> <span style="color:red"> *</span>
                         <input class="form-control" id="email" name="contest[email]" type="email" required data-validation-regexp="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-validation-error-msg="Please enter a valid email address" data-validation="custom" tabindex="3"/>
                     </div>
