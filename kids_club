@@ -45,10 +45,7 @@
                         <label for="birthday">Child's Birthday (yyyy-mm-dd) </label>  <span style="color:red"> *</span>
                         <input class="form-control" id="birthday" name="contest[birthday]" type="text" required data-validation="required" tabindex="2"/>    
                     </div>
-                    <div class="col-sm-6 margin_30">
-                        <label for="phone">Phone Number</label>  <span style="color:red"> *</span>
-                        <input class="form-control" id="phone" name="contest[phone]" type="text" required data-validation="required" tabindex="3"/>    
-                    </div>
+                    
                     
                 </div>
                 <br class="hidden_phone">
