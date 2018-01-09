@@ -127,7 +127,7 @@
                           }
             }
             ])
-            // map.setViewBox(id);
+            map.setViewBox(id);
             map.selectRegion(id);
     }
 //     $(window).load(function(e){
