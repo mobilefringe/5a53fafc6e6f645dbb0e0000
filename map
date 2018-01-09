@@ -161,7 +161,7 @@
                 responsive:true,
                 zoomLimit: [0,10]
             });
-            $(".map_tooltip").css({"background-color":"#C607A9", "color" : "#fff", "padding": "5px"});
+            $(".map_tooltip").css({"background-color":"#C607A9", "color" : "#fff", "padding": "2px 5px"});
             // $('.map_pin_a').click(function(e){
             //     e.preventDefault();
             //     var id = $(this).attr('data-value')
