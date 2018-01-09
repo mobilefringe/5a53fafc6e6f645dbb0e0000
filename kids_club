@@ -64,7 +64,7 @@
                     Anniversary
                      <div class="col-md-4 col-sm-6">
                         <label for="postal_code">State</label>  <span style="color:red"> *</span>
-                        <select name="contest[province]" class="form-control" tabindex="6">
+                        <select name="contest[anniversary]" class="form-control" tabindex="6">
                         	<option value="AL">AL</option>
                         	<option value="AK">AK</option>
                         	<option value="AZ">AZ</option>
