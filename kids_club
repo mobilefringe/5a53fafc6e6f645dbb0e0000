@@ -49,7 +49,7 @@
                 // $(".inside_banner").css({backgroundImage: "url(" + banner + ")"});
                 var discounts = repo.images;
                 renderGeneral("#discount_container","#discount_template",discounts);
-                console.log("repo",repo.images);
+                console.log("repo",discounts);
                 
             }
            
