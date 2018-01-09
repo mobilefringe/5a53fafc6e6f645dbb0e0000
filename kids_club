@@ -85,9 +85,9 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12" style="float: none;">
-                        <br/><br/>
+                        <!--<br/><br/>-->
                         <button class="contact_btn" tabindex="13">Submit</button>
-                        <br/><br/>
+                        <!--<br/><br/>-->
                     </div>
                     <div id="success_subscribe_popup" class="hidden_now">
                         <div class="alert alert-success fade in" style="margin-top:18px;">
