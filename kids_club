@@ -27,11 +27,11 @@
                 <div class="row">
                     <div class="col-sm-6">
                         <label for="notes">Child's First Name</label> <span style="color:red"> *</span>
-                        <input class="form-control" id="note" name="contest[notes]" type="text" required data-validation="required" tabindex="1"/>
+                        <input class="form-control" id="child_lname" type="text" required data-validation="required" tabindex="1"/>
                     </div>
                     <div class="col-sm-6">
                         <label for="notes">Child's Last Name</label> <span style="color:red"> *</span>
-                        <input class="form-control" id="notes" name="contest[notes]" type="text" required data-validation="required" tabindex="1"/>
+                        <input class="form-control" id="notes"  type="text" required data-validation="required" tabindex="1"/>
                     </div>
                     <div class="col-sm-6">
                         <label for="birthday">Child's Birthday (yyyy-mm-dd) </label>  <span style="color:red"> *</span>
