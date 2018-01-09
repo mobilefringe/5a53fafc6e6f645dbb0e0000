@@ -52,20 +52,6 @@
         </div> 
     </div>
 </div>
-<!--<script type="text/javascript">-->
-<!--    window.mappedin = {-->
-<!--        miKey: {-->
-<!--            id: 'NQ8si2mbnbtJ6ticAUV37ByqstlkuC5M',-->
-<!--            key: 'cwKTJ7lHEWz0fpLY'-->
-<!--        },-->
-<!--        searchKey: {-->
-<!--            id: 'ki6v9TAb9HA2VK2A2OSaUCdXi0orCnxE',-->
-<!--            secret: 'TIc9sMNtVrme4hik'-->
-<!--        }-->
-<!--    };-->
-<!--</script>-->
-<!--<script src="https://d1p5cqqchvbqmy.cloudfront.net/web/release/mappedin-web.js" type="text/javascript"></script>-->
-
 <link href="//codecloud.cdn.speedyrails.net/sites/582e04fa6e6f644b9c000000/text/css/1432640222000/smoothzoom.css" rel="stylesheet">
 <script src="//codecloud.cdn.speedyrails.net/sites/59035a6c6e6f645a5b420000/application/x-javascript/1503602727000/smoothZoomA24.js"></script> 
 <script>
