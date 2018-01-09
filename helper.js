@@ -308,7 +308,7 @@ function submit_contest(slug) {
     });
 }
 
-function submit_contest(data) {
+function submit_form_data(data) {
     var propertyDetails = getPropertyDetails();
     var host = propertyDetails.mm_host;
     var email = $("#email").val();
