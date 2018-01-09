@@ -185,7 +185,7 @@
             $.ajax({
                 type: "GET",
                 url: "http://www.stvitalcentrespark.com/index,article.rss",
-                dataType: "application/rss+xml",
+                dataType: "xml",
                 success: function (xml) {
                     console.log(xml);
                      $title = $(xml).find( "title" ); 
