@@ -139,8 +139,7 @@
                                     </ul>    
                                 </li>
                                 <!--<li class="menu_item"><a href="/dine">Dine</a></li>-->
-                                <li class="menu_item"><a href="/events">Events</a></li>
-                                <li class="menu_item"><a href="/promotions">Promos</a></li>
+                                
                                 <li class="menu_item">
                                     <a href="#">Events <i class="fa fa-angle-down" aria-hidden="true"></i></a>
                                     <ul>
