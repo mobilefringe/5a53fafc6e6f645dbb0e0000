@@ -22,7 +22,7 @@
                 <script id="discount_template" type="x-tmpl-mustache/text">
                     {{name}}
                     <strong><a href="{{item.url}}">{{item.name}}</a></strong>
-        			    <span>{{item.description}}</span>
+        			<span>{{item.description}}</span>
                 </script>
             </div>
         </div>
