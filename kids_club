@@ -23,7 +23,7 @@
                 <li>
                     <strong><a href="{{url}}">{{name}}</a></strong>
         			<span>{{description}}</span>
-        			</li>
+        		</li>
                 </script>
             </div>
         </div>
