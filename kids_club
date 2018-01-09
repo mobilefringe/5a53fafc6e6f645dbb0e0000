@@ -19,12 +19,73 @@
     <div class="row">
         <div class="col-md-12">
             <h3>Kids Club Registration</h3>
-            <form name="contact_form" id="contact_form" method="post">
-                <input name="name" id="name" class="form-control" type="text" value="" placeholder="Your Name" required>
-                <input name="email" id="email" class="form-control" type="text" value="" placeholder="Your Email" required>
-                <input name="subject" id="subject" class="form-control" type="text" placeholder="Subject" required>
-                <textarea name="message" id="message" rows="8" class="form-control" placeholder="Your Comments" required></textarea>
-                <button id="submit" class="contact_btn" type="submit">SUBMIT</button>
+            <form id="contest_form">
+                <input id="property_id" name="contest[property_id]" type="hidden" value="{{property_id}}"/>
+                <input id="contest_id" name="contest[contest_id]" type="hidden"  value="{{id}}" />
+                <input type="hidden" name="cm-name" id="cm-name" />
+                <div class="row ">
+                    <div class="col-md-4 col-sm-6 margin_30">
+                        <label for="first_name">Guardian's First Name</label>  <span style="color:red"> *</span>
+                        <input class="form-control" id="first_name" name="contest[first_name]" type="text" required data-validation="required" tabindex="1"/>
+                    </div>
+                    <div class="col-md-4 col-sm-6 margin_30">
+                        <label for="last_name">Guardian's Last Name</label>  <span style="color:red"> *</span>
+                        <input class="form-control" id="last_name" name="contest[last_name]" type="text" required data-validation="required" tabindex="2"/>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <label for="email">Email</label> <span style="color:red"> *</span>
+                        <input class="form-control" id="email" name="contest[email]" type="email" required data-validation-regexp="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-validation-error-msg="Please enter a valid email address" data-validation="custom" tabindex="3"/>
+                    </div>
+                    
+                </div>
+                <br class="hidden_phone">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <label for="notes">Child's Full Name</label> <span style="color:red"> *</span>
+                        <input class="form-control" id="notes" name="contest[notes]" type="text" required data-validation="required" tabindex="4"/>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <label for="birthday">Child's Birthday (yyyy-mm-dd) </label>  <span style="color:red"> *</span>
+                        <input class="form-control" id="birthday" name="contest[birthday]" type="text" required data-validation="required" tabindex="5"/>    
+                    </div>
+                    <div class="col-md-4 col-sm-6 margin_30">
+                        <label for="phone">Phone Number</label>  <span style="color:red"> *</span>
+                        <input class="form-control" id="phone" name="contest[phone]" type="text" required data-validation="required" tabindex="3"/>    
+                    </div>
+                    
+                </div>
+                
+                <br>
+                <div class="row">
+                    <div class="col-md-12">
+                        <label class="agree">
+                            <input id="agree_to_conditions" required type="checkbox" tabindex="7" /> 
+                                I agree to receive electronic messages from Yuba Sutter Mall.
+                        </label>
+                        
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12" style="float: none;">
+                        <!--<a class="contest_link" href="/pages/yubasutter-rules-regulations" target="_blank" tabindex="8">Click here</a> to view the rules and regulations.-->
+                        <br/><br/>
+                        <button class=" store_header_btns" tabindex="9">Submit</button>
+                        <br/><br/>
+                    </div>
+                    <div id="success_subscribe_popup" class="hidden_now">
+                        <div class="alert alert-success fade in" style="margin-top:18px;">
+                            <a href="#" class="close" data-dismiss="alert" aria-label="close" title="close">×</a>
+                            <strong>Success!</strong> Thank you, your entry has been received.
+                        </div>
+                    </div>
+                    <div id="error_subscribe_popup" class="hidden_now">
+                        <div class="alert alert-error fade in" style="margin-top:12px;">
+                            <a href="#" class="close" data-dismiss="alert" aria-label="close" title="close">×</a>
+                            <strong>Sorry!</strong> There was a problem submiting your request. Please try again later!
+                        </div>
+                    </div>
+                    <br/><br/>
+                </div>
             </form>
         </div>
     </div>
