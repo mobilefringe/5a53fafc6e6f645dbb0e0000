@@ -20,7 +20,7 @@
         <div class="col-md-12">
             <div id="discount_container">
                 <script id="discount_template" type="x-tmpl-mustache/text">
-                    
+                    {{}}
                 </script>
             </div>
         </div>
