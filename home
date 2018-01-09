@@ -193,7 +193,7 @@
             //     }
             //     });
             var x = new XMLHttpRequest();
-            x.open("GET", "http://feed.example/", true);
+            x.open("GET", "//www.stvitalcentrespark.com/index,article.rss", true);
             x.onreadystatechange = function () {
               if (x.readyState == 4 && x.status == 200)
               {
@@ -202,6 +202,7 @@
               }
             };
             x.send(null);
+            
             // var xml = "http://www.stvitalcentrespark.com/index,article.rss",
             //   xmlDoc = $.parseXML( xml ),
             //   $xml = $( xmlDoc ),
