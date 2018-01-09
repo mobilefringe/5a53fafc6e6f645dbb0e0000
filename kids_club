@@ -39,8 +39,8 @@
         position: relative;
     }
     .info-list li strong {
-    padding: 0 2px 2px 0;
-}
+        padding: 0 2px 2px 0;
+    }
 </style>
 <script>
     $(document).ready(function(e){
