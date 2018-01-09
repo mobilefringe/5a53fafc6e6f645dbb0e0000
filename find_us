@@ -1,0 +1,50 @@
+<div class="inside_banner">   
+    <div class="content_container">
+        <div class="inside_banner_content">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>Find Us</h1>
+                </div>
+                <div class="col-md-6 hidden_phone">
+                    <h4 class="pull-right">Contact Us <i class="fa fa-angle-right" aria-hidden="true"></i> Find Us</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content_container margin_30">
+    <div class="margin_30"></div>
+    <div class="row">
+        <div class="col-md-12">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1634.5055658082479!2d-97.11115357990204!3d49.82896497503548!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x97eb75a30e4fd90b!2sSt.Vital+Centre!5e0!3m2!1sen!2sca!4v1515516651189" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <div class="margin_30 hidden_phone"></div>
+            <hr class="horizontal_div show_phone">
+            <div id="mm_page_content"></div>
+        </div> 
+    </div>
+</div>
+<script>
+    $(document).ready(function(e){
+        init(e);
+        function renderAll(){
+            // var repo = getRepoDetailsByName("Contact Us Banner");
+            // if (repo != undefined) {
+            //     var banner = getImageURL(repo.images[0].photo_url);
+            //     $(".inside_banner").css({backgroundImage: "url(" + banner + ")"});
+            // }
+            
+            var prefix = get_prefix();
+            var pages_json = prefix + "	/.json"
+            $.getJSON(pages_json).done(function(data) {
+                $('#mm_page_content').html(data.body);
+            }).fail(function(jqXHR) {
+                if (jqXHR.status == 404) {
+                    $("#404_msg").fadeIn("fast");
+                }
+            }); 
+        
+            show_content();
+        }
+        loadMallDataCached(renderAll); 
+    });
+</script>
