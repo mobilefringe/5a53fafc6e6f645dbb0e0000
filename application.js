@@ -402,7 +402,7 @@ function renderJobDetails(container, template, collection){
             }
         } else {
             val.store_name = mall_name;
-            // val.image_url = default_image;
+            val.image_url = default_image;
         }
         
         var show_date = moment(val.show_on_web_date);
