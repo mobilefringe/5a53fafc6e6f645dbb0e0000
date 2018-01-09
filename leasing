@@ -1,0 +1,47 @@
+<div class="inside_banner">   
+    <div class="content_container">
+        <div class="inside_banner_content">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>Leasing</h1>
+                </div>
+                <div class="col-md-6 hidden_phone">
+                    <h4 class="pull-right">Leasing <i class="fa fa-angle-right" aria-hidden="true"></i> Leasing</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content_container margin_30">
+    <div class="margin_30"></div>
+    <div class="row">
+        <div class="col-md-12">
+            <div id="mm_page_content"></div>
+        </div> 
+    </div>
+</div>
+<script>
+    $(document).ready(function(e){
+        init(e);
+        function renderAll(){
+            // var repo = getRepoDetailsByName("Contact Us Banner");
+            // if (repo != undefined) {
+            //     var banner = getImageURL(repo.images[0].photo_url);
+            //     $(".inside_banner").css({backgroundImage: "url(" + banner + ")"});
+            // }
+            
+            var prefix = get_prefix();
+            var pages_json = prefix + "/pages/svc-leasing.json"
+            $.getJSON(pages_json).done(function(data) {
+                $('#mm_page_content').html(data.body);
+            }).fail(function(jqXHR) {
+                if (jqXHR.status == 404) {
+                    $("#404_msg").fadeIn("fast");
+                }
+            }); 
+        
+            show_content();
+        }
+        loadMallDataCached(renderAll); 
+    });
+</script>
