@@ -65,7 +65,7 @@
                     <div class="col-md-12">
                         <label class="agree">
                             <input id="agree_to_conditions" required type="checkbox" tabindex="7" /> 
-                                I WOULD LIKE TO RECEIVE COMMUNICATIONS FROM ST. VITAL CENTRE ON SPECIALS AND EVENTS FOR THE KIDS CLUB. I HAVE READ AND UNDERSTOOD THE PRIVACY POLICY.*
+                                I would like to receive communications from St. Vital Centre on specials and events for the kids club. I have read and understood the privacy policy.*
                         </label>
                         
                     </div>
