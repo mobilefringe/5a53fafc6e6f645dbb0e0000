@@ -33,6 +33,9 @@
                     $("#404_msg").fadeIn("fast");
                 }
             }); 
+            
+            
+            // kids club discounts
             show_content();
         }
         loadMallDataCached(renderAll); 
