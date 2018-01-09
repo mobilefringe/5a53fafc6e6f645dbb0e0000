@@ -154,13 +154,12 @@
                 // viewBox: [520,150,1350,1400],
                 disableAll: true,
                 regions: regions,
-                tooltipsMode:'custom',
-                zoom:true,
-                zoomButtons: {'show': true, 'location': 'left'},
-                pan:true,
-                cursor:'pointer',
-                responsive:true,
-                zoomLimit: [0,5]
+                tooltipsMode:    'custom',
+        zoom: true,
+        pan:true,
+        cursor:'pointer',
+        responsive:true,
+        zoomLimit: [0,10]
             });
             
             $('.map_pin_a').click(function(e){
