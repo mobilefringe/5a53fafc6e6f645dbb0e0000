@@ -18,7 +18,7 @@
     </div>
     <div class="row">
         <div class="col-md-12">
-            <h3>What is the Kids club?</h3>
+            <h3>KIDS CLUB DISCOUNTS</h3>
             <ul id="discount_container" class="info-list wide">
                 <script id="discount_template" type="x-tmpl-mustache/text">
                 <li>
