@@ -18,7 +18,9 @@
     </div>
     <div class="row">
         <div class="col-md-12">
-            <div id="discount_container"></div>
+            <div id="discount_container">
+                <script id="discount_template" type=""></script>
+            </div>
         </div>
     </div>
 </div>
