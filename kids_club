@@ -61,7 +61,6 @@
                         <label for="email">Parent's Email</label> <span style="color:red"> *</span>
                         <input class="form-control" id="email" name="contest[email]" type="email" required data-validation-regexp="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-validation-error-msg="Please enter a valid email address" data-validation="custom" tabindex="3"/>
                     </div>
-                    Anniversary
                      <div class="col-md-4 col-sm-6">
                         <label for="reason">How did you hear about the St Vital Centre Kids Centre?</label>  <span style="color:red"> *</span>
                         <select name="contest[anniversary]" class="form-control" tabindex="6">
