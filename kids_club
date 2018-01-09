@@ -20,9 +20,8 @@
         <div class="col-md-12">
             <div id="discount_container">
                 <script id="discount_template" type="x-tmpl-mustache/text">
-                    {{name}}
-                    <strong><a href="{{item.url}}">{{item.name}}</a></strong>
-        			<span>{{item.description}}</span>
+                    <strong><a href="{{url}}">{{name}}</a></strong>
+        			<span>{{description}}</span>
                 </script>
             </div>
         </div>
