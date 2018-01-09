@@ -34,7 +34,7 @@
             <div class="stores_table">
                 <ul id="store_list_container_map">
                     <script id="store_list_template_map" type="x-tmpl-mustache/text">
-                        <li><a class="map_pin_a" href="#" store_id="{{id}}" store_name="{{name}}" svgmap_region="{{svgmap_region}}" store_y_coordinate="{{y_coordinate}}">{{name}}</a><li>
+                        <li><a class="map_pin_a" href="#" store_id="{{id}}" store_name="{{name}}" store_x_coordinate="{{x_coordinate}}" store_y_coordinate="{{y_coordinate}}">{{name}}</a><li>
                     </script>
                 </ul>
             </div>
@@ -96,19 +96,17 @@
             $(".map_tooltip").css({"background-color":"#C607A9", "color" : "#fff", "margin": "5px", "border": "none"});
             $('.map_pin_a').click(function(e){
                 e.preventDefault();
-                var id = $(this).attr('svgmap_region')
+                var id = $(this).attr('data-value')
                 map_pin(id)
-                map.setViewBox(id);
-                map.selectRegion(id);
             })
             
-            // function map_pin(value){
-            //     map.marksHide();
-            //     value = value.split('/')
-            //     if (value[0] != null){
-            //         drop_pin(value[0], map);    
-            //     }
-            // }
+            function map_pin(value){
+                map.marksHide();
+                value = value.split('/')
+                if (value[0] != null){
+                    drop_pin(value[0], map);    
+                }
+            }
             console.log("stores", stores);
             // init_map(reg);
             show_content();
