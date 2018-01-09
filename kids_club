@@ -34,7 +34,7 @@
                 }
             }); 
              // kids club discounts
-            var repo = getRepoDetailsByName("Store Directory Banner");
+            var repo = getRepoDetailsByName("kids club discounts");
             if (repo != undefined) {
                 var banner = getImageURL(repo.images[0].photo_url);
                 $(".inside_banner").css({backgroundImage: "url(" + banner + ")"});
