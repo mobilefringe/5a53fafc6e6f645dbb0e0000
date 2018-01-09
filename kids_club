@@ -47,7 +47,7 @@
             if (repo != undefined) {
                 // var banner = getImageURL(repo.images[0].photo_url);
                 // $(".inside_banner").css({backgroundImage: "url(" + banner + ")"});
-                renderGeneral("#discount_container","#discount_template")
+                renderGeneral("#discount_container","#discount_template",)
                 console.log("repo",repo.images);
                 
             }
