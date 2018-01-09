@@ -42,10 +42,11 @@
                        <!--         </div>-->
                        <!--         </div>   -->
                        <!--         <div class="store_details_desc hidden_phone">{{{rich_description}}}</div>-->
-                        <div class="zoom_container" id="zoom_container_store">
-                		    <img id="zoom_image" src=""/>
-                		    <div class="landmarks" data-show-at-zoom="0" data-allow-drag="true"></div>
-                    	</div>
+                     <!--   <div class="zoom_container" id="zoom_container_store">-->
+                		   <!-- <img id="zoom_image" src=""/>-->
+                		   <!-- <div class="landmarks" data-show-at-zoom="0" data-allow-drag="true"></div>-->
+                    	<!--</div>-->
+                    	<div id="mapsvg_store_detail" class="mobile_padding"></div>
                 <!--<select id="mapList"></select>-->
             </div>
         </div>
