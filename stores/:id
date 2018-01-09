@@ -235,9 +235,12 @@
         this_region = store_details.svgmap_region;
         map = $('#mapsvg_store_detail').mapSvg({
             source: getSVGMapURL(),
-            colors: {stroke: '#fff', selected: "#DCBB8D", hover: "#a6a6a6"},
-            disableAll: true,
-            regions: this_region,
+            colors: {stroke: '#aaaaaa', selected: "#F3047A", hover: 0},
+        width: svgW,
+        height:svgH,
+        popover: 'auto',
+        disableAll: true,
+        viewBox: [520,150,1350,1400],
             tooltipsMode:   'custom',
             zoom: false,
             pan:false,
