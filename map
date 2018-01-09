@@ -155,7 +155,7 @@
                 // viewBox: [520,150,1350,1400],
                 disableAll: true,
                 regions: regions,
-                tooltipsMode:    'custom',
+                tooltipsMode: 'custom',
                 zoom: true,
                 pan:true,
                 cursor:'pointer',
