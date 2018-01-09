@@ -164,7 +164,7 @@
             }
            
            $.validate();
-         var contest_details = getContestBySlug('yubasutter-kids-club'); 
+         var contest_details = getContestBySlug('svc-kids-club'); 
          var property = getPropertyDetails ();
          console.log(contest_details, property);
          $('#contest_id').val(contest_details.id);
