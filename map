@@ -98,6 +98,8 @@
                 e.preventDefault();
                 var id = $(this).attr('data-value')
                 map_pin(id)
+                map.setViewBox(store_details.svgmap_region);
+        map.selectRegion(store_details.svgmap_region);
             })
             
             // function map_pin(value){
