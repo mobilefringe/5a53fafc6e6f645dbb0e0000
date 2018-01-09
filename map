@@ -141,7 +141,7 @@
                     obj = {};
                     obj["tooltip"] = "<p class='tooltip_name'>"+val.name+"</p> <a href='/stores/"+val.slug+"'  >View Details</a>"
                     obj["attr"] = {}
-                    // obj["attr"]["href"] = "/stores/"+val.slug
+                    obj["attr"]["href"] = "/stores/"+val.slug
                     regions[val.svgmap_region] = obj
                 }
             });
