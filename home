@@ -191,7 +191,7 @@
                      $title = $(xml).find( "title" ); 
                     console.log("blog", $title);
                 }
-                });
+            });
             // var xml = "http://www.stvitalcentrespark.com/index,article.rss",
             //   xmlDoc = $.parseXML( xml ),
             //   $xml = $( xmlDoc ),
