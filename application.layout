@@ -151,7 +151,7 @@
                                 <li class="menu_item">
                                     <a href="#">Services <i class="fa fa-angle-down" aria-hidden="true"></i></a>
                                     <ul>
-                                        <li class="dropdown_item"><a href="/contact_us">Customer Services</a></li>
+                                        <li class="dropdown_item"><a href="/pages/svc-customer-service">Customer Services</a></li>
                                         <li class="dropdown_item"><a href="/leasing">Leasing</a></li>
                                         <li class="dropdown_item"><a href="/jobs">Jobs</a></li>
                                         <li class="dropdown_item"><a href="/pages/svc-community-booth">Community Booth</a></li>
