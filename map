@@ -96,7 +96,7 @@
             $(".map_tooltip").css({"background-color":"#C607A9", "color" : "#fff", "margin": "5px", "border": "none"});
             $('.map_pin_a').click(function(e){
                 e.preventDefault();
-                var id = $(this).attr('data-value')
+                var id = $(this).attr('svgmap_region')
                 map_pin(id)
                 map.setViewBox(store_details.svgmap_region);
                 map.selectRegion(store_details.svgmap_region);
