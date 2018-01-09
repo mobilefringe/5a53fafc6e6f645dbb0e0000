@@ -69,7 +69,7 @@
                         	<option value="AK">St Vital Centre website</option>
                         	<option value="AZ">From a friend</option>
                         	<option value="AZ">At a Kids Club event</option>
-                        	<option value="AZ">Other</option>
+                        	<option value="Other">Other</option>
                         </select>
                     </div>
                 </div>
