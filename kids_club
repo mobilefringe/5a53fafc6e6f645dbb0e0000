@@ -27,11 +27,11 @@
                 <div class="row">
                     <div class="col-sm-6">
                         <label for="notes">Child's First Name</label> <span style="color:red"> *</span>
-                        <input class="form-control" id="child_lname" type="text" required data-validation="required" tabindex="1"/>
+                        <input class="form-control" id="child_lname" type="text" required data-validation="required" tabindex="2"/>
                     </div>
                     <div class="col-sm-6">
                         <label for="notes">Child's Last Name</label> <span style="color:red"> *</span>
-                        <input class="form-control" id="child_fname"  type="text" required data-validation="required" tabindex="1"/>
+                        <input class="form-control" id="child_fname"  type="text" required data-validation="required" tabindex="3"/>
                     </div>
                     <div class="col-sm-6">
                         <label for="address">Street Address</label>  <span style="color:red"> *</span>
@@ -39,31 +39,31 @@
                     </div>
                     <div class="col-sm-6">
                         <label for="postal_code">Postal Code</label>  <span style="color:red"> *</span>
-                        <input class="form-control" id="postal_code" name="contest[postal_code]" type="text" required data-validation="required" tabindex="7"/>
+                        <input class="form-control" id="postal_code" name="contest[postal_code]" type="text" required data-validation="required" tabindex="5"/>
                     </div>
                     <div class="col-sm-6 ">
                         <label for="phone">Phone Number</label>  <span style="color:red"> *</span>
-                        <input class="form-control" id="phone" name="contest[phone]" type="text" required data-validation="required" tabindex="3"/>    
+                        <input class="form-control" id="phone" name="contest[phone]" type="text" required data-validation="required" tabindex="6"/>    
                     </div>
                     <div class="col-sm-6">
                         <label for="birthday">Child's Birthday (yyyy-mm-dd) </label>  <span style="color:red"> *</span>
-                        <input class="form-control" id="birthday" name="contest[birthday]" type="text" required data-validation="required" tabindex="2"/>    
+                        <input class="form-control" id="birthday" name="contest[birthday]" type="text" required data-validation="required" tabindex="7"/>    
                     </div>
                     <div class="col-sm-6 ">
                         <label for="first_name">Parent's First Name</label>  <span style="color:red"> *</span>
-                        <input class="form-control" id="first_name" name="contest[first_name]" type="text" required data-validation="required" tabindex="4"/>
+                        <input class="form-control" id="first_name" name="contest[first_name]" type="text" required data-validation="required" tabindex="8"/>
                     </div>
                     <div class="col-sm-6 ">
                         <label for="last_name">Parent's Last Name</label>  <span style="color:red"> *</span>
-                        <input class="form-control" id="last_name" name="contest[last_name]" type="text" required data-validation="required" tabindex="2"/>
+                        <input class="form-control" id="last_name" name="contest[last_name]" type="text" required data-validation="required" tabindex="9"/>
                     </div>
                     <div class="col-sm-6">
                         <label for="email">Parent's Email</label> <span style="color:red"> *</span>
-                        <input class="form-control" id="email" name="contest[email]" type="email" required data-validation-regexp="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-validation-error-msg="Please enter a valid email address" data-validation="custom" tabindex="3"/>
+                        <input class="form-control" id="email" name="contest[email]" type="email" required data-validation-regexp="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-validation-error-msg="Please enter a valid email address" data-validation="custom" tabindex="10"/>
                     </div>
                      <div class="col-sm-6">
                         <label for="reason">How did you hear about the St Vital Centre Kids Centre?</label>  <span style="color:red"> *</span>
-                        <select id="reason" class="form-control" tabindex="6">
+                        <select id="reason" class="form-control" tabindex="11">
                             <option value="" disabled selected>Select One</option>
                         	<option value="In St Vital Centre">In St Vital Centre</option>
                         	<option value="St Vital Centre website">St Vital Centre website</option>
@@ -77,7 +77,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <label class="agree">
-                            <input id="agree_to_conditions" required type="checkbox" tabindex="7" /> 
+                            <input id="agree_to_conditions" required type="checkbox" tabindex="12" /> 
                                 I would like to receive communications from St. Vital Centre on specials and events for the kids club. I have read and understood the privacy policy.*
                         </label>
                         
