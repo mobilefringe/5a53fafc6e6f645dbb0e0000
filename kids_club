@@ -33,7 +33,7 @@
                         <label for="notes">Child's Last Name</label> <span style="color:red"> *</span>
                         <input class="form-control" id="child_fname"  type="text" required data-validation="required" tabindex="1"/>
                     </div>
-                    <div class="col-sm-6 margin_30">
+                    <div class="col-sm-6">
                         <label for="address">Address</label>  <span style="color:red"> *</span>
                         <input class="form-control" id="address" name="contest[mailing_address]" type="text" required data-validation="required" tabindex="4"/>    
                     </div>
