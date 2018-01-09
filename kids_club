@@ -205,7 +205,7 @@
             e.preventDefault();
             
             $('.contest_btn').prop('disabled', true);
-            var child_name = $("#child_lname") + " " + $("#child_lname");
+            var child_name = $("#child_lname").val()  + " " + $("#child_lname");
             $("#notes").val(child_name);
             console.log($("#notes").val());
             submit_form_data($(this).serialize());
