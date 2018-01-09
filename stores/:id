@@ -220,6 +220,7 @@
                     regions[val.svgmap_region] = obj
                 }
             });
+            console.log(getSVGMapURL())
             load_map(regions, store_details);
             show_content();
         }
