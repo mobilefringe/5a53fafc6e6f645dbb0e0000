@@ -68,8 +68,8 @@
                         	<option value="AL">AL</option>
                         	<option value="AK">AK</option>
                         	<option value="AZ">AZ</option>
-                        	</select>
-                        	</div>
+                        </select>
+                    </div>
                 </div>
                 <!--<br class="hidden_phone">-->
                 <!--<div class="row ">-->
