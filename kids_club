@@ -63,7 +63,7 @@
                     </div>
                     
                 </div>
-                <br class="hidden_phone">
+                <!--<br class="hidden_phone">-->
                 <!--<div class="row ">-->
                 <!--    <div class="col-sm-6 margin_30">-->
                 <!--        <label for="first_name">Parent's First Name</label>  <span style="color:red"> *</span>-->
