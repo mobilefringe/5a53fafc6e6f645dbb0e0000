@@ -1,0 +1,98 @@
+<div class="inside_banner">   
+    <div class="content_container">
+        <div class="inside_banner_content">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>Contact Us</h1>
+                </div>
+                <div class="col-md-6 hidden_phone">
+                    <h4 class="pull-right">Contact Us <i class="fa fa-angle-right" aria-hidden="true"></i> Contact Us</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content_container margin_30">
+    <div class="margin_30 hidden_phone"></div>
+    <div class="row">
+        <div class="col-md-6 border_right">
+            <!--<h2>Management Office</h2>-->
+            <!--<p>216 Chrislea Road<br>Vaughan, ON L4L 8S5</p> -->
+            <!--<h2 class="hidden_phone"><div class="phone_pad">Tel: </div>416.254.7777</h2>-->
+            <!--<h2 class="show_phone"><a href:"tel:416.254.7777"><div class="phone_pad">Tel: </div>416.254.7777</a></h2>-->
+            <!--<h2><div class="phone_pad">Fax: </div>416.254.7777</h2>-->
+            <br>
+            <!--<h2 class="margin_30">Important Phone Numbers:</h2>-->
+            <div id="mm_page_content"></div>
+            <hr class="horizontal_div show_phone">
+        </div>
+        <div class="col-md-6 ">
+            <h2>Contact us with your questions, comments, or for more information.</h2>
+            <div id="send_contact_success" class="alert alert-success hidden_now" role="alert">
+                <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                <span class="sr-only">Success</span>
+                Thank you for contacting us. A member from our team will contact you shortly.
+            </div>
+            <div id="send_contact_error" class="alert alert-danger hidden_now" role="alert">
+                <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                <span class="sr-only">Error:</span>
+                There was an error when trying to submit your request. Please ensure you have entered a valid email address and subject and please try again.
+            </div>
+            <form name="contact_form" id="contact_form" method="post">
+                <input name="name" id="name" class="form-control" type="text" value="" placeholder="Your Name" required>
+                <input name="email" id="email" class="form-control" type="text" value="" placeholder="Your Email" required>
+                <input name="subject" id="subject" class="form-control" type="text" placeholder="Subject" required>
+                <textarea name="message" id="message" rows="8" class="form-control" placeholder="Your Comments" required></textarea>
+                <button id="submit" class="contact_btn" type="submit">SUBMIT</button>
+            </form>
+            <br>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function(e){
+        init(e);
+        function renderAll(){
+            // var repo = getRepoDetailsByName("Contact Us Banner");
+            // if (repo != undefined) {
+            //     var banner = getImageURL(repo.images[0].photo_url);
+            //     $(".inside_banner").css({backgroundImage: "url(" + banner + ")"});
+            // }
+            
+            var prefix = get_prefix();
+            var pages_json = prefix + "/pages/svc-contact.json"
+            $.getJSON(pages_json).done(function(data) {
+                $('#mm_page_content').html(data.body);
+            }).fail(function(jqXHR) {
+                if (jqXHR.status == 404) {
+                    $("#404_msg").fadeIn("fast");
+                }
+            }); 
+            
+            $.validate();
+            
+            show_content();
+            
+            $('#contact_form').submit(function(e) {
+                values = [];
+                values = JSON.stringify($('#contact_form').serializeArray());
+                e.preventDefault();
+                $.ajax({
+                    url : "/api/v1/contact_us",
+                    type: "POST",
+                    data : {authenticity_token: '<%=form_authenticity_token%>' ,
+                    form_data:values},
+                    success: function(data, textStatus, jqXHR) {
+                        $('#send_contact_success').fadeIn();
+                        $('#contact_form').find("input[type=text], textarea").val("");
+                    },
+                    error: function (jqXHR, textStatus, errorThrown) {
+                        $('html, body').animate({scrollTop : 0},800);
+                        $('#send_contact_error').fadeIn();
+                    }
+                });
+    		});
+        }
+        loadMallDataCached(renderAll); 
+    });
+</script>
