@@ -18,14 +18,14 @@
     </div>
     <div class="row">
         <div class="col-md-12">
-            <div id="discount_container">
+            <ul id="discount_container">
                 <script id="discount_template" type="x-tmpl-mustache/text">
                 <li>
                     <strong><a href="{{url}}">{{name}}</a></strong>
         			<span>{{description}}</span>
         		</li>
                 </script>
-            </div>
+            </ul>
         </div>
     </div>
 </div>
