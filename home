@@ -187,7 +187,7 @@
                 url: "http://www.stvitalcentrespark.com/.rss",
                 dataType: "application/rss+xml",
                 success: function (xml) {
-                    console.log(xml)
+                    console.log(xml);
                      $title = $(xml).find( "title" ); 
                     console.log("blog", $title);
                 }
