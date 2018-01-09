@@ -18,7 +18,7 @@
     </div>
     <div class="row">
         <div class="col-md-12">
-            <ul id="discount_container">
+            <ul id="discount_container" class="info_list">
                 <script id="discount_template" type="x-tmpl-mustache/text">
                 <li>
                     <strong><a href="{{url}}">{{name}}</a></strong>
@@ -30,12 +30,7 @@
     </div>
 </div>
 <style>
-        border-bottom: 1px dotted #777777;
-    clear: both;
-    display: block;
-    line-height: 1;
-    margin-bottom: 10px;
-    position: relative;
+    
 </style>
 <script>
     $(document).ready(function(e){
