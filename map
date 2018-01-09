@@ -155,11 +155,11 @@
                 disableAll: true,
                 regions: regions,
                 tooltipsMode:    'custom',
-        zoom: true,
-        pan:true,
-        cursor:'pointer',
-        responsive:true,
-        zoomLimit: [0,10]
+                zoom: true,
+                pan:true,
+                cursor:'pointer',
+                responsive:true,
+                zoomLimit: [0,10]
             });
             
             $('.map_pin_a').click(function(e){
