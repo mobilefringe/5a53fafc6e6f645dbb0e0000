@@ -173,8 +173,9 @@
         $('#contest_form').submit(function(e){
             
             e.preventDefault();
+            
             $('.contest_btn').prop('disabled', true);
-            // submit_contest(slug);
+            $()
             submit_contest($(this).serialize());
             // $('html, body').animate({scrollBottom : 0},800);
         });
