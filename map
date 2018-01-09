@@ -132,18 +132,18 @@
             // }
             var stores = getStoresList(); 
             renderStoreList('#store_list_container_map','#store_list_template_map', stores, "A", "Z");
-    //         reg = {};
-    // 		$.each( stores , function( key, val ) {
-    //             if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
-    //                 obj = {};
-    //                 obj["tooltip"] = "<label class='store_name_map'> "+val.name +"</label>"
-    //                 obj["attr"] = {}
-    //                 obj["attr"]["href"] = '/stores/'+val.slug 
-    //                 reg[val.svgmap_region] = obj
-    //             }
-    //         });
-    //         console.log("stores", stores);
-    //         init_map(reg);
+            reg = {};
+    		$.each( stores , function( key, val ) {
+                if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
+                    obj = {};
+                    obj["tooltip"] = "<label class='store_name_map'> "+val.name +"</label>"
+                    obj["attr"] = {}
+                    obj["attr"]["href"] = '/stores/'+val.slug 
+                    reg[val.svgmap_region] = obj
+                }
+            });
+            console.log("stores", stores);
+            init_map(reg);
             show_content();
         }
         loadMallDataCached(renderAll); 
