@@ -33,7 +33,7 @@
                     $("#404_msg").fadeIn("fast");
                 }
             }); 
-            
+             // kids club discounts
             var repo = getRepoDetailsByName("Store Directory Banner");
             if (repo != undefined) {
                 var banner = getImageURL(repo.images[0].photo_url);
