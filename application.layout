@@ -196,7 +196,7 @@
                     <hr class="horizontal_div show_phone">
                     <div class="col-md-4">
                         <h3 class="footer_nav_title caps">Menu</h3>
-                        <div class="margin_60 hidden_phone"></div>
+                        <div class="margin_60 hidden_phone" style="    margin-bottom: 40px;"></div>
                         <ul class="footer_menu footer_menu_left">
                             <li><a href="/map">Map</a></li>
                             <li><a href="/promotions">Promotions</a></li>
