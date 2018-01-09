@@ -29,6 +29,19 @@
             </ul>
         </div>
     </div>
+    <div class="row">
+        <div class="col-md-12">
+            <h3>Kids Club Discount</h3>
+            <ul id="discount_container" class="info-list wide">
+                <script id="discount_template" type="x-tmpl-mustache/text">
+                <li>
+                    <strong><a href="{{url}}">{{name}}</a></strong>
+        			<span>{{description}}</span>
+        		</li>
+                </script>
+            </ul>
+        </div>
+    </div>
 </div>
 <style>
     .info-list li {
