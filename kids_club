@@ -175,7 +175,7 @@
             e.preventDefault();
             
             $('.contest_btn').prop('disabled', true);
-            var child name = $("child_lname") +  $("child_lname");
+            var child name = $("child_lname") + " " +$("child_lname");
             $("#notes").val("")
             submit_contest($(this).serialize());
             // $('html, body').animate({scrollBottom : 0},800);
