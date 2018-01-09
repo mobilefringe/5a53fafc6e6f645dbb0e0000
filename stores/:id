@@ -1,0 +1,313 @@
+
+<!--<link href="//codecloud.cdn.speedyrails.net/sites/582e04fa6e6f644b9c000000/text/css/1432640222000/smoothzoom.css" rel="stylesheet">-->
+<!--<script src="//codecloud.cdn.speedyrails.net/sites/59035a6c6e6f645a5b420000/application/x-javascript/1503602727000/smoothZoomA24.js"></script> -->
+<!--<style>-->
+<!--    .demo1{-->
+<!--        height:625px;-->
+<!--        margin-bottom:20px;-->
+<!--        border: solid 1px #ccc-->
+<!--    }-->
+<!--    @media(max-width: 768px){-->
+<!--        .demo1{-->
+<!--            height:300px;-->
+<!--        }-->
+<!--        #map{-->
+<!--           width:auto;-->
+<!--           height:325px;-->
+<!--        }-->
+<!--    }-->
+<!--    #map {-->
+<!--        max-width: 100%;-->
+        /*max-height: 586px;*/
+<!--        position: relative;-->
+<!--        top: 0;-->
+<!--        left: 0;-->
+<!--        border-radius: 4px;-->
+<!--        overflow: hidden;-->
+<!--    }-->
+<!--    #zoom_image{-->
+<!--		width:795px;-->
+<!--		height: 1230px;-->
+<!--		min-width:795px;-->
+<!--		min-height: 1230px;-->
+<!--		max-width: none;-->
+		
+<!--	}-->
+<!--   .zoom_container .landmarks{-->
+<!--    	position:absolute;-->
+<!--    	z-index:10;	-->
+<!--    	top:0px;-->
+<!--    	left:0px;-->
+<!--    	font-family: Helvetica, Arial, Verdana;-->
+<!--    	font-size:12px;-->
+<!--    	color: #ffffff;-->
+<!--    }	-->
+<!--    .zoom_container .landmarks .item {-->
+<!--    	position:absolute;		-->
+<!--    	text-align:center;		-->
+<!--    	display: none;-->
+<!--    }	-->
+<!--    .zoom_container .landmarks .lable div {-->
+<!--    	width: 100px;-->
+<!--    	padding: 4px;	-->
+<!--    }	-->
+<!--    .zoom_container .landmarks .mark .text{-->
+<!--    	background-color:#000000;-->
+<!--    	padding:2px 6px;-->
+<!--    	min-width: 75px;	-->
+<!--    }-->
+<!--    #_zi_icon{background:transparent url("//codecloud.cdn.speedyrails.net/sites/587659fb6e6f641648010000/image/png/1484339363000/icons.png") -16px -16px no-repeat !important}-->
+<!--    #_zo_icon{background:transparent url("//codecloud.cdn.speedyrails.net/sites/587659fb6e6f641648010000/image/png/1484339363000/icons.png") -66px -16px no-repeat !important}-->
+    
+<!--    @media(max-width: 768px){-->
+<!--        #_zi_icon{background:transparent url("//codecloud.cdn.speedyrails.net/sites/587659fb6e6f641648010000/image/png/1484339363000/icons.png") -10px -10px no-repeat !important}-->
+<!--    #_zo_icon{background:transparent url("//codecloud.cdn.speedyrails.net/sites/587659fb6e6f641648010000/image/png/1484339363000/icons.png") -60px -10px no-repeat !important}-->
+<!--    }-->
+<!--</style>-->
+<div class="inside_banner">   
+    <div class="content_container">
+        <div class="inside_banner_content">
+            <div class="row">
+                <div id="store_header_container">
+                    <script id="store_header_template" type="x-tmpl-mustache/text">
+                        <div class="col-md-6">    
+                            <h1> {{name}} </h1>
+                        </div>
+                        <div class="col-md-6 hidden_phone">
+                            <h4 class="pull-right">Stores <i class="fa fa-angle-right" aria-hidden="true"></i> <a href="/stores">Store Directory</a> <i class="fa fa-angle-right" aria-hidden="true"></i> {{name}}</h4>
+                        </div>
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content_container margin_30">
+    <div class="margin_30"></div>
+    <div class="row">
+        <div class="col-md-12 center">
+            <div class="directory_btn caps active">Stores</div>
+            <a href="/map"><div class="directory_btn caps">Centre Map</div></a>
+        </div>
+    </div>
+    <div class="margin_30"></div>
+    <div class="row">
+        <div class="col-md-6">
+            <!-- MAP -->
+            <div class="store_map_container">
+                <div id="mapView">
+                    
+                </div>
+                       <!--<img src="" class="imgMap" id="map_image">                -->
+                       <!--     	<div class="marker" id='scroll_to_marker' data-coords="{{map_x_coordinate}}, {{map_y_coordinate}}">-->
+                       <!--     	    {{name}}-->
+                       <!--         </div>-->
+                       <!--         </div>   -->
+                       <!--         <div class="store_details_desc hidden_phone">{{{rich_description}}}</div>-->
+                        <div class="zoom_container" id="zoom_container_store">
+                		    <img id="zoom_image" src=""/>
+                		    <div class="landmarks" data-show-at-zoom="0" data-allow-drag="true"></div>
+                    	</div>
+                <!--<select id="mapList"></select>-->
+            </div>
+        </div>
+        <div class="col-md-6 border_left">
+            <div id="store_details_container">
+                <script id="store_details_template" type="x-tmpl-mustache/text">
+                    <div class="store_details_logo">
+                        <img src="{{store_logo}}"/>
+                    </div>
+                    <p class="center"><span class="store_detail_highlight">Phone:</span> {{phone}}</p>
+                    <p class="center"><span class="store_detail_highlight">Category:</span> {{store_categories}}</p>
+                    <p class="center"><span class="store_detail_highlight">Location:</span> Level {{z_coordinate}}</p>
+                    <p>{{{rich_description}}}</p>
+                </script>
+            </div>
+            <div id="hours" class="grey_line hidden_now">
+                <h2 class="details_title">Store Hours</h2>
+                <div id="hours_container" class="store_hours_container">
+                    <script id="hours_template" type="x-tmpl-mustache/text">
+                        <div class="row">
+                            <div class="col-xs-5">
+                                <span>{{day}}</span>
+                            </div>
+                            <div class="col-xs-7">
+                                <span class="pull-right">{{hour_string}}</span>
+                            </div>
+                        </div>
+                    </script>
+                </div>
+            </div>
+            <div id="promotions" class="grey_line hidden_now">
+                <h2 class="details_title">Sales & Promotions</h2>
+                <div id="promo_container">
+                    <script id="promo_template" type="x-tmpl-mustache/text">
+                        <div class="promo_img_container" style="background-image: url({{image_url}})"></div>
+                        <div class="promo_content">
+                            <h2 class="promo_name"> {{name}} </h2>
+                            <h4 class="promo_dates"> {{dates}} </h4>
+                            <a class="read_more" href="/promotions/{{slug}}">Read More</a>
+                        </div>
+                    </script>
+                </div>
+            </div>
+            <div id="jobs" class="grey_line hidden_now">
+                <h2 class="details_title">Job Opportunities</h2>
+                <div id="jobs_container">
+                    <script id="jobs_template" type="x-tmpl-mustache/text">
+                        <div class="promo_content">
+                            <h2 class="promo_name">{{name}}</h2>
+                            <h4 class="promo_dates"> {{dates}} </h4>
+                            <a class="read_more" href="/jobs/{{slug}}"><p>Read More</p></a>
+                        </div>
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--<script src="https://d1p5cqqchvbqmy.cloudfront.net/websdk/v1.21.1/mappedin.js"></script>-->
+<!--<script src="/mappedin.js"></script>-->
+<script>
+    $(document).ready(function(e){
+        init(e);
+        // initMappedin();
+        function renderAll(){
+            // var repo = getRepoDetailsByName("Store Directory Banner");
+            // if (repo != undefined) {
+            //     var banner = getImageURL(repo.images[0].photo_url);
+            //     $(".inside_banner").css({backgroundImage: "url(" + banner + ")"});
+            // }
+            
+            var pathArray = window.location.pathname.split( '/' );
+            var slug = pathArray[pathArray.length-1];
+            var store_details = getStoreDetailsBySlug(slug);
+            if(store_details === undefined){
+                window.location = "/";
+            } else {
+                renderStoreDetails('#store_header_container', '#store_header_template', store_details);
+                renderStoreDetails("#store_details_container", "#store_details_template", store_details, slug);
+
+                /* HOURS */
+                var hour_ids = store_details.store_hours;
+                if (hour_ids != null){
+                    var hours = getHoursForStoreSlug(store_details.slug).sortBy(function(o){ return o.day_of_week });
+                    renderStoreDetailsHours('#hours_container','#hours_template', hours, 'reg_hours');
+                    $('#hours').show();
+                }
+                
+                /* MAP */
+                // var name = store_details.name;
+                // setTimeout(function(){
+                //     hightlightStore(name)
+                // }, 3000);
+
+                /* PROMOS */
+                var store_promo_ids = store_details.promotions
+                if(store_promo_ids != null){
+                    var store_promos = getPromotionsForIds(store_promo_ids).sortBy(function(o){ return o.start_date });
+                    var published_promos = [];
+                    $.each(store_promos, function(key, val){
+                        today = moment();
+                        webDate = moment(val.show_on_web_date)
+                        if (today.tz(getPropertyTimeZone()) >= webDate.tz(getPropertyTimeZone())) {
+                            published_promos.push(val);
+                        } 
+                    });
+                    if( published_promos.length > 0){
+                        renderPromotions("#promo_container","#promo_template", published_promos);
+                        $('#promotions').show();
+                    }
+                }
+                
+                /* JOBS */
+                var store_job_ids = store_details.jobs
+                if(store_job_ids != null){
+                    var store_jobs = getJobsForIds(store_job_ids).sortBy(function(o){ return o.start_date });
+                    var published_jobs = [];
+                    $.each( store_jobs , function( key, val ){
+                        today = moment();
+                        webDate = moment(val.show_on_web_date)
+                        if (today.tz(getPropertyTimeZone()) >= webDate.tz(getPropertyTimeZone())) {
+                            published_jobs.push(val);
+                        } 
+                    });
+                    if(published_jobs.length > 0){
+                        renderJobs('#jobs_container', '#jobs_template', published_jobs);
+                        $('#jobs').show();
+                    } 
+                }
+            }
+            $("#zoom_image").attr("src", getPNGMapURL());
+    		$('#zoom_image').smoothZoom({
+    		    width: "100%",
+                height: 500,
+    		    initial_ZOOM: 0,
+    			zoom_MIN: 0,
+    			zoom_MAX: 250,
+    			responsive: true,
+    		    responsive_maintain_ratio: true,
+    			zoom_BUTTONS_SHOW : 'YES',
+    			pan_BUTTONS_SHOW : 'NO',
+    			pan_LIMIT_BOUNDARY : 'NO',
+    			button_ALIGN: "top right",
+    			zoom_OUT_TO_FIT: "NO",
+    			container: 'zoom_container_store'
+    		});
+    		var pathArray = window.location.pathname.split( '/' );
+            var slug = pathArray[pathArray.length-1];
+    		var store_details = getStoreDetailsBySlug(slug);
+    	    var store_x_coordinate = store_details.x_coordinate;
+    	    var store_y_coordinate = store_details.y_coordinate;
+    		var pin_id = store_details.id; 
+    		var store_name = store_details.name;
+    		add_landmark(store_x_coordinate, store_y_coordinate, pin_id, store_name);
+    		$("#anchor_id").click(function(e){
+                e.preventDefault();
+                $('#zoom_image').smoothZoom('focusTo',{
+        			x: store_x_coordinate,
+        			y: store_y_coordinate,
+        			zoom: 120,
+        			speed: 5
+        		});
+            });
+		
+            show_content();
+        }
+        loadMallDataCached(renderAll); 
+    });
+    
+   
+    function add_landmark(store_x_coordinate, store_y_coordinate, pin_id, store_name){
+        console.log("Adding landmark at",store_x_coordinate, store_y_coordinate, "for",pin_id, store_name);
+    	var name = store_name;
+    	var x_coordinate = store_x_coordinate;
+    	var y_coordinate = store_y_coordinate;
+    	var mark = "mark_store_" + pin_id;
+    
+        // Remove existing landmark
+        $('#zoom_image').smoothZoom('removeLandmark');
+    
+    	// Add new landmark
+    	$('#zoom_image').smoothZoom('addLandmark', 
+    		[
+    		'<div class="item mark" data-show-at-zoom="0" data-position="' + x_coordinate + ',' + y_coordinate + '" id="' + mark + '">\
+    			<div>\
+    				<div class="text">\
+    				<strong>' + name + '</strong>\
+    			</div>\
+    			<img src="//codecloud.cdn.speedyrails.net/sites/589e308f6e6f641b9f010000/image/png/1484850466000/show_pin.png" width="40px" height="65px" alt="' + name +'" />\
+    			</div>\
+    		</div>'
+    		]
+    	);
+    
+    	// Focus on new landmark
+    	$('#zoom_image').smoothZoom('focusTo',{
+    		x: x_coordinate,
+    		y: y_coordinate,
+    		zoom: 120,
+    		speed: 5
+    	});console.log("zooming to spot");
+    }
+</script>
