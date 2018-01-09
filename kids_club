@@ -22,6 +22,7 @@
             <form id="contest_form">
                 <input id="property_id" name="contest[property_id]" type="hidden" value="{{property_id}}"/>
                 <input id="contest_id" name="contest[contest_id]" type="hidden"  value="{{id}}" />
+                <input class="form-control" id="notes" name="contest[notes]" type="text" required data-validation="required" tabindex="1"/>
                 <input type="hidden" name="cm-name" id="cm-name" />
                 <div class="row">
                     <div class="col-sm-6">
