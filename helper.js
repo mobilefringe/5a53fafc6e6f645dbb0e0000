@@ -61,7 +61,7 @@ function show_content() {
 }
 
 var default_image = {
-    "image_url" : "//codecloud.cdn.speedyrails.net/sites/5a53fafc6e6f645dbb0e0000/image/png/1495562552000/logo.png//codecloud.cdn.speedyrails.net/sites/5a53fafc6e6f645dbb0e0000/image/png/1495562552000/logo.png//codecloud.cdn.speedyrails.net/sites/5a53fafc6e6f645dbb0e0000/image/png/1495562552000/logo.png//codecloud.cdn.speedyrails.net/sites/5a53fafc6e6f645dbb0e0000/image/png/1495562552000/logo.png//codecloud.cdn.speedyrails.net/sites/5a53fafc6e6f645dbb0e0000/image/png/1495562552000/logo.png//codecloud.cdn.speedyrails.net/sites/5a53fafc6e6f645dbb0e0000/image/png/1495562552000/logo.png//codecloud.cdn.speedyrails.net/sites/5a53fafc6e6f645dbb0e0000/image/png/1495562552000/logo.png//codecloud.cdn.speedyrails.net/sites/5a53fafc6e6f645dbb0e0000/image/png/1495562552000/logo.png ", //Add default image
+    "image_url" : "//codecloud.cdn.speedyrails.net/sites/5a53fafc6e6f645dbb0e0000/image/png/1495562552000/logo.png ", //Add default image
 }
 
 function get_instagram(url, total, size, callback){
