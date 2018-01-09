@@ -252,7 +252,7 @@
             height:svgH,
             popover: 'auto',
             disableAll: true,
-            viewBox: [520,150,1350,1400],,
+            viewBox: [520,150,1350,1400],
             regions: this_region,
             tooltipsMode:   'custom',
             zoom: false,
