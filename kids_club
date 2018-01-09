@@ -163,6 +163,20 @@
                 
             }
            
+           $.validate();
+         var contest_details = getContestBySlug('yubasutter-kids-club'); 
+         var property = getPropertyDetails ();
+         console.log(contest_details, property);
+         $('#contest_id').val(contest_details.id);
+         $('#property_id').val(property.id);
+        $('#contest_form').submit(function(e){
+            
+            e.preventDefault();
+            $('.contest_btn').prop('disabled', true);
+            // submit_contest(slug);
+            submit_contest($(this).serialize());
+            // $('html, body').animate({scrollBottom : 0},800);
+        });
             show_content();
         }
         loadMallDataCached(renderAll); 
