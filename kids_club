@@ -41,6 +41,13 @@
     .info-list li strong {
         padding: 0 2px 2px 0;
     }
+    .info-list li strong, .info-list li span {
+    background: none repeat scroll 0 0 #FFFFFF;
+    display: inline-block;
+    margin-bottom: 0;
+    position: relative;
+    top: 6px;
+}
 </style>
 <script>
     $(document).ready(function(e){
