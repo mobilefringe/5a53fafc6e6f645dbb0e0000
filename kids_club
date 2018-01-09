@@ -175,7 +175,7 @@
             e.preventDefault();
             
             $('.contest_btn').prop('disabled', true);
-            $()
+            $("#notes")
             submit_contest($(this).serialize());
             // $('html, body').animate({scrollBottom : 0},800);
         });
