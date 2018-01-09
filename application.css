@@ -1089,6 +1089,7 @@ a {
     // min-height: 165px;
     min-height: 165px;
     max-height: 165px;
+    overflow: hidden;
     border: 1px solid #000;
     position: relative;
     transition: all 0.3s ease;
