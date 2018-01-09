@@ -64,6 +64,10 @@
 <!--    #_zo_icon{background:transparent url("//codecloud.cdn.speedyrails.net/sites/587659fb6e6f641648010000/image/png/1484339363000/icons.png") -60px -10px no-repeat !important}-->
 <!--    }-->
 <!--</style>-->
+<script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/jquery.js"></script>
+<script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/raphael.js"></script>
+<script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/system/site_images/photos/000/005/107/original/mallmaverick_svgmap.js?1412885524"></script>
 <div class="inside_banner">   
     <div class="content_container">
         <div class="inside_banner_content">
