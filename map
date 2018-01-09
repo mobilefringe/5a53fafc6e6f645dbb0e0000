@@ -163,19 +163,19 @@
                 zoomLimit: [0,10]
             });
             $(".map_tooltip").css("background-color", "#C607A9");
-            $('.map_pin_a').click(function(e){
-                e.preventDefault();
-                var id = $(this).attr('data-value')
-                map_pin(id)
-            })
+            // $('.map_pin_a').click(function(e){
+            //     e.preventDefault();
+            //     var id = $(this).attr('data-value')
+            //     map_pin(id)
+            // })
             
-            function map_pin(value){
-                map.marksHide();
-                value = value.split('/')
-                if (value[0] != null){
-                    drop_pin(value[0], map);    
-                }
-            }
+            // function map_pin(value){
+            //     map.marksHide();
+            //     value = value.split('/')
+            //     if (value[0] != null){
+            //         drop_pin(value[0], map);    
+            //     }
+            // }
             console.log("stores", stores);
             init_map(reg);
             show_content();
