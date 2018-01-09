@@ -275,7 +275,7 @@
     //     			speed: 5
     //     		});
     //         });
-		var stores = getStoresList();
+		    var stores = getStoresList();
             var regions = {}
             $.each( stores , function( key, val ) {
                 if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
