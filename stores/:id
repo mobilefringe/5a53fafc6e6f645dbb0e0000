@@ -233,6 +233,18 @@
     function load_map(reg, store_details){
         this_region = {};
         this_region = store_details.svgmap_region;
+        var svgH;
+    var svgW;
+    if ($(window).width() <= 479){
+        svgH = 186;
+        svgW = 295;
+    } else if ($(window).width() <= 767){
+        svgH = 300;
+        svgW = 366;
+    } else{
+        svgH = 375;
+        svgW = 970;
+    }
         map = $('#mapsvg_store_detail').mapSvg({
             source: getSVGMapURL(),
             colors: {stroke: '#aaaaaa', selected: "#F3047A", hover: 0},
