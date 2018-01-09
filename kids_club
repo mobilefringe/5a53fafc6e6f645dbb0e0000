@@ -29,6 +29,14 @@
         </div>
     </div>
 </div>
+<style>
+        border-bottom: 1px dotted #777777;
+    clear: both;
+    display: block;
+    line-height: 1;
+    margin-bottom: 10px;
+    position: relative;
+</style>
 <script>
     $(document).ready(function(e){
         init(e);
