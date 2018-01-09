@@ -64,7 +64,7 @@
                      <div class="col-sm-6">
                         <label for="reason">How did you hear about the St Vital Centre Kids Centre?</label>  <span style="color:red"> *</span>
                         <select name="contest[anniversary]" class="form-control" tabindex="6">
-                            <option value="" disabled>In St Vital Centre</option>
+                            <option value="" disabled>Select One</option>
                         	<option value="In St Vital Centre">In St Vital Centre</option>
                         	<option value="St Vital Centre website">St Vital Centre website</option>
                         	<option value="From a friend">From a friend</option>
