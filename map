@@ -139,7 +139,7 @@
                         val.store_front_url_abs = '//codecloud.cdn.speedyrails.net/sites/55ddf3f86e6f640775000000/a22fcf023d728855c6f575ba100806d7/default.jpg'
                     } 
                     obj = {};
-                    obj["tooltip"] = "<p class='tooltip_name'>"+val.name+"</p> <a href='/stores/"+val.slug+"'  >View Details</a>"
+                    obj["tooltip"] = "<p class='tooltip_name'>"+val.name+"</p>
                     obj["attr"] = {}
                     obj["attr"]["href"] = "/stores/"+val.slug
                     regions[val.svgmap_region] = obj
