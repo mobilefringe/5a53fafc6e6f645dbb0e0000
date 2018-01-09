@@ -49,7 +49,18 @@
                         <label for="birthday">Child's Birthday (yyyy-mm-dd) </label>  <span style="color:red"> *</span>
                         <input class="form-control" id="birthday" name="contest[birthday]" type="text" required data-validation="required" tabindex="2"/>    
                     </div>
-                    
+                    <div class="col-sm-6 margin_30">
+                        <label for="first_name">Parent's First Name</label>  <span style="color:red"> *</span>
+                        <input class="form-control" id="first_name" name="contest[first_name]" type="text" required data-validation="required" tabindex="4"/>
+                    </div>
+                    <div class="col-sm-6 margin_30">
+                        <label for="last_name">Parent's Last Name</label>  <span style="color:red"> *</span>
+                        <input class="form-control" id="last_name" name="contest[last_name]" type="text" required data-validation="required" tabindex="2"/>
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="email">Parent's Email</label> <span style="color:red"> *</span>
+                        <input class="form-control" id="email" name="contest[email]" type="email" required data-validation-regexp="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-validation-error-msg="Please enter a valid email address" data-validation="custom" tabindex="3"/>
+                    </div>
                     
                 </div>
                 <br class="hidden_phone">
