@@ -49,15 +49,14 @@
         top: 6px;
     }
     .info-list.wide span {
-    line-height: normal;
-    margin-bottom: 10px;
-    width: 50%;
-}
-41.css?1512421526:1726
-.info-list li span {
-    float: right;
-    padding: 0 0 2px 2px;
-}
+        line-height: normal;
+        margin-bottom: 10px;
+        width: 50%;
+    }
+    .info-list li span {
+        float: right;
+        padding: 0 0 2px 2px;
+    }
 </style>
 <script>
     $(document).ready(function(e){
