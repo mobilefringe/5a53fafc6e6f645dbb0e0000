@@ -151,6 +151,7 @@
                 source: getSVGMapURL(),
                 colors: {stroke: '#aaaaaa', selected: -20, hover: "#F3047A"},
                 width: 1170,
+                height:600,
                 // viewBox: [520,150,1350,1400],
                 disableAll: true,
                 regions: regions,
