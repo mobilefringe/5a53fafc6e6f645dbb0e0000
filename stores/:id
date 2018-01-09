@@ -221,7 +221,7 @@
                 }
             });
             console.log(getSVGMapURL())
-            load_map(regions, store_details);
+            // load_map(regions, store_details);
             show_content();
         }
         loadMallDataCached(renderAll); 
