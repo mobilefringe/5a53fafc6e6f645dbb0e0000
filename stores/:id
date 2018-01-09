@@ -239,11 +239,11 @@
             disableAll: true,
             regions: this_region,
             tooltipsMode:   'custom',
-        zoom: false,
-        pan:false,
-        cursor:'pointer',
-        responsive:true,
-        zoomLimit: [-1,5]
+            zoom: false,
+            pan:false,
+            cursor:'pointer',
+            responsive:true,
+            zoomLimit: [-1,5]
         });
         map.setViewBox(store_details.svgmap_region);
         map.selectRegion(store_details.svgmap_region);
