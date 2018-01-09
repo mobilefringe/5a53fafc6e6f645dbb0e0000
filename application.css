@@ -926,7 +926,12 @@ a {
 
 .kids_club_container {
     h3 {
-        
+       font-size: 22px;
+       color: $primary;
+    }
+    a {
+        color: $primary;
+        text-decoration: underline;
     }
 }
 /* *** PHOTOS *** */
