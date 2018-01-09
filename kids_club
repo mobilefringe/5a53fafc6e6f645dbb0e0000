@@ -63,7 +63,7 @@
                     </div>
                     Anniversary
                      <div class="col-md-4 col-sm-6">
-                        <label for="reason">How did you hear about the St Vital Centre kids centre?</label>  <span style="color:red"> *</span>
+                        <label for="reason">How did you hear about the St Vital Centre Kids Centre?</label>  <span style="color:red"> *</span>
                         <select name="contest[anniversary]" class="form-control" tabindex="6">
                         	<option value="AL">AL</option>
                         	<option value="AK">AK</option>
