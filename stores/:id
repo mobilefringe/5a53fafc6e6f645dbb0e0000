@@ -282,36 +282,26 @@
     });
     
    
-    function add_landmark(store_x_coordinate, store_y_coordinate, pin_id, store_name){
-        console.log("Adding landmark at",store_x_coordinate, store_y_coordinate, "for",pin_id, store_name);
-    	var name = store_name;
-    	var x_coordinate = store_x_coordinate;
-    	var y_coordinate = store_y_coordinate;
-    	var mark = "mark_store_" + pin_id;
-    
-        // Remove existing landmark
-        $('#zoom_image').smoothZoom('removeLandmark');
-    
-    	// Add new landmark
-    	$('#zoom_image').smoothZoom('addLandmark', 
-    		[
-    		'<div class="item mark" data-show-at-zoom="0" data-position="' + x_coordinate + ',' + y_coordinate + '" id="' + mark + '">\
-    			<div>\
-    				<div class="text">\
-    				<strong>' + name + '</strong>\
-    			</div>\
-    			<img src="//codecloud.cdn.speedyrails.net/sites/589e308f6e6f641b9f010000/image/png/1484850466000/show_pin.png" width="40px" height="65px" alt="' + name +'" />\
-    			</div>\
-    		</div>'
-    		]
-    	);
-    
-    	// Focus on new landmark
-    	$('#zoom_image').smoothZoom('focusTo',{
-    		x: x_coordinate,
-    		y: y_coordinate,
-    		zoom: 120,
-    		speed: 5
-    	});console.log("zooming to spot");
+    function load_map(reg, store_details){
+        this_region = {};
+        this_region = store_details.svgmap_region;
+        map = $('#mapsvg_store_detail').mapSvg({
+            source: getSVGMapURL(),
+            colors: {stroke: '#fff', selected: "#DCBB8D", hover: "#a6a6a6"},
+            disableAll: true,
+            regions: this_region,
+            height:1700,
+            width:2300,
+            tooltipsMode:'custom',
+            zoom:true,
+            zoomButtons: {'show': true, 'location': 'left'},
+            pan:true,
+            cursor:'pointer',
+            responsive:true,
+            zoomLimit: [0,5]
+        });
+        // map.setViewBox(store_details.svgmap_region);
+        map.selectRegion(store_details.svgmap_region);
+        drop_pin(store_details.svgmap_region, map);
     }
 </script>
