@@ -255,8 +255,8 @@
             viewBox: [520,150,1350,1400],
             regions: this_region,
             tooltipsMode:   'custom',
-            zoom: false,
-            pan:false,
+            zoom: true,
+            pan:true,
             cursor:'pointer',
             responsive:true,
             zoomLimit: [-1,5]
