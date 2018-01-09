@@ -182,15 +182,15 @@
             //     renderPromotions("#promo_container","#promo_template", published_promos);
             // }
             // http://www.stvitalcentrespark.com/index,article.rss
-            $.ajax({
-                type: "GET",
-                url: "http://www.stvitalcentrespark.com/.rss",
-                dataType: "application/rss+xml",
-                success: function (xml) {
-                     $title = $(xml).find( "title" ); 
-                    console.log("blog", $title);
-                }
-                });
+            // $.ajax({
+            //     type: "GET",
+            //     url: "http://www.stvitalcentrespark.com/.rss",
+            //     dataType: "application/rss+xml",
+            //     success: function (xml) {
+            //          $title = $(xml).find( "title" ); 
+            //         console.log("blog", $title);
+            //     }
+            //     });
             // var xml = "http://www.stvitalcentrespark.com/index,article.rss",
             //   xmlDoc = $.parseXML( xml ),
             //   $xml = $( xmlDoc ),
