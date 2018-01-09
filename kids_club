@@ -206,7 +206,7 @@
             
             $('.contest_btn').prop('disabled', true);
             var child_name = $("#child_lname").val()  + " " + $("#child_lname").val();
-            var notes= "Child's name: " + child_name + " . Heard about it through: " + 
+            var notes= "Child's name: " + child_name + " . Heard about it through: " + $("#reason")
             $("#notes").val(child_name);
             console.log($("#notes").val());
             submit_form_data($(this).serialize());
