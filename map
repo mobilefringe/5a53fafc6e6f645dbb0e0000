@@ -162,7 +162,7 @@
                 responsive:true,
                 zoomLimit: [0,10]
             });
-            $(".map_popover").css("background-color", "#C607A9");
+            $(".map_popover").css({"background-color": "#C607A9", "color":"#fff"});
             $('.map_pin_a').click(function(e){
                 e.preventDefault();
                 var id = $(this).attr('data-value')
