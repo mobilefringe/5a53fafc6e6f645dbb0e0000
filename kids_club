@@ -26,11 +26,11 @@
                 <div class="row">
                     <div class="col-md-4 col-sm-6">
                         <label for="notes">Child's First Name</label> <span style="color:red"> *</span>
-                        <input class="form-control" id="notes" name="contest[notes]" type="text" required data-validation="required" tabindex="4"/>
+                        <input class="form-control" id="notes" name="contest[notes]" type="text" required data-validation="required" tabindex="1"/>
                     </div>
                     <div class="col-md-4 col-sm-6">
                         <label for="birthday">Child's Birthday (yyyy-mm-dd) </label>  <span style="color:red"> *</span>
-                        <input class="form-control" id="birthday" name="contest[birthday]" type="text" required data-validation="required" tabindex="5"/>    
+                        <input class="form-control" id="birthday" name="contest[birthday]" type="text" required data-validation="required" tabindex="2"/>    
                     </div>
                     <div class="col-md-4 col-sm-6 margin_30">
                         <label for="phone">Phone Number</label>  <span style="color:red"> *</span>
@@ -42,7 +42,7 @@
                 <div class="row ">
                     <div class="col-md-4 col-sm-6 margin_30">
                         <label for="first_name">Guardian's First Name</label>  <span style="color:red"> *</span>
-                        <input class="form-control" id="first_name" name="contest[first_name]" type="text" required data-validation="required" tabindex="1"/>
+                        <input class="form-control" id="first_name" name="contest[first_name]" type="text" required data-validation="required" tabindex="4"/>
                     </div>
                     <div class="col-md-4 col-sm-6 margin_30">
                         <label for="last_name">Guardian's Last Name</label>  <span style="color:red"> *</span>
