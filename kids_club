@@ -36,8 +36,8 @@
              // kids club discounts
             var repo = getRepoDetailsByName("kids club discounts");
             if (repo != undefined) {
-                var banner = getImageURL(repo.images[0].photo_url);
-                $(".inside_banner").css({backgroundImage: "url(" + banner + ")"});
+                // var banner = getImageURL(repo.images[0].photo_url);
+                // $(".inside_banner").css({backgroundImage: "url(" + banner + ")"});
             }
            
             show_content();
