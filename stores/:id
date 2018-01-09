@@ -251,7 +251,7 @@
             width: svgW,
             height:svgH,
             popover: 'auto',
-            disableAll: true,
+            // disableAll: true,
             viewBox: [520,150,1350,1400],
             regions: this_region,
             tooltipsMode:   'custom',
