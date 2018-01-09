@@ -153,7 +153,6 @@
                 width: 1170,
                 height:600,
                 // viewBox: [520,150,1350,1400],
-                disableAll: true,
                 regions: regions,
                 tooltipsMode: 'custom',
                 zoom: true,
