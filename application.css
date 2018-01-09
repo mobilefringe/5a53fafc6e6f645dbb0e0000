@@ -1087,7 +1087,7 @@ a {
 .store_logo_container {
     // margin-bottom: 30px;
     // min-height: 165px;
-        min-height: 160px;
+    min-height: 160px;
     max-height: 160px;
     border: 1px solid #000;
     position: relative;
