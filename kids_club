@@ -39,7 +39,7 @@
                 var banner = getImageURL(repo.images[0].photo_url);
                 $(".inside_banner").css({backgroundImage: "url(" + banner + ")"});
             }
-            // kids club discounts
+           
             show_content();
         }
         loadMallDataCached(renderAll); 
