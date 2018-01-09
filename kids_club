@@ -62,6 +62,14 @@
                         <input class="form-control" id="email" name="contest[email]" type="email" required data-validation-regexp="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-validation-error-msg="Please enter a valid email address" data-validation="custom" tabindex="3"/>
                     </div>
                     Anniversary
+                     <div class="col-md-4 col-sm-6">
+                        <label for="postal_code">State</label>  <span style="color:red"> *</span>
+                        <select name="contest[province]" class="form-control" tabindex="6">
+                        	<option value="AL">AL</option>
+                        	<option value="AK">AK</option>
+                        	<option value="AZ">AZ</option>
+                        	</select>
+                        	</div>
                 </div>
                 <!--<br class="hidden_phone">-->
                 <!--<div class="row ">-->
