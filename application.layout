@@ -143,8 +143,8 @@
                                 <li class="menu_item">
                                     <a href="#">Events <i class="fa fa-angle-down" aria-hidden="true"></i></a>
                                     <ul>
-                                        <li class="dropdown_item"><a href="/leasing">Leasing</a></li>
-                                        <li class="dropdown_item"><a href="/photos">Photos</a></li>
+                                        <li class="menu_item"><a href="/events">Events</a></li>
+                                <li class="menu_item"><a href="/promotions">Promos</a></li>
                                     </ul>        
                                 </li>
                                 <li class="menu_item">
