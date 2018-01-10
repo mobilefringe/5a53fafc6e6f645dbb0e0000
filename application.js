@@ -660,7 +660,7 @@ function renderStoreDetails(container, template, collection, slug){
         if (val.phone != null && val.phone.length > 0){
             val.show_phone = "display:inline-block";
         } else {
-            val.show = "display:none";
+            val.show_phone = "display:none";
         }
         
         var rendered = Mustache.render(template_html,val);
