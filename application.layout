@@ -202,7 +202,7 @@
                             <li><a href="/map">Map</a></li>
                             <li><a href="/promotions">Promotions</a></li>
                             <li><a href="/events">Events</a></li>
-                            <li><a href="/contact_us">Community</a></li>
+                            <li><a href="/community">Community</a></li>
                         </ul>
                         <ul class="footer_menu footer_menu_right">
                             <li><a href="/find_us">Location</a></li>
