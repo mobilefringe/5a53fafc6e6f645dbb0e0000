@@ -74,7 +74,7 @@
                     <span class="selector-wrap" id="service_select">
                         <!--<span class="select_name">Pick a Memo</span>-->
                         <select id="memo_select">
-                            <script id="memo_select_template" type="">
+                            <script id="memo_select_template" type="x-tmpl-mustache/text">
                             <option value="image_url">
                                 {{name}}                                            
                             </option>    
