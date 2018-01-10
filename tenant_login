@@ -187,7 +187,7 @@
                 if ($(this).val() == "" ){
                     window.location.href = "/tenant_info";            
                 } else {
-                    window.location.href = "/pages/svc-tenants-manual?show="+$(this).val();            
+                    window.location.href = "/tenant_info?show="+$(this).val();            
                 }
             });
         
