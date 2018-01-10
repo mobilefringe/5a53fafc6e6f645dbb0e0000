@@ -88,7 +88,7 @@
                 <div id="home_promo_container" class="dine_container margin_20">
                     <script id="home_promo_template" type="x-tmpl-mustache/text">
                         <div class="margin_30">
-                            <h3 class="home_store_name"  style="position:relative"> {{store_name}} </h3>
+                            <h3 class="home_store_name" style="position:relative"> {{store_name}} </h3>
                             <h2 class="home_promo_name"> {{name}} </h2>
                             <p class="home_promo_dates"> {{dates }} <span style="font-style: italic;color:red;"> {{days_left}}</span></p>
                             <a class="home_read_more" href="/stores/{{slug}}"><p>See Store Details</p></a>
