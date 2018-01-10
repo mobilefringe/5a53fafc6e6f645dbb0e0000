@@ -165,7 +165,7 @@
     		$('#issue_select').prepend('<option value="" selected="selected" disabled>Find an Issue</option>');
             $('#issue_select').prepend('<option value="/pages/svc-tenants-shoptalk" selected="selected" disabled>View All</option>');
             $('#memo_select').prepend('<option value="" selected="selected" disabled>Pick an Memo</option>');
-            $('#memo_select').prepend('<option value="/pages/svc-tenants-memo" selected="selected" disabled>View All</option>');
+            $('#memo_select').prepend('<option value="/pages/svc-tenants-memo" selected="selected">View All</option>');
             show_content();
         }
         loadMallDataCached(renderAll); 
