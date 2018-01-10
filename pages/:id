@@ -65,7 +65,7 @@
                                     $(".tenant_select").show();
                                     // $(".flexslider").remove();
                                     // $(".login_title").remove();
-                                    $(".page_title").text("welcome");
+                                    $('#mm_page_title').text("welcome");
                                     window.scrollTo(0,0);
                                     var date = new Date();
                                     var minutes = 15;
