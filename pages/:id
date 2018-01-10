@@ -29,7 +29,7 @@
     </div>
     <div>
         <div class="row-fluid tenant_select store_list_padding" >
-                <div class="span4">
+                <div class="col-sm-4">
                     <label>Category</label>
                     <span class="selector-wrap" id="category_select">
                         <!--<span class="select_name">Pick a Category</span>-->
@@ -55,7 +55,7 @@
                         <span class="select_icon"></span>
                     </span>
                 </div>
-                <div class="span4">
+                <div class="col-sm-4">
                     <label>shoptalk</label>
                     <span class="selector-wrap" id="brand_select">
                         <!--<span class="select_name">Find an Issue</span>-->
