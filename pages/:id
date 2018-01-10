@@ -56,7 +56,7 @@
                     </span>
                 </div>
                 <div class="col-sm-4">
-                    <label>shoptalk</label>
+                    <label>Shoptalk</label>
                     <span class="selector-wrap" id="brand_select">
                         <!--<span class="select_name">Find an Issue</span>-->
                         <select id="issue_select">
