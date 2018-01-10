@@ -61,7 +61,7 @@
                         <span class="select_name">Find an Issue</span>
                         <select id="issue_select">
                         <script>
-                            <option value="{{file.image_url}}">
+                            <option value="image_url">
                                 {% assign name = file.name | split: '. ' %}
                                 {{name[1]}}                                            
                             </option>    
