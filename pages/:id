@@ -164,6 +164,10 @@
             renderGeneral("#issue_select", "#issue_select_template", shop_talks);
             
             var memos = getRepoDetailsByName("Memo").images;
+            $.each(memos, function(key, val){
+                console.log(val.name.split("."))
+    		    val.show_name = val.name.split(".")[1];
+    		})
             renderGeneral("#memo_select", "#memo_select_template", memos);
             $('#issue_select').prepend('<option value="/pages/svc-tenants-shoptalk" selected="selected">View All</option>');
     		$('#issue_select').prepend('<option value="" selected="selected" disabled>Find an Issue</option>');
