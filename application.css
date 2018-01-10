@@ -933,6 +933,9 @@ a {
         color: $primary;
         text-decoration: underline;
     }
+    h2{
+       color: $primary; 
+    }
 }
 
 .tenant_select{
