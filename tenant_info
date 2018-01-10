@@ -230,6 +230,6 @@
         loadMallDataCached(renderAll); 
     });
     function getURLParameter (val) {
-        
+        console.log()
     }
 </script>
