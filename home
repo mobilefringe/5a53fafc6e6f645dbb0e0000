@@ -200,10 +200,10 @@
                     console.log("blog", $title);
                 }
             });
-            var xml = "http://www.stvitalcentrespark.com/index,article.rss",
-              xmlDoc = $.parseXML( xml ),
-              $xml = $( xmlDoc ),
-              $title = $xml.find( "title" );
+            // var xml = "http://www.stvitalcentrespark.com/index,article.rss",
+            //   xmlDoc = $.parseXML( xml ),
+            //   $xml = $( xmlDoc ),
+            //   $title = $xml.find( "title" );
             renderPromotions('#home_promo_container','#home_promo_template', published_promos);
             // var blog_posts = getBlogByName("main").sortBy(function(o){return o.publish_date;}).reverse().slice(1, 15);;
             // renderPosts('#home_blog_container','#home_blog_template', blog_posts);
