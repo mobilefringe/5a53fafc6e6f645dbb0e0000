@@ -924,7 +924,7 @@ a {
     }
 }
 
-.kids_club_container {
+.kids_club_container, #page_title {
     h3 {
        font-size: 22px;
        color: $primary;
