@@ -158,8 +158,8 @@
     		
     		//populating tenant select div
     		
-                            <option value="">Find an Issue</option>
-                            <option value="/pages/svc-tenants-shoptalk">Vew All</option>
+                            // <option value="">Find an Issue</option>
+                            // <option value="/pages/svc-tenants-shoptalk">Vew All</option>
     		var shop_talks = getRepoDetailsByName("Shoptalk").images;
             renderGeneral("#portfolio_container", "#portfolio_template", shop_talks)
     		$("#").();
