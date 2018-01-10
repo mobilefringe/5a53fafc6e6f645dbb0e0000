@@ -230,6 +230,7 @@
         loadMallDataCached(renderAll); 
     });
     function getURLParameter (val) {
+        window.location.pathname.split( '/' );
         console.log()
     }
 </script>
