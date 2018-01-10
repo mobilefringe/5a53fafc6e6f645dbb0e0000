@@ -205,6 +205,7 @@
                         item.description =  el.find("description").text();
                         blogs.push(item);
                     });
+                     console.log("blog", blogs);
                     renderPosts('#home_blog_container','#home_blog_template', blogs);
                     // console.log("blog", $title);
                 }
