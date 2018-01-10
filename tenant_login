@@ -114,7 +114,7 @@
             // }
             
             if ($.cookie("tenant_login") == "true"){
-                console.log("")
+                console.log("tenant is logged in")
                     $(".login").hide();
                     $(".tenant_select").show();
                     $(".flexslider").remove();
