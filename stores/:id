@@ -56,7 +56,7 @@
                     <div class="store_details_logo">
                         <img src="{{store_logo}}"/>
                     </div>
-                    <p class="center"><span class="store_detail_highlight">Phone:</span> {{phone}}</p>
+                    <p class="center" style="{{show_phone}}"><span class="store_detail_highlight">Phone:</span> {{phone}}</p>
                     <p class="center" style="{{show_category}}"><span class="store_detail_highlight">Category:</span> {{store_categories}}</p>
                     <p>{{{rich_description}}}</p>
                 </script>
