@@ -64,7 +64,7 @@
                                     $(".tenant_login").hide();
                                     $(".tenant_select").show();
                                     // $(".flexslider").remove();
-                                    $(".login_title").remove();
+                                    // $(".login_title").remove();
                                     $(".page_title").text("welcome");
                                     window.scrollTo(0,0);
                                     var date = new Date();
