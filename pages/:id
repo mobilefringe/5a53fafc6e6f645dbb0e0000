@@ -62,7 +62,7 @@
                         <select id="issue_select">
                             <script id="issue_select_template" type="x-tmpl-mustache/text">
                                 <option value="image_url">
-                                    {{name}}                                            
+                                    {{show_name}}                                            
                                 </option>    
                             </script>
                         </select>
@@ -76,7 +76,7 @@
                         <select id="memo_select">
                             <script id="memo_select_template" type="x-tmpl-mustache/text">
                             <option value="image_url">
-                                {{name}}                                            
+                                {{show_name}}                                            
                             </option>    
                         </script>
                         </select>
