@@ -100,7 +100,7 @@
             <div class="unit_info manual_info">
                 <div id="mm_page_content"></div>
                 <p class="back">
-                    <a href="/tenant_info"> List all</a>
+                    <a href="/tenant_info?show=all"> List all</a>
                 </p>
             </div>
             
