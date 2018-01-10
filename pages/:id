@@ -34,7 +34,7 @@
                     <span class="selector-wrap" id="category_select">
                         <!--<span class="select_name">Pick a Category</span>-->
                         <select id="menual_select">
-                            <option value="" disabled>Pick a Category</option>
+                            <option value="" disabled selected>Pick a Category</option>
                             <option value="all">View All</option>
                             <option value="0">Heating, Ventilation and Air Conditioning (HVAC)</option>
                             <option value="1">Restaurant and Food Hall Tenants</option>
