@@ -185,7 +185,7 @@
             
             $("#menual_select").change(function(){
                 if ($(this).val() == "" ){
-                    window.location.href = "/pages/svc-tenants-manual";            
+                    window.location.href = "/tenant_info";            
                 } else {
                     window.location.href = "/pages/svc-tenants-manual?show="+$(this).val();            
                 }
