@@ -632,7 +632,7 @@ a {
         margin-top: 10px;
         
     }
-    home_promo_name:after {
+    .home_promo_name:after {
         content: " ";
         width: 32px;
         height: 2px;
