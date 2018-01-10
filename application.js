@@ -657,7 +657,7 @@ function renderStoreDetails(container, template, collection, slug){
             val.show = "display:none";
         }
         
-        if (val.website != null && val.website.length > 0){
+        if (val.phone != null && val.phone.length > 0){
             val.show = "display:inline-block";
         } else {
             val.show = "display:none";
