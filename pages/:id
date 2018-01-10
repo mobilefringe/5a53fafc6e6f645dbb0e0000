@@ -39,7 +39,7 @@
             
             if(slug == "svc-tenant-login") {
                 $("#tenant_login").show();
-                $('#mm_page_title').html(data.title.toUpperCase());
+                $('#mm_page_title').text(data.title.toUpperCase());
             }
             show_content();
         }
