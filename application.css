@@ -937,7 +937,7 @@ a {
 
 .tenant_select{
     select {
-        
+        width:100%;
     }
 }
 /* *** PHOTOS *** */
