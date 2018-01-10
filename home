@@ -118,6 +118,7 @@
                 <div id="home_blog_container" class="dine_container margin_20">
                     <script id="home_blog_template" type="x-tmpl-mustache/text">
                         <div class="margin_30">
+                        <div style="position:relative;">
                             <h2 class="home_promo_name"> {{title}} </h2>
                             <p class="home_promo_dates"> {{publish_date}}</p>
                             <a class="home_read_more" href="{{link}}"><p>Read Full Article</p></a>
