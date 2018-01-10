@@ -202,18 +202,18 @@ function store_search() {
         $("#site_search").hide();
         console.log("closing search")
     });
-    $("#site_search").focusout(function() {
-        setTimeout(function(){ 
-            console.log("not focused");
-            $("#site_search").toggle();
-            $("#search_results_stores").hide();
-            $('#site_search').val('');
-            $('#search_icon').show();
-            $("#close_search").hide(); 
+    // $("#site_search").focusout(function() {
+    //     setTimeout(function(){ 
+    //         console.log("not focused");
+    //         $("#site_search").toggle();
+    //         $("#search_results_stores").hide();
+    //         $('#site_search').val('');
+    //         $('#search_icon').show();
+    //         $("#close_search").hide(); 
             
-        }, 1000);
+    //     }, 1000);
         
-    })
+    // })
     $('#site_search').keyup(function(){
         if ($('#site_search').val() == ""){
             $('#search_results_stores').html('');
