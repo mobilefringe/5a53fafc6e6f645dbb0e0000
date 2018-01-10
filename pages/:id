@@ -11,7 +11,7 @@
 </div>
 <div class="content_container margin_30">
     <div class="margin_30"></div>
-    <h3>
+    <h3 id="page_title">
         
     </h3>
     <div id="tenant_login" class="row">
