@@ -108,10 +108,10 @@
                 }
             }); 
             
-            if(slug == "svc-tenant-login") {
-                $("#tenant_login").show();
-                $('#page_title').text("Login");
-            }
+            // if(slug == "svc-tenant-login") {
+            //     $("#tenant_login").show();
+            //     $('#page_title').text("Login");
+            // }
             
             if ($.cookie("tenant_login") == "true"){
                     $(".login").hide();
