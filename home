@@ -87,10 +87,10 @@
                 <!--<h2 class="details_title">Restaurants & Eateries</h2>-->
                 <div id="home_promo_container" class="dine_container margin_20">
                     <script id="home_promo_template" type="x-tmpl-mustache/text">
-                        <div class="margin_30">
-                            <div class="" style="position:relative;">
+                        <div class="margin_30" style="position:relative;">
+                            // <div class="" style="position:relative;">
                                 <h3 class="home_store_name"> {{store_name}} </h3>
-                            </div>
+                            // </div>
                             
                             <h2 class="home_promo_name"> {{name}} </h2>
                             <p class="home_promo_dates"> {{dates }} <span style="font-style: italic;color:red;"> {{days_left}}</span></p>
