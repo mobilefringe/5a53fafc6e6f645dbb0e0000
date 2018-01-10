@@ -27,6 +27,76 @@
         </div>
         </form>
     </div>
+    <div>
+        <div class="row-fluid tenant_select store_list_padding" >
+                <div class="span4">
+                    <label>Category</label>
+                    <span class="selector-wrap" id="category_select">
+                        <span class="select_name">Pick a Category</span>
+                        <select id="menual_select">
+                            <option value="">Pick a Category</option>
+                            <option value="all">View All</option>
+                            <option value="0">Heating, Ventilation and Air Conditioning (HVAC)</option>
+                            <option value="1">Restaurant and Food Hall Tenants</option>
+                            <option value="2">Maintenance</option>
+                            <option value="3">Garbage Disposal and Recycling</option>
+                            <option value="4">Deliveries</option>
+                            <option value="5">Employee Parking</option>
+                            <option value="6">Store Mechandising Guidelines</option>
+                            <option value="7">Emergency Information and Procedures</option>
+                            <option value="8">Security</option>
+                            <option value="9">Gift Card Procedures</option>
+                            <option value="10">Customer Service</option>
+                            <option value="11">Marketing Department</option>
+                            <option value="12">Hours of Business</option>
+                            <option value="13">St. Vital Centre Administration</option>
+                            <option value="14">St. Vital Centre Profile</option>
+                        </select>
+                        <span class="select_icon"></span>
+                    </span>
+                </div>
+                <div class="span4">
+                    <label>shoptalk</label>
+                    <span class="selector-wrap" id="brand_select">
+                        <span class="select_name">Find an Issue</span>
+                        <select id="issue_select">
+                            <option value="">Find an Issue</option>
+                            <option value="/pages/svc-tenants-shoptalk">Vew All</option>
+                            {% for repo in site.property.repos %}
+                                {% if repo.slug == "svc-shoptalk" %}                        
+                                    {% assign shoptalk = repo.site_images | reverse%}
+                                    {% for file in  shoptalk  %}
+                                        <option value="{{file.image_url}}">
+                                            {% assign name = file.name | split: '. ' %}
+                                            {{name[1]}}                                            
+                                        </option>                                            
+                                    {% endfor %}
+                                {% endif %}
+                            {% endfor %}
+                        </select>
+                        <span class="select_icon"></span>
+                    </span>
+                </div>
+                <div class="span4">            
+                    <label>memo</label>
+                    <span class="selector-wrap" id="service_select">
+                        <span class="select_name">Pick a Memo</span>
+                        <select id="memo_select">
+                            <option value="">Pick a Memo</option>
+                            <option value="/pages/svc-tenants-memo">View All</option>
+                            {% assign memo_repo = "svc-memo" | get_repo_by_slug%}
+                            {% for file in memo_repo.site_images %}
+                                <option value="{{file.image_url}}">
+                                    {% assign name = file.name | split: '. ' %}
+                                    {{name[1]}}  
+                                </option>
+                            {% endfor %}
+                        </select>
+                        <span class="select_icon"></span>
+                    </span>
+                </div>
+            </div>
+    </div>
     <div class="row">
         <div class="col-md-12">
             <div id="mm_page_content"></div>
