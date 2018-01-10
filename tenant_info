@@ -98,7 +98,7 @@
             // var pathArray = window.location.pathname.split( '/' );
             // var slug = pathArray[pathArray.length-1];
             prefix = get_prefix();
-            var pages_json = prefix + "/pages/svc-tenant-login.json"
+            var pages_json = prefix + "/pages/svc-tenants-manual.json"
             $.getJSON(pages_json).done(function(data) {
                 $('#mm_page_title').html(data.title.toUpperCase());
                 $('#mm_page_content').html(data.body);
