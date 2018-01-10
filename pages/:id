@@ -160,6 +160,10 @@
     		
                             // <option value="">Find an Issue</option>
                             // <option value="/pages/svc-tenants-shoptalk">Vew All</option>
+                            $('#mySelect').append($('<option>', {
+    value: 1,
+    text: 'My option'
+}));
     		var shop_talks = getRepoDetailsByName("Shoptalk").images;
             renderGeneral("#portfolio_container", "#portfolio_template", shop_talks)
     		$("#").();
