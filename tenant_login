@@ -118,9 +118,9 @@
                     $("#tenant_login").hide();
                     $(".tenant_select").show();
                     $('#page_title').text("Welcome");
-                    $(".flexslider").remove();
-                    $(".login_title").remove();
-                    $(".page_title").text("welcome");   
+                    // $(".flexslider").remove();
+                    // $(".login_title").remove();
+                    // $(".page_title").text("welcome");   
                 }
             $('#tenant_login_form').submit(function(e) {
                 // values = [];
