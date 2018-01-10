@@ -29,7 +29,7 @@
         </p>
     </div>
     <div>
-        <div class="row-fluid tenant_select store_list_padding hidden_now" >
+        <div class="row-fluid tenant_select store_list_padding " >
                 <div class="col-sm-4">
                     <label>Category</label>
                     <span class="selector-wrap" id="category_select">
