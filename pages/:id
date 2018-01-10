@@ -164,6 +164,8 @@
             
     		var shop_talks = getRepoDetailsByName("Shoptalk").images;
             renderGeneral("#issue_select", "#issue_select_template", shop_talks);
+            
+            var memos = 
     		
             show_content();
         }
