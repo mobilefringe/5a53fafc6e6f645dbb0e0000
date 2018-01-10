@@ -12,7 +12,7 @@
 <div class="content_container margin_30 pages_container">
     <div class="margin_30"></div>
     <div>
-        
+        <h3 id="page_title"></h3>
     </div>
     <div id="tenant_login" class="row">
         <form name="tenant_login_form" id="tenant_login_form" method="post" class="col-sm-6">
