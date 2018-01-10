@@ -219,9 +219,7 @@
             });
              
             renderPromotions('#home_promo_container','#home_promo_template', published_promos);
-            // var blog_posts = getBlogByName("main").sortBy(function(o){return o.publish_date;}).reverse().slice(1, 15);;
             
-            // console.log(blog_posts);
             // LOGO SCROLL //
             var stores = getStoresList();
             renderLogoScroll('#logo_container','#logo_template', stores);
