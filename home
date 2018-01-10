@@ -201,8 +201,8 @@
                         item.title = el.find("title").text();
                         item.link = el.find("link").text();
                         item.permalink =  el.find("guid").text();
-                        console.log(moment( el.find("pubDate").text()))
-                        item.published_date =  el.find("pubDate").text();
+                        console.log(moment( el.find("pubDate").text()).format())
+                        item.publish_date =  el.find("pubDate").text();
                         item.body =  el.find("description").text();
                         item.image_url = el.find("img").text();
                         blogs.push(item);
