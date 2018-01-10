@@ -115,12 +115,7 @@
             
             if ($.cookie("tenant_login") == "true"){
                 console.log("tenant is logged in")
-                    $("#tenant_login").hide();
-                    $(".tenant_select").show();
-                    $('#page_title').text("Welcome");
-                    // $(".flexslider").remove();
-                    // $(".login_title").remove();
-                    // $(".page_title").text("welcome");   
+                    window.location.href = "/tenant_login";        
                 }
             $('#tenant_login_form').submit(function(e) {
                 // values = [];
