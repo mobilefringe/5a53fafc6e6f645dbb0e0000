@@ -158,7 +158,7 @@
             
             
     		var shop_talks = getRepoDetailsByName("Shoptalk").images;
-    		$.each(shop_talks, function(val, key){
+    		$.each(shop_talks, function(key, val){
     		    console.log(val.name);
     		})
             renderGeneral("#issue_select", "#issue_select_template", shop_talks);
