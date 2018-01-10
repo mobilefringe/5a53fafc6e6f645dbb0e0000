@@ -230,8 +230,8 @@
         loadMallDataCached(renderAll); 
     });
     function getURLParameter (val) {
-        console.log(val);
-        console.log(window.location);
+        // console.log(val);
+        // console.log(window.location);
         var new_val = window.location.search.split(val+"=")[1];
         console.log(new_val);
     }
