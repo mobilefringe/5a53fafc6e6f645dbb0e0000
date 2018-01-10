@@ -74,15 +74,6 @@
                     <span class="selector-wrap" id="service_select">
                         <span class="select_name">Pick a Memo</span>
                         <select id="memo_select">
-                            <option value="">Pick a Memo</option>
-                            <option value="/pages/svc-tenants-memo">View All</option>
-                            {% assign memo_repo = "svc-memo" | get_repo_by_slug%}
-                            {% for file in memo_repo.site_images %}
-                                <option value="{{file.image_url}}">
-                                    {% assign name = file.name | split: '. ' %}
-                                    {{name[1]}}  
-                                </option>
-                            {% endfor %}
                             <script id="memo_select_template" type="">
                             <option value="image_url">
                                 {{name}}                                            
