@@ -117,43 +117,43 @@
                 console.log("tenant is logged in")
                     window.location.href = "/tenant_login";        
                 }
-            $('#tenant_login_form').submit(function(e) {
-                // values = [];
-                // values = JSON.stringify($('#tenant_login_form').serializeArray());
-                e.preventDefault();
-                var data = {}
-                  data["username"] = $("#username").val();
-                  data["pin"] = $("#pin").val();
-                  if ($("#username").val() !="" && $("#pin").val() != ""){
-                      $.ajax({
-                            url: prefix + "/verify_pin",
-                            type: "POST",
-                            data: data,
-                            success: function(response){
-                                if (response["msg"] == "success"){
-                                    $("#tenant_login").hide();
-                                    $("#tenant_select").show();
-                                    // $(".flexslider").remove();
-                                    // $(".login_title").remove();
-                                    $('#page_title').text("Welcome");
-                                    window.scrollTo(0,0);
-                                    var date = new Date();
-                                    var minutes = 15;
-                                    date.setTime(date.getTime() + (minutes * 60 * 1000));                                
-                                    $.cookie("tenant_login", "true", { expires: date });                                
-                                } else {
-                                    alert("Please try again later.");
-                        	    }
-                			},
-                            error: function(xhr, ajaxOptions, thrownError){
-                                alert("Please try again later.");
-                			}
-                        }) 
-                  }
-                  else{
-                      alert("Please provide username and password.");
-                  }
-    		});
+    //         $('#tenant_login_form').submit(function(e) {
+    //             // values = [];
+    //             // values = JSON.stringify($('#tenant_login_form').serializeArray());
+    //             e.preventDefault();
+    //             var data = {}
+    //               data["username"] = $("#username").val();
+    //               data["pin"] = $("#pin").val();
+    //               if ($("#username").val() !="" && $("#pin").val() != ""){
+    //                   $.ajax({
+    //                         url: prefix + "/verify_pin",
+    //                         type: "POST",
+    //                         data: data,
+    //                         success: function(response){
+    //                             if (response["msg"] == "success"){
+    //                                 $("#tenant_login").hide();
+    //                                 $("#tenant_select").show();
+    //                                 // $(".flexslider").remove();
+    //                                 // $(".login_title").remove();
+    //                                 $('#page_title').text("Welcome");
+    //                                 window.scrollTo(0,0);
+    //                                 var date = new Date();
+    //                                 var minutes = 15;
+    //                                 date.setTime(date.getTime() + (minutes * 60 * 1000));                                
+    //                                 $.cookie("tenant_login", "true", { expires: date });                                
+    //                             } else {
+    //                                 alert("Please try again later.");
+    //                     	    }
+    //             			},
+    //                         error: function(xhr, ajaxOptions, thrownError){
+    //                             alert("Please try again later.");
+    //             			}
+    //                     }) 
+    //               }
+    //               else{
+    //                   alert("Please provide username and password.");
+    //               }
+    // 		});
     		
     		//populating tenant select div
             // <option value="">Find an Issue</option>
