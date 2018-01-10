@@ -59,7 +59,7 @@
                     <p class="center" style="{{show_phone}}"><span class="store_detail_highlight">Phone:</span> {{phone}}</p>
                     <p class="center" style="{{show_website}}"><span class="store_detail_highlight">Website:</span> {{website}}</p>
                     <p class="center" style="{{show_category}}"><span class="store_detail_highlight">Category:</span> {{store_categories}}</p>
-                    <p>{{{rich_description}}}</p>
+                    <p class="store_description">{{{rich_description}}}</p>
                 </script>
             </div>
             <div id="hours" class="grey_line hidden_now">
