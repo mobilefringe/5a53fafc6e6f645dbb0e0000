@@ -209,7 +209,7 @@
                     // console.log("blog", $title);
                 }
             });
-              console.log("blog", blogs);
+             
             // var xml = "http://www.stvitalcentrespark.com/index,article.rss",
             //   xmlDoc = $.parseXML( xml ),
             //   $xml = $( xmlDoc ),
