@@ -219,8 +219,8 @@
         map = $('#mapsvg_store_detail').mapSvg({
             source: getSVGMapURL(),
             colors: {stroke: '#aaaaaa', selected: "#F3047A", hover: 0},
-            width: svgW,
-            height:svgH,
+            width: 970,
+            height:375,
             popover: 'auto',
             // disableAll: true,
             viewBox: [520,150,1350,1400],
