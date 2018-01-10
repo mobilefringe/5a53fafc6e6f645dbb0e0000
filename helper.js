@@ -188,6 +188,7 @@ function store_search() {
     $('#search_icon').click(function(){
         $("#site_search").show();
         $('#close_search').show();
+        $('#search_icon').show();
     });
     $('#close_search').click(function(){
         $(this).hide();
