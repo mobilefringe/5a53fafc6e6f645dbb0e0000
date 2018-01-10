@@ -198,7 +198,7 @@
                         console.log("link       : " + el.find("link").text());
                         console.log("description: " + el.find("description").text());
                         var item = {};
-                        item.title = ;
+                        item.title = el.find("title").text());
                     });
                     console.log("blog", $title);
                 }
