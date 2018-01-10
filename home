@@ -191,7 +191,7 @@
                       xmlDoc = $.parseXML( xml ),
                       $xml = $( xmlDoc ),
                       $title = $xml.find( "title" );
-                    // console.log(xml);
+                    console.log(xml);
                     //  $title = $(xml).find( "item" ); 
                     console.log("blog", $title);
                 }
