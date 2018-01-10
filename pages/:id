@@ -158,6 +158,9 @@
             
             
     		var shop_talks = getRepoDetailsByName("Shoptalk").images;
+    		$.each(shop_talks, function(val, key){
+    		    
+    		})
             renderGeneral("#issue_select", "#issue_select_template", shop_talks);
             
             var memos = getRepoDetailsByName("Memo").images;
