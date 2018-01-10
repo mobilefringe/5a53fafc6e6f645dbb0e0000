@@ -114,6 +114,7 @@
             // }
             
             if ($.cookie("tenant_login") == "true"){
+                console.log("")
                     $(".login").hide();
                     $(".tenant_select").show();
                     $(".flexslider").remove();
