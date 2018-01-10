@@ -83,7 +83,7 @@
                                     {{name[1]}}  
                                 </option>
                             {% endfor %}
-                            <script id="issue_select_template" type="">
+                            <script id="memo_select_template" type="">
                             <option value="image_url">
                                 {{name}}                                            
                             </option>    
