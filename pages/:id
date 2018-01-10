@@ -61,7 +61,7 @@
                             data: data,
                             success: function(response){
                                 if (response["msg"] == "success"){
-                                    $(".login").hide();
+                                    $(".tenant_login").hide();
                                     $(".tenant_select").show();
                                     $(".flexslider").remove();
                                     $(".login_title").remove();
