@@ -229,7 +229,7 @@
         }
         loadMallDataCached(renderAll); 
     });
-    function getURLParameter () {
+    function getURLParameter (val) {
         
     }
 </script>
