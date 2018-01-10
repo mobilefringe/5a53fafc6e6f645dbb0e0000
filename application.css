@@ -616,7 +616,7 @@ a {
     }
     .home_promo_store {
         margin: 0;
-        position: relative;
+        // position: relative;
         font-size: 14px;
     }
     .home_promo_store:after {
