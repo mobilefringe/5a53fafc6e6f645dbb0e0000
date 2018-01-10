@@ -117,6 +117,7 @@
                 console.log("tenant is logged in")
                     $("#tenant_login").hide();
                     $(".tenant_select").show();
+                    $('#page_title').text("Welcome");
                     $(".flexslider").remove();
                     $(".login_title").remove();
                     $(".page_title").text("welcome");   
