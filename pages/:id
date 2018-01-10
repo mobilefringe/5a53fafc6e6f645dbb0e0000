@@ -70,7 +70,7 @@
                     </span>
                 </div>
                 <div class="col-sm-4">  
-                    <label>memo</label>
+                    <label>Memo</label>
                     <span class="selector-wrap" id="service_select">
                         <!--<span class="select_name">Pick a Memo</span>-->
                         <select id="memo_select">
