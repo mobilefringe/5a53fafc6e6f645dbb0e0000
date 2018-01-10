@@ -15,17 +15,18 @@
         <h2 id="page_title"></h2>
     </div>
     <div id="tenant_login" class="row">
-        <form name="tenant_login_form" id="tenant_login_form" method="post" class="col-sm-6" style="padding: 10px;">
-        <div class="col-sm-12">
-            <input name="username" id="username" class="form-control" type="text" value="" placeholder="Username" required>
-        </div>
-        <div class="col-sm-12">
-            <input name="pin" id="pin" class="form-control" type="password" value="" placeholder="Password" required>
-        </div>
-        <div class="col-sm-12">
-            <button id="submit" class="contact_btn" type="submit" style="float:left">SUBMIT</button>
-        </div>
-        </form>
+       <p>
+            This manual is intended to aid you in the day-to-day operations of your store and to hopefully answer any and all questions you may have regarding your tenancy at St. Vital Centre. Should you have any questions or concerns, please feel free to contact the Administration Office at any time and we will be pleased to assist you.
+        </p>
+        <p>
+            It is suggested all new employees familiarize themselves with the contents of this manual, and that it be kept in a convenient location (at the cash register or store bulletin board) for easy reference as required.
+        </p>
+        <p>
+            This manual is intended as a guideline, and in cases where there is a discrepancy between the manual and your lease, the provisions of the lease shall prevail.
+        </p>
+        <p>
+            Click <a style="text-decoration:underline;" href="{{1898 | get_image_url}}" target="_blank">here</a> for a pdf copy of the Tenant Manual.
+        </p>
     </div>
     <div>
         <div class="row-fluid tenant_select store_list_padding hidden_now" >
