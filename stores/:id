@@ -233,7 +233,7 @@
     function load_map(reg, store_details){
         this_region = {};
         if(store_details.svgmap_region != null) {
-        this_region = store_details.svgmap_region;
+            this_region = store_details.svgmap_region;
         }
         var svgH;
         var svgW;
