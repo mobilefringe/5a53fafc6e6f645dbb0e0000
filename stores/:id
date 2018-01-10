@@ -8,10 +8,10 @@
             <div class="row">
                 <div id="store_header_container">
                     <script id="store_header_template" type="x-tmpl-mustache/text">
-                        <div class="col-md-6">    
+                        <div class="col-sm-6">    
                             <h1> {{name}} </h1>
                         </div>
-                        <div class="col-md-6 hidden_phone">
+                        <div class="col-sm-6 hidden_phone">
                             <h4 class="pull-right">Stores <i class="fa fa-angle-right" aria-hidden="true"></i> <a href="/stores">Store Directory</a> <i class="fa fa-angle-right" aria-hidden="true"></i> {{name}}</h4>
                         </div>
                     </script>
@@ -23,14 +23,14 @@
 <div class="content_container margin_30">
     <div class="margin_30"></div>
     <div class="row">
-        <div class="col-md-12 center">
+        <div class="col-sm-12 center">
             <div class="directory_btn caps active">Stores</div>
             <a href="/map"><div class="directory_btn caps">Centre Map</div></a>
         </div>
     </div>
     <div class="margin_30"></div>
     <div class="row">
-        <div class="col-md-6">
+        <div class="col-sm-6">
             <!-- MAP -->
             <div class="store_map_container">
                 <div id="mapView">
@@ -50,7 +50,7 @@
                 <!--<select id="mapList"></select>-->
             </div>
         </div>
-        <div class="col-md-6 border_left">
+        <div class="col-sm-6 border_left">
             <div id="store_details_container">
                 <script id="store_details_template" type="x-tmpl-mustache/text">
                     <div class="store_details_logo">
