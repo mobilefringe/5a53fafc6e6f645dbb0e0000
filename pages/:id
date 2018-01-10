@@ -156,7 +156,7 @@
             // <option value="">Find an Issue</option>
             // <option value="/pages/svc-tenants-shoptalk">Vew All</option>
             $('#issue_select').append($('<option>', {value: "",text: 'Find an Issue'}));
-            $('#example').append('<option value="" selected="selected" disabled>Find an Issue</option>');
+            $('#issue_select').append('<option value="" selected="selected" disabled>Find an Issue</option>');
             $('#issue_select').append($('<option>', {value: "/pages/svc-tenants-shoptalk",text: 'View All'}));
             $('#memo_select').append($('<option>', {value: "",text: 'Pick an Memo'}));
             $('#memo_select').append($('<option>', {value: "/pages/svc-tenants-memo",text: 'View All'}));
