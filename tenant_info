@@ -233,4 +233,20 @@
         var new_val = window.location.pathname.split(val)[1];
         console.log(new_val);
     }
+    function show_manual(id){
+                if(id == "all"){
+                    $(".manual_list .store_list_padding").show();
+                } else if (id != "all" || id != "" ){                    
+                    var name = "manual"+id;
+                    $(".manual_list .store_list_padding").hide();
+                    var expend_js = "javascript:expend_all("+id+")";                    
+                    $(".manual_list .manual_title").html($("."+name).text() + "<a class='expend_all' href="+expend_js+">expand all</a>");
+                    $("."+name).nextUntil("h3", "h2").show()
+                    $(".back").show();
+                }
+            }
+            
+            function expend_all(id){
+                $(".manual"+id).nextUntil("h3").show();
+            }
 </script>
