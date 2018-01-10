@@ -15,8 +15,6 @@
         <form name="contact_form" id="contact_form" method="post">
             <input name="username" id="username" class="form-control" type="text" value="" placeholder="Username" required>
             <input name="password" id="password" class="form-control" type="password" value="" placeholder="Password" required>
-            <input name="subject" id="subject" class="form-control" type="text" placeholder="Subject" required>
-            <textarea name="message" id="message" rows="8" class="form-control" placeholder="Your Comments" required></textarea>
             <button id="submit" class="contact_btn" type="submit">SUBMIT</button>
         </form>
     </div>
