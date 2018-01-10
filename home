@@ -198,11 +198,11 @@
                         // console.log("link       : " + el.find("link").text());
                         // console.log("description: " + el.find("description").text());
                         var item = {};
-                        item.title = el.find("title").text());
-                        item.link = el.find("link").text());
-                        item.permalink =  el.find("guid").text());
-                        item.published_date=  el.find("pubDate").text());
-                        item.description =  el.find("description").text());
+                        item.title = el.find("title").text();
+                        item.link = el.find("link").text();
+                        item.permalink =  el.find("guid").text();
+                        item.published_date=  el.find("pubDate").text();
+                        item.description =  el.find("description").text();
                         blogs.push(item);
                     });
                     // console.log("blog", $title);
