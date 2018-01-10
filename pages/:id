@@ -60,7 +60,7 @@
                     <span class="selector-wrap" id="brand_select">
                         <!--<span class="select_name">Find an Issue</span>-->
                         <select id="issue_select">
-                            <script id="issue_select_template" type="">
+                            <script id="issue_select_template" type="x-tmpl-mustache/text">
                                 <option value="image_url">
                                     {{name}}                                            
                                 </option>    
