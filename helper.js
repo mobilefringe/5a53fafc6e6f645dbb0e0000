@@ -203,6 +203,7 @@ function store_search() {
         console.log("closing search")
     });
     $("#site_search").focusout(function() {
+        setTimeout(function(){ alert("Hello"); }, 3000);
         console.log("not focused");
         $("#site_search").toggle();
         $("#search_results_stores").hide();
