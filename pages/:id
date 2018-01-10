@@ -18,7 +18,7 @@
             <input name="subject" id="subject" class="form-control" type="text" placeholder="Subject" required>
             <textarea name="message" id="message" rows="8" class="form-control" placeholder="Your Comments" required></textarea>
             <button id="submit" class="contact_btn" type="submit">SUBMIT</button>
-            </form>
+        </form>
     </div>
     <div class="row">
         <div class="col-md-12">
