@@ -58,7 +58,6 @@
                     </div>
                     <p class="center"><span class="store_detail_highlight">Phone:</span> {{phone}}</p>
                     <p class="center" style="{{show_category}}"><span class="store_detail_highlight">Category:</span> {{store_categories}}</p>
-                    // <p class="center"><span class="store_detail_highlight">Location:</span> Level {{z_coordinate}}</p>
                     <p>{{{rich_description}}}</p>
                 </script>
             </div>
