@@ -230,6 +230,7 @@
         loadMallDataCached(renderAll); 
     });
     function getURLParameter (val) {
+        console.log(val)
         var new_val = window.location.pathname.split(val);
         console.log(new_val);
     }
