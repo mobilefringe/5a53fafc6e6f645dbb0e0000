@@ -188,7 +188,7 @@
                 dataType: "xml",
                 success: function (xml) {
                     console.log(xml);
-                     $title = $(xml).find( "title" ); 
+                     $title = $(xml).find( "item" ); 
                     console.log("blog", $title);
                 }
             });
