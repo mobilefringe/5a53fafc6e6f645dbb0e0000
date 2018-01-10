@@ -69,7 +69,7 @@
                         <span class="select_icon"></span>
                     </span>
                 </div>
-                <div class="span4">            
+                <div class="col-sm-4">  
                     <label>memo</label>
                     <span class="selector-wrap" id="service_select">
                         <!--<span class="select_name">Pick a Memo</span>-->
