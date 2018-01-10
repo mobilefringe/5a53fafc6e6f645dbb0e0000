@@ -65,20 +65,6 @@
                                 {{name}}                                            
                             </option>    
                         </script>
-                            <option value="">Find an Issue</option>
-                            <option value="/pages/svc-tenants-shoptalk">Vew All</option>
-                            
-                            {% for repo in site.property.repos %}
-                                {% if repo.slug == "svc-shoptalk" %}                        
-                                    {% assign shoptalk = repo.site_images | reverse%}
-                                    {% for file in  shoptalk  %}
-                                        <option value="{{file.image_url}}">
-                                            {% assign name = file.name | split: '. ' %}
-                                            {{name[1]}}                                            
-                                        </option>                                            
-                                    {% endfor %}
-                                {% endif %}
-                            {% endfor %}
                         </select>
                         <span class="select_icon"></span>
                     </span>
