@@ -51,20 +51,38 @@
                 values = [];
                 values = JSON.stringify($('#tenant_login_form').serializeArray());
                 e.preventDefault();
-                $.ajax({
-                    url : "/api/v1/contact_us",
-                    type: "POST",
-                    data : {authenticity_token: '<%=form_authenticity_token%>' ,
-                    form_data:values},
-                    success: function(data, textStatus, jqXHR) {
-                        $('#send_contact_success').fadeIn();
-                        $('#contact_form').find("input[type=text], textarea").val("");
-                    },
-                    error: function (jqXHR, textStatus, errorThrown) {
-                        $('html, body').animate({scrollTop : 0},800);
-                        $('#send_contact_error').fadeIn();
-                    }
-                });
+                var data = {}
+                  data["username"] = $("#username").val();
+                  data["pin"] = $("#pin").val();
+                  if ($("#username").val() !="" && $("#pin").val() != ""){
+                      $.ajax({
+                            url: "/verify_pin",
+                            type: "POST",
+                            data: data,
+                            success: function(response){
+                                if (response["msg"] == "success"){
+                                    $(".login").hide();
+                                    $(".tenant_select").show();
+                                    $(".flexslider").remove();
+                                    $(".login_title").remove();
+                                    $(".page_title").text("welcome");
+                                    window.scrollTo(0,0);
+                                    var date = new Date();
+                                    var minutes = 15;
+                                    date.setTime(date.getTime() + (minutes * 60 * 1000));                                
+                                    $.cookie("tenant_login", "true", { expires: date });                                
+                                } else {
+                                    alert("Please try again later.");
+                        	    }
+                			},
+                            error: function(xhr, ajaxOptions, thrownError){
+                                alert("Please try again later.");
+                			}
+                        }) 
+                  }
+                  else{
+                      alert("Please provide username and password.");
+                  }
     		});
             show_content();
         }
