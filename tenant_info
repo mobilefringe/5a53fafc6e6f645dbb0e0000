@@ -28,7 +28,7 @@
             Click <a style="text-decoration:underline;" href="https://www.mallmaverick.com/system/site_images/photos/000/001/898/original/Tenant_Manual_-revised_October_2012.pdf?1394039465" target="_blank">here</a> for a pdf copy of the Tenant Manual.
         </p>
     </div>
-    <!--<div>-->
+    <div>
         <div class="row-fluid tenant_select store_list_padding " >
                 <div class="col-sm-4">
                     <label>Category</label>
