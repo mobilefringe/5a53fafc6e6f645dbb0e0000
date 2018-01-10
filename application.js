@@ -635,7 +635,7 @@ function renderStoreDetails(container, template, collection, slug){
             val.show_category = "display:block";
         }
         else {
-            
+            val.show_category = "display:none";
         }
         if(val.store_hours != null){
             var store_hours = getHoursForStoreSlug(val.slug);
