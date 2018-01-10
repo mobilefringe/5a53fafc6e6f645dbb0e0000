@@ -116,8 +116,46 @@
             
             if ($.cookie("tenant_login") !== "true"){
                 console.log("tenant is logged in")
-                    window.location.href = "/tenant_login";        
-                }
+                window.location.href = "/tenant_login";        
+            }
+            else {
+                $(".unit_info h2").each(function(){
+                        var title = $(this).text();
+                        $(this).html("<strong>"+title+"</strong> <span>read more</span>");                                
+                        $("<p class='readless'>read less</p>").insertBefore( $(this) );
+                    })
+                    $(".readless").first().remove();
+                    $(".unit_info h2").click(function(){
+                        $(this).nextUntil( "h2" ).show();
+                    })
+                    
+                    $(".readless").on("click",function(){
+                        $(this).hide();
+                        $(this).prevUntil( "h2" ).hide();
+                    })
+                    
+                    $(".unit_info").show();
+                    $(".unit_info ul, .unit_info p, .unit_info h3, .unit_info h2").hide();            
+                    
+                    $(".manual_info h3").each(function(index){
+                        $(this).addClass("manual"+index);
+                        var js = "javascript:show_manual("+index+")";
+                        $(".manual_list .store_list_padding").append("- <a href='?show="+index+"'>"+$(this).text()+"</a><br/>")
+                        $(this).nextUntil("h3", "h2").each(function(){
+                            $(".manual_list .store_list_padding").append("<span>- "+$(this).find("strong").text()+"</span><br/>")
+                        })
+                    })
+                    
+                    $(".expend_all").click(function(){
+                        $(this).nextUntil("h3").show();
+                    })
+                    
+                    if (getURLParameter("show") != "null"){
+                        show_manual(getURLParameter("show"));
+                    } else {                        
+                        $(".manual_list .store_list_padding").show();
+                    }
+            }
     //         $('#tenant_login_form').submit(function(e) {
     //             // values = [];
     //             // values = JSON.stringify($('#tenant_login_form').serializeArray());
