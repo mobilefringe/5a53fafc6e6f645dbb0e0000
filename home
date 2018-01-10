@@ -188,9 +188,9 @@
                 dataType: "xml",
                 success: function (xml) {
                     var xml = "http://www.stvitalcentrespark.com/index,article.rss",
-              xmlDoc = $.parseXML( xml ),
-              $xml = $( xmlDoc ),
-              $title = $xml.find( "title" );
+                      xmlDoc = $.parseXML( xml ),
+                      $xml = $( xmlDoc ),
+                      $title = $xml.find( "title" );
                     console.log(xml);
                      $title = $(xml).find( "item" ); 
                     console.log("blog", $title);
