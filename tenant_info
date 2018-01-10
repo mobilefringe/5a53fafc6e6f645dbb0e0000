@@ -100,7 +100,7 @@
             <div class="unit_info manual_info">
                 <div id="mm_page_content"></div>
                 <p class="back">
-                    <a href="/pages/svc-tenants-manual"><img src="{{1846 | get_image_url}}">List all</a>
+                    <a href="/pages/svc-tenants-manual"> <List all</a>
                 </p>
             </div>
             
