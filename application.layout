@@ -88,7 +88,7 @@
                                         <span class="todays_hours">{% raw %} {{open}} {{hours}} {% endraw %}</span>
                                     </script>
                                 </span>
-                                <a class="view_holiday_hours" href="/hours">View Holiday Hours</a>
+                                <a class="view_holiday_hours" href="/hours">View All Hours</a>
                             </div>
                         </div>
                         <div class="col-md-6">
