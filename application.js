@@ -652,7 +652,7 @@ function renderStoreDetails(container, template, collection, slug){
         val.property_map = getPropertyDetails().mm_host + getPropertyDetails().map_url;
         
         if (val.website != null && val.website.length > 0){
-            val.show_website = "display:inline-block";
+            val.show_website = "display:block";
         } else {
             val.show_website = "display:none";
         }
