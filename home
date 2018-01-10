@@ -203,7 +203,7 @@
                         item.permalink =  el.find("guid").text();
                         item.published_date=  el.find("pubDate").text();
                         item.description =  el.find("description").text();
-                        item.image_url
+                        item.image_url = el.find("img").text();
                         blogs.push(item);
                     });
                      console.log("blog", blogs);
