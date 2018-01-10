@@ -199,7 +199,8 @@
                         console.log("description: " + el.find("description").text());
                         var item = {};
                         item.title = el.find("title").text());
-                        item.link = el.find("title").text());
+                        item.link = el.find("link").text());
+                        
                     });
                     console.log("blog", $title);
                 }
