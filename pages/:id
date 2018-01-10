@@ -20,7 +20,7 @@
             <input name="username" id="username" class="form-control" type="text" value="" placeholder="Username" required>
         </div>
         <div>
-            
+            <input name="pin" id="pin" class="form-control" type="password" value="" placeholder="Password" required>
         </div>
             
             <button id="submit" class="contact_btn" type="submit">SUBMIT</button>
