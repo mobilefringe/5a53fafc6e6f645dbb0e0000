@@ -1,0 +1,181 @@
+<div class="inside_banner">   
+    <div class="content_container">
+        <div class="inside_banner_content">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 id="mm_page_title"></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content_container margin_30 pages_container">
+    <div class="margin_30"></div>
+    <div>
+        <h3 id="page_title"></h3>
+    </div>
+    <div id="tenant_login" class="row">
+        <form name="tenant_login_form" id="tenant_login_form" method="post" class="col-sm-6" style="padding: 10px;">
+        <div class="col-sm-12">
+            <input name="username" id="username" class="form-control" type="text" value="" placeholder="Username" required>
+        </div>
+        <div class="col-sm-12">
+            <input name="pin" id="pin" class="form-control" type="password" value="" placeholder="Password" required>
+        </div>
+        <div class="col-sm-12">
+            <button id="submit" class="contact_btn" type="submit" style="float:left">SUBMIT</button>
+        </div>
+        </form>
+    </div>
+    <div>
+        <div class="row-fluid tenant_select store_list_padding" >
+                <div class="col-sm-4">
+                    <label>Category</label>
+                    <span class="selector-wrap" id="category_select">
+                        <!--<span class="select_name">Pick a Category</span>-->
+                        <select id="menual_select">
+                            <option value="" disabled selected>Pick a Category</option>
+                            <option value="all">View All</option>
+                            <option value="0">Heating, Ventilation and Air Conditioning (HVAC)</option>
+                            <option value="1">Restaurant and Food Hall Tenants</option>
+                            <option value="2">Maintenance</option>
+                            <option value="3">Garbage Disposal and Recycling</option>
+                            <option value="4">Deliveries</option>
+                            <option value="5">Employee Parking</option>
+                            <option value="6">Store Mechandising Guidelines</option>
+                            <option value="7">Emergency Information and Procedures</option>
+                            <option value="8">Security</option>
+                            <option value="9">Gift Card Procedures</option>
+                            <option value="10">Customer Service</option>
+                            <option value="11">Marketing Department</option>
+                            <option value="12">Hours of Business</option>
+                            <option value="13">St. Vital Centre Administration</option>
+                            <option value="14">St. Vital Centre Profile</option>
+                        </select>
+                        <span class="select_icon"></span>
+                    </span>
+                </div>
+                <div class="col-sm-4">
+                    <label>Shoptalk</label>
+                    <span class="selector-wrap" id="brand_select">
+                        <!--<span class="select_name">Find an Issue</span>-->
+                        <select id="issue_select">
+                            <script id="issue_select_template" type="x-tmpl-mustache/text">
+                                <option value="image_url">
+                                    {{show_name}}                                            
+                                </option>    
+                            </script>
+                        </select>
+                        <span class="select_icon"></span>
+                    </span>
+                </div>
+                <div class="col-sm-4">  
+                    <label>Memo</label>
+                    <span class="selector-wrap" id="service_select">
+                        <!--<span class="select_name">Pick a Memo</span>-->
+                        <select id="memo_select">
+                            <script id="memo_select_template" type="x-tmpl-mustache/text">
+                            <option value="image_url">
+                                {{show_name}}                                            
+                            </option>    
+                        </script>
+                        </select>
+                        <span class="select_icon"></span>
+                    </span>
+                </div>
+            </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div id="mm_page_content"></div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function(e){
+        init(e);
+        function renderAll(){
+            var pathArray = window.location.pathname.split( '/' );
+            var slug = pathArray[pathArray.length-1];
+            prefix = get_prefix();
+            var pages_json = prefix + "/pages/" + slug + ".json"
+            $.getJSON(pages_json).done(function(data) {
+                $('#mm_page_title').html(data.title.toUpperCase());
+                $('#mm_page_content').html(data.body);
+            }).fail(function(jqXHR) {
+                if (jqXHR.status == 404) {
+                    $("#404_msg").fadeIn("fast");
+                }
+            }); 
+            
+            if(slug == "svc-tenant-login") {
+                $("#tenant_login").show();
+                $('#page_title').text("Login");
+            }
+            
+            
+            $('#tenant_login_form').submit(function(e) {
+                // values = [];
+                // values = JSON.stringify($('#tenant_login_form').serializeArray());
+                e.preventDefault();
+                var data = {}
+                  data["username"] = $("#username").val();
+                  data["pin"] = $("#pin").val();
+                  if ($("#username").val() !="" && $("#pin").val() != ""){
+                      $.ajax({
+                            url: get_prefix + "/verify_pin",
+                            type: "POST",
+                            data: data,
+                            success: function(response){
+                                if (response["msg"] == "success"){
+                                    $("#tenant_login").hide();
+                                    $("#tenant_select").show();
+                                    // $(".flexslider").remove();
+                                    // $(".login_title").remove();
+                                    $('#page_title').text("Welcome");
+                                    window.scrollTo(0,0);
+                                    var date = new Date();
+                                    var minutes = 15;
+                                    date.setTime(date.getTime() + (minutes * 60 * 1000));                                
+                                    $.cookie("tenant_login", "true", { expires: date });                                
+                                } else {
+                                    alert("Please try again later.");
+                        	    }
+                			},
+                            error: function(xhr, ajaxOptions, thrownError){
+                                alert("Please try again later.");
+                			}
+                        }) 
+                  }
+                  else{
+                      alert("Please provide username and password.");
+                  }
+    		});
+    		
+    		//populating tenant select div
+            // <option value="">Find an Issue</option>
+            // <option value="/pages/svc-tenants-shoptalk">Vew All</option>
+            
+            
+    		var shop_talks = getRepoDetailsByName("Shoptalk").images;
+    		$.each(shop_talks, function(key, val){
+    		    val.show_name = val.name.split(".")[1];
+    		})
+            renderGeneral("#issue_select", "#issue_select_template", shop_talks);
+            
+            var memos = getRepoDetailsByName("Memo").images;
+            $.each(memos, function(key, val){
+                console.log(val.name.split("."))
+    		    val.show_name = val.name.split(".")[1];
+    		})
+            renderGeneral("#memo_select", "#memo_select_template", memos);
+            $('#issue_select').prepend('<option value="/pages/svc-tenants-shoptalk" selected="selected">View All</option>');
+    		$('#issue_select').prepend('<option value="" selected="selected" disabled>Find an Issue</option>');
+            
+            $('#memo_select').prepend('<option value="/pages/svc-tenants-memo" selected="selected">View All</option>');
+            $('#memo_select').prepend('<option value="" selected="selected" disabled>Pick an Memo</option>');
+            show_content();
+        }
+        loadMallDataCached(renderAll); 
+    })
+</script>
