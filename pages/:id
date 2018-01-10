@@ -158,7 +158,7 @@
             $('#issue_select').append('<option value="" selected="selected" disabled>Find an Issue</option>');
             $('#issue_select').append('<option value="/pages/svc-tenants-shoptalk" selected="selected" disabled>View All</option>');
             $('#memo_select').append($('<option>', {value: "",text: 'Pick an Memo'}));
-            $('#memo_select').append($('<option>', {value: "/pages/svc-tenants-memo",text: 'View All'}));.append('<option value="/pages/svc-tenants-memo" selected="selected" disabled>View All</option>');
+            $('#memo_select').append('<option value="/pages/svc-tenants-memo" selected="selected" disabled>View All</option>');
             
     		var shop_talks = getRepoDetailsByName("Shoptalk").images;
             renderGeneral("#issue_select", "#issue_select_template", shop_talks);
