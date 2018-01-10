@@ -190,7 +190,7 @@
             var blogs = [];
             $.ajax({
                 type: "GET",
-                url: "http://www.stvitalcentrespark.com/index,article.rss",
+                url: "https://codecloud.cdn.speedyrails.net/sites/5a53fafc6e6f645dbb0e0000/application/rss+xml/1515613339209/temp_svc_blog.rss",
                 dataType: "xml",
                 success: function (xml) {
                     
