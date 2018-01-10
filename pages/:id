@@ -14,7 +14,7 @@
     <div>
         <h3 id="page_title"></h3>
     </div>
-    <div id="tenant_login" class="row">
+    <div id="tenant_login" >
         <form name="tenant_login_form" id="tenant_login_form" method="post" class="row" style="padding: 10px;">
             <input name="username" id="username" class="form-control col-sm-6" type="text" value="" placeholder="Username" required>
             <input name="pin" id="pin" class="form-control col-sm-6" type="password" value="" placeholder="Password" required>
