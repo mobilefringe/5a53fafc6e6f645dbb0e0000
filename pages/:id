@@ -155,10 +155,7 @@
     		//populating tenant select div
             // <option value="">Find an Issue</option>
             // <option value="/pages/svc-tenants-shoptalk">Vew All</option>
-            $('#issue_select').append('<option value="" selected="selected" disabled>Find an Issue</option>');
-            $('#issue_select').append('<option value="/pages/svc-tenants-shoptalk" selected="selected" disabled>View All</option>');
-            $('#memo_select').append('<option value="" selected="selected" disabled>Pick an Memo</option>');
-            $('#memo_select').append('<option value="/pages/svc-tenants-memo" selected="selected" disabled>View All</option>');
+            
             
     		var shop_talks = getRepoDetailsByName("Shoptalk").images;
             renderGeneral("#issue_select", "#issue_select_template", shop_talks);
