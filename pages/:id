@@ -32,7 +32,7 @@
                 <div class="span4">
                     <label>Category</label>
                     <span class="selector-wrap" id="category_select">
-                        <span class="select_name">Pick a Category</span>
+                        <!--<span class="select_name">Pick a Category</span>-->
                         <select id="menual_select">
                             <option value="">Pick a Category</option>
                             <option value="all">View All</option>
@@ -58,7 +58,7 @@
                 <div class="span4">
                     <label>shoptalk</label>
                     <span class="selector-wrap" id="brand_select">
-                        <span class="select_name">Find an Issue</span>
+                        <!--<span class="select_name">Find an Issue</span>-->
                         <select id="issue_select">
                         <script id="issue_select_template" type="">
                             <option value="image_url">
@@ -72,7 +72,7 @@
                 <div class="span4">            
                     <label>memo</label>
                     <span class="selector-wrap" id="service_select">
-                        <span class="select_name">Pick a Memo</span>
+                        <!--<span class="select_name">Pick a Memo</span>-->
                         <select id="memo_select">
                             <option value="">Pick a Memo</option>
                             <option value="/pages/svc-tenants-memo">View All</option>
