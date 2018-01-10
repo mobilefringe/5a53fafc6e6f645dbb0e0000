@@ -62,6 +62,7 @@
                         <select id="issue_select">
                             <option value="">Find an Issue</option>
                             <option value="/pages/svc-tenants-shoptalk">Vew All</option>
+                            
                             {% for repo in site.property.repos %}
                                 {% if repo.slug == "svc-shoptalk" %}                        
                                     {% assign shoptalk = repo.site_images | reverse%}
