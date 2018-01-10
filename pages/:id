@@ -22,6 +22,8 @@
         <div class="col-sm-6">
             <input name="pin" id="pin" class="form-control" type="password" value="" placeholder="Password" required>
         </div>
+        <div class="col-sm-6">
+        </div>
         <button id="submit" class="contact_btn" type="submit" style="float:left">SUBMIT</button>
         </form>
     </div>
