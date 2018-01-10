@@ -200,7 +200,7 @@
                         var item = {};
                         item.title = el.find("title").text());
                         item.link = el.find("link").text());
-                        item.permalink =  el.find("description").text());
+                        item.permalink =  el.find("guid").text());
                         item.description =  el.find("description").text());
                     });
                     console.log("blog", $title);
