@@ -97,12 +97,12 @@
                 </div>
             </div>
         
-        <div class="unit_info manual_info">
-            {{page.body}}
-            <p class="back">
-                <a href="/pages/svc-tenants-manual"><img src="{{1846 | get_image_url}}">List all</a>
-            </p>
-        </div>
+            <div class="unit_info manual_info">
+                {{page.body}}
+                <p class="back">
+                    <a href="/pages/svc-tenants-manual"><img src="{{1846 | get_image_url}}">List all</a>
+                </p>
+            </div>
             <div id="mm_page_content"></div>
         </div>
     </div>
