@@ -104,7 +104,7 @@
     </div>
     <div class="flex_container">
         <div class="width_50">
-            <div class="home_promos">
+            <div class="home_promos hidden_phone">
                 <div id="home_blog_container" class="dine_container margin_20">
                     <script id="home_blog_template" type="x-tmpl-mustache/text">
                         <div class="margin_30">
