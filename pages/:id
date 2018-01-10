@@ -165,7 +165,8 @@
     		});
     		
     		//populating tenant select div
-    		
+    		var leasing_photos = getRepoDetailsByName("photos").images;
+            renderGeneral("#portfolio_container", "#portfolio_template", leasing_photos)
     		
             show_content();
         }
