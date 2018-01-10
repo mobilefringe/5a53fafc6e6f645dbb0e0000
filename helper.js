@@ -205,7 +205,7 @@ function store_search() {
     $("#site_search").focusout(function() {
         console.log("not focused");
         $("#site_search").toggle();
-        $("#search_results_stores").toggle();
+        $("#search_results_stores").hide();
         $('#site_search').val('');
         $('#search_icon').toggle();
         $("#close_search").toggle();
