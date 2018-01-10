@@ -95,8 +95,8 @@
     $(document).ready(function(e){
         init(e);
         function renderAll(){
-            var pathArray = window.location.pathname.split( '/' );
-            var slug = pathArray[pathArray.length-1];
+            // var pathArray = window.location.pathname.split( '/' );
+            // var slug = pathArray[pathArray.length-1];
             prefix = get_prefix();
             var pages_json = prefix + "/pages/svc-tenant-login.json"
             $.getJSON(pages_json).done(function(data) {
