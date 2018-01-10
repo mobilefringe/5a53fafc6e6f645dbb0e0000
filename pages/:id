@@ -164,7 +164,7 @@
                   }
     		});
     		
-    		//populaing tenant select div
+    		//populating tenant select div
             show_content();
         }
         loadMallDataCached(renderAll); 
