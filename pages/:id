@@ -34,6 +34,10 @@
                     $("#404_msg").fadeIn("fast");
                 }
             }); 
+            
+            if(slug == "svc-tenant-login") {
+                $("#tenant_login").show();
+            }
             show_content();
         }
         loadMallDataCached(renderAll); 
