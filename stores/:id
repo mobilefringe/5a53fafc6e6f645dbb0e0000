@@ -177,39 +177,6 @@
                     } 
                 }
             }
-    //         $("#zoom_image").attr("src", getPNGMapURL());
-    // 		$('#zoom_image').smoothZoom({
-    // 		    width: "100%",
-    //             height: 500,
-    // 		    initial_ZOOM: 0,
-    // 			zoom_MIN: 0,
-    // 			zoom_MAX: 250,
-    // 			responsive: true,
-    // 		    responsive_maintain_ratio: true,
-    // 			zoom_BUTTONS_SHOW : 'YES',
-    // 			pan_BUTTONS_SHOW : 'NO',
-    // 			pan_LIMIT_BOUNDARY : 'NO',
-    // 			button_ALIGN: "top right",
-    // 			zoom_OUT_TO_FIT: "NO",
-    // 			container: 'zoom_container_store'
-    // 		});
-    // 		var pathArray = window.location.pathname.split( '/' );
-    //         var slug = pathArray[pathArray.length-1];
-    // 		var store_details = getStoreDetailsBySlug(slug);
-    // 	    var store_x_coordinate = store_details.x_coordinate;
-    // 	    var store_y_coordinate = store_details.y_coordinate;
-    // 		var pin_id = store_details.id; 
-    // 		var store_name = store_details.name;
-    // 		add_landmark(store_x_coordinate, store_y_coordinate, pin_id, store_name);
-    // 		$("#anchor_id").click(function(e){
-    //             e.preventDefault();
-    //             $('#zoom_image').smoothZoom('focusTo',{
-    //     			x: store_x_coordinate,
-    //     			y: store_y_coordinate,
-    //     			zoom: 120,
-    //     			speed: 5
-    //     		});
-    //         });
 		    var stores = getStoresList();
             var regions = {}
             $.each( stores , function( key, val ) {
