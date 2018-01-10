@@ -113,7 +113,7 @@
             //     $('#page_title').text("Login");
             // }
             
-            if ($.cookie("tenant_login") == "true"){
+            if ($.cookie("tenant_login") !== "true"){
                 console.log("tenant is logged in")
                     window.location.href = "/tenant_login";        
                 }
