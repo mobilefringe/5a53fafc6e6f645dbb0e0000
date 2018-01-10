@@ -89,7 +89,7 @@
                     <script id="home_promo_template" type="x-tmpl-mustache/text">
                         <div class="margin_30">
                             <div style="position:relative;">
-                                <h3 class="home_store_name" {{store_name}} </h3>
+                                <h3 class="home_store_name"> {{store_name}} </h3>
                             </div>
                             
                             <h2 class="home_promo_name"> {{name}} </h2>
