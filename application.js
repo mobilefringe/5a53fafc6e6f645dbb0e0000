@@ -657,6 +657,12 @@ function renderStoreDetails(container, template, collection, slug){
             val.show = "display:none";
         }
         
+        if (val.website != null && val.website.length > 0){
+            val.show = "display:inline-block";
+        } else {
+            val.show = "display:none";
+        }
+        
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
     });
