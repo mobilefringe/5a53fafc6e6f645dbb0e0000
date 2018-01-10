@@ -88,14 +88,14 @@
     </div>
     <div class="row">
         <div class="col-md-12">
-        <div class="manual_list">
-            <h3 class="manual_title">
-                list all                
-            </h3>
-            <div class="store_list_padding">
-                
+            <div class="manual_list">
+                <h3 class="manual_title">
+                    list all                
+                </h3>
+                <div class="store_list_padding">
+                    
+                </div>
             </div>
-        </div>
         
         <div class="unit_info manual_info">
             {{page.body}}
