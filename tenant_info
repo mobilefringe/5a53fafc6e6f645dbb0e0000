@@ -232,7 +232,7 @@
     function getURLParameter (val) {
         console.log(val);
         console.log(window.location);
-        var new_val = window.location.search.split(val+"=");
+        var new_val = window.location.search.split(val+"=")[1];
         console.log(new_val);
     }
     function show_manual(id){
