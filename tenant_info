@@ -231,7 +231,7 @@
     });
     function getURLParameter (val) {
         console.log(val);
-        console.log();
+        console.log(window.location.pathname);
         var new_val = window.location.pathname.split(val);
         console.log(new_val);
     }
