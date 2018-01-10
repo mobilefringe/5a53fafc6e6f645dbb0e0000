@@ -936,7 +936,9 @@ a {
 }
 
 .tenant_select{
-    
+    select {
+        
+    }
 }
 /* *** PHOTOS *** */
 .portfolio_item {
