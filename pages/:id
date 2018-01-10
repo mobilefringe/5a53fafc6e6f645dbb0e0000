@@ -14,7 +14,7 @@
     <div id="tenant_login">
         <form name="tenant_login_form" id="tenant_login_form" method="post">
             <input name="username" id="username" class="form-control" type="text" value="" placeholder="Username" required>
-            <input name="password" id="password" class="form-control" type="password" value="" placeholder="Password" required>
+            <input name="pin" id="pin" class="form-control" type="password" value="" placeholder="Password" required>
             <button id="submit" class="contact_btn" type="submit">SUBMIT</button>
         </form>
     </div>
