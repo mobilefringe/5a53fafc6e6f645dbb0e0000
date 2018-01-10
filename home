@@ -164,16 +164,6 @@
             renderGeneral('#feature_container','#feature_template', three_items);
             renderGeneral('#single_feature_container','#single_feature_template', single_item);
 
-            // // RESTAURANTS LIST //
-            // var cat_one = getStoresListByCategoryID(1600);
-            // var cat_two = getStoresListByCategoryID(1686);
-            // var cat_three = getStoresListByCategoryID(2146);
-            // var cat_four = getStoresListByCategoryID(3030);
-            // var cat_five = getStoresListByCategoryID(3024);
-            // var cat_six = getStoresListByCategoryID(2144);
-            
-            // var dine_list = cat_one.concat(cat_two, cat_three, cat_four, cat_five, cat_six).sortBy(function(o){ return o.name});
-            // var sorted_list = _.uniq(dine_list, function(o){ return o.name; });
             var promotions = getPromotionsList().sortBy(function(o){ return o.end_date });
             var published_promos = [];
             $.each(promotions, function(key, val){
