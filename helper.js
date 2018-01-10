@@ -208,7 +208,7 @@ function store_search() {
         $("#search_results_stores").hide();
         $('#site_search').val('');
         $('#search_icon').show();
-        $("#site_search").hide();
+        $("#close_search").hide();
     })
     $('#site_search').keyup(function(){
         if ($('#site_search').val() == ""){
