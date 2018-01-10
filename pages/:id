@@ -43,7 +43,7 @@
             
             if(slug == "svc-tenant-login") {
                 $("#tenant_login").show();
-                $('#mm_page_title').text("Login");
+                // $('#mm_page_title').text("Login");
             }
             
             
@@ -65,7 +65,7 @@
                                     $(".tenant_select").show();
                                     // $(".flexslider").remove();
                                     // $(".login_title").remove();
-                                    $('#mm_page_title').text("Welcome");
+                                    // $('#mm_page_title').text("Welcome");
                                     window.scrollTo(0,0);
                                     var date = new Date();
                                     var minutes = 15;
