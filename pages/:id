@@ -23,7 +23,7 @@
             <input name="pin" id="pin" class="form-control" type="password" value="" placeholder="Password" required>
         </div>
         <div class="col-sm-6">
-        <button id="submit" class="contact_btn" type="submit" style="float:left">SUBMIT</button>
+            <button id="submit" class="contact_btn" type="submit" style="float:left">SUBMIT</button>
         </div>
         </form>
     </div>
