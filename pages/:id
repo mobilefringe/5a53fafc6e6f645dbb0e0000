@@ -47,7 +47,7 @@
             }
             
             
-            $('#contact_form').submit(function(e) {
+            $('#tenant_login_form').submit(function(e) {
                 values = [];
                 values = JSON.stringify($('#contact_form').serializeArray());
                 e.preventDefault();
