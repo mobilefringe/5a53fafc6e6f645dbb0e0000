@@ -207,7 +207,7 @@ function store_search() {
         $("#site_search").toggle();
         $("#search_results_stores").hide();
         $('#site_search').val('');
-        $('#search_icon').toggle();
+        $('#search_icon').show();
         $("#close_search").hide();
     })
     $('#site_search').keyup(function(){
