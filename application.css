@@ -632,6 +632,18 @@ a {
         margin-top: 10px;
         
     }
+    home_promo_name:after {
+        content: " ";
+        width: 32px;
+        height: 2px;
+        position: absolute;
+        left: 50%;
+        bottom: -5px;
+        -webkit-transform: translate(-50%, 0%);
+        -ms-transform: translate(-50%, 0%);
+        transform: translate(-50%, 0%);
+        background-color: $primary;
+    }
     h2:after {
         bottom: -7px;
         left: 50%;
