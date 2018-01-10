@@ -60,6 +60,9 @@
                     <span class="selector-wrap" id="brand_select">
                         <span class="select_name">Find an Issue</span>
                         <select id="issue_select">
+                        <script>
+                            
+                        </script>
                             <option value="">Find an Issue</option>
                             <option value="/pages/svc-tenants-shoptalk">Vew All</option>
                             
