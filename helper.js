@@ -190,6 +190,7 @@ function store_search() {
     });
     $('#close_search').click(function(){
         $(this).hide();
+        $(".site_search_results").hide()
         $('#search_results_stores').html('');
         $('#search_results_events').html('');
         $('#search_results_promotions').html('');
