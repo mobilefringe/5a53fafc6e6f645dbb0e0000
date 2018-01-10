@@ -103,15 +103,6 @@
         </div>
     </div>
     <div class="flex_container">
-        <!--<div id="single_feature_container">-->
-        <!--    <script id="single_feature_template" type="x-tmpl-mustache/text">-->
-        <!--        <div class="width_50">-->
-        <!--            <img src="{{image_url}}" alt="Promotional Image">-->
-        <!--        </div>-->
-        <!--    </script>-->
-        <!--</div>-->
-        
-        
         <div class="width_50">
             <div class="home_promos">
                 <!--<h2 class="details_title">Restaurants & Eateries</h2>-->
