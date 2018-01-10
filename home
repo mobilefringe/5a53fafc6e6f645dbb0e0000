@@ -201,6 +201,7 @@
                         item.title = el.find("title").text());
                         item.link = el.find("link").text());
                         item.description =  el.find("description").text());
+                        
                     });
                     console.log("blog", $title);
                 }
