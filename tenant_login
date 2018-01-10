@@ -184,12 +184,12 @@
             $('#memo_select').prepend('<option value="" selected="selected" disabled>Pick an Memo</option>');
             
             $("#menual_select").change(function(){
-            if ($(this).val() == "" ){
-                window.location.href = "/pages/svc-tenants-manual";            
-            } else {
-                window.location.href = "/pages/svc-tenants-manual?show="+$(this).val();            
-            }
-        })
+                if ($(this).val() == "" ){
+                    window.location.href = "/pages/svc-tenants-manual";            
+                } else {
+                    window.location.href = "/pages/svc-tenants-manual?show="+$(this).val();            
+                }
+            });
         
             show_content();
         }
