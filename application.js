@@ -658,7 +658,7 @@ function renderStoreDetails(container, template, collection, slug){
         }
         
         if (val.phone != null && val.phone.length > 0){
-            val.show = "display:inline-block";
+            val.show_phone = "display:inline-block";
         } else {
             val.show = "display:none";
         }
