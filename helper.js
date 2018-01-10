@@ -211,7 +211,7 @@ function store_search() {
             $('#search_icon').show();
             $("#close_search").hide(); 
             
-        }, 3000);
+        }, 1000);
         
     })
     $('#site_search').keyup(function(){
