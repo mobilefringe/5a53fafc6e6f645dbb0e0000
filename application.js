@@ -652,9 +652,9 @@ function renderStoreDetails(container, template, collection, slug){
         val.property_map = getPropertyDetails().mm_host + getPropertyDetails().map_url;
         
         if (val.website != null && val.website.length > 0){
-            val.show = "display:inline-block";
+            val.show_website = "display:inline-block";
         } else {
-            val.show = "display:none";
+            val.show_website = "display:none";
         }
         
         if (val.phone != null && val.phone.length > 0){
