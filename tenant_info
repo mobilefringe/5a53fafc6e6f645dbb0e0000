@@ -228,5 +228,8 @@
             show_content();
         }
         loadMallDataCached(renderAll); 
-    })
+    });
+    function getURLParameter () {
+        
+    }
 </script>
