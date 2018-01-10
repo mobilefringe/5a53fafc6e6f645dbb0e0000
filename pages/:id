@@ -56,7 +56,7 @@
                   data["pin"] = $("#pin").val();
                   if ($("#username").val() !="" && $("#pin").val() != ""){
                       $.ajax({
-                            url: "/verify_pin",
+                            url: get_prefix + "/verify_pin",
                             type: "POST",
                             data: data,
                             success: function(response){
