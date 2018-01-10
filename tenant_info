@@ -14,7 +14,7 @@
     <div>
         <h2 id="page_title"></h2>
     </div>
-    <div class="row">
+    <div class="col-sm-12">
        <p>
             This manual is intended to aid you in the day-to-day operations of your store and to hopefully answer any and all questions you may have regarding your tenancy at St. Vital Centre. Should you have any questions or concerns, please feel free to contact the Administration Office at any time and we will be pleased to assist you.
         </p>
