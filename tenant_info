@@ -14,19 +14,19 @@
     <div>
         <h2 id="page_title"></h2>
     </div>
-    <!--<div id="tenant_login" class="row">-->
-    <!--    <form name="tenant_login_form" id="tenant_login_form" method="post" class="col-sm-6" style="padding: 10px;">-->
-    <!--    <div class="col-sm-12">-->
-    <!--        <input name="username" id="username" class="form-control" type="text" value="" placeholder="Username" required>-->
-    <!--    </div>-->
-    <!--    <div class="col-sm-12">-->
-    <!--        <input name="pin" id="pin" class="form-control" type="password" value="" placeholder="Password" required>-->
-    <!--    </div>-->
-    <!--    <div class="col-sm-12">-->
-    <!--        <button id="submit" class="contact_btn" type="submit" style="float:left">SUBMIT</button>-->
-    <!--    </div>-->
-    <!--    </form>-->
-    <!--</div>-->
+    <div id="tenant_login" class="row">
+        <form name="tenant_login_form" id="tenant_login_form" method="post" class="col-sm-6" style="padding: 10px;">
+        <div class="col-sm-12">
+            <input name="username" id="username" class="form-control" type="text" value="" placeholder="Username" required>
+        </div>
+        <div class="col-sm-12">
+            <input name="pin" id="pin" class="form-control" type="password" value="" placeholder="Password" required>
+        </div>
+        <div class="col-sm-12">
+            <button id="submit" class="contact_btn" type="submit" style="float:left">SUBMIT</button>
+        </div>
+        </form>
+    </div>
     <div>
         <div class="row-fluid tenant_select store_list_padding hidden_now" >
                 <div class="col-sm-4">
