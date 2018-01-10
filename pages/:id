@@ -165,7 +165,7 @@
     		});
     		
     		//populating tenant select div
-    		var shop_talks = getRepoDetailsByName("photos").images;
+    		var shop_talks = getRepoDetailsByName("Shoptalk").images;
             renderGeneral("#portfolio_container", "#portfolio_template", leasing_photos)
     		
             show_content();
