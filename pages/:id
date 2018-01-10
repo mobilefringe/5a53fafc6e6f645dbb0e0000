@@ -163,6 +163,8 @@
                       alert("Please provide username and password.");
                   }
     		});
+    		
+    		//populaing tenant select div
             show_content();
         }
         loadMallDataCached(renderAll); 
