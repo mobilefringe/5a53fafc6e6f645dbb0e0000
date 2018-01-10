@@ -22,7 +22,7 @@
         <div>
             
         </div>
-            <input name="pin" id="pin" class="form-control" type="password" value="" placeholder="Password" required>
+            
             <button id="submit" class="contact_btn" type="submit">SUBMIT</button>
         </form>
     </div>
