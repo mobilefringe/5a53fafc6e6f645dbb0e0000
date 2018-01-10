@@ -200,6 +200,7 @@ function store_search() {
         $('#site_search').val('');
         $('#search_icon').show();
         $("#site_search").hide();
+        console.log("closing search")
     });
     $("#site_search").focusout(function() {
         console.log("not focused");
