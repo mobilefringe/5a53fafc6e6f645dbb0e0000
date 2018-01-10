@@ -192,7 +192,7 @@
                       $xml = $( xmlDoc ),
                       $title = $xml.find( "title" );
                     console.log(xml);
-                     $title = $(xml).find( "item" ); 
+                    //  $title = $(xml).find( "item" ); 
                     console.log("blog", $title);
                 }
             });
