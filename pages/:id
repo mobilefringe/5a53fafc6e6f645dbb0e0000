@@ -159,7 +159,7 @@
             
     		var shop_talks = getRepoDetailsByName("Shoptalk").images;
     		$.each(shop_talks, function(key, val){
-    		    console.log(val.name);
+    		    val.edited_name = 
     		})
             renderGeneral("#issue_select", "#issue_select_template", shop_talks);
             
