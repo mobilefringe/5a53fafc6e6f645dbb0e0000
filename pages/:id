@@ -162,7 +162,7 @@
             $('#mySelect').append($('<option>', {value: "",text: 'Find an Issue'}));
             $('#mySelect').append($('<option>', {value: "/pages/svc-tenants-shoptalk",text: 'View All'}));
     		var shop_talks = getRepoDetailsByName("Shoptalk").images;
-            renderGeneral("#portfolio_container", "#portfolio_template", shop_talks)
+            renderGeneral("#issue_select", "#issue_select_template", shop_talks)
     		$("#").();
     		
             show_content();
