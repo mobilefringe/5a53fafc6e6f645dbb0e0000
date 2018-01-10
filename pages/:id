@@ -60,11 +60,11 @@
                     <span class="selector-wrap" id="brand_select">
                         <!--<span class="select_name">Find an Issue</span>-->
                         <select id="issue_select">
-                        <script id="issue_select_template" type="">
-                            <option value="image_url">
-                                {{name}}                                            
-                            </option>    
-                        </script>
+                            <script id="issue_select_template" type="">
+                                <option value="image_url">
+                                    {{name}}                                            
+                                </option>    
+                            </script>
                         </select>
                         <span class="select_icon"></span>
                     </span>
