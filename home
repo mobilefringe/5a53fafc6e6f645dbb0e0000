@@ -84,7 +84,7 @@
         </div>
         <div class="width_50">
             <div class="home_promos">
-                <h2 class="details_title">News</h2>
+                <h2 class="details_title caps">News</h2>
                 <div id="home_promo_container" class="dine_container margin_20">
                     <script id="home_promo_template" type="x-tmpl-mustache/text">
                         <div class="margin_30">
