@@ -119,7 +119,7 @@
                     </div>
                     <div class="site_search pull-right">
                         <label class="top_form_control no_margin">
-                            <input type="text" placeholder="Search Stores" id="site_search" class="hidden_now"/>
+                            <input type="text" placeholder="Search Stores" id="site_search" />
                             <i id="search_icon" class="fa fa-search"></i>
                             <i id="close_search" class="fa fa-times-circle"></i>
                         </label>
