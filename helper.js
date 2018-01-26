@@ -184,10 +184,8 @@ function show_png_pin(trigger, map){
     });
 }
 
-function store_search() {
-    $('#close_search').click(function(){
+$('#close_search').click(function(){
         $(this).hide();
-        $("#search_results_stores").hide();
         $('#search_results_stores').html('');
         $('#search_results_events').html('');
         $('#search_results_promotions').html('');
@@ -196,21 +194,7 @@ function store_search() {
         $('#search_results_promotions').hide();
         $('#site_search').val('');
         $('#search_icon').show();
-        $("#site_search").hide();
-        console.log("closing search")
     });
-    // $("#site_search").focusout(function() {
-    //     setTimeout(function(){ 
-    //         console.log("not focused");
-    //         $("#site_search").toggle();
-    //         $("#search_results_stores").hide();
-    //         $('#site_search').val('');
-    //         $('#search_icon').show();
-    //         $("#close_search").hide(); 
-            
-    //     }, 1000);
-        
-    // })
     $('#site_search').keyup(function(){
         if ($('#site_search').val() == ""){
             $('#search_results_stores').html('');
@@ -219,11 +203,11 @@ function store_search() {
             $('#search_results_stores').hide();
             $('#search_results_events').hide();
             $('#search_results_promotions').hide();
-            // $('#close_search').hide();
-            // $('#search_icon').show();
+            $('#close_search').hide();
+            $('#search_icon').show();
         } else {
-            // $('#close_search').show();
-            // $('#search_icon').hide();
+            $('#close_search').show();
+            $('#search_icon').hide();
             $('#search_results_stores').html('');
             $('#search_results_events').html('');
             $('#search_results_promotions').html('');
