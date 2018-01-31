@@ -502,7 +502,27 @@ function renderPromotions(container, template, collection){
             }
         }
         else {
+            val.store_name = mall_name;
+            val.image_url = val.event_image_url_abs;
+            val.logo  = default_image.image_url;
+            if(val.image_url.indexOf('missing.png') > 0){
+                val.image_url  = val.logo;
+            }
             
+            if (val.name.length > 30){
+                val.name_short = val.name.substring(0,30) + "...";
+            } else {
+                val.name_short = val.name;
+            }
+            
+            var show_date = moment(val.show_on_web_date);
+            var start = moment(val.start_date).tz(getPropertyTimeZone());
+            var end = moment(val.end_date).tz(getPropertyTimeZone());
+            if (start.format("DMY") == end.format("DMY")){
+                val.dates = start.format("MMM D")
+            } else {
+                val.dates = start.format("MMM D") + " - " + end.format("MMM D")
+            }
         }
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
