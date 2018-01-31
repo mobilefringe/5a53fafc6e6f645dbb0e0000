@@ -500,6 +500,8 @@ function renderPromotions(container, template, collection){
             } else {
                 val.short_desc = val.description;
             }
+            
+            val.promo_slug = "/promotions/" + val.slug;
         }
         else {
             val.store_name = mall_name;
