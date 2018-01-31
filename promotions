@@ -46,6 +46,7 @@
             
             var promotions = getPromotionsList().sortBy(function(o){ return o.end_date });
             var events = getEventsList().sortBy(function(o){ return o.end_date });
+            var combined_list = $.merge(promotions, events);
             var published_promos = [];
             $.each(promotions, function(key, val){
                 today = moment();
