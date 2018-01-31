@@ -444,7 +444,7 @@ function renderPromotions(container, template, collection){
     var template_html = $(template).html();
     Mustache.parse(template_html); 
     $.each( collection , function( key, val ) {
-        if(val.type === "Promotion") {
+        if(val.type === "Event") {
             
             val.store_name = mall_name;
             val.image_url = val.event_image_url_abs;
@@ -593,7 +593,7 @@ function renderStoreList(container, template, collection, type){
         
         var current_initial = val.name[0];
         if(isInt(current_initial)){
-            current_initial = "7";
+            current_initial = "#";
         }
         
         if(store_initial.toLowerCase() == current_initial.toLowerCase()){
