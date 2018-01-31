@@ -70,7 +70,7 @@
     </div>
 </div>
 <div class="content_container">
-    <div class="flex_container">
+    <div class="promo_blog_container">
         <!--<div id="single_feature_container">-->
         <!--    <script id="single_feature_template" type="x-tmpl-mustache/text">-->
         <!--        <div class="width_50">-->
@@ -102,7 +102,7 @@
             </div>
         </div>
     </div>
-    <div class="flex_container">
+    <div class="promo_blog_container">
         <div class="width_50 hidden_phone">
             <div class="home_promos ">
                 <h2 class="details_title">Life. Style. Blog</h2>
