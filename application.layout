@@ -174,22 +174,40 @@
             <div class="content_container">
                 <div class="row">
                     <div class="col-md-4 footer_center">
-                        <h3 class="footer_nav_title caps">Location</h3>
-                        <div class="margin_60 hidden_phone"></div>
-                        <div class="footer_address">
-                            <p class="caps">St Vital Centre</p>
-                            <p class="">86-1225 St. Mary's Road. <br> Winnipeg, MB R2M 5E5</p>
+                        <h3 class="footer_nav_title caps">Mall Hours</h3>
+                        <div class="margin_30 hidden_phone"></div>
+                        <!--<div class="footer_address">-->
+                        <!--    <p class="caps">Twin Pines Mall</p>-->
+                        <!--    <p class="">216 Chrislea Road<br>Vaughan, ON L4L 8S5</p>-->
+                        <!--</div>-->
+                        <!--<div class="footer_logo">-->
+                        <!--    <a href="//www.mallmaverick.com" target="_blank">-->
+                        <!--        <img src="//codecloud.cdn.speedyrails.net/sites/5a3820a06e6f6441880e0000/image/png/1513700491203/cornwall_logo.png" alt="Bentall Kennedy Logo">-->
+                        <!--    </a>-->
+                        <!--</div>-->
+                        <!--<a href="/">-->
+                        <!--    <div class="footer_btn">-->
+                        <!--        <div class="footer_btn_text caps">Enter Our Contest</div>-->
+                        <!--        <div class="footer_btn_icon">-->
+                        <!--            <i class="fa fa-trophy" aria-hidden="true"></i>-->
+                        <!--        </div>-->
+                        <!--    </div>-->
+                        <!--</a>-->
+                        <div id="home_reg_hours_container">
+                            <script id="home_reg_hours_template" type="x-tmpl-mustache/text">
+                                <div class="hours_div">
+                                    <div class="day">{% raw %}{{day}}{% endraw %}:</div>
+                                    <div class="time">{% raw %}{{h}}{% endraw %}</div>
+                                </div>
+                            </script>
                         </div>
-                        <div class="footer_logo">
-                            <a href="//www.mallmaverick.com" target="_blank">
-                                <img src="//codecloud.cdn.speedyrails.net/sites/5a53fafc6e6f645dbb0e0000/image/png/1495562552000/logo.png" alt="Bentall Kennedy Logo">
-                            </a>
-                        </div>
-                        <a href="/">
+                        <div class="margin_60 hidden_phone" style="margin-bottom: 85px;"></div>
+                        <a href="/stores">
                             <div class="footer_btn">
-                                <div class="footer_btn_text caps">Enter Our Contest</div>
+                                <div class="footer_btn_text caps">Go to Directories</div>
                                 <div class="footer_btn_icon">
-                                    <i class="fa fa-trophy" aria-hidden="true"></i>
+                                    <!--<i class="fa fa-map-o" aria-hidden="true"></i>-->
+                                    <img src="//codecloud.cdn.speedyrails.net/sites/5a3820a06e6f6441880e0000/image/png/1517342211000/directoryicon.png" class="" alt="">
                                 </div>
                             </div>
                         </a>
@@ -197,33 +215,44 @@
                     <hr class="horizontal_div show_phone">
                     <div class="col-md-4">
                         <h3 class="footer_nav_title caps">Menu</h3>
-                        <div class="margin_60 hidden_phone" style="margin-bottom: 40px;"></div>
+                        <div class="margin_30 hidden_phone"></div>
                         <ul class="footer_menu footer_menu_left">
                             <li><a href="/map">Map</a></li>
-                            <li><a href="/promotions">Promotions</a></li>
+                            <!--<li><a href="/promotions">Promotions</a></li>-->
                             <li><a href="/events">Events</a></li>
-                            <li><a href="/jobs">Jobs</a></li>
+                            <li><a href="/contact_us">Contact Us</a></li>
                         </ul>
                         <ul class="footer_menu footer_menu_right">
                             <li><a href="/find_us">Location</a></li>
-                            <li><a href="/pages/svc-community">Community</a></li>
-                            <li><a href="/kids_club">Kid's Club</a></li>
+                            <li><a href="/jobs">Jobs</a></li>
+                            <li><a href="/leasing">Leasing</a></li>
                         </ul>  
-                        <a href="/newsletter">
+                        <div class="margin_30 hidden_phone"></div>
+                        <a href="/blog_newsletter">
                             <div class="footer_btn">
-                                <div class="footer_btn_text caps">Join Our Newsletter</div>
+                                <div class="footer_btn_text caps">Sign up for our Blog</div>
                                 <div class="footer_btn_icon">
-                                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                    <!--<i class="fa fa-envelope-o" aria-hidden="true"></i>-->
+                                    <img src="//codecloud.cdn.speedyrails.net/sites/5a3820a06e6f6441880e0000/image/png/1517342121000/crownicon.png" class="" alt="">
                                 </div>
                             </div>
                         </a>
                     </div>
                     <hr class="horizontal_div show_phone">
                     <div class="col-md-4 footer_center">
-                        <h3 class="footer_nav_title caps">Twitter</h3>
-                        <div class="margin_20"></div>
-                        <a class="twitter-timeline" data-height="360" data-theme="light" data-link-color="#DF62A5" href="https://twitter.com/StVitalCentre"></a> 
-                        <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        <h3 class="footer_nav_title caps">Instagram</h3>
+                        <div class="margin_20 visible-sm-block visible-xs-block"></div>
+                            <a target="_blank" href="//www.instagram.com/cornwallcentre/">
+                            <!--<h3 class="footer_explore"></h3>-->
+                                
+                            </a>
+                            <div>
+                                <div id="instafeed"></div>
+                            </div>
+                        
+                        <!--<div class="margin_20"></div>-->
+                        <!--<a class="twitter-timeline" data-height="360" data-theme="light" data-link-color="#DF62A5" href="https://twitter.com/CornwallCentre"></a> -->
+                        <!--<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>-->
                     </div>
                 </div>
             </div>
