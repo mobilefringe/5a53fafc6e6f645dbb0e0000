@@ -4,7 +4,7 @@
             <script id="banner_template" type="x-tmpl-mustache/text">
                 <li>
                     <a href="{{url}}" {{css}} onclick="{{noLink}}">
-                        <div class="banner_img" style="background-image: url({{image_url}});"
+                        <div class="banner_img" style="background-image: url({{image_url}});"></div>
                     </a>
                 </li>
             </script>
