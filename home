@@ -11,32 +11,6 @@
         </ul>
     </div>
 </div>
-<!--<div class="home_banner">   -->
-<!--    <div class="flexslider">-->
-<!--        <ul class="slides">-->
-<!--            <li>-->
-<!--                <a href="{{url}}">-->
-<!--                    <div class="banner_img" style="background-image: url('//codecloud.cdn.speedyrails.net/sites/5a53fafc6e6f645dbb0e0000/image/png/1510775101000/banner2.png');"></div>-->
-<!--                </a>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href="{{url}}">-->
-<!--                    <div class="banner_img" style="background-image: url('//codecloud.cdn.speedyrails.net/sites/5a53fafc6e6f645dbb0e0000/image/png/1510775102000/banner4.png');"></div>-->
-<!--                </a>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href="{{url}}">-->
-<!--                    <div class="banner_img" style="background-image: url('//codecloud.cdn.speedyrails.net/sites/5a53fafc6e6f645dbb0e0000/image/png/1510775102000/banner3.png');"></div>-->
-<!--                </a>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <a href="{{url}}">-->
-<!--                    <div class="banner_img" style="background-image: url('//codecloud.cdn.speedyrails.net/sites/5a53fafc6e6f645dbb0e0000/image/png/1510775101000/banner1.png');"></div>-->
-<!--                </a>-->
-<!--            </li>-->
-<!--        </ul>-->
-<!--    </div>-->
-<!--</div>-->
 <div class="feature_container">
     <div class="content_container">
         <!--<div class="flex_container">-->
