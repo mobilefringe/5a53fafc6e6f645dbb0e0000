@@ -138,7 +138,7 @@
         <!--        </div>-->
         <!--        <p class="home_see_all"><a href="http://www.stvitalcentrespark.com/">See all news articles </a> <i class="fa fa-angle-right" aria-hidden="true"></i></p>-->
         <!--    </div>-->
-        </div>
+        <!--</div>-->
     </div>
     <div class="instafeed_container">
         <div id="instafeed"></div> 
