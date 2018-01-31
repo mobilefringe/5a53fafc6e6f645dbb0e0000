@@ -444,63 +444,63 @@ function renderPromotions(container, template, collection){
     var template_html = $(template).html();
     Mustache.parse(template_html); 
     $.each( collection , function( key, val ) {
-        if(val.type === "Promotions")
-        if (val.promotionable_type == "Store") {
-            var store_details = getStoreDetailsByID(val.promotionable_id);
-            val.store_detail_btn = store_details.slug ;
-            val.store_name = store_details.name;
-            if(val.promo_image_url_abs.indexOf('missing.png') > 0){
-                val.image_url = store_details.store_front_url_abs;
+        if(val.type === "Promotions") {
+            if (val.promotionable_type == "Store") {
+                var store_details = getStoreDetailsByID(val.promotionable_id);
+                val.store_detail_btn = store_details.slug ;
+                val.store_name = store_details.name;
+                if(val.promo_image_url_abs.indexOf('missing.png') > 0){
+                    val.image_url = store_details.store_front_url_abs;
+                } else {
+                    val.image_url = val.promo_image_url_abs;
+                }
             } else {
-                val.image_url = val.promo_image_url_abs;
+                val.store_name = mall_name;
+                if(val.promo_image_url_abs.indexOf('missing.png') > 0){
+                    val.image_url = default_image.image_url;
+                } else {
+                    val.image_url = val.promo_image_url_abs;
+                }
             }
-        } else {
-            val.store_name = mall_name;
-            if(val.promo_image_url_abs.indexOf('missing.png') > 0){
-                val.image_url = default_image.image_url;
+    
+            var show_date = moment(val.show_on_web_date);
+            var start = moment(val.start_date).tz(getPropertyTimeZone());
+            var end = moment(val.end_date).tz(getPropertyTimeZone());
+            var today = moment().tz(getPropertyTimeZone());
+            if (start.format("DMY") == end.format("DMY")){
+                val.dates = start.format("MMM D")
             } else {
-                val.image_url = val.promo_image_url_abs;
-            }
-        }
-
-        var show_date = moment(val.show_on_web_date);
-        var start = moment(val.start_date).tz(getPropertyTimeZone());
-        var end = moment(val.end_date).tz(getPropertyTimeZone());
-        var today = moment().tz(getPropertyTimeZone());
-        if (start.format("DMY") == end.format("DMY")){
-            val.dates = start.format("MMM D")
-        } else {
-            val.dates = start.format("MMM D") + " - " + end.format("MMM D")
-        }
-        
-        if(today.format("DMY") == end.format("DMY")){
-            val.days_left = "SALE ENDS TODAY!";
-            // console.log(val.days_left);
-        }
-        else if (end.diff(today, 'days',true) < 5) {
-            var day_diff = Math.ceil(end.diff(today, 'days',true));
-            if(day_diff >0 && day_diff<=1){
-                val.days_left = "1 DAY LEFT";
-            }
-            else {
-                val.days_left =day_diff + " DAYS LEFT";
+                val.dates = start.format("MMM D") + " - " + end.format("MMM D")
             }
             
-            //  console.log(today.format("DMY") , end.format("DMY"), today.format("DMY") == end.format("DMY"))
-            // console.log(val.days_left);
+            if(today.format("DMY") == end.format("DMY")){
+                val.days_left = "SALE ENDS TODAY!";
+                // console.log(val.days_left);
+            }
+            else if (end.diff(today, 'days',true) < 5) {
+                var day_diff = Math.ceil(end.diff(today, 'days',true));
+                if(day_diff >0 && day_diff<=1){
+                    val.days_left = "1 DAY LEFT";
+                }
+                else {
+                    val.days_left =day_diff + " DAYS LEFT";
+                }
+                
+                //  console.log(today.format("DMY") , end.format("DMY"), today.format("DMY") == end.format("DMY"))
+                // console.log(val.days_left);
+            }
+            if(val.description.length > 160){
+                val.description_short = val.description.substring(0, 164) + "...";
+            } else {
+                val.description_short = val.description;
+            }
+            
+            if(val.description.length > 40){
+                val.short_desc = val.description.substring(0, 39) + "...";
+            } else {
+                val.short_desc = val.description;
+            }
         }
-        if(val.description.length > 160){
-            val.description_short = val.description.substring(0, 164) + "...";
-        } else {
-            val.description_short = val.description;
-        }
-        
-        if(val.description.length > 40){
-            val.short_desc = val.description.substring(0, 39) + "...";
-        } else {
-            val.short_desc = val.description;
-        }
-        
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
     });
