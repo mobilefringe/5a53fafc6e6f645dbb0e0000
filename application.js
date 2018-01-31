@@ -501,6 +501,9 @@ function renderPromotions(container, template, collection){
                 val.short_desc = val.description;
             }
         }
+        else {
+            
+        }
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
     });
