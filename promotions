@@ -46,7 +46,7 @@
             
             var promotions = getPromotionsList().sortBy(function(o){ return o.end_date });
             $.map( promotions, function( val, i ) {
-                val.type = "Event";
+                val.type = "Promotion";
             });
             var events = getEventsList().sortBy(function(o){ return o.end_date });
             $.map( events, function( val, i ) {
