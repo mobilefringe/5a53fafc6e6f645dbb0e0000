@@ -162,7 +162,7 @@
         <div class="col-sm-6 subscribeBlog">
             <h1>Sign up for our e-blast</h1> 
              
-            <form action="//mobilefringe.createsend.com/t/d/s/ykouu/" method="post" id="newsletterBlogForm">
+            <form action="http://app.emediatemail.com/t/r/s/jtoujj/" method="post" id="newsletterBlogForm">
                 <label for="fieldEmail" style="display:none"></label>
                 <input id="fieldEmail" name="cm-tkyhii-tkyhii" class="form-control" type="email" value="" placeholder="Email Address" required/> 
                 <button class="contact_btn" data-i18n="general.submit">Sign Up</button>
