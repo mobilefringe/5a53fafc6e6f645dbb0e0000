@@ -161,7 +161,7 @@
         </div>
         <div class="col-sm-6 subscribeBlog">
             <h1>Sign up for our e-blast</h1> 
-             
+            <br>
             <form action="http://app.emediatemail.com/t/r/s/jtoujj/" method="post" id="newsletterBlogForm">
                 <label for="fieldEmail" style="display:none"></label>
                 <input id="fieldEmail" name="cm-jtoujj-jtoujj" class="form-control" type="email" value="" placeholder="Email Address" required/> 
