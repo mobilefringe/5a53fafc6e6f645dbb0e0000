@@ -1,0 +1,82 @@
+<div class="inside_banner">   
+    <div class="content_container">
+        <div class="inside_banner_content">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>Blog Newsletter</h1>
+                </div>
+                <div class="col-md-6 hidden_phone">
+                    <h4 class="pull-right">Blog Newsletter</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content_container margin_30">
+    <div class="margin_30"></div>
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Sign Up to Queen City Current</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="margin_30 hidden_phone"></div>
+            <p class="">Stay updated on the latest news with our carefully curated newsletters!</p>
+            <hr class="horizontal_div show_phone">
+        </div> 
+        <div class="col-md-6">
+            <form action="//mobilefringe.createsend.com/t/d/s/fjdtyy/" method="post" id="subForm">
+                <label for="fieldEmail" style="display:none"></label>
+                <input id="fieldEmail" name="cm-iltjiiu-iltjiiu" class="form-control" type="email" value="" placeholder="Your Email" required/> 
+                
+                <label for="agree_terms">
+                    <input type="checkbox" class="info_check" id="agree_terms" required>
+                    I agree to receive emails from Cornwall Centre <!--Change to Mall Name -->
+                </label>
+                <div id="RecaptchaField1"></div>
+                <br>
+                <button class="contact_btn" data-i18n="general.submit">SUBMIT</button>
+                <br>
+                <span id="success_subscribe" class="hidden_now">Thank you for subscribing to our newsletter.</span>
+            </form>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function(e){
+        init(e);
+        function renderAll(){
+            $.validate();
+            $('#subForm').submit(function (e) {
+                data = {"g-recaptcha-response": $('#subForm .g-recaptcha-response').val()}
+                $.post("https://cornwall.mallmaverick.com/verify_captcha", data, function(response){
+                    if(response.success == false){
+                        grecaptcha.reset(widgetId1);
+                        alert("Please validate captcha");
+                        return false;
+                    }
+                })
+                if ($("#agree_terms").prop("checked") != true){
+                    alert("Please agree to the term and conditions.");
+                    $("#agree_terms").focus();
+                    return false;
+                }
+                e.preventDefault();
+                $.getJSON(
+                    this.action + "?callback=?",
+                    $(this).serialize(),
+                    function (data) {
+                        if (data.Status === 400) {
+                            alert("Please try again later.");
+                        } else { // 200
+                            $('#subForm').trigger('reset');
+                            $("#success_subscribe").fadeIn();
+                        }
+                    });
+            });
+            show_content();
+        }
+        loadMallDataCached(renderAll); 
+    });
+</script>
