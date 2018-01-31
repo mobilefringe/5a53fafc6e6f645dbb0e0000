@@ -156,6 +156,9 @@
 
 <div class="home_subscription">
     <div class="subscribeBlog content_container">
+    <div class="col-sm-6">
+        
+    </div>
          <h1>Sign up for our e-newsletter</h1> 
          <img scr="via.placeholder.com/350x150">
         <form action="//mobilefringe.createsend.com/t/d/s/ykouu/" method="post" id="newsletterBlogForm">
