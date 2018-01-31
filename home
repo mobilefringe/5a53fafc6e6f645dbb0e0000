@@ -155,7 +155,7 @@
 </div>
 
 <div class="home_subscription">
-    <div class=" content_container">
+    <!--<div class=" content_container">-->
         <div class="col-sm-6 kids_club">
             <img src="http://via.placeholder.com/800x400" class="" alt="">
         </div>
@@ -171,7 +171,7 @@
             </form>
         </div>
          
-    </div>
+    <!--</div>-->
 </div>
 
 <script>
