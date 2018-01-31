@@ -157,13 +157,11 @@
 <div class="home_subscription">
     <div class="subscribeBlog content_container">
     <div class="col-sm-6">
-        
+        <img scr="via.placeholder.com/350x150">
     </div>
     <div class="col-sm-6">
-        
-    </div>
-         <h1>Sign up for our e-newsletter</h1> 
-         <img scr="via.placeholder.com/350x150">
+        <h1>Sign up for our e-newsletter</h1> 
+         
         <form action="//mobilefringe.createsend.com/t/d/s/ykouu/" method="post" id="newsletterBlogForm">
             <label for="fieldEmail" style="display:none"></label>
             <input id="fieldEmail" name="cm-tkyhii-tkyhii" class="form-control" type="email" value="" placeholder="Email address" required/> 
@@ -171,6 +169,8 @@
             
             <span id="success_subscribe" class="hidden_now">Thank you for subscribing to our newsletter.</span>
         </form>
+    </div>
+         
     </div>
 </div>
 
