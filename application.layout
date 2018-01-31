@@ -147,16 +147,16 @@
                                     </ul>        
                                 </li>
                                 <li class="menu_item"><a href="/contact_us">Contact Us</a></li>
-                                <li class="menu_item">
-                                    <a href="#">Services <i class="fa fa-angle-down" aria-hidden="true"></i></a>
-                                    <ul>
-                                        <li class="dropdown_item"><a href="/jobs">Jobs</a></li>
-                                        <li class="dropdown_item"><a href="/pages/svc-customer-service">Customer Services</a></li>
-                                        <li class="dropdown_item"><a href="/leasing">Leasing</a></li>
-                                        <li class="dropdown_item"><a href="/pages/svc-community-booth">Community Booth</a></li>
-                                        <li class="dropdown_item"><a href="/pages/svc-giftcard">Giftcard</a></li>
-                                    </ul> 
-                                </li>
+                                <!--<li class="menu_item">-->
+                                <!--    <a href="#">Services <i class="fa fa-angle-down" aria-hidden="true"></i></a>-->
+                                <!--    <ul>-->
+                                <!--        <li class="dropdown_item"><a href="/jobs">Jobs</a></li>-->
+                                <!--        <li class="dropdown_item"><a href="/pages/svc-customer-service">Customer Services</a></li>-->
+                                <!--        <li class="dropdown_item"><a href="/leasing">Leasing</a></li>-->
+                                <!--        <li class="dropdown_item"><a href="/pages/svc-community-booth">Community Booth</a></li>-->
+                                <!--        <li class="dropdown_item"><a href="/pages/svc-giftcard">Giftcard</a></li>-->
+                                <!--    </ul> -->
+                                <!--</li>-->
                                 <li class="menu_item"><a href="http://www.stvitalcentrespark.com/" target="_blank">Blog</a></li>
                             </ul>
                         </nav>
