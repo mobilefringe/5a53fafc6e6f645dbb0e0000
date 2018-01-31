@@ -157,7 +157,7 @@
 <div class="home_subscription">
     <!--<div class=" content_container">-->
         <div class="col-sm-6 kids_club"  style="background-image: url('http://via.placeholder.com/800x500');">
-            <img src="http://via.placeholder.com/800x500" class="" alt="">
+            <!--<img src="http://via.placeholder.com/800x500" class="" alt="">-->
         </div>
         <div class="col-sm-6 subscribeBlog">
             <h1>Sign up for our e-blast</h1> 
