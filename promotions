@@ -46,6 +46,9 @@
             
             var promotions = getPromotionsList().sortBy(function(o){ return o.end_date });
             var events = getEventsList().sortBy(function(o){ return o.end_date });
+            $.map( events, function( val, i ) {
+                events.type = "Event"
+            });
             var combined_list = $.merge(promotions, events).sortBy(function(o){ return o.end_date });
             console.log(combined_list);
             var published_promos = [];
