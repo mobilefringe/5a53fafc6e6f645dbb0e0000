@@ -105,7 +105,7 @@
     <div class="flex_container">
         <div class="width_50">
             <div class="home_promos ">
-                <h2 class="details_title">Life. Style. Blog</h2>
+                <h2 class="details_title">Life. Style. Blog. </h2>
                 <div id="home_blog_container" class="dine_container margin_20">
                     <script id="home_blog_template" type="x-tmpl-mustache/text">
                         <div class="margin_30">
