@@ -160,7 +160,7 @@
             <img src="http://via.placeholder.com/800x500" class="" alt="">
         </div>
         <div class="col-sm-6 subscribeBlog">
-            <h1>Sign up for our e-newsletter</h1> 
+            <h1>Sign up for our e-blast</h1> 
              
             <form action="//mobilefringe.createsend.com/t/d/s/ykouu/" method="post" id="newsletterBlogForm">
                 <label for="fieldEmail" style="display:none"></label>
