@@ -19,7 +19,7 @@
             <div id="mm_page_content"></div>
             <div class="margin_30"></div>
             <div style="text-align: left;float: left;">
-                <button class="contact_btn" data-i18n="general.submit">SUBMIT</button>
+                <button class="contact_btn">View</button>
             </div>
         </div> 
     </div>
