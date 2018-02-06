@@ -1,0 +1,122 @@
+<script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/jquery.js"></script>
+<script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/raphael.js"></script>
+<script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/system/site_images/photos/000/005/107/original/mallmaverick_svgmap.js?1412885524"></script>
+<div class="inside_banner">   
+    <div class="content_container">
+        <div class="inside_banner_content">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>Centre Map</h1>
+                </div>
+                <div class="col-md-6 hidden_phone">
+                    <h4 class="pull-right">Stores <i class="fa fa-angle-right" aria-hidden="true"></i> Centre Map</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content_container margin_30">
+    <div class="margin_30"></div>
+    <div class="row">
+        <div class="col-md-12 center hidden_phone">
+            <a href="/stores"><div class="directory_btn caps ">Stores</div></a>
+            <div class="directory_btn caps active">Centre Map</div>
+        </div>
+        <div class="col-sm-12 center">
+            <a href="/stores"><div class="directory_btn caps directory_back"><i class="fa fa-angle-left" aria-hidden="true"></i> Back to Directory</div></a>
+        </div>
+    </div>
+    <div class="margin_30"></div>
+    <div class="row">
+        <div class="col-md-12">
+            <!--<a href="#" class="locate_store">Locate store <i class="fa fa-search"></i></a>-->
+            <!--<div class="stores_table">-->
+            <!--    <ul id="store_list_container_map">-->
+            <!--        <script id="store_list_template_map" type="x-tmpl-mustache/text">-->
+            <!--            <li><a class="map_pin_a" href="#" data-value='{{svgmap_region}}/{{slug}}'>{{name}}</a><li>-->
+            <!--        </script>-->
+            <!--    </ul>-->
+            <!--</div>-->
+            <div class="map_container">
+			    <div class="map">
+                    <div id="mapsvg_store_detail"></div>  
+                </div>
+            </div>
+        </div> 
+    </div>
+</div>
+
+<script>
+    $(document).ready(function(e){
+        init(e);
+        function renderAll(){
+            var stores = getStoresList(); 
+            renderStoreList('#store_list_container_map','#store_list_template_map', stores, "A", "Z");
+            regions = {}
+            $.each( stores , function( key, val ) {
+                if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
+                    if(!val.store_front_url_abs ||  val.store_front_url_abs.indexOf('missing.png') > -1 || val.store_front_url_abs.length === 0){
+                        val.store_front_url_abs = '//codecloud.cdn.speedyrails.net/sites/55ddf3f86e6f640775000000/a22fcf023d728855c6f575ba100806d7/default.jpg'
+                    }
+                    obj = {};
+                    obj["tooltip"] = "<p class='tooltip_name'>"+val.name+"</p>"
+                    obj["attr"] = {}
+                    obj["attr"]["href"] = "/stores/"+val.slug
+                    regions[val.svgmap_region] = obj
+                }
+            });
+            renderStoreList('#stores_container','#stores_template', stores, "A", "Z");
+            show_content();
+            var map = $('#mapsvg_store_detail').mapSvg({
+                source: getSVGMapURL(),
+                colors: {stroke: '#aaaaaa', selected: -20, hover: "#F3047A"},
+                width: 1170,
+                height:600,
+                // viewBox: [520,150,1350,1400],
+                regions: regions,
+                tooltipsMode: 'custom',
+                zoom: true,
+                pan:true,
+                cursor:'pointer',
+                responsive:true,
+                zoomLimit: [0,10]
+            });
+            $(".map_tooltip").css({"background-color":"#C607A9", "color" : "#fff", "margin": "5px", "border": "none"});
+            $('.map_pin_a').click(function(e){
+                e.preventDefault();
+                var id = $(this).attr('data-value')
+                map_pin(id)
+            })
+            
+            function map_pin(value){
+                map.marksHide();
+                value = value.split('/')
+                if (value[0] != null){
+                    drop_pin(value[0], map);    
+                }
+            }
+            console.log("stores", stores);
+            // init_map(reg);
+            show_content();
+        }
+        loadMallDataCached(renderAll); 
+    });
+    function drop_pin(id, map){
+
+        var coords = map.get_coords(id);
+        var height = parseInt(coords["height"])
+        var width = parseInt(coords["width"])
+        var x_offset = (parseInt(width) / 2);
+        var y_offset = (parseInt(height) /2);
+        
+        map.setMarks([{ xy: [coords["x"] - 15 + x_offset, coords["y"] - 55 + y_offset],
+                  attrs: {
+                            src:  '//codecloud.cdn.speedyrails.net/sites/57f7f01f6e6f647835890000/image/png/1463000912000/pin2.png'     // image for marker
+                          }
+            }
+            ])
+            map.setViewBox(id);
+            map.selectRegion(id);
+    }
+</script>
