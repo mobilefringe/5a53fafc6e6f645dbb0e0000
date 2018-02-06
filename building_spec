@@ -33,7 +33,7 @@
             <div class="stores_table">
                 <ul id="store_list_container_map">
                     <script id="store_list_template_map" type="x-tmpl-mustache/text">
-                        <li><a class="map_pin_a" href="#">{{name}}</a><li>
+                        <li><a class="" href="#">{{name}}</a><li>
                     </script>
                 </ul>
             </div>
