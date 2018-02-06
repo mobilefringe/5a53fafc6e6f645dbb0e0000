@@ -24,7 +24,7 @@
     <div class="margin_30"></div>
     <div class="row">
         <div class="col-sm-12 center">
-            <div class="directory_btn caps active">Stores</div>
+            <a href="/stores"><div class="directory_btn caps ">Stores</div></a>
             <a href="/map"><div class="directory_btn caps">Centre Map</div></a>
         </div>
     </div>
