@@ -62,7 +62,7 @@
         init(e);
         function renderAll(){
             var stores = getStoresList(); 
-            renderStoreList('#store_list_container_map','#store_list_template_map', stores, "A", "Z");
+            renderStoreList('#store_list_building_spec','#store_list_template_map', stores, "A", "Z");
             regions = {}
             $.each( stores , function( key, val ) {
                 if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
