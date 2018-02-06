@@ -193,7 +193,7 @@
                         <!--        </div>-->
                         <!--    </div>-->
                         <!--</a>-->
-                        <div id="home_reg_hours_container">
+                        <div id="home_reg_hours_container"   style="padding-left:30px;">
                             <script id="home_reg_hours_template" type="x-tmpl-mustache/text">
                                 <div class="hours_div">
                                     <div class="day">{% raw %}{{day}}{% endraw %}:</div>
