@@ -27,17 +27,17 @@
         <div class="flex_container">
             <div class="width_30">
                 <a href="/stores">
-                    <img src="//codecloud.cdn.speedyrails.net/sites/5a53fafc6e6f645dbb0e0000/image/png/1510776675000/storesicon.png" alt="Stores"/>
+                    <img src="//codecloud.cdn.speedyrails.net/sites/5a53fafc6e6f645dbb0e0000/image/png/1517934913000/directory.png" alt="Stores"/>
                 </a>
             </div>
             <div class="width_30">
                 <a href="/promotions">
-                    <img src="//codecloud.cdn.speedyrails.net/sites/5a53fafc6e6f645dbb0e0000/image/png/1510776675000/saleicon.png" alt="Sales & Promos"/>
+                    <img src="//codecloud.cdn.speedyrails.net/sites/5a53fafc6e6f645dbb0e0000/image/png/1517934913000/tag.png" alt="Sales & Promos"/>
                 </a>
             </div>
             <div class="width_30">
                 <a href="/find_us">
-                    <img src="//codecloud.cdn.speedyrails.net/sites/5a53fafc6e6f645dbb0e0000/image/png/1510776675000/locationicon.png" alt="Location"/>
+                    <img src="//codecloud.cdn.speedyrails.net/sites/5a53fafc6e6f645dbb0e0000/image/png/1517934913000/hours.png" alt="Location"/>
                 </a>
             </div>
         </div>
