@@ -197,7 +197,8 @@
                         blogs.push(item);
                     });
                      console.log("blog", blogs);
-                    renderPosts('#home_blog_container','#home_blog_template', blogs);
+                     blog_posts[0].latest_post = "/ NEW POST!";
+                    blogs('#home_blog_container','#home_blog_template', blogs);
                     renderPosts('#home_mblog_container','#home_mblog_template', blogs);
                 }
             });
