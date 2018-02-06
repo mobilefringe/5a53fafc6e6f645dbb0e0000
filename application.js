@@ -505,7 +505,7 @@ function renderPromotions(container, template, collection){
             else if (end.diff(today, 'days',true) < 5) {
                 var day_diff = Math.ceil(end.diff(today, 'days',true));
                 if(day_diff >0 && day_diff<=1){
-                    val.days_left = "1 DAY LEFT";
+                    val.days_left = "/ 1 DAY LEFT";
                 }
                 else {
                     val.days_left =day_diff + " DAYS LEFT";
