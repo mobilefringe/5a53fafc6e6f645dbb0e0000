@@ -208,6 +208,10 @@
             
             // LOGO SCROLL //
             var stores = getStoresList();
+            store_list = store_list.filter(function( val, index ) {
+                // console.log($.isNumeric(val.name[0]), val.name[0]);
+                return !$.isNumeric(val.name[0]);
+            });
             renderLogoScroll('#logo_container','#logo_template', stores);
 
             show_content();
