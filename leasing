@@ -20,7 +20,6 @@
             <div class="margin_30"></div>
             <div>
                 <button class="contact_btn" data-i18n="general.submit">SUBMIT</button>
-                
             </div>
         </div> 
     </div>
