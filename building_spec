@@ -30,7 +30,7 @@
     <div class="margin_30"></div>
     <div class="row">
         <div class="col-sm-4"> 
-            <div class="stores_table">
+            <div class="stores_list">
                 <ul id="store_list_container_map">
                     <script id="store_list_template_map" type="x-tmpl-mustache/text">
                         <li><a class="map_pin_a" href="#">{{name}}</a><li>
