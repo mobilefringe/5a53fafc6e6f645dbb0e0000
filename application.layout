@@ -174,7 +174,7 @@
             <div class="content_container">
                 <div class="row">
                     <div class="col-md-4 footer_center">
-                        <h3 class="footer_nav_title caps">Mall Hours</h3>
+                        <h3 class="footer_nav_title caps"  style="padding-left:30px;">Mall Hours</h3>
                         <div class="margin_30 hidden_phone"></div>
                         <!--<div class="footer_address">-->
                         <!--    <p class="caps">Twin Pines Mall</p>-->
