@@ -207,7 +207,8 @@
             renderPromotions('#home_promo_container','#home_promo_template', published_promos);
             
             // LOGO SCROLL //
-            var stores = getStoresList();
+            // var stores = getStoresList();
+            var store_list = getStoresList();
             store_list = store_list.filter(function( val, index ) {
                 // console.log($.isNumeric(val.name[0]), val.name[0]);
                 return !$.isNumeric(val.name[0]);
