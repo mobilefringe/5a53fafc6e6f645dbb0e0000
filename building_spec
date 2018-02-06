@@ -29,7 +29,9 @@
     <!--</div>-->
     <div class="margin_30"></div>
     <div class="row">
-        <div class="col-sm-8"> 
+        <div class="col-sm-4"> 
+        
+            
         </div>
         <div class="col-sm-8">
             <!--<a href="#" class="locate_store">Locate store <i class="fa fa-search"></i></a>-->
