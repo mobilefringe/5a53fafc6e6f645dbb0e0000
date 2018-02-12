@@ -214,7 +214,7 @@
                     </div>
                     <hr class="horizontal_div show_phone">
                     <div class="col-md-4">
-                        <h3 class="footer_nav_title"  style="padding-left:30px;">Menu</h3>
+                        <h3 class="footer_nav_title caps"  style="padding-left:30px;">Menu</h3>
                         <div class="margin_30 hidden_phone"></div>
                         <ul class="footer_menu footer_menu_left">
                             <li><a href="/map">Map</a></li>
