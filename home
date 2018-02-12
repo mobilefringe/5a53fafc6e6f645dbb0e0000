@@ -153,6 +153,7 @@
                 <button class="contact_btn" data-i18n="general.submit">Sign Up</button>
                 
             </form>
+            <span id="success_subscribe" class="hidden_now">Thank you for subscribing to our newsletter.</span>
         </div>
          
     <!--</div>-->
