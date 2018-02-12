@@ -45,16 +45,16 @@
 </div>
 <div class="content_container">
     <div class="promo_blog_container">
-        <!--<div id="giftcard_feature_container" class="col-sm-6 text-center">-->
-        <!--    <script id="giftcard_feature_template" type="x-tmpl-mustache/text">-->
-        <!--        <a href="{{url}}" class="">-->
-        <!--            <img src="{{image_url}}" alt="Promotional Image">-->
-        <!--        </a>-->
-        <!--    </script>-->
+        <div id="giftcard_feature_container" class="col-sm-6 text-center">
+            <script id="giftcard_feature_template" type="x-tmpl-mustache/text">
+                <a href="{{url}}" class="">
+                    <img src="{{image_url}}" alt="Promotional Image">
+                </a>
+            </script>
         <!--</div>-->
-        <div class="col-sm-6 text-center">
-            <img src="//codecloud.cdn.speedyrails.net/sites/5a53fafc6e6f645dbb0e0000/image/jpeg/1517931496615/stv1.jpg" class="" alt="">
-        </div>
+        <!--<div class="col-sm-6 text-center">-->
+        <!--    <img src="//codecloud.cdn.speedyrails.net/sites/5a53fafc6e6f645dbb0e0000/image/jpeg/1517931496615/stv1.jpg" class="" alt="">-->
+        <!--</div>-->
         <div class="col-sm-6">
             <div class="home_promos">
                 <h2 class="details_title caps">News</h2>
