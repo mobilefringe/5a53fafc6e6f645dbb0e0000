@@ -30,7 +30,7 @@
             <hr class="horizontal_div show_phone">
         </div> 
         <div class="col-md-6">
-            <form action="//mobilefringe.createsend.com/t/d/s/jukin/" method="post" id="subForm">
+            <form action="https://mobilefringe.createsend.com/t/d/s/jukin/" method="post" id="subForm">
                 <label for="fieldEmail" style="display:none"></label>
                 <input id="fieldEmail" name="cm-jukin-jukin" class="form-control" type="email" value="" placeholder="Your Email" required/> 
                 
