@@ -15,6 +15,8 @@
 <div class="content_container margin_30">
     <div class="margin_30 hidden_phone"></div>
     <div class="row">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1634.5055658082479!2d-97.11115357990204!3d49.82896497503548!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x97eb75a30e4fd90b!2sSt.Vital+Centre!5e0!3m2!1sen!2sca!4v1515516651189" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    
         <div class="col-md-6 border_right">
             <!--<h2>Management Office</h2>-->
             <!--<p>216 Chrislea Road<br>Vaughan, ON L4L 8S5</p> -->
