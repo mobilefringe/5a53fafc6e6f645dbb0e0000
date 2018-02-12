@@ -98,6 +98,7 @@
                 e.preventDefault();
                 var id = $(this).attr('data-value')
                 map_pin(id)
+                value_is = $(this).attr('data-id');
             })
             
             function map_pin(value){
