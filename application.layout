@@ -214,7 +214,7 @@
                     </div>
                     <hr class="horizontal_div show_phone">
                     <div class="col-md-4">
-                        <h3 class="footer_nav_title caps"  style="padding-left:30px;">Menu</h3>
+                        <h3 class="footer_nav_title"  style="padding-left:30px;">Menu</h3>
                         <div class="margin_30 hidden_phone"></div>
                         <ul class="footer_menu footer_menu_left">
                             <li><a href="/map">Map</a></li>
@@ -230,7 +230,7 @@
                         <div class="margin_30 hidden_phone"></div>
                         <a href="/blog_newsletter">
                             <div class="footer_btn">
-                                <div class="footer_btn_text caps">Join our Blog</div>
+                                <div class="footer_btn_text">Join our Blog</div>
                                 <div class="footer_btn_icon">
                                     <!--<i class="fa fa-envelope-o" aria-hidden="true"></i>-->
                                     <img src="//codecloud.cdn.speedyrails.net/sites/5a53fafc6e6f645dbb0e0000/image/png/1518452737403/Spark.png" class="" alt="">
