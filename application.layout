@@ -154,7 +154,7 @@
                                         <!--<li class="dropdown_item"><a href="/leasing">Leasing</a></li>-->
                                         <li class="dropdown_item"><a href="/pages/svc-community-booth">Community Booth</a></li>
                                         <li class="dropdown_item"><a href="/pages/svc-giftcard">Giftcard</a></li>
-                                        <li class="dropdown_item"><a href="/pages/svc-giftcard">Green Initiative</a></li>
+                                        <li class="dropdown_item"><a href="/">Green Initiative</a></li>
                                     </ul> 
                                 </li>
                                 <li class="menu_item"><a href="/hours">Hours</a></li>
