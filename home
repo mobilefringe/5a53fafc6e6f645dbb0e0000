@@ -88,7 +88,7 @@
                                 <h2 class="home_promo_name"> {{title}} </h2>
                             </div>
                             <p class="home_promo_dates"> {{publish_date}} <span style="color:#e18c7d;"> {{latest_post}}</span></p>
-                            <a class="home_read_more" href="{{link}}"><p>Read Full Article</p></a>
+                            <a class="home_read_more" href="{{link}}"><p>Read More</p></a>
                         </div>
                     </script>
                 </div>
