@@ -256,7 +256,7 @@
             var logo_slider = new $JssorSlider$("slider_container", logo_options);
         }
         loadMallDataCached(renderAll); 
-        $('#home_newsletter_form').submit(function(e){
+        $('#newsletterBlogForm').submit(function(e){
            e.preventDefault();
            console.log($('#agree_terms').prop('checked'));
            $.getJSON(
