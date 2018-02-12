@@ -140,9 +140,10 @@
 
 <div class="home_subscription">
     <!--<div class=" content_container">-->
-        <div class="col-sm-6 kids_club"  style="background-image: url('http://via.placeholder.com/800x500');">
-            <a href="/kids_club"></a><!--<img src="http://via.placeholder.com/800x500" class="" alt="">-->
+         <a href="/kids_club"><div class="col-sm-6 kids_club"  style="background-image: url('http://via.placeholder.com/800x500');">
+          <!--<img src="http://via.placeholder.com/800x500" class="" alt="">-->
         </div>
+         </a>
         <div class="col-sm-6 subscribeBlog">
             <h1>Sign up for our e-blast</h1> 
             <br>
