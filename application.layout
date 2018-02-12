@@ -99,7 +99,7 @@
                                 <a href="https://www.youtube.com/StVitalCentre" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>
                                 <div class="site_search show_phone">
                                     <label class="top_form_control no_margin">
-                                        <input type="text" placeholder="Search Stores" id="site_search" class="site_search_m"/>
+                                        <input type="text" placeholder="Search" id="site_search" class="site_search_m"/>
                                         <i id="search_icon" class="fa fa-search search_icon"></i>
                                         <i id="close_search" class="fa fa-times-circle close_search"></i>
                                     </label>
@@ -110,7 +110,7 @@
                             </div>
                             <div class="site_search hidden_phone">
                                 <label class="top_form_control no_margin">
-                                    <input type="text" placeholder="Search Stores" id="site_search" class="site_search"/>
+                                    <input type="text" placeholder="Search" id="site_search" class="site_search"/>
                                     <i id="search_icon" class="fa fa-search search_icon"></i>
                                     <i id="close_search" class="fa fa-times-circle close_search"></i>
                                 </label>
