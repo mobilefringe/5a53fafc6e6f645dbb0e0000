@@ -128,7 +128,7 @@
             popover : "<p class='popover_name'>"+val.name+"</p><a href="+ val.leasing + "> View Spec Document </a>"
                           
         }])
-            map.setViewBox(id);
-            map.selectRegion(id);
+        map.setViewBox(id);
+        map.selectRegion(id);
     }
 </script>
