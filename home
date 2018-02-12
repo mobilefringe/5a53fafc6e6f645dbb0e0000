@@ -93,6 +93,13 @@
                 <p class="home_see_all"><a href="http://www.stvitalcentrespark.com/">See all news articles </a> <i class="fa fa-angle-right" aria-hidden="true"></i></p>
             </div>
         </div>
+        <!--<div id="blog_feature_container" class="col-sm-6 text-center">-->
+        <!--    <script id="blog_feature_template" type="x-tmpl-mustache/text">-->
+        <!--        <a href="{{url}}" class="">-->
+        <!--            <img src="{{image_url}}" alt="Promotional Image">-->
+        <!--        </a>-->
+        <!--    </script>-->
+        <!--</div>-->
         <div class="col-sm-6 text-center">
             <img src="//codecloud.cdn.speedyrails.net/sites/5a53fafc6e6f645dbb0e0000/image/jpeg/1517931493067/stv2.jpg" class="" alt="">
         </div>
