@@ -158,10 +158,13 @@
             renderBanner('#banner_template','#home_banner', banners);
             
             var all_feature_items = getFeatureList();
-            var three_items = all_feature_items.slice(0, 3);
-            var single_item = all_feature_items.slice(3, 5);
-            renderGeneral('#feature_container','#feature_template', three_items);
-            renderGeneral('#single_feature_container','#single_feature_template', single_item);
+            // var three_items = all_feature_items.slice(0, 3);
+            var giftcard_image = all_feature_items[0];
+            var blog_image = all_feature_items[1];
+            // console.log("giftcard_image", giftcard_image, "blog_image", blog_image);
+            // renderGeneral('#feature_container','#feature_template', three_items);
+            renderSingleItem('#giftcard_feature_container','#giftcard_feature_template', giftcard_image);
+            renderSingleItem('#blog_feature_container','#blog_feature_template', blog_image);
 
             var promotions = getPromotionsList().sortBy(function(o){ return o.end_date });
             var published_promos = [];
