@@ -265,7 +265,7 @@
                 function (data) {
                     if (data.Status === 400) {
                         // alert("Please try again later.");
-                        cnsole.log("data",data);
+                        console.log("data",data);
                     } else { // 200
                         $("#success_subscribe").fadeIn();
                     }
