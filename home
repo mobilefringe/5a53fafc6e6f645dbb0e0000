@@ -152,7 +152,6 @@
                 <input id="fieldEmail" name="cm-jukin-jukin" class="form-control" type="email" value="" placeholder="Email Address" required/> 
                 <button class="contact_btn" data-i18n="general.submit">Sign Up</button>
                 
-                <span id="success_subscribe" class="hidden_now">Thank you for subscribing to our newsletter.</span>
             </form>
         </div>
          
