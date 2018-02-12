@@ -110,6 +110,19 @@ function renderEventDetails(container, template, collection){
     $(container).html(item_rendered.join(''));
 }
 
+function renderSingleItem(container, template, val){
+    var item_list = [];
+    var item_rendered = [];
+    var template_html = $(template).html();
+    Mustache.parse(template_html); 
+    // $.each( collection , function( key, val ) {
+        console.log("renderGeneral",val)
+        var repo_rendered = Mustache.render(template_html,val);
+        item_rendered.push(repo_rendered);
+    // });
+    $(container).html(item_rendered.join(''));
+}
+
 function renderGeneral(container, template, collection){
     var item_list = [];
     var item_rendered = [];
