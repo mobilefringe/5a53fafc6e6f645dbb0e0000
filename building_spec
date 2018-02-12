@@ -104,8 +104,8 @@
                 map.marksHide();
                 value = value.split('/')
                 if (value[0] != null){
-                    value = getStoreDetailsBySlug(value[0]);
                     if(value[1] != null){
+                        
                     }
                     drop_pin(value[0], map);    
                 }
