@@ -508,7 +508,7 @@ function renderPromotions(container, template, collection){
             if (start.format("DMY") == end.format("DMY")){
                 val.dates = start.format("MMMM D")
             } else {
-                val.dates = start.format("MMMM D") + " - " + end.format("MMM D")
+                val.dates = start.format("MMMM D") + " - " + end.format("MMMM D")
             }
             
             if(today.format("DMY") == end.format("DMY")){
@@ -516,7 +516,7 @@ function renderPromotions(container, template, collection){
                 // console.log(val.days_left);
             }
             else if (end.diff(today, 'days',true) < 5) {
-                var day_diff = Math.ceil(end.diff(today, 'days',true));
+                var day_diff = Math.floor(end.diff(today, 'days',true));
                 if(day_diff >0 && day_diff<=1){
                     val.days_left = "/ 1 DAY LEFT";
                 }
