@@ -96,8 +96,8 @@
             $(".map_tooltip").css({"background-color":"#C607A9", "color" : "#fff", "margin": "5px", "border": "none"});
             $('.map_pin_a').click(function(e){
                 e.preventDefault();
-                var id = $(this).attr('data-value')
-                map_pin(id)
+                var id = $(this).attr('data-value');
+                map_pin(id);
             })
             
             function map_pin(value){
