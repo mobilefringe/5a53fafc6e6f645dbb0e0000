@@ -85,7 +85,7 @@
                             <div class="hours_container">
                                 <span id="home_hours_container" class="">
                                     <script id="home_hours_template" type="x-tmpl-mustache/text">
-                                        <span class="todays_hours">{% raw %} {{open}} {{hours}} {% endraw %}</span>
+                                        <span class="todays_hours caps">{% raw %} {{open}} {{hours}} {% endraw %}</span>
                                     </script>
                                 </span>
                             </div>
