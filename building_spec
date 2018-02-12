@@ -71,7 +71,7 @@
                     }
                     obj = {};
                     obj["tooltip"] = "<p class='tooltip_name'>"+val.name+"</p>"
-                    obj["popover"] = "<p class='tooltip_name'>"+val.name+"</p>"
+                    obj["popover"] = "<p class='popover_name'>"+val.name+"</p>"
                     obj["attr"] = {}
                     obj["attr"]["href"] = "/stores/"+val.slug
                     regions[val.svgmap_region] = obj
