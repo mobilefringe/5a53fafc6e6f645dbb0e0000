@@ -258,7 +258,7 @@
         loadMallDataCached(renderAll); 
         $('#newsletterBlogForm').submit(function(e){
            e.preventDefault();
-           console.log($('#agree_terms').prop('checked'));
+        //   console.log($('#agree_terms').prop('checked'));
            $.getJSON(
                 this.action + "?callback=?",
                 $(this).serialize(),
