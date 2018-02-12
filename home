@@ -69,7 +69,7 @@
                             
                             <h2 class="home_promo_name"> {{name}} </h2>
                             <p class="home_promo_dates"> {{dates }} <span style="color:#ff5455;"> {{days_left}}</span></p>
-                            <a class="home_read_more" href="/promotions/{{slug}}"><p>See Store Details</p></a>
+                            <a class="home_read_more" href="/promotions/{{slug}}"><p>Read More</p></a>
                         </div>
                     </script>
                 </div>
