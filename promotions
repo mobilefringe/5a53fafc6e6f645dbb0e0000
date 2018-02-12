@@ -55,7 +55,7 @@
             // var combined_list = $.merge(promotions, events).sortBy(function(o){ return o.end_date });
             // console.log(combined_list);
             var published_promos = [];
-            $.each(combined_list, function(key, val){
+            $.each(promotions, function(key, val){
                 today = moment();
                 webDate = moment(val.show_on_web_date)
                 if (today.tz(getPropertyTimeZone()) >= webDate.tz(getPropertyTimeZone())) {
