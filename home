@@ -92,7 +92,7 @@
                         </div>
                     </script>
                 </div>
-                <p class="home_see_all"><a href="http://www.stvitalcentrespark.com/">See all news articles </a> <i class="fa fa-angle-right" aria-hidden="true"></i></p>
+                <p class="home_see_all"><a href="http://www.stvitalcentrespark.com/"  target="_blank">See all news articles </a> <i class="fa fa-angle-right" aria-hidden="true"></i></p>
             </div>
         </div>
         <!--<div id="blog_feature_container" class="col-sm-6 text-center">-->
