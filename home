@@ -256,5 +256,19 @@
             var logo_slider = new $JssorSlider$("slider_container", logo_options);
         }
         loadMallDataCached(renderAll); 
+        $('#home_newsletter_form').submit(function(e){
+           e.preventDefault();
+           console.log($('#agree_terms').prop('checked'));
+           $.getJSON(
+                this.action + "?callback=?",
+                $(this).serialize(),
+                function (data) {
+                    if (data.Status === 400) {
+                        alert("Please try again later.");
+                    } else { // 200
+                        $("#subscription_confirmed").fadeIn();
+                    }
+            });
+        });
     })
 </script>
