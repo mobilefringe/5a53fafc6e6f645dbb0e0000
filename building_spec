@@ -125,7 +125,7 @@
             attrs: {
                 src:  '//codecloud.cdn.speedyrails.net/sites/57f7f01f6e6f647835890000/image/png/1463000912000/pin2.png'     // image for marker
             },
-            popover : "<p class='popover_name'>"+store.name+"</p><a href="+ store.leasing + "> View Spec Document </a>"
+            popover : "<p class='popover_name'>"+store.name+"</p><a href="+ store.slug + "> View Spec Document </a>"
                           
         }])
         map.setViewBox(id);
