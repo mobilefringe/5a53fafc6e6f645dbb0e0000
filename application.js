@@ -358,7 +358,7 @@ function renderPosts(container, template, collection){
         val.description_short = val.description_short.replace("&amp;", "&");
         
         var published_on = moment(val.publish_date).tz(getPropertyTimeZone());
-        val.publish_date = published_on.format("MMMMM D, YYYY");
+        val.publish_date = published_on.format("MMMM D, YYYY");
         
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
