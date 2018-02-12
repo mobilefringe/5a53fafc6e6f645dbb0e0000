@@ -30,7 +30,7 @@
             <hr class="horizontal_div show_phone">
         </div>
         
-        <div class="col-md-6 border-left">
+        <div class="col-md-6 border_left">
             <h2>Holiday Hours</h2>
             <div id="holiday_hours_container" style="overflow:hidden;">
                 <script id="holiday_hours_template" type="x-tmpl-mustache/text">
