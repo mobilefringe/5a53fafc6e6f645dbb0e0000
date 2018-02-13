@@ -54,7 +54,7 @@
     <script src="//s3.amazonaws.com/kodekloud/sites/59d3dc256e6f6459f8960000/text/javascript/1410850608000/jssor.core.js"></script>
     <script src="//s3.amazonaws.com/kodekloud/sites/59d3dc256e6f6459f8960000/text/javascript/1410850608000/jssor.utils.js"></script>
     <script src="//s3.amazonaws.com/kodekloud/sites/59d3dc256e6f6459f8960000/text/javascript/1410850608000/jssor.slider.min.js"></script>
-    
+    <scropt src="https://cdn.jsdelivr.net/npm/lodash@4.17.5/lodash.min.js"></scropt>
     <!--MallMaverick SDK-->
     <script src="//mallmaverick.codecloudapp.com/mallmaverick_v4.js"></script>
     
