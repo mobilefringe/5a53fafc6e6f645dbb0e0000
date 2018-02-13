@@ -132,7 +132,7 @@
         map.setViewBox(id);
         map.selectRegion(id);
     }
-    function leasing_data () {
+    function getLeasingData () {
         $.getJSON(getStorage().MM_URL).done(function(data){
             mallData = data;
             try {
