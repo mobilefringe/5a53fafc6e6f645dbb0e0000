@@ -177,9 +177,6 @@
         var viewport_center_y = 0;
         viewport_center_x = (_.toNumber(elBBox.left) + _.toNumber(elBBox.right) )/2;
         viewport_center_y = (_.toNumber(elBBox.top) + _.toNumber(elBBox.bottom) )/2;
-        // viewport_x = _.toNumber(elBBox.x) + elBBox.width/2;
-        // viewport_y = _.toNumber(elBBox.y) + elBBox.height/2;
-        // console.log("viewport_x",viewport_x,viewport_y);
         pt = svg.createSVGPoint();
         pt.x = viewport_center_x;
         pt.y = viewport_center_y;
