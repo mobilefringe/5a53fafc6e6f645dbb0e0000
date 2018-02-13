@@ -118,7 +118,7 @@
                     map_pin(id, e, regions);
                 
                 })
-                map.onClick(function() {
+                map.onClick(function(this,e,mapSVG) {
                     
                 })
                 function map_pin(value, e, regions){
