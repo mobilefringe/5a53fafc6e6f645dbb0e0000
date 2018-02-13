@@ -89,7 +89,7 @@
                 // renderStoreList('#stores_container','#stores_template', stores, "A", "Z");
                 show_content();
                 var map = $('#mapsvg_store_detail').mapSvg({
-                    source: getSVGMapURL(),
+                    source: "mallmaverickdevelopment.com/system/properties/leasing_mapsvgs/000/000/042/original/StVital_-_Map_-_Jan-30-2018_-_Red.svg?1517426277",
                     colors: {stroke: '#aaaaaa', selected: "#F3047A", hover: "#F3047A"},
                     width: 1170,
                     height:600,
