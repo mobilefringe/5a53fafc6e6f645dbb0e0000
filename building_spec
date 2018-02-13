@@ -174,7 +174,7 @@
         $("#"+id).click();
         console.log("('#'+id)", $("#"+id)[0].getBBox());
         var svg = $('#mapsvg_store_detail svg')[0];
-        console.log(svg);
+        console.log("svg", svg);
         var elBBox =$("#"+id)[0].getBBox();
         var viewport_center_x = 0;
         var viewport_center_y = 0;
