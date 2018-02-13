@@ -123,7 +123,7 @@
                     value = value.split('/')
                     if (value[0] != null){
                         store = getStoreDetailsBySlug(value[1]);
-                        drop_pin(value[0], map, store, e);    
+                        drop_pin(value[0], map, store, e,regions);    
                     }
                 }
             });
