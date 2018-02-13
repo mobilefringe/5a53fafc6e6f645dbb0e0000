@@ -68,9 +68,10 @@
                 var mallDataJSON = JSON.parse(mallData);
                 log('done fetching mallData from: ' + url);
                 return mallDataJSON.leasing_units;
+                var leasing_units = getLeasingData();
+                console.log(leasing_units);
             });
-            var leasing_units = getLeasingData();
-            console.log(leasing_units);
+            
             // var stores = getStoresList(); 
             // renderStoreList('#store_list_building_spec','#store_list_template_map', stores, "A", "Z");
             // regions = {}
