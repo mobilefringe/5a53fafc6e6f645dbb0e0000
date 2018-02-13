@@ -67,8 +67,8 @@
                 mallData = JSON.stringify(data);
                 var mallDataJSON = JSON.parse(mallData);
                 log('done fetching mallData from: ' + url);
-                return mallDataJSON.leasing_units;
-                var leasing_units = getLeasingData();
+                // return mallDataJSON.leasing_units;
+                var leasing_units = mallDataJSON.leasing_units;
                 console.log(leasing_units);
             });
             
