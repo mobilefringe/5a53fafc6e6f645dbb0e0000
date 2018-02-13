@@ -118,7 +118,9 @@
                     map_pin(id, e, regions);
                 
                 })
-                
+                map.onClick(function() {
+                    
+                })
                 function map_pin(value, e, regions){
                     map.marksHide();
                     value = value.split('/')
