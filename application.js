@@ -787,37 +787,7 @@ function renderLeasingList(container, template, collection, type){
             store_initial = current_initial;
         }
         
-        if(val.is_coming_soon_store == true){
-            val.coming_soon_store = "display: block";
-        } else {
-            val.coming_soon_store = "display:none";
-        }
         
-        if(val.is_new_store == true){
-            val.new_store = "display: block";
-        } else {
-            val.new_store = "display: none";
-        }
-        
-        if(val.phone != ""){
-            val.phone_exist = "display: inline";
-        } else {
-            val.phone_exist = "visibility: hidden";
-        }
-        
-        if(val.total_published_promos != null){
-            val.promotion_exist = "display: inline";
-            val.promotion_list = val.total_published_promos;
-        } else {
-            val.promotion_exist = "display: none";
-        }
-        
-        if (val.total_published_jobs != null){
-            val.job_exist = "display: inline";
-            val.job_list = val.total_published_jobs;
-        } else {
-            val.job_exist = "display: none";
-        }
         
         val.block = current_initial + '-block';
         var rendered = Mustache.render(template_html,val);
