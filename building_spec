@@ -173,6 +173,7 @@
         var y_offset = (parseInt(height) /2);
         $("#"+id).click();
         var region = regions [id];
+        map.regionClickHandler(e,region)
         // map.showPopover(e,"<p class='popover_name'>"+store.name+"</p><a href="+ store.slug + "> View Spec Document </a>",[coords["x"], coords["y"] ]);
         
         // map.setMarks([{ xy: [coords["x"] - 15 + x_offset, coords["y"] - 55 + y_offset],
