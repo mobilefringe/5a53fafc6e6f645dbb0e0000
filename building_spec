@@ -118,9 +118,7 @@
                     map_pin(id, e, regions);
                 
                 })
-                map.onClick(function(this_obj,e,mapSVG) {
-                    console.log("clicked")
-                });
+                
                 function map_pin(value, e, regions){
                     map.marksHide();
                     value = value.split('/')
@@ -130,7 +128,9 @@
                     }
                 }
             });
-            
+            map.onClick(function(this_obj,e,mapSVG) {
+                    console.log("clicked")
+                });
             // var stores = getStoresList(); 
             // renderStoreList('#store_list_building_spec','#store_list_template_map', stores, "A", "Z");
             // regions = {}
