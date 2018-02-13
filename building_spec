@@ -120,7 +120,6 @@
                     drop_pin(value[0], map, store, e);    
                 }
             }
-            console.log("stores", stores);
             // init_map(reg);
         }
         function drop_pin(id, map, store, e){
