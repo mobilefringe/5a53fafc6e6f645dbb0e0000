@@ -142,7 +142,6 @@
             // } catch(e) {
             //     getStorage().mallData = JSON.stringify(data);
             // }
-            console.log("mallData", mallData);
             var mallDataJSON = JSON.parse(mallData);
             log('done fetching mallData from: ' + url);
             return mallDataJSON.leasing_units;
