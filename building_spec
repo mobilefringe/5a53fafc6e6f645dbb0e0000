@@ -144,7 +144,7 @@
             // }
             console.log("mallData", mallData);
             var mallDataJSON = JSON.parse(mallData);
-            console.log("mallData", mallData);
+            console.log("mallDataJSON", mallDataJSON);
             return mallDataJSON.leasing_units;
             log('done fetching mallData from: ' + url);
         });
