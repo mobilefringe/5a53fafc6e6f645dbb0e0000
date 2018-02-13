@@ -80,6 +80,7 @@
                         }
                         obj = {};
                         obj["tooltip"] = "<p class='tooltip_name'>"+val.unit_number+"</p>"
+                        console.log("val.no_pdf",val.no_pdf);
                         if(val.no_pdf) {
                             obj["popover"] = "<p class='popover_name'>"+val.unit_number+"</p>"
                         }
