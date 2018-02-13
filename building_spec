@@ -165,7 +165,7 @@
             // init_map(reg);
         }
         function drop_pin(id, map, store, e){
-        console.log("store", store);
+        // console.log("store", store);
         var coords = map.get_coords(id);
         var height = parseInt(coords["height"])
         var width = parseInt(coords["width"])
