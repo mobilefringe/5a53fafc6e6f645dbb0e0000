@@ -145,7 +145,6 @@
             var mallDataJSON = JSON.parse(mallData);
             return mallDataJSON.stores;
             log('done fetching mallData from: ' + url);
-            callback();
         });
     }
     
