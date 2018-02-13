@@ -61,7 +61,7 @@
     $(document).ready(function(e){
         init(e);
         function renderAll(){
-            console.log(getLeasingData());
+            var leasing_units = getLeasingData();
             var stores = getStoresList(); 
             renderStoreList('#store_list_building_spec','#store_list_template_map', stores, "A", "Z");
             regions = {}
