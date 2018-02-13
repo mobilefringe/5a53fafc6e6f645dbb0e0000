@@ -774,7 +774,7 @@ function renderLeasingList(container, template, collection, type){
             val.cat_list = val.categories.join(',')
         }
         
-        var current_initial = val.name[0];
+        var current_initial = val.unit_number[0];
         if(isInt(current_initial)){
             current_initial = "#";
         }
