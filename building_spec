@@ -70,7 +70,7 @@
                 // return mallDataJSON.leasing_units;
                 var leasing_units = mallDataJSON.leasing_units;
                 console.log(leasing_units);
-                renderStoreList('#store_list_building_spec','#store_list_template_map', leasing_units, "A", "Z");
+                renderLeasingList('#store_list_building_spec','#store_list_template_map', leasing_units, "A", "Z");
                 // console.log(no_pdf);
             });
             
