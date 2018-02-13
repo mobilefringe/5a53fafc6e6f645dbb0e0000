@@ -173,7 +173,7 @@
         var y_offset = (parseInt(height) /2);
         $("#"+id).click();
         console.log("('#'+id)", $("#"+id)[0].getBBox());
-        var svg = $('#mapsvg_store_detail svg');
+        var svg = $('#mapsvg_store_detail svg')[0];
         var elBBox =$("#"+id)[0].getBBox();
         var viewport_center_x = 0;
         var viewport_center_y = 0;
