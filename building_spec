@@ -86,7 +86,7 @@
                         regions[val.svgmap_region] = obj
                     }
                 });
-                renderStoreList('#stores_container','#stores_template', stores, "A", "Z");
+                // renderStoreList('#stores_container','#stores_template', stores, "A", "Z");
                 show_content();
                 var map = $('#mapsvg_store_detail').mapSvg({
                     source: getSVGMapURL(),
