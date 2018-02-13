@@ -133,7 +133,7 @@
         map.selectRegion(id);
     }
     function getLeasingData (url) {
-        $.getJSON(getStorage().MM_URL).done(function(data){
+        $.getJSON(url).done(function(data){
             mallData = data;
             try {
                 getStorage().setItem('mallData', JSON.stringify(data));
