@@ -111,21 +111,21 @@
                 });
                 $(".map_tooltip").css({"background-color":"#C607A9", "color" : "#fff", "margin": "5px", "border": "none"});
                 $('.map_pin_a').click(function(e){
-                e.preventDefault();
-                var id = $(this).attr('data-value');
-                console.log("id",id);
-                map_pin(id, e);
-            
-            })
-            
-            function map_pin(value, e){
-                map.marksHide();
-                value = value.split('/')
-                if (value[0] != null){
-                    store = getStoreDetailsBySlug(value[1]);
-                    drop_pin(value[0], map, store, e);    
+                    e.preventDefault();
+                    var id = $(this).attr('data-value');
+                    console.log("id",id);
+                    map_pin(id, e);
+                
+                })
+                
+                function map_pin(value, e){
+                    map.marksHide();
+                    value = value.split('/')
+                    if (value[0] != null){
+                        store = getStoreDetailsBySlug(value[1]);
+                        drop_pin(value[0], map, store, e);    
+                    }
                 }
-            }
             });
             
             // var stores = getStoresList(); 
