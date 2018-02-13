@@ -172,7 +172,21 @@
         var x_offset = (parseInt(width) / 2);
         var y_offset = (parseInt(height) /2);
         $("#"+id).click();
-        console.log("('#'+id)", $("#"+id)[0].getBBox())
+        console.log("('#'+id)", $("#"+id)[0].getBBox());
+        var viewport_center_x = 0;
+        var viewport_center_y = 0;
+        viewport_center_x = (_.toNumber(elBBox.left) + _.toNumber(elBBox.right) )/2;
+        viewport_center_y = (_.toNumber(elBBox.top) + _.toNumber(elBBox.bottom) )/2;
+        // viewport_x = _.toNumber(elBBox.x) + elBBox.width/2;
+        // viewport_y = _.toNumber(elBBox.y) + elBBox.height/2;
+        // console.log("viewport_x",viewport_x,viewport_y);
+        pt = svg.createSVGPoint();
+        pt.x = viewport_center_x;
+        pt.y = viewport_center_y;
+        var svgP = pt.matrixTransform(svg.getScreenCTM().inverse());
+        // console.log("svg points", svgP.x,svgP.y);
+        var new_x = svgP.x/ 2500;
+        var new_y = svgP.y/ 2500;
         var region = regions[id];
         map.regionClickHandler(e,region);
         // map.showPopover(e,"<p class='popover_name'>"+store.name+"</p><a href="+ store.slug + "> View Spec Document </a>",[coords["x"], coords["y"] ]);
