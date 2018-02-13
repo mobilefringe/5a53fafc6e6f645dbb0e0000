@@ -134,16 +134,6 @@
         map.setViewBox(id);
         map.selectRegion(id);
     }
-    function getLeasingData () {
-        url = "//codecloud.cdn.speedyrails.net/sites/5a53fafc6e6f645dbb0e0000/application/json/1518478191901/leasing_units.json";
-        $.getJSON(url).done(function(data){
-            mallData = JSON.stringify(data);
-            var mallDataJSON = JSON.parse(mallData);
-            log('done fetching mallData from: ' + url);
-            return mallDataJSON.leasing_units;
-        });
-    }
-    
         loadMallDataCached(renderAll); 
     });
     
