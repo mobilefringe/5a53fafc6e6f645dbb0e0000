@@ -134,7 +134,7 @@
     }
     function getLeasingData (url) {
         url = "//codecloud.cdn.speedyrails.net/sites/5a53fafc6e6f645dbb0e0000/application/json/1518478191901/leasing_units.json";
-        $.getJSON().done(function(data){
+        $.getJSON(url).done(function(data){
             mallData = data;
             try {
                 getStorage().setItem('mallData', JSON.stringify(data));
