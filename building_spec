@@ -141,7 +141,7 @@
             // } catch(e) {
             //     getStorage().mallData = JSON.stringify(data);
             // }
-            var mallDataJSON = JSON.parse(getStorage().mallData);
+            var mallDataJSON = JSON.parse(mallData);
             return mallDataJSON.stores;
             log('done fetching mallData from: ' + url);
             callback();
