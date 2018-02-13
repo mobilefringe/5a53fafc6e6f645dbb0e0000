@@ -129,8 +129,8 @@
                 }
             });
             map.onClick(function(this_obj,e,mapSVG) {
-                    console.log("clicked")
-                });
+                console.log("clicked")
+            });
             // var stores = getStoresList(); 
             // renderStoreList('#store_list_building_spec','#store_list_template_map', stores, "A", "Z");
             // regions = {}
