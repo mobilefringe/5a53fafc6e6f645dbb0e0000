@@ -192,6 +192,8 @@
         // console.log(new_x, new_y);
         // var region = regions[id];
         // map.regionClickHandler(e,region);
+        store={};
+        store.name = "Some name"
         map.showPopover(e,"<p class='popover_name'>"+store.name+"</p><a href="+ store.slug + "> View Spec Document </a>",[svgP.x, svgP.y ]);
         
         // map.setMarks([{ xy: [coords["x"] - 15 + x_offset, coords["y"] - 55 + y_offset],
