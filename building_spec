@@ -172,6 +172,7 @@
         var x_offset = (parseInt(width) / 2);
         var y_offset = (parseInt(height) /2);
         $("#"+id).click();
+        console.log("('#'+id)", ("#"+id))
         var region = regions[id];
         map.regionClickHandler(e,region);
         // map.showPopover(e,"<p class='popover_name'>"+store.name+"</p><a href="+ store.slug + "> View Spec Document </a>",[coords["x"], coords["y"] ]);
