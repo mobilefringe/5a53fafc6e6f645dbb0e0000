@@ -118,7 +118,7 @@
                 
                 })
                 
-                function map_pin(value, e){
+                function map_pin(value, e, regions){
                     map.marksHide();
                     value = value.split('/')
                     if (value[0] != null){
