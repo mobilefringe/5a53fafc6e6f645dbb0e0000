@@ -164,7 +164,7 @@
             
             // init_map(reg);
         }
-        function drop_pin(id, map, store, e){
+        function drop_pin(id, map, store, e, regions){
         console.log("map", map);
         var coords = map.get_coords(id);
         var height = parseInt(coords["height"])
