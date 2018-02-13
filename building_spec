@@ -184,8 +184,8 @@
         // console.log("svg points", svgP.x,svgP.y);
         var new_x = svgP.x/ 2376;
         var new_y = svgP.y/ 1728;
-        console.log(new_x, new_y)
-        var region = regions[id);;
+        console.log(new_x, new_y);
+        var region = regions[id];
         map.regionClickHandler(e,region);
         // map.showPopover(e,"<p class='popover_name'>"+store.name+"</p><a href="+ store.slug + "> View Spec Document </a>",[coords["x"], coords["y"] ]);
         
