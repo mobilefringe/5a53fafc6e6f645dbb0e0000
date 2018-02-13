@@ -111,6 +111,44 @@
             console.log("stores", stores);
             // init_map(reg);
         }
+        function drop_pin(id, map, store, e){
+        console.log("store", store);
+        var coords = map.get_coords(id);
+        var height = parseInt(coords["height"])
+        var width = parseInt(coords["width"])
+        var x_offset = (parseInt(width) / 2);
+        var y_offset = (parseInt(height) /2);
+        // $("#"+id).click();
+        // map.showPopover(e,"<p class='popover_name'>"+store.name+"</p><a href="+ store.slug + "> View Spec Document </a>",[coords["x"], coords["y"] ]);
+        
+        map.regionClickHandler (e, id)
+        // map.setMarks([{ xy: [coords["x"] - 15 + x_offset, coords["y"] - 55 + y_offset],
+        //     attrs: {
+        //         // src:  '//codecloud.cdn.speedyrails.net/sites/57f7f01f6e6f647835890000/image/png/1463000912000/pin2.png',     // image for marker
+        //         popover : "<p class='popover_name'>"+store.name+"</p><a href="+ store.slug + "> View Spec Document </a>"
+        //     },
+            
+                          
+        // }])
+        map.setViewBox(id);
+        map.selectRegion(id);
+    }
+    function getLeasingData () {
+        url = "//codecloud.cdn.speedyrails.net/sites/5a53fafc6e6f645dbb0e0000/application/json/1518478191901/leasing_units.json";
+        $.getJSON(url).done(function(data){
+            mallData = data;
+            // try {
+            //     getStorage().setItem('mallData', JSON.stringify(data));
+            // } catch(e) {
+            //     getStorage().mallData = JSON.stringify(data);
+            // }
+            var mallDataJSON = JSON.parse(mallData);
+            return mallDataJSON.stores;
+            log('done fetching mallData from: ' + url);
+            callback();
+        });
+    }
+    
         loadMallDataCached(renderAll); 
     });
     
