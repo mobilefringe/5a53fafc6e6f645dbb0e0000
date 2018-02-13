@@ -119,8 +119,8 @@
                 
                 })
                 map.bind('onClick',function(this_obj,e,mapSVG) {
-                console.log("clicked");
-            });
+                    console.log("clicked");
+                });
                 function map_pin(value, e, regions){
                     map.marksHide();
                     value = value.split('/')
