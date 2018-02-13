@@ -765,7 +765,7 @@ function renderLeasingList(container, template, collection, type){
     var store_initial="";
     $.each(collection, function(key, val) {
         
-        
+        if(val.leasing_doc)
         var rendered = Mustache.render(template_html,val);
         var upper_current_initial = current_initial.toUpperCase();
         item_rendered.push(rendered);
