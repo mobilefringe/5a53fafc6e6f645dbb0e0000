@@ -779,16 +779,6 @@ function renderLeasingList(container, template, collection, type){
             current_initial = "#";
         }
         
-        if(store_initial.toLowerCase() == current_initial.toLowerCase()){
-            val.initial = "";
-            val.show = "display:none;";
-        } else {
-            val.initial = current_initial.toUpperCase();
-            store_initial = current_initial;
-        }
-        
-        
-        
         val.block = current_initial + '-block';
         var rendered = Mustache.render(template_html,val);
         var upper_current_initial = current_initial.toUpperCase();
