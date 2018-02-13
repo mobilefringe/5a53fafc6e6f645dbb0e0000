@@ -100,7 +100,7 @@
                 map_pin(id, e);
             })
             
-            function map_pin(value){
+            function map_pin(value, e){
                 map.marksHide();
                 value = value.split('/')
                 if (value[0] != null){
