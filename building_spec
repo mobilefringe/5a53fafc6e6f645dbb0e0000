@@ -142,7 +142,7 @@
                 getStorage().mallData = JSON.stringify(data);
             }
 
-            log('done fetching mallData from: ' + getStorage().MM_URL);
+            log('done fetching mallData from: ' + url);
             callback();
         });
     }
