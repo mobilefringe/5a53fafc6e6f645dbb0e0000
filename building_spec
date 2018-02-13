@@ -97,7 +97,7 @@
             $('.map_pin_a').click(function(e){
                 e.preventDefault();
                 var id = $(this).attr('data-value');
-                map_pin(id);
+                map_pin(id, e);
             })
             
             function map_pin(value){
