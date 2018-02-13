@@ -177,7 +177,6 @@
         console.log("svg", svg);
         var element = document.getElementById(val);
         elBBox = element.getBoundingClientRect();
-        var elBBox =$("#"+id)[0].getBBox();
         var viewport_center_x = 0;
         var viewport_center_x = 0;
         viewport_center_x = (_.toNumber(elBBox.left) + _.toNumber(elBBox.right) )/2;
