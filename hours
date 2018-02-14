@@ -40,7 +40,7 @@
                     </div>
                 </script>
             </div>
-            <h2>Holiday Closure</h2>
+            <h2 class="holiday_closure">Holiday Closure</h2>
             <div id="holiday_hours_closure_container">
                 <script id="holiday_hours_closure_template" type="x-tmpl-mustache/text">
                     <div class="holiday_hours_div">
