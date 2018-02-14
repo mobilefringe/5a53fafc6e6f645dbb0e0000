@@ -1550,7 +1550,8 @@ var mapSVG = function(elem, options){
                 var region = _data.R.getById(id);
                 if(!region || region.disabled) return false;
                 console.log("region", region);
-                $("#"+id).trigger("click");               
+                $("#"+id).trigger("click");       
+                console.log("id", $("#"+id));
             };
             
             popoverClose.on('click', _this.hidePopover);
