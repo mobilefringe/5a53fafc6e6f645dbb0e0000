@@ -1915,6 +1915,7 @@ var mapSVG = function(elem, options){
                                 
                                 //_this.mouseDownHandler.call(this, e, methods);}
                                 _this.regionClickHandler.call(_this, e, this);
+                                console.log("clicky clicky");
                              });
                         }else{
                             _data.RMap.touchstart(
