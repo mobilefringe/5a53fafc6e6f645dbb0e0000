@@ -131,7 +131,7 @@
                     $(".unit_name").show();
                     $(".view_specs").show();
                     if(leasing_unit.no_pdf) {
-                        $(".view_specs").show();
+                        $(".view_specs").hide();
                     }
                     else {
                         $(".view_specs").show();
