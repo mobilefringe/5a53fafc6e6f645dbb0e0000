@@ -74,6 +74,7 @@
             }
             else {
                 $("#holiday_hours_closure_container").hide();
+                $(".holiday_closure").hide();
             }
 
             show_content();
