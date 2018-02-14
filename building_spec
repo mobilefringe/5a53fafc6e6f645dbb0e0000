@@ -220,7 +220,7 @@
             // store.leasing_doc ="/"
             // map.showPopover(e,"<p class='popover_name'>"+store.name+"</p><a href="+ store.leasing_doc + "> View Spec Document </a>",[viewport_center_x, viewport_center_y ]);
         
-        map.setMarks([{ xy: [coords["x"] - 15 + x_offset, coords["y"] - 55 + y_offset],
+            map.setMarks([{ xy: [coords["x"] - 15 + x_offset, coords["y"] - 55 + y_offset],
             attrs: {
                 src:  '//codecloud.cdn.speedyrails.net/sites/57f7f01f6e6f647835890000/image/png/1463000912000/pin2.png',     // image for marker
             },        
