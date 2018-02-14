@@ -65,7 +65,7 @@
     $(document).ready(function(e){
         init(e);
         
-             var leasing_units = null;
+        var leasing_units = null;
         function renderAll(){
              var regions = {};
              var map = null;
