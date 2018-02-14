@@ -180,7 +180,7 @@
             var x_offset = (parseInt(width) / 2);
             var y_offset = (parseInt(height) /2);
             $("#"+id).click();
-            console.log("('#'+id)", $("#"+id)[0].getBBox());
+            console.log("('#'+id)", $("#"+id)[0].getBBox(), $("#"+id));
             var svg = $('#mapsvg_store_detail svg')[0];
             console.log("svg", svg);
             var element = document.getElementById(id);
