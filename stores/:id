@@ -230,7 +230,7 @@
             pan:true,
             cursor:'pointer',
             responsive:true,
-            zoomLimit: [-1,5]
+            zoomLimit: [1,10]
         });
         if(store_details.svgmap_region != null) {
             map.setViewBox(store_details.svgmap_region);
