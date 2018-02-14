@@ -1545,7 +1545,18 @@ var mapSVG = function(elem, options){
                                                 
                 });                
             };
-
+            
+            _this.hidePopover = function(){
+                _data.mapPopover.find('.map_popover_content').html('');
+                _data.mapPopover.hide(0,function(){
+                    $('body').off('mousedown', _this.popoverOffHandler);
+                    if(_data.options.onPopoverClose){
+                        _data.options.onPopoverClose.call(_this);
+                    }
+                                                
+                });                
+            };
+            
             popoverClose.on('click', _this.hidePopover);
 
         },
