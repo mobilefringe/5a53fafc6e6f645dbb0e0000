@@ -1550,8 +1550,24 @@ var mapSVG = function(elem, options){
                 var region = _data.R.getById(id);
                 if(!region || region.disabled) return false;
                 console.log("region", region);
-                $("#"+id).trigger("click");       
                 console.log("id", $("#"+id));
+                if(content){
+                    _data.mapPopover.find('.map_popover_content').html(content);
+                    var nx = pos[0] - _data.mapPopover.outerWidth(false)/2;
+                    var ny = pos[1] - _data.mapPopover.outerHeight(false) - 7;
+                    if(nx<0) nx = 0;
+                    if(ny<0) ny = 0;
+
+                    //if(nx+_data.mapPopover.outerWidth(false) > $(window).scrollLeft() + $(window).width()) nx = ($(window).scrollLeft() + $(window).width()) - _data.mapPopover.outerWidth(false);
+                    //if(ny+_data.mapPopover.outerHeight(false) > $(window).scrollTop() + $(window).height()) ny = ($(window).scrollTop() + $(window).height()) - _data.mapPopover.outerHeight(false);
+                    //if(nx < $(window).scrollLeft()) nx = $(window).scrollLeft();
+                    //if(ny < $(window).scrollTop()) ny = $(window).scrollTop();
+
+                    _data.mapPopover.css('left', nx).css('top', ny);
+                    _data.mapPopover.show()
+                }else{
+                    _this.hidePopover();
+                }    
             };
             
             popoverClose.on('click', _this.hidePopover);
