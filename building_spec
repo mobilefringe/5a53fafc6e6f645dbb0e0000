@@ -196,8 +196,8 @@
             var offset = svg.getBoundingClientRect();
             element.getScreenCTM();
            
-              x: (matrix.a * x) + (matrix.c * y) + matrix.e - offset.left,
-              y: (matrix.b * x) + (matrix.d * y) + matrix.f - offset.top
+              page_x = (matrix.a * x) + (matrix.c * y) + matrix.e - offset.left,
+              page_y = (matrix.b * x) + (matrix.d * y) + matrix.f - offset.top
            
             console.log("viewport_x",viewport_center_x,viewport_center_y);
             pt = svg.createSVGPoint();
