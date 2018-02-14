@@ -1549,7 +1549,8 @@ var mapSVG = function(elem, options){
             _this.showTargetPopover = function(id){
                 var region = _data.R.getById(id);
                 if(!region || region.disabled) return false;
-                $("#"+id).trigger("click")               
+                console.log("region", region);
+                $("#"+id).trigger("click");               
             };
             
             popoverClose.on('click', _this.hidePopover);
