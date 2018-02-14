@@ -127,9 +127,9 @@
                     leasing_unit = getLeasingUnitByID(unit_id);
                     console.log("leasing_unit", leasing_unit);
                     $(".unit_name").text(leasing_unit.unit_number);
-                    $(".view-specs").attr("href" , leasing_unit.leasing_doc);
+                    $(".view_specs").attr("href" , leasing_unit.leasing_doc);
                     $(".unit_name").show();
-                    $(".view-specs").show();
+                    $(".view_specs").show();
                     $(".select_unit").hide();
                 
                 })
