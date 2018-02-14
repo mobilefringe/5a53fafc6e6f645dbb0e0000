@@ -228,7 +228,7 @@
             map.showTargetPopover(id);
             map.setViewBox(id);
             map.selectRegion(id);
-    }
+     }
         loadMallDataCached(renderAll); 
     });
     
