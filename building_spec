@@ -128,6 +128,7 @@
                     console.log("leasing_unit", leasing_unit);
                     $(".unit_name").text(leasing_unit.unit_number);
                     $(".view-specs").href(leasing_unit.leasing_doc);
+                    $(".view-specs").show();
                     $(".select_unit").hide();
                 
                 })
