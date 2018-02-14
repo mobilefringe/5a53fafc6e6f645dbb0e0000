@@ -1551,7 +1551,7 @@ var mapSVG = function(elem, options){
                 if(!region || region.disabled) return false;
                 console.log("region", region);
                 console.log("id", $("#"+id));
-                document.getElementById(id).click();
+                $("#"+id).mousedown();
                 // content = region.popover;
                 // if(content){
                 //     _data.mapPopover.find('.map_popover_content').html(content);
