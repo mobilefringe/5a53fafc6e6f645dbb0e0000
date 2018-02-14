@@ -1549,13 +1549,7 @@ var mapSVG = function(elem, options){
             _this.showTargetPopover = function(id){
                 var region = _data.R.getById(id);
                 if(!region || region.disabled) return false;
-                _data.mapPopover.hide(0,function(){
-                    $('body').off('mousedown', _this.popoverOffHandler);
-                    if(_data.options.onPopoverClose){
-                        _data.options.onPopoverClose.call(_this);
-                    }
-                                                
-                });                
+                $("#"+id).trigger("click")               
             };
             
             popoverClose.on('click', _this.hidePopover);
