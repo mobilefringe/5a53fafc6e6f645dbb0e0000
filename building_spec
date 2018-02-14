@@ -167,6 +167,9 @@
             
             // init_map(reg);
         }
+        function  regionClicked() {
+            
+        }
         function drop_pin(id, map, store, e, regions){
             console.log("map", map);
             var coords = map.get_coords(id);
