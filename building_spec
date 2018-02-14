@@ -130,7 +130,9 @@
                     $(".view_specs").attr("href" , leasing_unit.leasing_doc);
                     $(".unit_name").show();
                     $(".view_specs").show();
-                    if(leasing_unit.no_pdf)
+                    if(leasing_unit.no_pdf) {
+                        
+                    }
                     $(".select_unit").hide();
                 
                 })
