@@ -37,7 +37,7 @@
                     </script>
                 </ul>
             </div>
-            <div>
+            <div class="">
                 <h3 class="unit_name"></h3>
                 <a class="" href=""> View </a>
                 <p class="select_unit"> Select a unit for more information. </p>
