@@ -186,7 +186,7 @@
             console.log("svg", svg);
             var element = document.getElementById(id);
             elBBox = element.getBoundingClientRect();
-            console.log("('#'+id)", $("#"+id)[0].getBBox());
+            console.log("('#'+id)",elBBox);
             console.log("id data", $("#"+id));
             var viewport_center_x = 0;
             var viewport_center_x = 0;
