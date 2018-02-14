@@ -1942,6 +1942,14 @@ var mapSVG = function(elem, options){
                                 
                                 _this.panRegionClickHandler.call(_this, e, this);
                             });
+                            _data.RMap.mousedown( function(e){
+                                // While panning we just remember which region was clicked
+                                // by panRegionClickHandler method, and then trigger
+                                // regionClickHandler on that region when panning finishes
+                                e.preventDefault();
+                                
+                                _this.panRegionClickHandler.call(_this, e, this);
+                            });
                             // _data.RMap
                         }else{
                             _data.RMap.touchstart(
