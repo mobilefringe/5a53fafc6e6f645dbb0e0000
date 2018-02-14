@@ -181,12 +181,13 @@
             var x_offset = (parseInt(width) / 2);
             var y_offset = (parseInt(height) /2);
             $("#"+id).click();
-            console.log("('#'+id)", $("#"+id)[0].getBBox());
-            console.log("id data", $("#"+id));
+            
             var svg = $('#mapsvg_store_detail svg')[0];
             console.log("svg", svg);
             var element = document.getElementById(id);
             elBBox = element.getBoundingClientRect();
+            console.log("('#'+id)", $("#"+id)[0].getBBox());
+            console.log("id data", $("#"+id));
             var viewport_center_x = 0;
             var viewport_center_x = 0;
             viewport_center_x = (_.toNumber(elBBox.left) + _.toNumber(elBBox.right) )/2;
