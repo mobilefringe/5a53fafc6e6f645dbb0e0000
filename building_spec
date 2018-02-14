@@ -94,7 +94,7 @@
                         else {
                             obj["popover"] = "<p class='popover_name'>"+val.unit_number+"</p><a href="+ val.leasing_doc + "> View Spec Document </a>"
                         }
-                        
+                        obj["store_id"] = val.id;
                         // obj["attr"] = {}
                         // obj["attr"]["href"] = "/stores/"+val.slug
                         regions[val.svgmap_region] = obj
