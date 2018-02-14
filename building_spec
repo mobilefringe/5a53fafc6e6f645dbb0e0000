@@ -124,7 +124,7 @@
                     map_pin(id, e, regions);
                     var unit_id = $(this).attr('data-id');
                     leasing_unit = getLeasingUnitByID(unit_id);
-                    
+                    console.log("leasing_unit", leasing_unit);
                 
                 })
                 $('#mapsvg_store_detail').bind('onClick',function(this_obj,e,mapSVG) {
