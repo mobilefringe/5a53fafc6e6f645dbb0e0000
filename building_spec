@@ -185,41 +185,6 @@
             var x_offset = (parseInt(width) / 2);
             var y_offset = (parseInt(height) /2);
             // $("#"+id).click();
-            
-            // var svg = $('#mapsvg_store_detail svg')[0];
-            // console.log("svg", svg);
-            // var element = document.getElementById(id);
-            // elBBox = element.getBoundingClientRect();
-            // console.log("elBBox",elBBox);
-            // console.log("coords",coords);
-            // console.log("id data", $("#"+id));
-            // var viewport_center_x = 0;
-            // var viewport_center_x = 0;
-            // viewport_center_x = (_.toNumber(elBBox.left) + _.toNumber(elBBox.right) )/2;
-            // viewport_center_y = (_.toNumber(elBBox.top) + _.toNumber(elBBox.bottom) )/2;
-            // var offset = svg.getBoundingClientRect();
-            // var matrix =element.getScreenCTM();
-           
-            //   page_x = (matrix.a * viewport_center_x) + (matrix.c * viewport_center_y) + matrix.e - offset.left,
-            //   page_y = (matrix.b * viewport_center_x) + (matrix.d * viewport_center_y) + matrix.f - offset.top
-           
-            // console.log("viewport_x",viewport_center_x,viewport_center_y);
-            // console.log("page_x",page_x,page_y);
-            // pt = svg.createSVGPoint();
-            // pt.x = viewport_center_x;
-            // pt.y = viewport_center_y;
-            // var svgP = pt.matrixTransform(svg.getScreenCTM().inverse());
-            // console.log("svg points", svgP.x,svgP.y);
-            // var new_x = svgP.x/ 2376;
-            // var new_y = svgP.y/ 1728;
-            // console.log(new_x, new_y);
-            // var region = regions[id];
-            // map.regionClickHandler(e,region);
-            // store={};
-            // store.name = "Some name";
-            // store.leasing_doc ="/"
-            // map.showPopover(e,"<p class='popover_name'>"+store.name+"</p><a href="+ store.leasing_doc + "> View Spec Document </a>",[viewport_center_x, viewport_center_y ]);
-        
             map.setMarks([{ xy: [coords["x"] - 15 + x_offset, coords["y"] - 55 + y_offset],
                 attrs: {
                     src:  '//codecloud.cdn.speedyrails.net/sites/57f7f01f6e6f647835890000/image/png/1463000912000/pin2.png',     // image for marker
