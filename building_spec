@@ -169,7 +169,7 @@
         }
         function  regionClicked(e,mapsvg){
             var region = this;
-            console.log(this.id);
+            console.log(region);
         }
         function drop_pin(id, map, store, e, regions){
             console.log("map", map);
