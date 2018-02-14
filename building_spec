@@ -200,6 +200,7 @@
               page_y = (matrix.b * x) + (matrix.d * y) + matrix.f - offset.top
            
             console.log("viewport_x",viewport_center_x,viewport_center_y);
+            console.log("page_x",page_x,page_y);
             pt = svg.createSVGPoint();
             pt.x = viewport_center_x;
             pt.y = viewport_center_y;
