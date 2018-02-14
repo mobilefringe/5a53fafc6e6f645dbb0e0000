@@ -208,7 +208,9 @@
                         item.publish_date =  el.find("pubDate").text();
                         item.body =  el.find("description").text();
                         item.image_url = el.find("img").text();
-                        blogs.push(item);
+                        if(blogs.length < 4) {
+                            blogs.push(item);
+                        }
                     });
                      
                      blogs[0].latest_post = "/ NEW POST!";
