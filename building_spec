@@ -206,11 +206,11 @@
             pt.y = viewport_center_y;
             var svgP = pt.matrixTransform(svg.getScreenCTM().inverse());
             console.log("svg points", svgP.x,svgP.y);
-            // var new_x = svgP.x/ 2376;
-            // var new_y = svgP.y/ 1728;
-            // console.log(new_x, new_y);
-            // var region = regions[id];
-            // map.regionClickHandler(e,region);
+            var new_x = svgP.x/ 2376;
+            var new_y = svgP.y/ 1728;
+            console.log(new_x, new_y);
+            var region = regions[id];
+            map.regionClickHandler(e,region);
             store={};
             store.name = "Some name";
             store.leasing_doc ="/"
