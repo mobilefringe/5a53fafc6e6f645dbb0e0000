@@ -222,7 +222,8 @@
             },
             popover : "<p class='popover_name'>"+store.name+"</p><a href="+ store.slug + "> View Spec Document </a>"
                           
-        }])
+        }]);
+        map.showTargetPopover(id);
         map.setViewBox(id);
         map.selectRegion(id);
     }
