@@ -39,7 +39,7 @@
             </div>
             <div>
                 <h3 class="unit_name"></h3>
-                <p class="select_unit"> Select a unit for more information </p>
+                <p class="select_unit"> Select a unit for more information. </p>
             </div>
         </div>
         <div class="col-sm-8">
