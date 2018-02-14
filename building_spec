@@ -38,7 +38,7 @@
                 </ul>
             </div>
             <div class="store_unit_dets">
-                <h3 class="unit_name"></h3>
+                <h3 class="unit_name hidden_now"></h3>
                 <a class="view_specs hidden_now" href=""> View Spec Document </a>
                 <p class="select_unit"> Select a unit for more information. </p>
             </div>
