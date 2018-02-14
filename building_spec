@@ -196,8 +196,8 @@
             var offset = svg.getBoundingClientRect();
             var matrix =element.getScreenCTM();
            
-              page_x = (matrix.a * x) + (matrix.c * y) + matrix.e - offset.left,
-              page_y = (matrix.b * x) + (matrix.d * y) + matrix.f - offset.top
+              page_x = (matrix.a * viewport_center_x) + (matrix.c * viewport_center_y) + matrix.e - offset.left,
+              page_y = (matrix.b * viewport_center_x) + (matrix.d * viewport_center_y) + matrix.f - offset.top
            
             console.log("viewport_x",viewport_center_x,viewport_center_y);
             console.log("page_x",page_x,page_y);
