@@ -435,8 +435,9 @@ var mapSVG = function(elem, options){
 
                 if(!_data.options.editMode){
                     if(!touchDevice){
+                        console.log(this.data('popover'));
                         RMark.mousedown(function(e){
-                                console.log(this.data('popover'));
+                                
                                 if(this.data('popover')){
                                     _this.showPopover(e, this.data('popover'));
                                 }
