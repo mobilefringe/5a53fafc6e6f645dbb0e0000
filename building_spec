@@ -122,6 +122,8 @@
                     var id = $(this).attr('data-value');
                     console.log("id",id);
                     map_pin(id, e, regions);
+                    var unit_id = $(this).attr('data-id');
+                    getLeasingUnitByID()
                 
                 })
                 $('#mapsvg_store_detail').bind('onClick',function(this_obj,e,mapSVG) {
