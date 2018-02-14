@@ -182,7 +182,7 @@
             
             // init_map(reg);
         }
-        function  regionClicked(e,mapsvg){
+        function regionClicked(e,mapsvg){
             var region = this;
             console.log(region);
             console.log("e",e)
