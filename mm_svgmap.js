@@ -1935,6 +1935,7 @@ var mapSVG = function(elem, options){
                                 
                                 _this.panRegionClickHandler.call(_this, e, this);
                             });
+                            // _data.RMap
                         }else{
                             _data.RMap.touchstart(
                                 function(e){
