@@ -193,11 +193,12 @@
             var viewport_center_x = 0;
             viewport_center_x = (_.toNumber(elBBox.left) + _.toNumber(elBBox.right) )/2;
             viewport_center_y = (_.toNumber(elBBox.top) + _.toNumber(elBBox.bottom) )/2;
+            var offset = svg.getBoundingClientRect();
             element.getScreenCTM();
-            return {
+           
               x: (matrix.a * x) + (matrix.c * y) + matrix.e - offset.left,
               y: (matrix.b * x) + (matrix.d * y) + matrix.f - offset.top
-            };
+           
             console.log("viewport_x",viewport_center_x,viewport_center_y);
             pt = svg.createSVGPoint();
             pt.x = viewport_center_x;
