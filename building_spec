@@ -195,7 +195,7 @@
             map.selectRegion(id);
         }
         function getLeasingUnitByID (id) {
-            return _.find(leasing_units, function(o) { return _.toNumber(o.unit_number) < 40; })
+            return _.find(leasing_units, function(o) { return _.toNumber(o.unit_number) === _.toNumber(id); })
         }
         loadMallDataCached(renderAll); 
     });
