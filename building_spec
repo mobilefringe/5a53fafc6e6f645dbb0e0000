@@ -126,6 +126,7 @@
                     var unit_id = $(this).attr('data-id');
                     leasing_unit = getLeasingUnitByID(unit_id);
                     console.log("leasing_unit", leasing_unit);
+                    $(".unit_number")
                 
                 })
                 $('#mapsvg_store_detail').bind('onClick',function(this_obj,e,mapSVG) {
