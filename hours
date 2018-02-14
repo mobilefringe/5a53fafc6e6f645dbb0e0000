@@ -68,7 +68,14 @@
             console.log(holiday_hours);
             var holiday_hours_closures = getPropertyHolidayHours().filter(function(o){ return o.is_closed }).sortBy(function(o){ return o.holiday_date});
             console.log(holiday_hours_closures);
-            renderHours('#holiday_hours_container','#holiday_hours_template', holiday_hours, 'holiday_hours');
+            
+            if(holiday_hours_closures.length > 0) {
+                renderHours('#holiday_hours_container','#holiday_hours_template', holiday_hours, 'holiday_hours');
+            }
+            else {
+                $("#holiday_hours_closure_container").hide();
+                $(".holiday_closure").hide();
+            }
             if(holiday_hours_closures.length > 0) {
                 renderHours('#holiday_hours_closure_container','#holiday_hours_closure_template', holiday_hours_closures, 'holiday_hours');
             }
