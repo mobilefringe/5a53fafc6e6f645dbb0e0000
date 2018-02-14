@@ -193,6 +193,9 @@
             map.setViewBox(id);
             map.selectRegion(id);
         }
+        function getLeasingUnitByID (id) {
+            
+        }
         loadMallDataCached(renderAll); 
     });
     
