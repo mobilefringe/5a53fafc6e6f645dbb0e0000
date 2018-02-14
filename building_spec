@@ -74,7 +74,7 @@
                 var mallDataJSON = JSON.parse(mallData);
                 log('done fetching mallData from: ' + url);
                 // return mallDataJSON.leasing_units;
-                var leasing_units = mallDataJSON.leasing_units;
+                leasing_units = mallDataJSON.leasing_units;
                 console.log(leasing_units);
                 renderLeasingList('#store_list_building_spec','#store_list_template_map', leasing_units, "A", "Z");
                 // console.log(no_pdf);
@@ -195,7 +195,7 @@
             map.selectRegion(id);
         }
         function getLeasingUnitByID (id) {
-            return _.find(users, function(o) { return o.age < 40; })
+            return _.find(leasing_units, function(o) { return o.age < 40; })
         }
         loadMallDataCached(renderAll); 
     });
