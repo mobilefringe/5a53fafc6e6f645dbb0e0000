@@ -187,6 +187,7 @@
             var element = document.getElementById(id);
             elBBox = element.getBoundingClientRect();
             console.log("elBBox",elBBox);
+            console.log("coords",coords)
             console.log("id data", $("#"+id));
             var viewport_center_x = 0;
             var viewport_center_x = 0;
