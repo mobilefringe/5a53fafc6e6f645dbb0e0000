@@ -1546,7 +1546,7 @@ var mapSVG = function(elem, options){
                 });                
             };
             
-            _this.showTargetPopover = function(){
+            _this.showTargetPopover = function(id){
                 _data.mapPopover.find('.map_popover_content').html('');
                 _data.mapPopover.hide(0,function(){
                     $('body').off('mousedown', _this.popoverOffHandler);
