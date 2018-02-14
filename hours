@@ -74,7 +74,7 @@
             }
             else {
                 $("#holiday_hours_container").hide();
-                $(".holiday_closure").hide();
+                $(".holiday_hours").hide();
             }
             if(holiday_hours_closures.length > 0) {
                 renderHours('#holiday_hours_closure_container','#holiday_hours_closure_template', holiday_hours_closures, 'holiday_hours');
