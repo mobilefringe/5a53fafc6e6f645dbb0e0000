@@ -73,7 +73,7 @@
                 renderHours('#holiday_hours_container','#holiday_hours_template', holiday_hours, 'holiday_hours');
             }
             else {
-                $("#holiday_hours_closure_container").hide();
+                $("#holiday_hours_container").hide();
                 $(".holiday_closure").hide();
             }
             if(holiday_hours_closures.length > 0) {
