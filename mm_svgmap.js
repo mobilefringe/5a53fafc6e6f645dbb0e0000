@@ -815,7 +815,7 @@ var mapSVG = function(elem, options){
             }
        },
        regionClickHandler : function(e, region){
-
+            console.log("clicked!");
             if(!region) return false;
 
             _data.region_clicked = null;
