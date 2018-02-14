@@ -184,7 +184,7 @@
             var width = parseInt(coords["width"])
             var x_offset = (parseInt(width) / 2);
             var y_offset = (parseInt(height) /2);
-            $("#"+id).click();
+            // $("#"+id).click();
             
             // var svg = $('#mapsvg_store_detail svg')[0];
             // console.log("svg", svg);
