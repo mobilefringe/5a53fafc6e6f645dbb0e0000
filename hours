@@ -69,7 +69,7 @@
             var holiday_hours_closures = getPropertyHolidayHours().filter(function(o){ return o.is_closed }).sortBy(function(o){ return o.holiday_date});
             console.log(holiday_hours_closures);
             
-            if(holiday_hours_closures.length > 0) {
+            if(holiday_hours.length > 0) {
                 renderHours('#holiday_hours_container','#holiday_hours_template', holiday_hours, 'holiday_hours');
             }
             else {
