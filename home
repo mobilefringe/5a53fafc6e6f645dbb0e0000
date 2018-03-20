@@ -259,7 +259,6 @@
         }
         loadMallDataCached(renderAll); 
         
-        
         $("#newsletterSignupBtn").click(function(e){
             e.preventDefault();
             console.log("newsletterSignupBtn", $("#fieldEmail").val());
