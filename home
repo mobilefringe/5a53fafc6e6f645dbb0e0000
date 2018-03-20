@@ -261,8 +261,6 @@
         
         $("#newsletterSignupBtn").click(function(e){
             e.preventDefault();
-            console.log("newsletterSignupBtn", $("#fieldEmail").val());
-            // $
              document.location.href = '/newsletter?name='+$("#fieldEmail").val();
         })
         show_content();
