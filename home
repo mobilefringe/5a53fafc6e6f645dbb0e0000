@@ -208,7 +208,7 @@
                         item.publish_date =  el.find("pubDate").text();
                         item.body =  el.find("description").text();
                         item.image_url = el.find("img").text();
-                        if(blogs.length < 4) {
+                        if(blogs.length < 5) {
                             blogs.push(item);
                         }
                     });
