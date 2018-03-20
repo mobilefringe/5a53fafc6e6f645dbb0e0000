@@ -147,10 +147,10 @@
         <div class="col-sm-6 subscribeBlog">
             <h1>Sign up for our e-blast</h1> 
             <br>
-            <form action="https://mobilefringe.createsend.com/t/d/s/jukin/" method="post" id="newsletterBlogForm">
+            <form id="newsletterBlogForm">
                 <label for="fieldEmail" style="display:none"></label>
                 <input id="fieldEmail" name="cm-jukin-jukin" class="form-control" type="email" value="" placeholder="Email Address" required/> 
-                <button class="contact_btn" data-i18n="general.submit">Sign Up</button>
+                <button class="contact_btn" data-i18n="general.submit" id="newsletterSignupBtn">Sign Up</button>
                 
             </form>
             <div id="success_subscribe" class="hidden_now">Thank you for subscribing to our newsletter.</div>
