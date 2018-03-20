@@ -193,7 +193,7 @@
             var blogs = [];
             $.ajax({
                 type: "GET",
-                url: "https://www.mallmaverick.com/system/site_images/photos/000/036/024/original/temp_svc_blog.rss?1515619258",
+                url: "//codecloud.cdn.speedyrails.net/sites/5a53fafc6e6f645dbb0e0000/application/rss+xml/1521579739426/temp_svc_blog.rss",
                 dataType: "xml",
                 success: function (xml) {
                     
