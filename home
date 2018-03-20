@@ -258,21 +258,7 @@
             var logo_slider = new $JssorSlider$("slider_container", logo_options);
         }
         loadMallDataCached(renderAll); 
-        // $('#newsletterBlogForm').submit(function(e){
-        //   e.preventDefault();
-        // //   console.log($('#agree_terms').prop('checked'));
-        //   $.getJSON(
-        //         this.action + "?callback=?",
-        //         $(this).serialize(),
-        //         function (data) {
-        //             if (data.Status === 400) {
-        //                 // alert("Please try again later.");
-        //                 console.log("data",data);
-        //             } else { // 200
-        //                 $("#success_subscribe").fadeIn();
-        //             }
-        //     });
-        // });
+        
         
         $("#newsletterSignupBtn").click(function(e){
             e.preventDefault();
