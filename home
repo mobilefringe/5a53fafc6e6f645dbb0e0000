@@ -231,7 +231,7 @@
             });
             renderLogoScroll('#logo_container','#logo_template', stores);
 
-            show_content();
+            
             
             $('.flexslider').flexslider({
                 animation: "slide",
@@ -275,10 +275,11 @@
         });
         
         $("#newsletterSignupBtn").click(function(e){
-                e.preventDefault();
-                console.log("newsletterSignupBtn", $("#fieldEmail").val());
-                // $
-                 document.location.href = '/newsletter?name='+$("#fieldEmail").val();
-            })
+            e.preventDefault();
+            console.log("newsletterSignupBtn", $("#fieldEmail").val());
+            // $
+             document.location.href = '/newsletter?name='+$("#fieldEmail").val();
+        })
+        show_content();
     })
 </script>
