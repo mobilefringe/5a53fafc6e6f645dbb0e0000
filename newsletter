@@ -51,6 +51,16 @@
     $(document).ready(function(e){
         init(e);
         function renderAll(){
+            
+            //add in email from
+            var query = window.location.search;
+            if(query !== "") {
+                
+                var search_part = query.split('?')[1];
+                var search_tag = search_part.split('=')[1];
+                $("#fieldEmail").val(search_tag);
+            }
+            
             $.validate();
             $('#subForm').submit(function (e) {
                 data = {"g-recaptcha-response": $('#subForm .g-recaptcha-response').val()}
