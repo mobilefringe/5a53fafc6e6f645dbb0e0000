@@ -2,7 +2,7 @@
     <div class="flexslider">
         <ul class="slides" id="home_banner">
             <li>
-                <a href="/blog">
+                <a href="http://www.stvitalcentrespark.com/" target="_blank">
                     <div class="banner_img" style="background-image: url('//codecloud.cdn.speedyrails.net/sites/5a53fafc6e6f645dbb0e0000/image/jpeg/1521736792860/11479_STV_website_banner_images_02.jpg');"></div>
                 </a>
             </li>
