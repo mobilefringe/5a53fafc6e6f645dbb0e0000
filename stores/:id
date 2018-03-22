@@ -107,8 +107,64 @@
         </div>
     </div>
 </div>
-<!--<script src="https://d1p5cqqchvbqmy.cloudfront.net/websdk/v1.21.1/mappedin.js"></script>-->
-<!--<script src="/mappedin.js"></script>-->
+<style>
+    .mapplic-pin{
+        /*background-color: transparent!important;    */
+    }
+    /* INTERACTIVE ELEMENTS */
+    /* clickable elements */
+    .mapplic-clickable:not(g),
+    g.mapplic-clickable > * {
+    	opacity: 1!important;
+    	/*fill: #b7a6bd*/;
+    }
+    /* hovered elements */
+    .mapplic-clickable:not(g):hover,
+    g.mapplic-clickable:hover > * {
+    	opacity: 1;
+    	fill: #343F4B;
+    }
+    
+    /* active elements */
+    .mapplic-active,
+    a.mapplic-active > path,
+    g.mapplic-active > * {
+    	fill: #343F4B;
+    	opacity: 1.0 !important;
+    }
+    .mapplic-coordinates {
+        visibility: hidden;
+    }
+    .mapplic-container {
+        background: #fff;
+    }
+    .mapplic-zoom-buttons{
+        bottom: initial!important;
+        top: 0!important;
+        left: initial!important;
+        right: 0!important;
+    }
+    .mapplic-pin.black-pin {
+    	background-image: url(' //codecloud.cdn.speedyrails.net/sites/587659fb6e6f641648010000/image/png/1484850466000/show_pin.png');
+        background-size: 40px 60px;
+        width: 40px;
+        height: 60px;
+    	margin-top: -55px;
+    	margin-left: -10px;
+    }
+    .mapplic-tooltip-content {
+        overflow: hidden;
+        overflow-y: hidden !important;
+    }
+</style>
+
+<link href="//codecloud.cdn.speedyrails.net/sites/59bac7db6e6f644f22ba0000/text/css/1510935230000/mapplic.css" rel="stylesheet">
+<link href="//codecloud.cdn.speedyrails.net/sites/59bac7db6e6f644f22ba0000/text/css/1485967426000/map.css" rel="stylesheet">
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+<script src="//codecloud.cdn.speedyrails.net/sites/5a9eeaa46e6f6405fb150000/text/javascript/1520365246170/mapplic_mmsdk.js"></script>
+<script src="//codecloud.cdn.speedyrails.net/sites/59bac7db6e6f644f22ba0000/text/javascript/1484859750000/hammer.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+
 <script>
     $(document).ready(function(e){
         init(e);
