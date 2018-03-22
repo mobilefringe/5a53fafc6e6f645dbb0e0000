@@ -100,6 +100,7 @@
             // init_map(reg);
         }
         loadMallDataCached(renderAll); 
+        // https://www.mallmaverick.com/system/site_images/photos/000/037/939/original/St.Vital_-_Map_-_Mar-21-2018.svg?1521739249
     });
     function drop_pin(id, map){
 
