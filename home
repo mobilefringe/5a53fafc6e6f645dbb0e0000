@@ -1,16 +1,28 @@
 <div class="home_banner">   
     <div class="flexslider">
         <ul class="slides" id="home_banner">
-            <script id="banner_template" type="x-tmpl-mustache/text">
-                <li>
-                    <a href="{{url}}" {{css}} onclick="{{noLink}}">
-                        <div class="banner_img" style="background-image: url({{image_url}});"></div>
-                    </a>
-                </li>
-            </script>
+            <li>
+                <a href="/blog">
+                    <div class="banner_img" style="background-image: url('//codecloud.cdn.speedyrails.net/sites/5aa1884a6e6f64062b310000/image/jpeg/1520883393932/11453_COR_website_banner_HOME.jpg');"></div>
+                </a>
+            </li>
         </ul>
     </div>
 </div>
+
+<!--<div class="home_banner">   -->
+<!--    <div class="flexslider">-->
+<!--        <ul class="slides" id="home_banner">-->
+<!--            <script id="banner_template" type="x-tmpl-mustache/text">-->
+<!--                <li>-->
+<!--                    <a href="{{url}}" {{css}} onclick="{{noLink}}">-->
+<!--                        <div class="banner_img" style="background-image: url({{image_url}});"></div>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--            </script>-->
+<!--        </ul>-->
+<!--    </div>-->
+<!--</div>-->
 <div class="feature_container">
     <div class="content_container">
         <!--<div class="flex_container">-->
