@@ -256,60 +256,100 @@
     });
     
    
-    function load_map(reg, store_details){
-        this_region = {};
-        if(store_details.svgmap_region != null) {
-            this_region = store_details.svgmap_region;
+    function floorList () {
+            var floor_list = [];
+            
+            var floor_1 = {};
+            floor_1.id = "first-floor";
+            floor_1.title = "Level One";
+            floor_1.map = getSVGMapURL().split("?")[0];
+            //"//www.mallmaverick.com/system/site_images/photos/000/037/418/original/Regent_Mall_-_Map_-_March-08-2018_updated.svg";
+            // floor_1.minimap = "//codecloud.cdn.speedyrails.net/sites/5a4bb6d36e6f6473fa0a0000/image/png/1513365138000/NorthPark - Dec-15-2017 - Floor 1.png";
+            floor_1.z_index = 1;
+            floor_1.show = true;
+            floor_list.push(floor_1);
+            return floor_list;
         }
-        var svgH;
-        var svgW;
-        if ($(window).width() <= 479){
-            svgH = 186;
-            svgW = 295;
-        } else if ($(window).width() <= 767){
-            svgH = 300;
-            svgW = 366;
-        } else{
-            svgH = 375;
-            svgW = 970;
+        function svgList () {
+            return _.map(getStoresList(), 'svgmap_region');
         }
-        map = $('#mapsvg_store_detail').mapSvg({
-            source: getSVGMapURL(),
-            colors: {stroke: '#aaaaaa', selected: "#F3047A", hover: 0},
-            width: 970,
-            height:375,
-            popover: 'auto',
-            // disableAll: true,
-            viewBox: [520,150,1350,1400],
-            regions: this_region,
-            tooltipsMode:   'custom',
-            zoom: true,
-            pan:true,
-            cursor:'pointer',
-            responsive:true,
-            zoomLimit: [1,10]
-        });
-        if(store_details.svgmap_region != null) {
-            map.setViewBox(store_details.svgmap_region);
-            map.selectRegion(store_details.svgmap_region);
-            drop_pin(store_details.svgmap_region, map);
+        function mapLoaded (map){
+            var pathArray = window.location.pathname.split( '/' );
+            var slug = pathArray[pathArray.length-1];
+            var store_details = getStoreDetailsBySlug(slug);
+            self = map.data('mapplic');
+            var svg = document.getElementById('Layer_x5F_1');
+            // console.log("svg", svg);
+            
+            //get floors to be visible 
+            $(".mapplic-layer").show();
+            //go through all the regions and recalculat the locations
+            _.forEach(svgList(), function(val, key) {
+                
+                if(val !== null) {
+                    
+                    var element = document.getElementById(val);
+                    if (element){
+                        // console.log(val, element);
+                        elBBox = element.getBoundingClientRect();
+                        // console.log(elBBox);
+                        
+                        var viewport_center_x = 0;
+                        var viewport_center_y = 0;
+                        viewport_center_x = (_.toNumber(elBBox.left) + _.toNumber(elBBox.right) )/2;
+                        viewport_center_y = (_.toNumber(elBBox.top) + _.toNumber(elBBox.bottom) )/2;
+                        // console.log("viewport_x",viewport_center_x,viewport_center_y);
+                        pt = svg.createSVGPoint();
+                        pt.x = viewport_center_x;
+                        pt.y = viewport_center_y;
+                        // console.log("pt", pt.x, pt.y)
+                        var svgP = pt.matrixTransform(svg.getScreenCTM().inverse());
+                        // console.log("svg points", svgP.x,svgP.y);
+                        var new_x = svgP.x/ 2500;
+                        var new_y = svgP.y/ 2500;
+                        var location = self.getLocationData(val);
+                        // console.log("nex_x, y", new_x, new_y)
+                        if(location !== null && location.el){
+                            location.x = new_x;
+                            location.y =  new_y;
+                            // self.updateLocation(val);
+                            if(store_details.svgmap_region == val){
+                              location.pin = "black-pin";
+                               
+                            }
+                            self.updateLocation(val);
+                            // var location1 = vm.self.getLocationData(val);
+                            // console.log("location1",  location1.x ,location1.y);
+                            if(store_details.svgmap_region == val){
+                                self.showLocation(val);
+                                self.addPin(val);
+                                
+                            }
+                        }
+                    }
+                }
+            });
+            // console.log("self", vm.self);
+            //find which levels need to be hidden
+            hidden_level = _.filter(self.data.levels , function (o){ 
+                // console.log (o); 
+                return o.show !== true;
+            });
+            //doing it in a loop for future cases where there are more than two floors
+            _.forEach(hidden_level, function(val, key) {
+                $(".mapplic-layer[data-floor='"+val.id+"']").hide();
+            });
+            
+            setTimeout(function() {
+                show_content();
+            }, 500);
         }
-    }
-    function drop_pin(id, map){
-
-        var coords = map.get_coords(id);
-        var height = parseInt(coords["height"])
-        var width = parseInt(coords["width"])
-        var x_offset = (parseInt(width) / 2);
-        var y_offset = (parseInt(height) /2);
         
-        map.setMarks([{ xy: [coords["x"] - 15 + x_offset, coords["y"] - 55 + y_offset],
-                  attrs: {
-                            src:  '//codecloud.cdn.speedyrails.net/sites/57f7f01f6e6f647835890000/image/png/1463000912000/pin2.png'     // image for marker
-                          }
-            }
-            ])
-            // map.setViewBox(id);
-            map.selectRegion(id);
-    }
+        loadMallDataCached(renderPage);
+    });
+    function dropPin(svgmap_region) {
+        console.log(svgmap_region)
+        self = map.data('mapplic');
+        self.showLocation(svgmap_region);
+    //
 </script>
