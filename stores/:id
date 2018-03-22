@@ -237,19 +237,77 @@
                 }
             }
 		    var stores = getStoresList();
-            var regions = {}
-            $.each( stores , function( key, val ) {
-                if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
-                    obj = {};
-                    obj["tooltip"] = "<div class='tooltip_div'><p class='tooltip_name'>"+val.name+"</p></div>"
-                    obj["attr"] = {}
-                    obj["attr"]["href"] = "/stores/"+val.slug
-                    regions[val.svgmap_region] = obj
-                }
+            var mall_json = {};
+            var landmarks = {};
+            mall_json.mapwidth = "1000";
+            mall_json.mapheight = "1000";
+            mall_json.categories = [];
+            mall_json.levels = [];
+            
+            // need to add the following for each floor we want to configure.
+            _.forEach(floorList(), function(value, key) { 
+                var floor_1 = {};
+                floor_1.id = value.id;
+                floor_1.title = value.title;
+                floor_1.map = value.map;
+                
+                floor_1.show = value.show;
+                floor_1.locations = [];
+                var stores_on_floors =  _.filter(stores, function(o) {return value.z_index === o.z_coordinate;}); // ['z_coordinate', value.z_index]);
+                _.forEach(stores_on_floors, function(val, key) {
+                    //for testing limiting the store numbers to vm
+                    var temp_val = {};
+                    temp_val.id = val.svgmap_region;
+                    temp_val.title = val.name;
+                    temp_val.about = val.description.substring(0,200);
+                    if(val.categories != null) {
+                        if(val.categories.length>1){
+                        temp_val.category = val.categories[1];
+                        }
+                        else {
+                            temp_val.category = val.categories[0];
+                        }
+                    }
+                    temp_val.link = "/stores/" + val.slug;
+                    temp_val.pin = "hidden";
+                   
+                    
+                    //get svg's wifth/height by checking the map
+                    var svg_width = 2500;
+                    var svg_height = 2500;
+                    temp_val.x = val.x_coordinate / svg_width;
+                    temp_val.y = val.y_coordinate / svg_height;
+                    floor_1.locations.push(temp_val);
+                });
+                mall_json.levels.push(floor_1);
             });
-            console.log(getSVGMapURL())
-            console.log(store_details);
-            load_map(regions, store_details);
+            
+            console.log(mall_json);
+            // if(store_details.svgmap_region != null){
+            //     load_map(regions, store_details);
+            // }
+            map = $('#mapsvg_store_detail').mapplic({
+            	source: mall_json,
+            	height: 585,
+            	landmark : true,
+            	mapfill:true,
+            	minimap: false,
+            	sidebar: false,
+            	hovertip: true,
+            	developer: false,
+            	fullscreen : false,
+            	clearbutton: false,
+            	deeplinking: false,
+            	fillcolor : "none",
+            	maxscale: 5,
+            	skin: 'mapplic-dark',
+            	action: "none"
+            });
+            
+            map.on('mapready', function(e, self) {
+				console.log('Map is ready!');
+				mapLoaded(map);
+			});
             show_content();
         }
         loadMallDataCached(renderAll); 
