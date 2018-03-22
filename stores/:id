@@ -295,7 +295,7 @@
             // }
             map = $('#mapsvg_store_detail').mapplic({
                 source: mall_json,
-                height: 585,
+                height: 800,
                 landmark: true,
                 mapfill: true,
                 minimap: false,
