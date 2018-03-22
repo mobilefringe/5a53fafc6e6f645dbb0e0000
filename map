@@ -244,7 +244,7 @@
         }
         function mapLoaded (map){
             self = map.data('mapplic');
-            var svg = document.getElementById('Layer_x5F_1');
+            var svg = document.getElementById('Layer_1');
             // console.log("svg", svg);
             
             //get floors to be visible 
