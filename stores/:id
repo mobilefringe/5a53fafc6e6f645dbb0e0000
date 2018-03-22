@@ -317,8 +317,8 @@
             });
             show_content();
         }
-        loadMallDataCached(renderAll);
-    });
+    //     loadMallDataCached(renderAll);
+    // });
 
 
     function floorList() {
@@ -412,8 +412,8 @@
         }, 500);
     }
 
-    // loadMallDataCached(renderPage);
-    // });
+    loadMallDataCached(renderPage);
+    });
 
     function dropPin(svgmap_region) {
         console.log(svgmap_region)
