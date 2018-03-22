@@ -92,7 +92,7 @@
         overflow: hidden;
         overflow-y: hidden !important;
     }
-    ..mapplic-hovertip {
+    .mapplic-hovertip {
         opacity:1!important;
     }
 </style>
