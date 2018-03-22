@@ -214,7 +214,7 @@
             	fillcolor : "none",
             	maxscale: 5,
             	skin: 'mapplic-dark',
-            	tooltiplabel : 'View Info'
+            	tooltiplabel : 'Info'
             });
             
             map.on('mapready', function(e, self) {
