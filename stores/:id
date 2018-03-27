@@ -405,10 +405,7 @@
             _.forEach(hidden_level, function(val, key) {
                 $(".mapplic-layer[data-floor='" + val.id + "']").hide();
             });
-    
-            setTimeout(function() {
-                show_content();
-            }, 500);
+
         }
 
         loadMallDataCached(renderAll);
