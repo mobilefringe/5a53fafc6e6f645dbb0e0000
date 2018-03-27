@@ -74,6 +74,7 @@
     }
     .mapplic-container {
         background: #fff;
+        height: 100%!important;
     }
     .mapplic-zoom-buttons{
         bottom: initial!important;
