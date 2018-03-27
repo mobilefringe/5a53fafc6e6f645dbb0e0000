@@ -308,7 +308,7 @@
                 clearbutton: false,
                 deeplinking: false,
                 fillcolor: "none",
-                maxscale: 7,
+                maxscale: 3,
                 skin: 'mapplic-dark',
                 action: "none"
             });
