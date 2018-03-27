@@ -285,7 +285,7 @@
                     temp_val.x = val.x_coordinate / svg_width;
                     temp_val.y = val.y_coordinate / svg_height;
                     
-                    temp_val.zoom = 5;
+                    temp_val.zoom = "6";
                     floor_1.locations.push(temp_val);
                 });
                 mall_json.levels.push(floor_1);
