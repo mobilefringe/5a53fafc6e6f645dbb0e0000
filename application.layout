@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <!-- Favicon -->
@@ -156,7 +155,7 @@
                                         <li class="dropdown_item"><a href="/map">Centre Map</a></li>
                                     </ul>    
                                 </li>
-                                <li class="menu_item"><a href="/promotions">Sales & Promos</a></li>
+                                <li class="menu_item"><a href="/promotions">Sales & Promotions</a></li>
                                 <li class="menu_item"><a href="/events">Events</a></li>
                                 <!--<li class="menu_item">-->
                                 <!--    <a href="#">Promos & Events <i class="fa fa-angle-down" aria-hidden="true"></i></a>-->
@@ -238,7 +237,7 @@
                         <div class="margin_30 hidden_phone"></div>
                         <ul class="footer_menu footer_menu_left">
                             <li><a href="/map">Map</a></li>
-                            <li><a href="/promotions">Sales & Promos</a></li>
+                            <li><a href="/promotions">Sales & Promotions</a></li>
                             <li><a href="/events">Events</a></li>
                             
                         </ul>
