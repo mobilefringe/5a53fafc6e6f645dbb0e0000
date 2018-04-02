@@ -212,7 +212,7 @@
             	clearbutton: false,
             	deeplinking: false,
             	fillcolor : "none",
-            	maxscale: 5,
+            	maxscale: 6,
             	skin: 'mapplic-dark',
             	tooltiplabel : 'Info'
             });
