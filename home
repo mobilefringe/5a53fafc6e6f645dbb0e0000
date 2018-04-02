@@ -277,4 +277,7 @@
         })
         
     })
+    $(window).load(function(){
+        show_content();
+    })
 </script>
