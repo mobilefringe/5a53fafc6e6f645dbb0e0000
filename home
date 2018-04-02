@@ -275,6 +275,6 @@
             e.preventDefault();
              document.location.href = '/newsletter?name='+$("#fieldEmail").val();
         })
-        show_content();
+        
     })
 </script>
