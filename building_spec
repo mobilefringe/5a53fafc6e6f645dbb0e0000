@@ -37,7 +37,7 @@
                     </script>
                 </ul>
             </div>
-            <div class="dropdown directory_btn category_select">
+            <div class="dropdown directory_btn category_select visible_phone">
                 <button class="dropdown-toggle caps" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Categories <i class="fa fa-angle-down" aria-hidden="true"></i>
                 </button>
