@@ -170,7 +170,7 @@
                         $(".view_specs").attr("href" , '#');
                         $(".view_specs").attr("target" , '');
                         $(".contact_info").show();
-                        console.log("leasing_unit.contact_email",leasing_unit.contact_email, leasing_unit.contact_phone);
+                        console.log("leasing_unit.contact_email",leasing_unit.contact_email, leasing_unit.contact_email.length);
                         if((leasing_unit.contact_email == null || leasing_unit.contact_email == undefined || leasing_unit.contact_email.length == 0) &&  (leasing_unit.contact_phone == null || leasing_unit.contact_phone == undefined || leasing_unit.contact_phone.length == 0)) {
                             $(".contact_phone").attr("href" , leasing_unit.contact_phone);
                             $(".contact_email").attr("href" , leasing_unit.contact_email);
