@@ -165,6 +165,9 @@
                         $(".view_specs").attr("href" , '#');
                         $(".view_specs").attr("target" , '');
                         $(".contact_info").show();
+                        if(leasing_unit.contact_email) {
+                            $(".contact_phone")
+                        }
                     }
                     else {
                         $(".view_specs").show();
