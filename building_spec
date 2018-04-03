@@ -92,8 +92,10 @@
         margin-bottom: 20px;
         width: 100%;
     }
-    #mapsvg_store_detail {
-        height:600px!important;
+    @media (max-width: 769px) {
+        #mapsvg_store_detail {
+            height:600px!important;
+        }
     }
 </style>
 <script>
