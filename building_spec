@@ -82,6 +82,10 @@
     .map_popover_content a {
         font-size: 14px;
     }
+    .dropdown.visible_phone {
+    border: 1px #000 solid;
+    margin-bottom: 20px;
+}
 </style>
 <script>
     $(document).ready(function(e){
