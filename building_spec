@@ -156,7 +156,7 @@
                     // $(".view_specs").show();
                     if(leasing_unit.no_pdf) {
                         // $(".view_specs").hide();
-                        $(".view_specs").attr("href" , leasing_unit.leasing_doc);
+                        $(".view_specs").text('No spec document availalble.');
                     }
                     else {
                         $(".view_specs").show();
