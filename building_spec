@@ -155,11 +155,11 @@
                     $(".unit_name").show();
                     // $(".view_specs").show();
                     if(leasing_unit.no_pdf) {
-                        // $(".view_specs").hide();
+                        $(".view_specs").show();;
                         $(".view_specs").text('No spec document availalble');
                     }
                     else {
-                        // $(".view_specs").show();
+                        $(".view_specs").show();
                          $(".view_specs").text('View Spec Document ');
                     }
                     $(".select_unit").hide();
