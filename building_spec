@@ -60,11 +60,11 @@
         </div> 
     </div>
 </div>
-<stlye>
+<style>
     .map_container {
         height : auto;
     }
-</stlye>
+</style>
 <script>
     $(document).ready(function(e){
         init(e);
