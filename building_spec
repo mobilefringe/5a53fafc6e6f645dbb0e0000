@@ -50,7 +50,7 @@
             <div class="store_unit_dets">
                 <h3 class="unit_name hidden_now"></h3>
                 <a class="view_specs hidden_now" href="" target="_blank"> View Spec Document </a>
-                <p class="contact_info hidden_now"> Contact us for more info: <a href="tel:204-257-5646">204-257-5646 Melissa.Marlatt@cushwake.com</p>
+                <p class="contact_info hidden_now"> Contact us for more info: <a href="tel:204-257-5646">204-257-5646</a> Melissa.Marlatt@cushwake.com</p>
                 <p class="select_unit"> Select a unit for more information. </p>
             </div>
         </div>
