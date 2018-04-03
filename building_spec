@@ -70,7 +70,7 @@
         margin-bottom: 0px;
     }
     .map_popover_content a {
-        
+        font-size: 14px;
     }
 </style>
 <script>
