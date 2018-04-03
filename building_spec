@@ -158,6 +158,7 @@
                         $(".view_specs").show();
                         $(".view_specs").text('No spec document availalble.');
                         $(".view_specs").attr("href" , '#');
+                        $(".view_specs").attr("target" , '');
                     }
                     else {
                         $(".view_specs").show();
