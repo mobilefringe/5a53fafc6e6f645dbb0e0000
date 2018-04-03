@@ -92,7 +92,7 @@
         margin-bottom: 20px;
         width: 100%;
     }
-    @media (max-width: 769px) {
+    @media (min-width: 769px) {
         #mapsvg_store_detail {
             height:600px!important;
         }
