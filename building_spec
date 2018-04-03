@@ -52,7 +52,7 @@
                 <a class="view_specs hidden_now" href="" target="_blank"> View Spec Document </a>
                 <p class="contact_info hidden_now">
                     Contact us for more info: <br/> 
-                    <a class="contact_num" href="tel:204-257-5646">204-257-5646</a>
+                    <a class="contact_phone" href="tel:204-257-5646">204-257-5646</a>
                     <a class="contact_email" href="mailto:Melissa.Marlatt@cushwake.com">Melissa.Marlatt@cushwake.com </a>
                 </p>
                 <p class="select_unit"> Select a unit for more information. </p>
