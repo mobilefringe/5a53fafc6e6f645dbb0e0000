@@ -37,7 +37,7 @@
                     </script>
                 </ul>
             </div>
-            <div class="dropdown visible_phone">
+            <div class="dropdown show_phone">
                 <button class="dropdown-toggle caps" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Select a Unit <i class="fa fa-angle-down" aria-hidden="true" style="margin-left: 10px;"></i>
                 </button>
