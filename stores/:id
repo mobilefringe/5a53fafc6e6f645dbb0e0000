@@ -326,7 +326,7 @@
             var floor_1 = {};
             floor_1.id = "first-floor";
             floor_1.title = "Level One";
-            floor_1.map =  "https://www.mallmaverick.com/system/site_images/photos/000/037/939/original/St.Vital_-_Map_-_Mar-21-2018.svg"; 
+            floor_1.map =  "https://www.mallmaverick.com/system/site_images/photos/000/038/284/original/St.Vital_-_Map_-_April-02-2018_-_Outlined.svg"; 
             //"//www.mallmaverick.com/system/site_images/photos/000/037/418/original/Regent_Mall_-_Map_-_March-08-2018_updated.svg";
             // floor_1.minimap = "//codecloud.cdn.speedyrails.net/sites/5a4bb6d36e6f6473fa0a0000/image/png/1513365138000/NorthPark - Dec-15-2017 - Floor 1.png";
             floor_1.z_index = 1;
