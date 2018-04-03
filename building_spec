@@ -85,6 +85,7 @@
     .dropdown.show_phone {
         border: 1px #000 solid;
         margin-bottom: 20px;
+            width: 100%;
     }
 </style>
 <script>
