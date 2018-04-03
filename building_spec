@@ -100,7 +100,6 @@
                 leasing_units = mallDataJSON.leasing_units;
                 console.log(leasing_units);
                 renderLeasingList('#store_list_building_spec','#store_list_template_map', leasing_units, "A", "Z");
-                var categories = getStoreCategories().sortBy(function(o){ return o.name});
                 renderGeneral("#category_select", "#category_select_template", leasing_units);
                 $('#category_select').prepend('<li class="dropdown-item show_cat_stores" data-id="000" name="ALL" href="#">ALL</li>');
                
