@@ -69,6 +69,9 @@
         font-size: 14px;
         margin-bottom: 0px;
     }
+    .map_popover_content a {
+        
+    }
 </style>
 <script>
     $(document).ready(function(e){
