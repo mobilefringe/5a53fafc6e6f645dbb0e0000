@@ -164,6 +164,7 @@
                         $(".view_specs").text('No spec document availalble.');
                         $(".view_specs").attr("href" , '#');
                         $(".view_specs").attr("target" , '');
+                        $(".contact_info").show()
                     }
                     else {
                         $(".view_specs").show();
