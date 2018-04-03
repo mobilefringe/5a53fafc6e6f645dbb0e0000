@@ -167,6 +167,7 @@
                         $(".contact_info").show();
                         if((leasing_unit.contact_email == null || leasing_unit.contact_email == undefined || leasing_unit.contact_email.length == 0) &&  (leasing_unit.contact_phone == null || leasing_unit.contact_phone == undefined || leasing_unit.contact_phone.length == 0)) {
                             $(".view_specs").attr("href" , leasing_unit.leasing_doc);
+                            $(".view_specs").attr("href" , leasing_unit.leasing_doc);
                         }
                     }
                     else {
