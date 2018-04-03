@@ -160,7 +160,7 @@
                     }
                     else {
                         $(".view_specs").show();
-                         $(".view_specs").text('View Spec Document ');
+                        $(".view_specs").text('View Spec Document ');
                     }
                     $(".select_unit").hide();
                 
