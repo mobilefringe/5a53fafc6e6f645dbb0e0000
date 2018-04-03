@@ -178,42 +178,6 @@
                     }
                 }
             });
-            
-            // var stores = getStoresList(); 
-            // renderStoreList('#store_list_building_spec','#store_list_template_map', stores, "A", "Z");
-            // regions = {}
-            // $.each( stores , function( key, val ) {
-            //     if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
-            //         if(!val.store_front_url_abs ||  val.store_front_url_abs.indexOf('missing.png') > -1 || val.store_front_url_abs.length === 0){
-            //             val.store_front_url_abs = '//codecloud.cdn.speedyrails.net/sites/55ddf3f86e6f640775000000/a22fcf023d728855c6f575ba100806d7/default.jpg'
-            //         }
-            //         obj = {};
-            //         obj["tooltip"] = "<p class='tooltip_name'>"+val.name+"</p>"
-            //         obj["popover"] = "<p class='popover_name'>"+val.name+"</p><a href="+ val.leasing + "> View Spec Document </a>"
-            //         // obj["attr"] = {}
-            //         // obj["attr"]["href"] = "/stores/"+val.slug
-            //         regions[val.svgmap_region] = obj
-            //     }
-            // });
-            // renderStoreList('#stores_container','#stores_template', stores, "A", "Z");
-            // show_content();
-            // var map = $('#mapsvg_store_detail').mapSvg({
-            //     source: getSVGMapURL(),
-            //     colors: {stroke: '#aaaaaa', selected: "#F3047A", hover: "#F3047A"},
-            //     width: 1170,
-            //     height:600,
-            //     // viewBox: [520,150,1350,1400],
-            //     regions: regions,
-            //     tooltipsMode: 'custom',
-            //     zoom: true,
-            //     pan:true,
-            //     cursor:'pointer',
-            //     responsive:true,
-            //     zoomLimit: [0,10]
-            // });
-            
-            
-            // init_map(reg);
         }
         function regionClicked(e,mapsvg){
             var region = this;
