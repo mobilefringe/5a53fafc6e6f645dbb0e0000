@@ -92,6 +92,9 @@
         margin-bottom: 20px;
         width: 100%;
     }
+    #mapsvg_store_detail {
+        height:600px!important;
+    }
 </style>
 <script>
     $(document).ready(function(e){
