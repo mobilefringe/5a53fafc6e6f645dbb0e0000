@@ -65,10 +65,10 @@
         height : auto;
     }
     p.popover_name {
-    font-family: brandon_bold;
-    font-size: 14px;
-    margin-bottom: 0px;
-}
+        font-family: brandon_bold;
+        font-size: 14px;
+        margin-bottom: 0px;
+    }
 </style>
 <script>
     $(document).ready(function(e){
