@@ -156,7 +156,8 @@
                     // $(".view_specs").show();
                     if(leasing_unit.no_pdf) {
                         $(".view_specs").show();
-                        $(".view_specs").text('No spec document availalble');
+                        $(".view_specs").text('No spec document availalble.');
+                        $(".view_specs").attr("href" , '#');
                     }
                     else {
                         $(".view_specs").show();
