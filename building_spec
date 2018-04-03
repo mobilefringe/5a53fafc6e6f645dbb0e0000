@@ -173,6 +173,7 @@
                     else {
                         $(".view_specs").show();
                         $(".view_specs").text('View Spec Document ');
+                        $(".contact_info").hide()
                     }
                     $(".select_unit").hide();
                 
