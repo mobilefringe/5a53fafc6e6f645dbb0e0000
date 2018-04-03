@@ -43,7 +43,7 @@
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink" id="category_select">
                     <script id="category_select_template" type="x-tmpl-mustache/text">
-                        <li class="dropdown-item show_cat_stores map_pin_a" data-id="{{id}}" name="{{unit_number}}">{{unit_number}}</li>
+                        <li class="dropdown-item show_cat_stores map_pin_a" data-value='{{svgmap_region}}/{{unit_number}}' data-id="{{id}}" name="{{unit_number}}">{{unit_number}}</li>
                     </script>
                 </ul>
             </div>
