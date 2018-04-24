@@ -276,8 +276,5 @@
              document.location.href = '/newsletter?name='+$("#fieldEmail").val();
         })
         
-    })
-    $(window).load(function(){
-        show_content();
-    })
+    });
 </script>
