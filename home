@@ -226,7 +226,6 @@
                     });
                      
                      blogs[0].latest_post = "/ NEW POST!";
-                     console.log("blog", blogs);
                     renderPosts('#home_blog_container','#home_blog_template', blogs);
                     renderPosts('#home_mblog_container','#home_mblog_template', blogs);
                 }
