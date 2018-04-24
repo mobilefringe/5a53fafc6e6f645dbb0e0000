@@ -7,11 +7,11 @@
         <div class="inside_banner_content">
             <div class="row">
                 <div class="menu_flex_container">
-                    <div>Unit Directory</div>
-                    <div>Submission Requirements</div>
-                    <div>Base Building</div>
-                    <div>Construction</div>
-                    <div>Sustainability</div>
+                    <div class="specs_menu_item">Unit Directory</div>
+                    <div class="specs_menu_item">Submission Requirements</div>
+                    <div class="specs_menu_item">Base Building</div>
+                    <div class="specs_menu_item">Construction</div>
+                    <div class="specs_menu_item">Sustainability</div>
                 </div>
             </div>
         </div>
