@@ -9,9 +9,6 @@
                 <div class="col-md-6">
                     <h1>Centre Map</h1>
                 </div>
-                <div class="col-md-6 hidden_phone">
-                    <h4 class="pull-right">Stores <i class="fa fa-angle-right" aria-hidden="true"></i> Centre Map</h4>
-                </div>
             </div>
         </div>
     </div>
