@@ -118,8 +118,6 @@
         <div id="structural_page"></div>
         <div id="mechanical_page"></div>
         <div id="electrical_page"></div>
-        <div id="site_page"></div>
-        <div id="environment_green_page"></div>
     </div>
 </section>
 <style>
