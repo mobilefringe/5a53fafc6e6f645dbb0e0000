@@ -107,11 +107,11 @@
     </div>
     <div class="content_container margin_30" id="base_build_page">
         <div id="architectural_page" class="hidden_now"></div>
-        <div id="structural_page"></div>
-        <div id="mechanical_page"></div>
-        <div id="electrical_page"></div>
-        <div id="site_page"></div>
-        <div id="environment_green_page"></div>
+        <div id="structural_page" class="hidden_now" class="hidden_now"></div>
+        <div id="mechanical_page" class="hidden_now"></div>
+        <div id="electrical_page" class="hidden_now"></div>
+        <div id="site_page" class="hidden_now"></div>
+        <div id="environment_green_page" class="hidden_now"></div>
     </div>
     <div class="content_container margin_30" id="construction_page">
         <div id="hoarding_page"></div>
