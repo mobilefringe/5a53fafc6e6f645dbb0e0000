@@ -226,7 +226,7 @@
         loadMallDataCached(renderAll); 
         
         $(".specs_menu_item").click(function(){
-            console.log($(this));
+            console.log($(this).id);
             // submenu_unit_dir
         });
         // submission_req
