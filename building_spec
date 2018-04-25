@@ -33,22 +33,22 @@
     <div class="bspec_sub_menu_container hidden_now" id="submenu_base_build">
         <div class="content_container">
             <div class="menu_flex_container">
-                <div class="specs_sub_menu_item caps" id="architectural">Architectural</div>
-                <div class="specs_sub_menu_item caps" id="structural">Structural</div>
-                <div class="specs_sub_menu_item caps" id="mechanical">Mechanical</div>
-                <div class="specs_sub_menu_item caps" id="electrical">Electrical</div>
-                <div class="specs_sub_menu_item caps" id="site">Site</div>
-                <div class="specs_sub_menu_item caps" id="environment_green">Environment Green</div>
+                <div class="specs_sub_menu_item caps multi_menu" id="architectural">Architectural</div>
+                <div class="specs_sub_menu_item caps multi_menu" id="structural">Structural</div>
+                <div class="specs_sub_menu_item caps multi_menu" id="mechanical">Mechanical</div>
+                <div class="specs_sub_menu_item caps multi_menu" id="electrical">Electrical</div>
+                <div class="specs_sub_menu_item caps multi_menu" id="site">Site</div>
+                <div class="specs_sub_menu_item caps multi_menu" id="environment_green">Environment Green</div>
             </div>
         </div>
     </div>
     <div class="bspec_sub_menu_container hidden_now" id="submenu_construction">
         <div class="content_container">
             <div class="menu_flex_container">
-                <div class="specs_sub_menu_item caps" id="hoarding">Hoarding</div>
-                <div class="specs_sub_menu_item caps" id="preferred_trades">Preferred Trades</div>
-                <div class="specs_sub_menu_item caps" id="before_construction">Before Construction</div>
-                <div class="specs_sub_menu_item caps" id="during_construction">During Construction</div>
+                <div class="specs_sub_menu_item caps multi_menu" id="hoarding">Hoarding</div>
+                <div class="specs_sub_menu_item caps multi_menu" id="preferred_trades">Preferred Trades</div>
+                <div class="specs_sub_menu_item caps multi_menu" id="before_construction">Before Construction</div>
+                <div class="specs_sub_menu_item caps multi_menu" id="during_construction">During Construction</div>
             </div>
         </div>
     </div>
