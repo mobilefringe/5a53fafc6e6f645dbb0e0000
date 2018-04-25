@@ -371,7 +371,7 @@
         pages_json = prefix + "/pages/svc-sustainability-criteria.json"
         $.getJSON(pages_json).done(function(data) {
             // $('#mm_page_title').html(data.title);
-            $('#during_construction_page').html(data.body);
+            $('#dsustainability_page').html(data.body);
         }).fail(function(jqXHR) {
             if (jqXHR.status == 404) {
                console.log("Error retreving data. Please try again.")
