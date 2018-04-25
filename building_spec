@@ -106,7 +106,9 @@
         
     </div>
     <div class="content_container margin_30" id="base_build_page">
-        
+        <div id="architecture_page">
+            
+        </div>
     </div>
 </section>
 <style>
