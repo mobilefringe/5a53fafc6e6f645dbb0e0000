@@ -47,7 +47,7 @@
             <div class="menu_flex_container">
                 <div class="specs_sub_menu_item caps" id="hoarding">Hoarding</div>
                 <div class="specs_sub_menu_item caps" id="preferred_trades">Preferred Trades</div>
-                <div class="specs_sub_menu_item caps">Before Construction</div>
+                <div class="specs_sub_menu_item caps" id="before_construction">Before Construction</div>
                 <div class="specs_sub_menu_item caps">During Construction</div>
             </div>
         </div>
