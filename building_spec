@@ -226,7 +226,7 @@
         loadMallDataCached(renderAll); 
         
         $(".specs_menu_item").click(function(){
-            $(".specs_menu_item").removeClass("active")
+            $(".specs_menu_item").removeClass("active");
             console.log($(this)[0].id);
             var el_id = $(this)[0].id;
             $("#submenu_"+el_id).show();
