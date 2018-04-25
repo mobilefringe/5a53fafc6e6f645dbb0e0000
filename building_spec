@@ -371,7 +371,7 @@
             $("#submenu_"+el_id).show();
             
             if (el_id == "submission_req") {
-                
+                $("#submission_req_page").show();
             }
             else if (el_id == "base_build") {
                 
