@@ -377,7 +377,7 @@
                 $("#submission_req_page").show();
             }
             else if (el_id == "base_build") {
-                $("#submission_req_page").show();
+                $("#architectural_page").show();
             }
             else if (el_id == "construction") {
                 $("#submission_req_page").show();
