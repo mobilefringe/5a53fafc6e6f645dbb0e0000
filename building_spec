@@ -68,7 +68,7 @@
                 <div class="stores_list hidden_phone">
                     <ul id="store_list_building_spec">
                         <script id="store_list_template_map" type="x-tmpl-mustache/text">
-                            <li><a class="map_pin_a" href="#" data-value='{{svgmap_region}}/{{unit_number}}' data-id="{{id}}">{{unit_number}}</a><li>
+                            <li><a class="map_pin_a" href="#" data-region = "{{svgmap_region}}" data-value='{{svgmap_region}}/{{unit_number}}' data-id="{{id}}">{{unit_number}}</a><li>
                         </script>
                     </ul>
                 </div>
