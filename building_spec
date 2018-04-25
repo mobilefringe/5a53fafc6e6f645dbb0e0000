@@ -370,8 +370,18 @@
             $(".bspec_sub_menu_container").hide();
             $("#submenu_"+el_id).show();
             
-            if (el_id == "submission_req")
-            
+            if (el_id == "submission_req") {
+                
+            }
+            else if (el_id == "submission_req") {
+                
+            }
+            else if (el_id == "submission_req") {
+                
+            }
+            else if (el_id == "submission_req") {
+                
+            }
         });
         id="submission_req">Submission Requirements</div>
             <div class="specs_menu_item caps" id="base_build">Base Building</div>
