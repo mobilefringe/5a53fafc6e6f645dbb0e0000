@@ -333,6 +333,47 @@
                console.log("Error retreving data. Please try again.")
             }
         });
+        
+        pages_json = prefix + "/pages/svc-base-building--6.json"
+        $.getJSON(pages_json).done(function(data) {
+            // $('#mm_page_title').html(data.title);
+            $('#environment_green_page').html(data.body);
+        }).fail(function(jqXHR) {
+            if (jqXHR.status == 404) {
+               console.log("Error retreving data. Please try again.")
+            }
+        });
+        pages_json = prefix + "/pages/svc-base-building--6.json"
+        $.getJSON(pages_json).done(function(data) {
+            // $('#mm_page_title').html(data.title);
+            $('#environment_green_page').html(data.body);
+        }).fail(function(jqXHR) {
+            if (jqXHR.status == 404) {
+               console.log("Error retreving data. Please try again.")
+            }
+        });
+        pages_json = prefix + "/pages/svc-base-building--6.json"
+        $.getJSON(pages_json).done(function(data) {
+            // $('#mm_page_title').html(data.title);
+            $('#environment_green_page').html(data.body);
+        }).fail(function(jqXHR) {
+            if (jqXHR.status == 404) {
+               console.log("Error retreving data. Please try again.")
+            }
+        });
+        pages_json = prefix + "/pages/svc-base-building--6.json"
+        $.getJSON(pages_json).done(function(data) {
+            // $('#mm_page_title').html(data.title);
+            $('#environment_green_page').html(data.body);
+        }).fail(function(jqXHR) {
+            if (jqXHR.status == 404) {
+               console.log("Error retreving data. Please try again.")
+            }
+        });
+        <div id="hoarding_page"></div>
+        <div id="preferred_trades_page"></div>
+        <div id="before_construction_page"></div>
+        <div id="during_construction_page"></div>
     });
     
 </script>
