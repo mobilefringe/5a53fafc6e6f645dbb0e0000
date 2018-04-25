@@ -377,7 +377,7 @@
             }
             else if (el_id == "base_build") {
                 $("#architectural_page").show();
-                $(".multi_menu").removeClass('active')
+                $(".multi_menu").removeClass('active');
                 $("#architectural").addClass("active")";
             }
             else if (el_id == "construction") {
