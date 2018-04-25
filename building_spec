@@ -293,7 +293,7 @@
         pages_json = prefix + "/pages/svc-base-building--2.json"
         $.getJSON(pages_json).done(function(data) {
             // $('#mm_page_title').html(data.title);
-            $('#submission_req').html(data.body);
+            $('#structural_page').html(data.body);
         }).fail(function(jqXHR) {
             if (jqXHR.status == 404) {
                console.log("Error retreving data. Please try again.")
@@ -317,7 +317,11 @@
                console.log("Error retreving data. Please try again.")
             }
         });
-        
+        div id=""></div>
+        <div id="mechanical_page"></div>
+        <div id="electrical_page"></div>
+        <div id="site_page"></div>
+        <div id="environment_green_page
     });
     
 </script>
