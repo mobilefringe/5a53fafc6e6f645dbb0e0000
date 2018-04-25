@@ -291,6 +291,16 @@
                console.log("Error retreving data. Please try again.")
             }
         });
+        pages_json = prefix + "/pages/svc-base-building--2.json"
+        $.getJSON(pages_json).done(function(data) {
+            // $('#mm_page_title').html(data.title);
+            $('#submission_req').html(data.body);
+        }).fail(function(jqXHR) {
+            if (jqXHR.status == 404) {
+               console.log("Error retreving data. Please try again.")
+            }
+        });
+        
     });
     
 </script>
