@@ -384,6 +384,7 @@
             else if (el_id == "sustainability") {
                 $("#sustainability_page").show();
             }
+            console.log("el_id");
         });
     });
     
