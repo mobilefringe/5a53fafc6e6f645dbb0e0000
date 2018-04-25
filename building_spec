@@ -242,22 +242,6 @@
                 //render map
                 renderMap(leasing_units);
                 loadInsidePages ();
-            //     var map = $('#mapsvg_store_detail').mapSvg({
-            //         source: "//mallmaverickdevelopment.com/system/properties/leasing_mapsvgs/000/000/042/original/StVital_-_Map_-_Jan-30-2018_-_Red.svg?1517426277",
-            //         colors: {stroke: '#aaaaaa', selected: "#F3047A", hover: "#F3047A"},
-            //         width: 1170,
-            //         height:600,
-            //         // viewBox: [520,150,1350,1400],
-            //         regions: regions,
-            //         tooltipsMode: 'custom',
-            //         zoom: true,
-            //         pan:true,
-            //         cursor:'pointer',
-            //         responsive:true,
-            //         zoomLimit: [0,10],
-            //         onClick:regionClicked,
-            //     });
-            //     $(".map_tooltip").css({"background-color":"#C607A9", "color" : "#fff", "margin": "5px", "border": "none"});
                 $('.map_pin_a').click(function(e){
                     e.preventDefault();
                     var id = $(this).attr('data-value');
