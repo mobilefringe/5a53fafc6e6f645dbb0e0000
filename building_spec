@@ -239,65 +239,65 @@
                 });
                 // renderStoreList('#stores_container','#stores_template', stores, "A", "Z");
                 show_content();
-                var map = $('#mapsvg_store_detail').mapSvg({
-                    source: "//mallmaverickdevelopment.com/system/properties/leasing_mapsvgs/000/000/042/original/StVital_-_Map_-_Jan-30-2018_-_Red.svg?1517426277",
-                    colors: {stroke: '#aaaaaa', selected: "#F3047A", hover: "#F3047A"},
-                    width: 1170,
-                    height:600,
-                    // viewBox: [520,150,1350,1400],
-                    regions: regions,
-                    tooltipsMode: 'custom',
-                    zoom: true,
-                    pan:true,
-                    cursor:'pointer',
-                    responsive:true,
-                    zoomLimit: [0,10],
-                    onClick:regionClicked,
-                });
-                $(".map_tooltip").css({"background-color":"#C607A9", "color" : "#fff", "margin": "5px", "border": "none"});
-                $('.map_pin_a').click(function(e){
-                    e.preventDefault();
-                    var id = $(this).attr('data-value');
-                    console.log("id",id);
-                    map_pin(id, e, regions);
-                    var unit_id = $(this).attr('data-id');
-                    leasing_unit = getLeasingUnitByID(unit_id);
-                    $(".unit_name").text(leasing_unit.unit_number);
-                    $(".view_specs").attr("href" , leasing_unit.leasing_doc);
-                    $(".unit_name").show();
-                    // $(".view_specs").show();
-                    if(leasing_unit.no_pdf) {
-                        $(".view_specs").show();
-                        $(".view_specs").text('No spec document availalble.');
-                        $(".view_specs").attr("href" , '#');
-                        $(".view_specs").attr("target" , '');
-                        $(".contact_info").show();
-                        console.log("leasing_unit.contact_email",leasing_unit.contact_email.length, leasing_unit.contact_phone.length);
-                        if((leasing_unit.contact_email != null && leasing_unit.contact_email != undefined && leasing_unit.contact_email.length > 0) &&  (leasing_unit.contact_phone != null && leasing_unit.contact_phone != undefined && leasing_unit.contact_phone.length > 0)) {
-                            $(".contact_phone").attr("href" , "tel:"+leasing_unit.contact_phone);
-                            $(".contact_email").attr("href" , "mailto"+leasing_unit.contact_email);
-                        }
-                    }
-                    else {
-                        $(".view_specs").show();
-                        $(".view_specs").text('View Spec Document ');
-                        $(".contact_info").hide();
-                    }
-                    $(".select_unit").hide();
+            //     var map = $('#mapsvg_store_detail').mapSvg({
+            //         source: "//mallmaverickdevelopment.com/system/properties/leasing_mapsvgs/000/000/042/original/StVital_-_Map_-_Jan-30-2018_-_Red.svg?1517426277",
+            //         colors: {stroke: '#aaaaaa', selected: "#F3047A", hover: "#F3047A"},
+            //         width: 1170,
+            //         height:600,
+            //         // viewBox: [520,150,1350,1400],
+            //         regions: regions,
+            //         tooltipsMode: 'custom',
+            //         zoom: true,
+            //         pan:true,
+            //         cursor:'pointer',
+            //         responsive:true,
+            //         zoomLimit: [0,10],
+            //         onClick:regionClicked,
+            //     });
+            //     $(".map_tooltip").css({"background-color":"#C607A9", "color" : "#fff", "margin": "5px", "border": "none"});
+            //     $('.map_pin_a').click(function(e){
+            //         e.preventDefault();
+            //         var id = $(this).attr('data-value');
+            //         console.log("id",id);
+            //         map_pin(id, e, regions);
+            //         var unit_id = $(this).attr('data-id');
+            //         leasing_unit = getLeasingUnitByID(unit_id);
+            //         $(".unit_name").text(leasing_unit.unit_number);
+            //         $(".view_specs").attr("href" , leasing_unit.leasing_doc);
+            //         $(".unit_name").show();
+            //         // $(".view_specs").show();
+            //         if(leasing_unit.no_pdf) {
+            //             $(".view_specs").show();
+            //             $(".view_specs").text('No spec document availalble.');
+            //             $(".view_specs").attr("href" , '#');
+            //             $(".view_specs").attr("target" , '');
+            //             $(".contact_info").show();
+            //             console.log("leasing_unit.contact_email",leasing_unit.contact_email.length, leasing_unit.contact_phone.length);
+            //             if((leasing_unit.contact_email != null && leasing_unit.contact_email != undefined && leasing_unit.contact_email.length > 0) &&  (leasing_unit.contact_phone != null && leasing_unit.contact_phone != undefined && leasing_unit.contact_phone.length > 0)) {
+            //                 $(".contact_phone").attr("href" , "tel:"+leasing_unit.contact_phone);
+            //                 $(".contact_email").attr("href" , "mailto"+leasing_unit.contact_email);
+            //             }
+            //         }
+            //         else {
+            //             $(".view_specs").show();
+            //             $(".view_specs").text('View Spec Document ');
+            //             $(".contact_info").hide();
+            //         }
+            //         $(".select_unit").hide();
                 
-                })
-                $('#mapsvg_store_detail').bind('onClick',function(this_obj,e,mapSVG) {
-                    console.log("clicked");
-                });
-                function map_pin(value, e, regions){
-                    map.marksHide();
-                    value = value.split('/')
-                    if (value[0] != null){
-                        store = getStoreDetailsBySlug(value[1]);
-                        drop_pin(value[0], map, store, e,regions);    
-                    }
-                }
-            });
+            //     })
+            //     $('#mapsvg_store_detail').bind('onClick',function(this_obj,e,mapSVG) {
+            //         console.log("clicked");
+            //     });
+            //     function map_pin(value, e, regions){
+            //         map.marksHide();
+            //         value = value.split('/')
+            //         if (value[0] != null){
+            //             store = getStoreDetailsBySlug(value[1]);
+            //             drop_pin(value[0], map, store, e,regions);    
+            //         }
+            //     }
+            // });
         }
         // function regionClicked(e,mapsvg){
         //     var region = this;
