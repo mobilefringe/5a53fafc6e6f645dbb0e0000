@@ -253,7 +253,7 @@
                     $(".view_specs").attr("href" , leasing_unit.leasing_doc);
                     $(".unit_name").show();
                     if(leasing_unit.no_pdf) {
-                        $(".view_specs").show();
+                        $(".view_specs").css({"display","inline-block"});
                         $(".view_specs").text('No spec document availalble.');
                         $(".view_specs").attr("href" , '#');
                         $(".view_specs").attr("target" , '');
