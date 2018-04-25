@@ -23,7 +23,7 @@
 <div class="bspec_sub_menu_container" id="submenu_unit_dir">
     <div class="content_container">
         <div class="menu_flex_container">
-            <div class="specs_sub_menu_item caps">Store Listing</div>
+            <div class="specs_sub_menu_item caps">Requirement Details</div>
         </div>
     </div>
 </div>
