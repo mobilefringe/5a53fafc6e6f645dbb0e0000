@@ -72,7 +72,7 @@
         <!--        <a href="/stores"><div class="directory_btn caps directory_back"><i class="fa fa-angle-left" aria-hidden="true"></i> Back to Directory</div></a>-->
         <!--    </div>-->
         <!--</div>-->
-        <!--<div class="margin_30"></div>-->
+        <div class="margin_30"></div>
         <div class="row">
             <div class="col-sm-4"> 
                 <div class="stores_list hidden_phone">
