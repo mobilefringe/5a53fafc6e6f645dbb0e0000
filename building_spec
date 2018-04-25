@@ -289,17 +289,6 @@
                     $(".select_unit").hide();
                 
                 })
-            //     $('#mapsvg_store_detail').bind('onClick',function(this_obj,e,mapSVG) {
-            //         console.log("clicked");
-            //     });
-            //     function map_pin(value, e, regions){
-            //         map.marksHide();
-            //         value = value.split('/')
-            //         if (value[0] != null){
-            //             store = getStoreDetailsBySlug(value[1]);
-            //             drop_pin(value[0], map, store, e,regions);    
-            //         }
-            //     }
             });
         }
         function getLeasingUnitByID (id) {
