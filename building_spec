@@ -262,7 +262,7 @@
                     e.preventDefault();
                     var id = $(this).attr('data-value');
                     console.log("id",id);
-                    map_pin(id, e, regions);
+                    drop_pin(id, e, regions);
                     var unit_id = $(this).attr('data-id');
                     leasing_unit = getLeasingUnitByID(unit_id);
                     $(".unit_name").text(leasing_unit.unit_number);
