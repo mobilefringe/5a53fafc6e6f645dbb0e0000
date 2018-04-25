@@ -5,7 +5,7 @@
 <div class="building_spec_menu_container">   
     <div class="content_container">
         <div class="menu_flex_container">
-            <div class="specs_menu_item caps active">Unit Directory</div>
+            <div class="specs_menu_item caps active" id="unit_dir">Unit Directory</div>
             <div class="specs_menu_item caps">Submission Requirements</div>
             <div class="specs_menu_item caps">Base Building</div>
             <div class="specs_menu_item caps">Construction</div>
