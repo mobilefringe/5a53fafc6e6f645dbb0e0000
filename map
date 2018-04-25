@@ -108,51 +108,6 @@
         function renderAll(){
             var stores = getStoresList(); 
             renderStoreList('#store_list_container_map','#store_list_template_map', stores, "A", "Z");
-            // regions = {}
-            // $.each( stores , function( key, val ) {
-            //     if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
-            //         if(!val.store_front_url_abs ||  val.store_front_url_abs.indexOf('missing.png') > -1 || val.store_front_url_abs.length === 0){
-            //             val.store_front_url_abs = '//codecloud.cdn.speedyrails.net/sites/55ddf3f86e6f640775000000/a22fcf023d728855c6f575ba100806d7/default.jpg'
-            //         }
-            //         obj = {};
-            //         obj["tooltip"] = "<p class='tooltip_name'>"+val.name+"</p>"
-            //         obj["attr"] = {}
-            //         obj["attr"]["href"] = "/stores/"+val.slug
-            //         regions[val.svgmap_region] = obj
-            //     }
-            // });
-            // renderStoreList('#stores_container','#stores_template', stores, "A", "Z");
-            // show_content();
-            // var map = $('#mapsvg_store_detail').mapSvg({
-            //     source: getSVGMapURL(),
-            //     colors: {stroke: '#aaaaaa', selected: -20, hover: "#F3047A"},
-            //     width: 1170,
-            //     height:600,
-            //     // viewBox: [520,150,1350,1400],
-            //     regions: regions,
-            //     tooltipsMode: 'custom',
-            //     zoom: true,
-            //     pan:true,
-            //     cursor:'pointer',
-            //     responsive:true,
-            //     zoomLimit: [0,10]
-            // });
-            // $(".map_tooltip").css({"background-color":"#C607A9", "color" : "#fff", "margin": "5px", "border": "none"});
-            // $('.map_pin_a').click(function(e){
-            //     e.preventDefault();
-            //     var id = $(this).attr('data-value')
-            //     map_pin(id)
-            // })
-            
-            // function map_pin(value){
-            //     map.marksHide();
-            //     value = value.split('/')
-            //     if (value[0] != null){
-            //         drop_pin(value[0], map);    
-            //     }
-            // }
-            // console.log("stores", stores);
-            // init_map(reg);
         var mall_json = {};
             var landmarks = {};
             mall_json.mapwidth = "1000";
