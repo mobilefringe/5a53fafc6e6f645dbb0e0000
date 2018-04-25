@@ -266,7 +266,7 @@
         prefix = get_prefix();
         var pages_json = prefix + "/pages/svc-submission-requirements.json"
         $.getJSON(pages_json).done(function(data) {
-            $('#mm_page_title').html(data.title);
+            // $('#mm_page_title').html(data.title);
             $('#submission_req').html(data.body);
         }).fail(function(jqXHR) {
             if (jqXHR.status == 404) {
