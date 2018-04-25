@@ -252,7 +252,6 @@
                     $(".unit_name").text(leasing_unit.unit_number);
                     $(".view_specs").attr("href" , leasing_unit.leasing_doc);
                     $(".unit_name").show();
-                    // $(".view_specs").show();
                     if(leasing_unit.no_pdf) {
                         $(".view_specs").show();
                         $(".view_specs").text('No spec document availalble.');
