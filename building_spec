@@ -84,7 +84,7 @@
                 </div>
                 <div class="store_unit_dets">
                     <h3 class="unit_name hidden_now"></h3>
-                    <a class="view_specs hidden_now" href="" target="_blank"> View Spec Document </a>
+                    <a class="view_specs hidden_now" href="" target="_blank"> Download PDF Here </a>
                     <p class="contact_info hidden_now">
                         Contact us for more info: <br/> 
                         <a class="contact_phone" href="tel:204-257-5646">204-257-5646</a>
@@ -230,7 +230,7 @@
                             obj["popover"] = "<p class='popover_name'>"+val.unit_number+"</p>"
                         }
                         else {
-                            obj["popover"] = "<p class='popover_name'>"+val.unit_number+"</p><a href="+ val.leasing_doc + "> View Spec Document </a>"
+                            obj["popover"] = "<p class='popover_name'>"+val.unit_number+"</p><a href="+ val.leasing_doc + "> Download PDF Here </a>"
                         }
                         obj["data"] = {};
                         obj["data"]["store_id"]= val.id;
@@ -265,7 +265,7 @@
                     }
                     else {
                         $(".view_specs").css({"display":"inline-block"});
-                        $(".view_specs").text('View Spec Document ');
+                        $(".view_specs").text('Download PDF Here ');
                         $(".contact_info").hide();
                     }
                     $(".select_unit").hide();
