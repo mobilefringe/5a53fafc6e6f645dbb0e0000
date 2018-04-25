@@ -270,10 +270,6 @@
             $(".bspec_sub_menu_container").hide();
             $("#submenu_"+el_id).show();
         });
-        // submission_req
-        //     base_build
-        //     construction
-        //     sustainability
     });
     
 </script>
