@@ -226,7 +226,7 @@
         loadMallDataCached(renderAll); 
         
         $(".specs_menu_item").click(function(){
-            
+            console.log($(this));
         });
         // submission_req
         //     base_build
