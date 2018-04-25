@@ -270,7 +270,7 @@
             $('#submission_req').html(data.body);
         }).fail(function(jqXHR) {
             if (jqXHR.status == 404) {
-                $("#404_msg").fadeIn("fast");
+               console.log("Error retreving data. Please try again.")
             }
         });
     });
