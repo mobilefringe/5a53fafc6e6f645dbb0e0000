@@ -360,6 +360,32 @@
             }
         });
         
+        $(".specs_menu_item").click(function(){
+            //make the right container active
+            $(".specs_menu_item").removeClass("active");
+            var el_id = $(this)[0].id;
+            $("#"+el_id).addClass("active");
+            // show the correct submenu contaienr
+            $(".bspec_sub_menu_container").hide();
+            $("#submenu_"+el_id).show();
+            $(".inner_dets_pages").hide();
+            if (el_id == "unit_dir") {
+                $("#unit_dir_page").show();
+            }
+            else if (el_id == "submission_req") {
+                $("#submission_req_page").show();
+            }
+            else if (el_id == "base_build") {
+                $("#architectural_page").show();
+            }
+            else if (el_id == "construction") {
+                $("#hoarding_page").show();
+            }
+            else if (el_id == "sustainability") {
+                $("#sustainability_page").show();
+            }
+            
+        });
     });
     
 </script>
