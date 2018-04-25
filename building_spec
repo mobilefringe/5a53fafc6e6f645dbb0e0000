@@ -102,7 +102,7 @@
             </div> 
         </div>
     </div>
-    <div id="submission_req">
+    <div class="content_container margin_30" id="submission_req">
         
     </div>
 </section>
