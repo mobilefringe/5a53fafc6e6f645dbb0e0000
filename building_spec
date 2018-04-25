@@ -368,7 +368,15 @@
                console.log("Error retreving data. Please try again.")
             }
         });
-        
+        pages_json = prefix + "/pages/svc-sustainability-criteria.json"
+        $.getJSON(pages_json).done(function(data) {
+            // $('#mm_page_title').html(data.title);
+            $('#during_construction_page').html(data.body);
+        }).fail(function(jqXHR) {
+            if (jqXHR.status == 404) {
+               console.log("Error retreving data. Please try again.")
+            }
+        });
         $(".specs_menu_item").click(function(){
             //make the right container active
             $(".specs_menu_item").removeClass("active");
