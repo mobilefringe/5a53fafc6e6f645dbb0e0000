@@ -383,7 +383,7 @@
             else if (el_id == "construction") {
                 $("#hoarding_page").show();
                 $(".multi_menu").removeClass('active');
-                $("#hoarding").addClass("active")";
+                $("#hoarding").addClass("active");
             }
             else if (el_id == "sustainability") {
                 $("#sustainability_page").show();
