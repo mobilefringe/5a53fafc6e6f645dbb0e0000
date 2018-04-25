@@ -261,7 +261,7 @@
                 $('.map_pin_a').click(function(e){
                     e.preventDefault();
                     var id = $(this).attr('data-value');
-                    console.log("$(this).attr('data-region');",$(this).attr('data-region'););
+                    console.log("$(this).attr('data-region');",$(this).attr('data-region'));
                     drop_pin($(this).attr('data-region'););
                     var unit_id = $(this).attr('data-id');
                     leasing_unit = getLeasingUnitByID(unit_id);
