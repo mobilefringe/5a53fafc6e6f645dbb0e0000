@@ -393,7 +393,8 @@
         
         $(".specs_sub_menu_item").click(function(){
             $(".multi_menu").removeClass('active');
-            
+            var el_id = $(this)[0].id;
+            $("#"+el_id).addClass("active");
         });
     });
     
