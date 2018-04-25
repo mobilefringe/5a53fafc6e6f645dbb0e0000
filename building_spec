@@ -376,17 +376,17 @@
             else if (el_id == "base_build") {
                 
             }
-            else if (el_id == "submission_req") {
+            else if (el_id == "construction") {
                 
             }
-            else if (el_id == "submission_req") {
+            else if (el_id == "sustainability") {
                 
             }
         });
         id="submission_req">Submission Requirements</div>
             <div class="specs_menu_item caps" id="base_build">Base Building</div>
-            <div class="specs_menu_item caps" id="construction">Construction</div>
-            <div class="specs_menu_item caps" id="sustainability
+            <div class="specs_menu_item caps" id="">Construction</div>
+            <div class="specs_menu_item caps" id="
         
     });
     
