@@ -118,9 +118,8 @@
         <div id="electrical_page">
             
         </div>
-        <div id="site_page">
-            
-        </div>
+        <div id="site_page"></div>
+        <div id="site_page"></div>
     </div>
 </section>
 <style>
