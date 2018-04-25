@@ -265,7 +265,7 @@
                         }
                     }
                     else {
-                        $(".view_specs").show();
+                        $(".view_specs").css({"display":"inline-block"});
                         $(".view_specs").text('View Spec Document ');
                         $(".contact_info").hide();
                     }
