@@ -8,7 +8,7 @@
             <div class="specs_menu_item caps active" id="unit_dir">Unit Directory</div>
             <div class="specs_menu_item caps" id="submission_req">Submission Requirements</div>
             <div class="specs_menu_item caps" id="base_build">Base Building</div>
-            <div class="specs_menu_item caps" id="unit_dir">Construction</div>
+            <div class="specs_menu_item caps" id="construction">Construction</div>
             <div class="specs_menu_item caps" id="unit_dir">Sustainability</div>
         </div>
     </div>
