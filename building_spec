@@ -112,7 +112,7 @@
         <div id="environment_green_page inner_dets_pages" class="hidden_now"></div>
     </div>
     <div class="content_container margin_30" id="construction_page">
-        <div id="hoarding_page " class="inner_dets_pages hidden_now"></div>
+        <div id="hoarding_page" class="inner_dets_pages hidden_now"></div>
         <div id="preferred_trades_page inner_dets_pages" class="hidden_now"></div>
         <div id="before_construction_page inner_dets_pages" class="hidden_now"></div>
         <div id="during_construction_page inner_dets_pages" class="hidden_now"></div>
