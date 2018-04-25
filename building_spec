@@ -337,7 +337,7 @@
         pages_json = prefix + "/pages/svc-base-building--6.json"
         $.getJSON(pages_json).done(function(data) {
             // $('#mm_page_title').html(data.title);
-            $('#environment_green_page').html(data.body);
+            $('#hoarding_page').html(data.body);
         }).fail(function(jqXHR) {
             if (jqXHR.status == 404) {
                console.log("Error retreving data. Please try again.")
@@ -346,7 +346,7 @@
         pages_json = prefix + "/pages/svc-base-building--6.json"
         $.getJSON(pages_json).done(function(data) {
             // $('#mm_page_title').html(data.title);
-            $('#environment_green_page').html(data.body);
+            $('#preferred_trades_page').html(data.body);
         }).fail(function(jqXHR) {
             if (jqXHR.status == 404) {
                console.log("Error retreving data. Please try again.")
