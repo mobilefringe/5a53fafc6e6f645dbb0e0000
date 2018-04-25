@@ -269,7 +269,9 @@
                         $(".contact_info").hide();
                     }
                     $(".select_unit").hide();
-                
+                    //drop pin on map 
+                    
+                    dropPin($(this).attr('data-region'));
                 })
             });
         }
