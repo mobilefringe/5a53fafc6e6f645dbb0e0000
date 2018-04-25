@@ -2,7 +2,7 @@
 <script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/raphael.js"></script>
 <script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/jquery.mousewheel.js"></script>
 <script type="text/javascript" src="/mm_svgmap.js"></script>
-<!-- Buildin Specs Main Menu-->
+<!-- Buildin Specs Main Menu -->
 <div class="building_spec_menu_container">   
     <div class="content_container">
         <div class="menu_flex_container">
