@@ -325,7 +325,6 @@
             return _.find(leasing_units, function(o) { return _.toNumber(o.id) === _.toNumber(id); })
         }
         loadMallDataCached(renderAll); 
-        show_content();
         
         $(".specs_menu_item").click(function(){
             //make the right container active
