@@ -381,6 +381,7 @@
             }
             else if (el_id == "construction") {
                 $("#hoarding_page").show();
+                $("#hoarding").addClass("active")";
             }
             else if (el_id == "sustainability") {
                 $("#sustainability_page").show();
