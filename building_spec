@@ -267,7 +267,6 @@
             $("#"+el_id).addClass("active");
             $(".bspec_sub_menu_container").hide();
             $("#submenu_"+el_id).show();
-            // submenu_unit_dir
         });
         // submission_req
         //     base_build
