@@ -63,15 +63,6 @@
 <section>
     <div class="content_container margin_30">
         <div class="margin_30"></div>
-        <!--<div class="row">-->
-        <!--    <div class="col-md-12 center hidden_phone">-->
-        <!--        <a href="/stores"><div class="directory_btn caps ">Stores</div></a>-->
-        <!--        <div class="directory_btn caps active">Centre Map</div>-->
-        <!--    </div>-->
-        <!--    <div class="col-sm-12 center">-->
-        <!--        <a href="/stores"><div class="directory_btn caps directory_back"><i class="fa fa-angle-left" aria-hidden="true"></i> Back to Directory</div></a>-->
-        <!--    </div>-->
-        <!--</div>-->
         <div class="margin_30"></div>
         <div class="row">
             <div class="col-sm-4"> 
