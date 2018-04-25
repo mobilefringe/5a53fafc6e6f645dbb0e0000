@@ -316,7 +316,7 @@
         pages_json = prefix + "/pages/svc-base-building--5.json"
         $.getJSON(pages_json).done(function(data) {
             // $('#mm_page_title').html(data.title);
-            $('#site_page').html(data.body);
+            $('#electrical_page').html(data.body);
         }).fail(function(jqXHR) {
             if (jqXHR.status == 404) {
                console.log("Error retreving data. Please try again.")
