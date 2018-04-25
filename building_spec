@@ -114,10 +114,10 @@
         <div id="environment_green_page" class="hidden_now"></div>
     </div>
     <div class="content_container margin_30" id="construction_page">
-        <div id="hoarding_page"></div>
-        <div id="preferred_trades_page"></div>
-        <div id="before_construction_page"></div>
-        <div id="during_construction_page"></div>
+        <div id="hoarding_page" class="hidden_now"></div>
+        <div id="preferred_trades_page" class="hidden_now"></div>
+        <div id="before_construction_page" class="hidden_now"></div>
+        <div id="during_construction_page" class="hidden_now"></div>
     </div>
 </section>
 <style>
