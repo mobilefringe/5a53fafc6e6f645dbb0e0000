@@ -299,7 +299,7 @@
             //             drop_pin(value[0], map, store, e,regions);    
             //         }
             //     }
-            // });
+            });
         }
         // function regionClicked(e,mapsvg){
         //     var region = this;
