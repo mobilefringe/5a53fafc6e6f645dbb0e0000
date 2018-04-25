@@ -238,7 +238,7 @@
                     }
                 });
                 // renderStoreList('#stores_container','#stores_template', stores, "A", "Z");
-                show_content();
+                
                 //render map
                 renderMap(leasing_units);
                 loadInsidePages ();
