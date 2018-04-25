@@ -334,7 +334,7 @@
             }
         });
         
-        pages_json = prefix + "/pages/svc-base-building--6.json"
+        pages_json = prefix + "/pages/svc-construction.json"
         $.getJSON(pages_json).done(function(data) {
             // $('#mm_page_title').html(data.title);
             $('#hoarding_page').html(data.body);
