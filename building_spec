@@ -377,6 +377,7 @@
             }
             else if (el_id == "base_build") {
                 $("#architectural_page").show();
+                
             }
             else if (el_id == "construction") {
                 $("#hoarding_page").show();
