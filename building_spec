@@ -264,7 +264,7 @@
         
         //get jsons 
         prefix = get_prefix();
-        var pages_json = prefix + "/pages/" + slug + ".json"
+        var pages_json = prefix + "/pages/svc-submission-requirements.json"
         $.getJSON(pages_json).done(function(data) {
             $('#mm_page_title').html(data.title);
             $('#mm_page_content').html(data.body);
