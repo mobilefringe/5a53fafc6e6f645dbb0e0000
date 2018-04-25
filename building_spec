@@ -45,6 +45,7 @@
             <div class="specs_sub_menu_item caps">Hoarding</div>
             <div class="specs_sub_menu_item caps">Preferred Trades</div>
             <div class="specs_sub_menu_item caps">Before Construction</div>
+            <div class="specs_sub_menu_item caps">During Construction</div>
         </div>
     </div>
 </div>
