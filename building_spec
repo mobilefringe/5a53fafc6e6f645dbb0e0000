@@ -266,6 +266,7 @@
             console.log($(this)[0].id);
             var el_id = $(this)[0].id;
             $("#"+el_id).addClass("active");
+            $(".bspec_sub_menu_container").hide();
             $("#submenu_"+el_id).show();
             // submenu_unit_dir
         });
