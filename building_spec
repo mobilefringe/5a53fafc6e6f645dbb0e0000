@@ -14,50 +14,52 @@
         </div>
     </div>
 </div>
-<!-- Building Specs Sub Menu-->
-<div class="bspec_sub_menu_container" id="submenu_unit_dir">
-    <div class="content_container">
-        <div class="menu_flex_container">
-            <div class="specs_sub_menu_item caps">Store Listing</div>
+<!-- Building Specs Sub Menus-->
+<section>
+    <div class="bspec_sub_menu_container" id="submenu_unit_dir">
+        <div class="content_container">
+            <div class="menu_flex_container">
+                <div class="specs_sub_menu_item caps">Store Listing</div>
+            </div>
         </div>
     </div>
-</div>
-<div class="bspec_sub_menu_container hidden_now" id="submenu_submission_req">
-    <div class="content_container">
-        <div class="menu_flex_container">
-            <div class="specs_sub_menu_item caps">Requirement Details</div>
+    <div class="bspec_sub_menu_container hidden_now" id="submenu_submission_req">
+        <div class="content_container">
+            <div class="menu_flex_container">
+                <div class="specs_sub_menu_item caps">Requirement Details</div>
+            </div>
         </div>
     </div>
-</div>
-<div class="bspec_sub_menu_container hidden_now" id="submenu_base_build">
-    <div class="content_container">
-        <div class="menu_flex_container">
-            <div class="specs_sub_menu_item caps">Architectural</div>
-            <div class="specs_sub_menu_item caps">Structural</div>
-            <div class="specs_sub_menu_item caps">Mechanical</div>
-            <div class="specs_sub_menu_item caps">Electrical</div>
-            <div class="specs_sub_menu_item caps">Site</div>
-            <div class="specs_sub_menu_item caps">Environment Green</div>
+    <div class="bspec_sub_menu_container hidden_now" id="submenu_base_build">
+        <div class="content_container">
+            <div class="menu_flex_container">
+                <div class="specs_sub_menu_item caps">Architectural</div>
+                <div class="specs_sub_menu_item caps">Structural</div>
+                <div class="specs_sub_menu_item caps">Mechanical</div>
+                <div class="specs_sub_menu_item caps">Electrical</div>
+                <div class="specs_sub_menu_item caps">Site</div>
+                <div class="specs_sub_menu_item caps">Environment Green</div>
+            </div>
         </div>
     </div>
-</div>
-<div class="bspec_sub_menu_container hidden_now" id="submenu_construction">
-    <div class="content_container">
-        <div class="menu_flex_container">
-            <div class="specs_sub_menu_item caps">Hoarding</div>
-            <div class="specs_sub_menu_item caps">Preferred Trades</div>
-            <div class="specs_sub_menu_item caps">Before Construction</div>
-            <div class="specs_sub_menu_item caps">During Construction</div>
+    <div class="bspec_sub_menu_container hidden_now" id="submenu_construction">
+        <div class="content_container">
+            <div class="menu_flex_container">
+                <div class="specs_sub_menu_item caps">Hoarding</div>
+                <div class="specs_sub_menu_item caps">Preferred Trades</div>
+                <div class="specs_sub_menu_item caps">Before Construction</div>
+                <div class="specs_sub_menu_item caps">During Construction</div>
+            </div>
         </div>
     </div>
-</div>
-<div class="bspec_sub_menu_container hidden_now" id="submenu_sustainability">
-    <div class="content_container">
-        <div class="menu_flex_container">
-            <div class="specs_sub_menu_item caps">Sustainability Criteria</div>
+    <div class="bspec_sub_menu_container hidden_now" id="submenu_sustainability">
+        <div class="content_container">
+            <div class="menu_flex_container">
+                <div class="specs_sub_menu_item caps">Sustainability Criteria</div>
+            </div>
         </div>
     </div>
-</div>
+</section>
 <div class="content_container margin_30">
     <div class="margin_30"></div>
     <!--<div class="row">-->
