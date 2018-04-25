@@ -380,7 +380,7 @@
                 $("#architectural_page").show();
             }
             else if (el_id == "construction") {
-                $("#submission_req_page").show();
+                $("#hoarding_page").show();
             }
             else if (el_id == "sustainability") {
                 $("#submission_req_page").show();
