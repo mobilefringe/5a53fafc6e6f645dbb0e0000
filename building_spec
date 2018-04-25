@@ -373,7 +373,7 @@
             if (el_id == "submission_req") {
                 
             }
-            else if (el_id == "submission_req") {
+            else if (el_id == "base_build") {
                 
             }
             else if (el_id == "submission_req") {
