@@ -387,7 +387,8 @@
             
         });
         
-        $(".specs_sub_menu_item")
+        $(".specs_sub_menu_item").click(function(){
+        });
     });
     
 </script>
