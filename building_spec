@@ -105,7 +105,7 @@
     <div class="content_container margin_30 hidden_now inner_dets_pages" id="submission_req_page">
         
     </div>
-    <div class="content_container margin_30 inner_dets_pages" id="base_build_page">
+    <div class="content_container margin_30" id="base_build_page">
         <div id="architectural_page" class="hidden_now"></div>
         <div id="structural_page" class="hidden_now"></div>
         <div id="mechanical_page" class="hidden_now"></div>
@@ -113,7 +113,7 @@
         <div id="site_page" class="hidden_now"></div>
         <div id="environment_green_page" class="hidden_now"></div>
     </div>
-    <div class="content_container margin_30 inner_dets_pages" id="construction_page">
+    <div class="content_container margin_30" id="construction_page">
         <div id="hoarding_page" class="hidden_now"></div>
         <div id="preferred_trades_page" class="hidden_now"></div>
         <div id="before_construction_page" class="hidden_now"></div>
