@@ -34,11 +34,11 @@
         <div class="content_container">
             <div class="menu_flex_container">
                 <div class="specs_sub_menu_item caps" id="architectural">Architectural</div>
-                <div class="specs_sub_menu_item caps">Structural</div>
-                <div class="specs_sub_menu_item caps">Mechanical</div>
-                <div class="specs_sub_menu_item caps">Electrical</div>
-                <div class="specs_sub_menu_item caps">Site</div>
-                <div class="specs_sub_menu_item caps">Environment Green</div>
+                <div class="specs_sub_menu_item caps" id="architectural">Structural</div>
+                <div class="specs_sub_menu_item caps" id="architectural">Mechanical</div>
+                <div class="specs_sub_menu_item caps" id="architectural">Electrical</div>
+                <div class="specs_sub_menu_item caps" id="architectural">Site</div>
+                <div class="specs_sub_menu_item caps" id="environment_green">Environment Green</div>
             </div>
         </div>
     </div>
