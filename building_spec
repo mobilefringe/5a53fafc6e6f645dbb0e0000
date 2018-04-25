@@ -102,7 +102,7 @@
             </div> 
         </div>
     </div>
-    <div class="content_container margin_30 hidden_now" id="submission_req_page">
+    <div class="content_container margin_30 hidden_now inner_dets_pages" id="submission_req_page">
         
     </div>
     <div class="content_container margin_30" id="base_build_page">
