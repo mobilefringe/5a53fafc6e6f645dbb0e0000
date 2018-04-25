@@ -106,18 +106,10 @@
         
     </div>
     <div class="content_container margin_30" id="base_build_page">
-        <div id="architectural_page">
-            
-        </div>
-        <div id="structural_page">
-            
-        </div>
-        <div id="mechanical_page">
-            
-        </div>
-        <div id="electrical_page">
-            
-        </div>
+        <div id="architectural_page"></div>
+        <div id="structural_page"></div>
+        <div id="mechanical_page"></div>
+        <div id="electrical_page"></div>
         <div id="site_page"></div>
         <div id="environment_green_page"></div>
     </div>
