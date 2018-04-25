@@ -370,7 +370,7 @@
             $(".bspec_sub_menu_container").hide();
             $("#submenu_"+el_id).show();
             $(".inner_dets_pages").hide();
-            if (el_id == "submission_req") {
+            if (el_id == "unit_dir") {
                 $("#submission_req_page").show();
             }
             else if (el_id == "submission_req") {
