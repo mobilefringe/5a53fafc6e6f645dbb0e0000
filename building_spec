@@ -386,6 +386,8 @@
             }
             
         });
+        
+        $(".specs_sub_menu_item")
     });
     
 </script>
