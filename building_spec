@@ -392,7 +392,7 @@
         });
         
         $(".specs_sub_menu_item").click(function(){
-            
+            $(".multi_menu").removeClass('active')
             
         });
     });
