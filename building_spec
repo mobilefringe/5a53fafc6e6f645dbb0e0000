@@ -369,6 +369,8 @@
             // show the correct submenu contaienr
             $(".bspec_sub_menu_container").hide();
             $("#submenu_"+el_id).show();
+            
+            
         });
         
         
