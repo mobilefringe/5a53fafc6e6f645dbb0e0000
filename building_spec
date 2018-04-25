@@ -227,6 +227,7 @@
         
         $(".specs_menu_item").click(function(){
             console.log($(this));
+            // submenu_unit_dir
         });
         // submission_req
         //     base_build
