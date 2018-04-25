@@ -224,6 +224,8 @@
             return _.find(leasing_units, function(o) { return _.toNumber(o.id) === _.toNumber(id); })
         }
         loadMallDataCached(renderAll); 
+        
+        $("#unit_dir").click()
     });
     
 </script>
