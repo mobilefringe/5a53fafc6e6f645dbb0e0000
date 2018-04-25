@@ -62,7 +62,7 @@
 </section>
 <section>
     <div class="content_container margin_30">
-        <div class="margin_30"></div>
+        <!--<div class="margin_30"></div>-->
         <!--<div class="row">-->
         <!--    <div class="col-md-12 center hidden_phone">-->
         <!--        <a href="/stores"><div class="directory_btn caps ">Stores</div></a>-->
@@ -276,6 +276,7 @@
             $(".bspec_sub_menu_container").hide();
             $("#submenu_"+el_id).show();
         });
+        
     });
     
 </script>
