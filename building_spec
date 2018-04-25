@@ -258,7 +258,7 @@
             //         onClick:regionClicked,
             //     });
             //     $(".map_tooltip").css({"background-color":"#C607A9", "color" : "#fff", "margin": "5px", "border": "none"});
-            //     $('.map_pin_a').click(function(e){
+                $('.map_pin_a').click(function(e){
             //         e.preventDefault();
             //         var id = $(this).attr('data-value');
             //         console.log("id",id);
@@ -288,7 +288,7 @@
             //         }
             //         $(".select_unit").hide();
                 
-            //     })
+                })
             //     $('#mapsvg_store_detail').bind('onClick',function(this_obj,e,mapSVG) {
             //         console.log("clicked");
             //     });
