@@ -225,7 +225,7 @@
         }
         loadMallDataCached(renderAll); 
         
-        $("#unit_dir").click(function(){
+        $(".specs_menu_item").click(function(){
             
         });
         // submission_req
