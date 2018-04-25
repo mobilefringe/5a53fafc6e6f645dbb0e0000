@@ -266,6 +266,101 @@
         }
         loadMallDataCached(renderAll); 
         
+        //get jsons 
+        prefix = get_prefix();
+        var pages_json = prefix + "/pages/svc-submission-requirements.json"
+        $.getJSON(pages_json).done(function(data) {
+            // $('#mm_page_title').html(data.title);
+            $('#submission_req_page').html(data.body);
+        }).fail(function(jqXHR) {
+            if (jqXHR.status == 404) {
+               console.log("Error retreving data. Please try again.")
+            }
+        });
+        pages_json = prefix + "/pages/svc-base-building.json"
+        $.getJSON(pages_json).done(function(data) {
+            // $('#mm_page_title').html(data.title);
+            $('#architectural_page').html(data.body);
+        }).fail(function(jqXHR) {
+            if (jqXHR.status == 404) {
+               console.log("Error retreving data. Please try again.")
+            }
+        });
+        pages_json = prefix + "/pages/svc-base-building--2.json"
+        $.getJSON(pages_json).done(function(data) {
+            // $('#mm_page_title').html(data.title);
+            $('#structural_page').html(data.body);
+        }).fail(function(jqXHR) {
+            if (jqXHR.status == 404) {
+               console.log("Error retreving data. Please try again.")
+            }
+        });
+        pages_json = prefix + "/pages/svc-base-building--3.json"
+        $.getJSON(pages_json).done(function(data) {
+            // $('#mm_page_title').html(data.title);
+            $('#mechanical_page').html(data.body);
+        }).fail(function(jqXHR) {
+            if (jqXHR.status == 404) {
+               console.log("Error retreving data. Please try again.")
+            }
+        });
+        
+        pages_json = prefix + "/pages/svc-base-building--5.json"
+        $.getJSON(pages_json).done(function(data) {
+            // $('#mm_page_title').html(data.title);
+            $('#site_page').html(data.body);
+        }).fail(function(jqXHR) {
+            if (jqXHR.status == 404) {
+               console.log("Error retreving data. Please try again.")
+            }
+        });
+        pages_json = prefix + "/pages/svc-base-building--6.json"
+        $.getJSON(pages_json).done(function(data) {
+            // $('#mm_page_title').html(data.title);
+            $('#environment_green_page').html(data.body);
+        }).fail(function(jqXHR) {
+            if (jqXHR.status == 404) {
+               console.log("Error retreving data. Please try again.")
+            }
+        });
+        
+        pages_json = prefix + "/pages/svc-construction.json"
+        $.getJSON(pages_json).done(function(data) {
+            // $('#mm_page_title').html(data.title);
+            $('#hoarding_page').html(data.body);
+        }).fail(function(jqXHR) {
+            if (jqXHR.status == 404) {
+               console.log("Error retreving data. Please try again.")
+            }
+        });
+        pages_json = prefix + "/pages/svc-construction--2.json"
+        $.getJSON(pages_json).done(function(data) {
+            // $('#mm_page_title').html(data.title);
+            $('#preferred_trades_page').html(data.body);
+        }).fail(function(jqXHR) {
+            if (jqXHR.status == 404) {
+               console.log("Error retreving data. Please try again.")
+            }
+        });
+        pages_json = prefix + "/pages/svc-construction--3.json"
+        $.getJSON(pages_json).done(function(data) {
+            // $('#mm_page_title').html(data.title);
+            $('#before_construction_page').html(data.body);
+        }).fail(function(jqXHR) {
+            if (jqXHR.status == 404) {
+               console.log("Error retreving data. Please try again.")
+            }
+        });
+        pages_json = prefix + "/pages/svc-construction--4.json"
+        $.getJSON(pages_json).done(function(data) {
+            // $('#mm_page_title').html(data.title);
+            $('#during_construction_page').html(data.body);
+        }).fail(function(jqXHR) {
+            if (jqXHR.status == 404) {
+               console.log("Error retreving data. Please try again.")
+            }
+        });
+        
         $(".specs_menu_item").click(function(){
             //make the right container active
             $(".specs_menu_item").removeClass("active");
