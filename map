@@ -108,7 +108,7 @@
         function renderAll(){
             var stores = getStoresList(); 
             renderStoreList('#store_list_container_map','#store_list_template_map', stores, "A", "Z");
-        var mall_json = {};
+            var mall_json = {};
             var landmarks = {};
             mall_json.mapwidth = "1000";
             mall_json.mapheight = "1000";
