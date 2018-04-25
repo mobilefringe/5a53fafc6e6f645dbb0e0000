@@ -225,7 +225,9 @@
         }
         loadMallDataCached(renderAll); 
         
-        $("#unit_dir").click()
+        $("#unit_dir").click(function(){
+            
+        })
     });
     
 </script>
