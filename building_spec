@@ -394,7 +394,7 @@
         $(".specs_sub_menu_item").click(function(){
             $(".multi_menu").removeClass('active');
             var el_id = $(this)[0].id;
-            console.log("el", el_id, $("#"+el_id+"_page"));
+            $(".inner_dets_pages").hide();
             $("#"+el_id).addClass("active");
             $("#"+el_id+"_page").show();
         });
