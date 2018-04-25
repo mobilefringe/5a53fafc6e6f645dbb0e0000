@@ -228,10 +228,10 @@
         $("#unit_dir").click(function(){
             
         });
-        submission_req
-            base_build
-            construction
-            sustainability"
+        // submission_req
+        //     base_build
+        //     construction
+        //     sustainability
     });
     
 </script>
