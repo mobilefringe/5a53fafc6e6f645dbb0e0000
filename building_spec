@@ -115,7 +115,7 @@
     </div>
     <div class="content_container margin_30" id="construction_page">
         <div id="hoarding_page"></div>
-        <div id="structural_page"></div>
+        <div id="preferred_trades_page"></div>
         <div id="mechanical_page"></div>
         <div id="electrical_page"></div>
     </div>
