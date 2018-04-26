@@ -28,12 +28,12 @@
                     <li class="menu_item">
                         <a href="#">Base Building <i class="fa fa-angle-down" aria-hidden="true"></i></a>
                         <ul>
-                            <li class="dropdown_item"><a href="/pages/svc-customer-service">Architecturale</a></li>
-                            <li class="dropdown_item"><a href="/pages/svc-community-booth">Structural</a></li>
-                            <li class="dropdown_item"><a href="/pages/svc-giftcard">Mechanical</a></li>
-                            <li class="dropdown_item"><a href="/pages/svc-green-initiative">Electrical</a></li>
-                            <li class="dropdown_item"><a href="/pages/svc-green-initiative">Site</a></li>
-                            <li class="dropdown_item"><a href="/pages/svc-green-initiative">Environment Green</a></li>
+                            <li class="dropdown_item"><a href="">Architecturale</a></li>
+                            <li class="dropdown_item"><a href="">Structural</a></li>
+                            <li class="dropdown_item"><a href="">Mechanical</a></li>
+                            <li class="dropdown_item"><a href="">Electrical</a></li>
+                            <li class="dropdown_item"><a href="">Site</a></li>
+                            <li class="dropdown_item"><a href="">Environment Green</a></li>
                         </ul> 
                     </li>
                     <li class="menu_item">
