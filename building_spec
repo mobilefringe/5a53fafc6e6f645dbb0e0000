@@ -42,7 +42,7 @@
                             <li class="dropdown_item"><a href="/stores">Hoarding</a></li>
                             <li class="dropdown_item"><a href="/map">Preferred Trades</a></li>
                             <li class="dropdown_item"><a href="/map">Before Construction</a></li>
-                            <li class="dropdown_item"><a href="/map">Preferred Trades</a></li>
+                            <li class="dropdown_item"><a href="/map">During Construction</a></li>
                         </ul>    
                     </li>
                 </ul>
