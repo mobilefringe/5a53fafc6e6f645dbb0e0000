@@ -26,7 +26,7 @@
                     <li class="menu_item"><div id="unit_dir">Unit Directory</div></li>
                     <li class="menu_item"><div id="submission_req">Submission Requirements</div></li>
                     <li class="menu_item">
-                        <div href="#">Base Building <i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                        <div >Base Building <i class="fa fa-angle-down" aria-hidden="true"></i></div>
                         <ul>
                             <li class="dropdown_item"><div href="">Architecturale</div></li>
                             <li class="dropdown_item"><div href="">Structural</div></li>
