@@ -39,9 +39,9 @@
                     <li class="menu_item">
                         <div class="specs_menu_item" >Construction<i class="fa fa-angle-down" aria-hidden="true"></i></div>
                         <ul>
-                            <li class="dropdown_item"><div class="specs_sub_menu_item">Hoarding</div></li>
-                            <li class="dropdown_item"><div class="specs_sub_menu_item">Preferred Trades</div></li>
-                            <li class="dropdown_item"><div class="specs_sub_menu_item">Before Construction</div></li>
+                            <li class="dropdown_item"><div class="specs_sub_menu_item" id="hoarding">Hoarding</div></li>
+                            <li class="dropdown_item"><div class="specs_sub_menu_item" id="preferred_trades">Preferred Trades</div></li>
+                            <li class="dropdown_item"><div class="specs_sub_menu_item" id="before_construction">Before Construction</div></li>
                             <li class="dropdown_item"><div class="specs_sub_menu_item">During Construction</div></li>
                         </ul>    
                     </li>
