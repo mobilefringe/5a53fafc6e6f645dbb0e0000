@@ -24,7 +24,7 @@
                     <!--<li class="menu_item"><a href="/">Home</a></li>-->
                     
                     <li class="menu_item"><div id="unit_dir">Unit Directory</div></li>
-                    <li class="menu_item"><div href="">Submission Requirements</div></li>
+                    <li class="menu_item"><div id="submission_req">Submission Requirements</div></li>
                     <li class="menu_item">
                         <div href="#">Base Building <i class="fa fa-angle-down" aria-hidden="true"></i></div>
                         <ul>
