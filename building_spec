@@ -26,7 +26,7 @@
                     <li class="menu_item"><a href="/promotions">Unit Directory</a></li>
                     <li class="menu_item"><a href="/events">Submission Requirements</a></li>
                     <li class="menu_item">
-                        <a href="#">Services <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                        <a href="#">Base Building <i class="fa fa-angle-down" aria-hidden="true"></i></a>
                         <ul>
                             <!--<li class="dropdown_item"><a href="/jobs">Jobs</a></li>-->
                             <li class="dropdown_item"><a href="/pages/svc-customer-service">Customer Service</a></li>
