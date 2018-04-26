@@ -22,13 +22,7 @@
             <nav id="primary_nav">
                 <ul class="">
                     <!--<li class="menu_item"><a href="/">Home</a></li>-->
-                    <li class="menu_item">
-                        <a href="#">Unit Directory<i class="fa fa-angle-down" aria-hidden="true"></i></a>
-                        <ul>
-                            <li class="dropdown_item"><a href="/stores">Directory</a></li>
-                            <li class="dropdown_item"><a href="/map">Centre Map</a></li>
-                        </ul>    
-                    </li>
+                    
                     <li class="menu_item"><a href="/promotions">Unit Directory</a></li>
                     <li class="menu_item"><a href="/events">Submission Requirements</a></li>
                     <li class="menu_item">
@@ -41,6 +35,13 @@
                             <li class="dropdown_item"><a href="/pages/svc-giftcard">Giftcard</a></li>
                             <li class="dropdown_item"><a href="/pages/svc-green-initiative">Green Initiative</a></li>
                         </ul> 
+                    </li>
+                    <li class="menu_item">
+                        <a href="#">Unit Directory<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                        <ul>
+                            <li class="dropdown_item"><a href="/stores">Directory</a></li>
+                            <li class="dropdown_item"><a href="/map">Centre Map</a></li>
+                        </ul>    
                     </li>
                 </ul>
             </nav>
