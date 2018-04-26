@@ -5,7 +5,7 @@
 <!-- Buildin Specs Main Menu -->
 <div class="building_spec_menu_container">   
     <div class="content_container">
-        <div class="menu_flex_container">
+        <div class="menu_flex_container hidden_phone">
             <div class="specs_menu_item caps active" id="unit_dir">Unit Directory</div>
             <div class="specs_menu_item caps" id="submission_req">Submission Requirements</div>
             <div class="specs_menu_item caps" id="base_build">Base Building</div>
