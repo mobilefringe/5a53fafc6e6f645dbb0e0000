@@ -23,26 +23,26 @@
                 <ul class="">
                     <!--<li class="menu_item"><a href="/">Home</a></li>-->
                     
-                    <li class="menu_item"><a href="">Unit Directory</a></li>
-                    <li class="menu_item"><a href="">Submission Requirements</a></li>
+                    <li class="menu_item"><div href="">Unit Directory</div></li>
+                    <li class="menu_item"><div href="">Submission Requirements</div></li>
                     <li class="menu_item">
-                        <a href="#">Base Building <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                        <div href="#">Base Building <i class="fa fa-angle-down" aria-hidden="true"></i></div>
                         <ul>
-                            <li class="dropdown_item"><a href="">Architecturale</a></li>
-                            <li class="dropdown_item"><a href="">Structural</a></li>
-                            <li class="dropdown_item"><a href="">Mechanical</a></li>
-                            <li class="dropdown_item"><a href="">Electrical</a></li>
-                            <li class="dropdown_item"><a href="">Site</a></li>
-                            <li class="dropdown_item"><a href="">Environment Green</a></li>
+                            <li class="dropdown_item"><div href="">Architecturale</div></li>
+                            <li class="dropdown_item"><div href="">Structural</div></li>
+                            <li class="dropdown_item"><div href="">Mechanical</div></li>
+                            <li class="dropdown_item"><div href="">Electrical</div></li>
+                            <li class="dropdown_item"><div href="">Site</div></li>
+                            <li class="dropdown_item"><div href="">Environment Green</div></li>
                         </ul> 
                     </li>
                     <li class="menu_item">
-                        <a href="#">Construction<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                        <div href="#">Construction<i class="fa fa-angle-down" aria-hidden="true"></i></div>
                         <ul>
-                            <li class="dropdown_item"><a href="/stores">Hoarding</a></li>
-                            <li class="dropdown_item"><a href="/map">Preferred Trades</a></li>
-                            <li class="dropdown_item"><a href="/map">Before Construction</a></li>
-                            <li class="dropdown_item"><a href="/map">During Construction</a></li>
+                            <li class="dropdown_item"><div href="/stores">Hoarding</div></li>
+                            <li class="dropdown_item"><div href="/map">Preferred Trades</div></li>
+                            <li class="dropdown_item"><div href="/map">Before Construction</div></li>
+                            <li class="dropdown_item"><div href="/map">During Construction</div></li>
                         </ul>    
                     </li>
                 </ul>
