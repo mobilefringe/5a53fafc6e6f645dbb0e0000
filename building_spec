@@ -18,6 +18,43 @@
             <span></span>
             <span></span>
         </div>
+        <div class="nav_container pull-right">
+                        <nav id="primary_nav">
+                            <ul class="">
+                                <!--<li class="menu_item"><a href="/">Home</a></li>-->
+                                <li class="menu_item">
+                                    <a href="#">Stores <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                    <ul>
+                                        <li class="dropdown_item"><a href="/stores">Directory</a></li>
+                                        <li class="dropdown_item"><a href="/map">Centre Map</a></li>
+                                    </ul>    
+                                </li>
+                                <li class="menu_item"><a href="/promotions">Sales & Promotions</a></li>
+                                <li class="menu_item"><a href="/events">Events</a></li>
+                                <!--<li class="menu_item">-->
+                                <!--    <a href="#">Promos & Events <i class="fa fa-angle-down" aria-hidden="true"></i></a>-->
+                                <!--    <ul>-->
+                                <!--        <li class="dropdown_item"><a href="/events">Events</a></li>-->
+                                <!--        <li class="dropdown_item"><a href="/promotions">Promos</a></li>-->
+                                <!--    </ul>        -->
+                                <!--</li>-->
+                                <li class="menu_item">
+                                    <a href="#">Services <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                    <ul>
+                                        <!--<li class="dropdown_item"><a href="/jobs">Jobs</a></li>-->
+                                        <li class="dropdown_item"><a href="/pages/svc-customer-service">Customer Service</a></li>
+                                        <!--<li class="dropdown_item"><a href="/leasing">Leasing</a></li>-->
+                                        <li class="dropdown_item"><a href="/pages/svc-community-booth">Community Booth</a></li>
+                                        <li class="dropdown_item"><a href="/pages/svc-giftcard">Giftcard</a></li>
+                                        <li class="dropdown_item"><a href="/pages/svc-green-initiative">Green Initiative</a></li>
+                                    </ul> 
+                                </li>
+                                <li class="menu_item"><a href="/hours">Hours</a></li>
+                                <li class="menu_item"><a href="/contact_us">Contact</a></li>
+                                <li class="menu_item"><a href="http://www.stvitalcentrespark.com/" target="_blank">Blog</a></li>
+                            </ul>
+                        </nav>
+                    </div>
     </div>
 </div>
 <!-- Building Specs Sub Menus-->
