@@ -361,9 +361,9 @@
             $("#"+el_id+"_page").show();
             
             if($('#spec-menu-icon').hasClass("open")) {
-    		$('#spec-menu-icon').toggleClass('open');
-    		$('.spec_nav_container').slideToggle();
-		}
+        		$('#spec-menu-icon').toggleClass('open');
+        		$('.spec_nav_container').slideToggle();
+    		}
         });
     });
     
