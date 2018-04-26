@@ -12,7 +12,7 @@
             <div class="specs_menu_item caps" id="construction">Construction</div>
             <div class="specs_menu_item caps" id="sustainability">Sustainability</div>
         </div>
-        <div id="menu-icon">
+        <div id="spec-menu-icon">
             <span></span>
             <span></span>
             <span></span>
