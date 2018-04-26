@@ -350,7 +350,10 @@
             else if (el_id == "sustainability") {
                 $("#sustainability_page").show();
             }
-            
+            if($('#spec-menu-icon').hasClass("open")) {
+    		$('#spec-menu-icon').toggleClass('open');
+    		$('.spec_nav_container').slideToggle();
+		}
         });
         
         $(".specs_sub_menu_item").click(function(){
