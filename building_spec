@@ -368,6 +368,7 @@
         		$('#spec-menu-icon').toggleClass('open');
         		$('.spec_nav_container').slideToggle();
     		}
+    		$("#page_content_title").text()
         });
     });
     
