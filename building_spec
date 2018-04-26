@@ -33,16 +33,16 @@
                             <li class="dropdown_item"><div class="specs_sub_menu_item">Mechanical</div></li>
                             <li class="dropdown_item"><div class="specs_sub_menu_item">Electrical</div></li>
                             <li class="dropdown_item"><div class="specs_sub_menu_item">Site</div></li>
-                            <li class="dropdown_item"><div href="">Environment Green</div></li>
+                            <li class="dropdown_item"><div class="specs_sub_menu_item">Environment Green</div></li>
                         </ul> 
                     </li>
                     <li class="menu_item">
                         <div class="specs_menu_item" >Construction<i class="fa fa-angle-down" aria-hidden="true"></i></div>
                         <ul>
-                            <li class="dropdown_item"><div href="/stores">Hoarding</div></li>
-                            <li class="dropdown_item"><div href="/map">Preferred Trades</div></li>
-                            <li class="dropdown_item"><div href="/map">Before Construction</div></li>
-                            <li class="dropdown_item"><div href="/map">During Construction</div></li>
+                            <li class="dropdown_item"><div class="specs_sub_menu_item">Hoarding</div></li>
+                            <li class="dropdown_item"><div class="specs_sub_menu_item">Preferred Trades</div></li>
+                            <li class="dropdown_item"><div class="specs_sub_menu_item">Before Construction</div></li>
+                            <li class="dropdown_item"><div class="specs_sub_menu_item">During Construction</div></li>
                         </ul>    
                     </li>
                     <li class="menu_item"><div class="specs_menu_item" id="sustainability">Sustainability</div></li>
