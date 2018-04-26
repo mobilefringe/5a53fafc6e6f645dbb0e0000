@@ -40,7 +40,7 @@
                         <a href="#">Construction<i class="fa fa-angle-down" aria-hidden="true"></i></a>
                         <ul>
                             <li class="dropdown_item"><a href="/stores">Hoarding</a></li>
-                            <li class="dropdown_item"><a href="/map">Centre Map</a></li>
+                            <li class="dropdown_item"><a href="/map">Preferred Trades</a></li>
                         </ul>    
                     </li>
                 </ul>
