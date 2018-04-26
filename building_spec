@@ -18,7 +18,7 @@
             <span></span>
             <span></span>
         </div>
-        <div class="spec_nav_container pull-right">
+        <div class="spec_nav_container pull-right hidden_now">
             <nav id="primary_nav">
                 <ul class="">
                     <!--<li class="menu_item"><a href="/">Home</a></li>-->
