@@ -28,9 +28,9 @@
                     <li class="menu_item">
                         <div class="specs_menu_item" >Base Building <i class="fa fa-angle-down" aria-hidden="true"></i></div>
                         <ul>
-                            <li class="dropdown_item"><div class="specs_sub_menu_item">Architecturale</div></li>
-                            <li class="dropdown_item"><div class="specs_sub_menu_item">Structural</div></li>
-                            <li class="dropdown_item"><div class="specs_sub_menu_item">Mechanical</div></li>
+                            <li class="dropdown_item"><div class="specs_sub_menu_item" id="architectural">Architecturale</div></li>
+                            <li class="dropdown_item"><div class="specs_sub_menu_item" id="structural">Structural</div></li>
+                            <li class="dropdown_item"><div class="specs_sub_menu_item" id="mechanical">Mechanical</div></li>
                             <li class="dropdown_item"><div class="specs_sub_menu_item">Electrical</div></li>
                             <li class="dropdown_item"><div class="specs_sub_menu_item">Site</div></li>
                             <li class="dropdown_item"><div class="specs_sub_menu_item">Environment Green</div></li>
