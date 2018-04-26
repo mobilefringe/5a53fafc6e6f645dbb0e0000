@@ -45,6 +45,7 @@
                             <li class="dropdown_item"><div href="/map">During Construction</div></li>
                         </ul>    
                     </li>
+                    <li class="menu_item"><div class="specs_menu_item" id="sustainability">Submission Requirements</div></li>
                 </ul>
             </nav>
         </div>
