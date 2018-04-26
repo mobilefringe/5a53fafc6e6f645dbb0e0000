@@ -212,7 +212,7 @@
         
         $('#spec-menu-icon').click(function(){
     		$(this).toggleClass('open');
-    		$('.nav_container').slideToggle();
+    		$('.spec_nav_container').slideToggle();
     		$('body').toggleClass('no_scroll');
     	});
 	
