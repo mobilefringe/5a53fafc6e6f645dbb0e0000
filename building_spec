@@ -213,7 +213,7 @@
         $('#spec-menu-icon').click(function(){
     		$(this).toggleClass('open');
     		$('.spec_nav_container').slideToggle();
-    		$('body').toggleClass('no_scroll');
+    // 		$('body').toggleClass('no_scroll');
     	});
 	
         var leasing_units = null;
