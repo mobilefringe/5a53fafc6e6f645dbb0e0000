@@ -155,7 +155,7 @@
         <div id="before_construction_page" class="inner_dets_pages hidden_now"></div>
         <div id="during_construction_page" class="inner_dets_pages hidden_now"></div>
     </div>
-    <div class="content_container margin_30 hidden_now inner_dets_pages" id="sustainability_page"></div>
+    <div class="content_container margin_30 hidden_now inner_dets_pages col-md-12" id="sustainability_page"></div>
 </section>
 <style>
     .map_container {
