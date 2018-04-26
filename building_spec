@@ -211,10 +211,10 @@
         init(e);
         
         $('#spec-menu-icon').click(function(){
-		$(this).toggleClass('open');
-		$('.nav_container').slideToggle();
-		$('body').toggleClass('no_scroll');
-	});
+    		$(this).toggleClass('open');
+    		$('.nav_container').slideToggle();
+    		$('body').toggleClass('no_scroll');
+    	});
 	
         var leasing_units = null;
         function renderAll(){
