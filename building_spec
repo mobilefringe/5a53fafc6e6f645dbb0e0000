@@ -23,8 +23,8 @@
                 <ul class="">
                     <!--<li class="menu_item"><a href="/">Home</a></li>-->
                     
-                    <li class="menu_item"><a href="/promotions">Unit Directory</a></li>
-                    <li class="menu_item"><a href="/events">Submission Requirements</a></li>
+                    <li class="menu_item"><a href="">Unit Directory</a></li>
+                    <li class="menu_item"><a href="">Submission Requirements</a></li>
                     <li class="menu_item">
                         <a href="#">Base Building <i class="fa fa-angle-down" aria-hidden="true"></i></a>
                         <ul>
