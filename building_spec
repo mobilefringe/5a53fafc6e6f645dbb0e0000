@@ -28,21 +28,21 @@
                     <li class="menu_item">
                         <div class="specs_menu_item" >Base Building <i class="fa fa-angle-down" aria-hidden="true"></i></div>
                         <ul>
-                            <li class="dropdown_item"><div href="">Architecturale</div></li>
-                            <li class="dropdown_item"><div href="">Structural</div></li>
-                            <li class="dropdown_item"><div href="">Mechanical</div></li>
-                            <li class="dropdown_item"><div href="">Electrical</div></li>
-                            <li class="dropdown_item"><div href="">Site</div></li>
-                            <li class="dropdown_item"><div href="">Environment Green</div></li>
+                            <li class="dropdown_item specs_sub_menu_item"><div href="">Architecturale</div></li>
+                            <li class="dropdown_item specs_sub_menu_item"><div href="">Structural</div></li>
+                            <li class="dropdown_item specs_sub_menu_item"><div href="">Mechanical</div></li>
+                            <li class="dropdown_item specs_sub_menu_item"><div href="">Electrical</div></li>
+                            <li class="dropdown_item specs_sub_menu_item"><div href="">Site</div></li>
+                            <li class="dropdown_item specs_sub_menu_item"><div href="">Environment Green</div></li>
                         </ul> 
                     </li>
                     <li class="menu_item">
                         <div class="specs_menu_item" >Construction<i class="fa fa-angle-down" aria-hidden="true"></i></div>
                         <ul>
-                            <li class="dropdown_item"><div href="/stores">Hoarding</div></li>
-                            <li class="dropdown_item"><div href="/map">Preferred Trades</div></li>
-                            <li class="dropdown_item"><div href="/map">Before Construction</div></li>
-                            <li class="dropdown_item"><div href="/map">During Construction</div></li>
+                            <li class="dropdown_item specs_sub_menu_item"><div href="/stores">Hoarding</div></li>
+                            <li class="dropdown_item specs_sub_menu_item"><div href="/map">Preferred Trades</div></li>
+                            <li class="dropdown_item specs_sub_menu_item"><div href="/map">Before Construction</div></li>
+                            <li class="dropdown_item specs_sub_menu_item"><div href="/map">During Construction</div></li>
                         </ul>    
                     </li>
                     <li class="menu_item"><div class="specs_menu_item" id="sustainability">Sustainability</div></li>
