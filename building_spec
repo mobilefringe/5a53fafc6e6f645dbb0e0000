@@ -15,7 +15,7 @@
     </div>
 </div>
 <!-- Building Specs Sub Menus-->
-<section>
+<section class="hidden_phone">
     <div class="bspec_sub_menu_container" id="submenu_unit_dir">
         <div class="content_container">
             <div class="menu_flex_container">
