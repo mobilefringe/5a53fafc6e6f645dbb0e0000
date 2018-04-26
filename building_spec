@@ -99,7 +99,7 @@
 </section>
 <section id="building_spec_content_container">
     <div class="visible_phone col-md-12"><h1 id="page_content_title"></h1></div>
-    <div class="content_container margin_30 inner_dets_pages" id="unit_dir_page">
+    <div class="content_container inner_dets_pages" id="unit_dir_page">
         <div class="margin_30"></div>
         <div class="row">
             <div class="col-sm-4"> 
