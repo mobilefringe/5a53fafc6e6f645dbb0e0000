@@ -37,7 +37,7 @@
                         </ul> 
                     </li>
                     <li class="menu_item">
-                        <a href="#">Unit Directory<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                        <a href="#">Construction<i class="fa fa-angle-down" aria-hidden="true"></i></a>
                         <ul>
                             <li class="dropdown_item"><a href="/stores">Directory</a></li>
                             <li class="dropdown_item"><a href="/map">Centre Map</a></li>
