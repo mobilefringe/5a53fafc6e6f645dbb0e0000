@@ -362,7 +362,7 @@
         $(".specs_sub_menu_item").click(function(){
             $(".multi_menu").removeClass('active');
             var el_id = $(this)[0].id;
-            console.log($(this));
+            console.log("this is",$(this));
             $(".inner_dets_pages").hide();
             console.log("hiding inner_dets_pages");
             $("#"+el_id).addClass("active");
