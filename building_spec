@@ -45,7 +45,7 @@
                             <li class="dropdown_item"><div class="specs_sub_menu_item" id="during_construction">During Construction</div></li>
                         </ul>    
                     </li>
-                    <li class="menu_item"><div class="specs_menu_item" id="sustainability" disabled="disabled">Sustainability</div></li>
+                    <li class="menu_item"><div class="specs_menu_item" id="sustainability" >Sustainability</div></li>
                 </ul>
             </nav>
         </div>
@@ -92,7 +92,7 @@
     <div class="bspec_sub_menu_container hidden_now" id="submenu_sustainability">
         <div class="content_container">
             <div class="menu_flex_container">
-                <div class="specs_sub_menu_item caps">Sustainability Criteria</div>
+                <div class="specs_sub_menu_item caps" disabled="disabled">Sustainability Criteria</div>
             </div>
         </div>
     </div>
