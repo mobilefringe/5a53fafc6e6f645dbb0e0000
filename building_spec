@@ -24,7 +24,7 @@
                     <!--<li class="menu_item"><a href="/">Home</a></li>-->
                     
                     <li class="menu_item"><div class="specs_menu_item" id="unit_dir" >Unit Directory</div></li>
-                    <li class="menu_item"><div class="specs_menu_item" id="submission_req" disabled="disabled">Submission Requirements</div></li>
+                    <li class="menu_item"><div class="specs_menu_item" id="submission_req" >Submission Requirements</div></li>
                     <li class="menu_item">
                         <div class="specs_menu_item" id="base_build">Base Building <i class="fa fa-angle-down" aria-hidden="true"></i></div>
                         <ul>
@@ -63,7 +63,7 @@
     <div class="bspec_sub_menu_container hidden_now" id="submenu_submission_req">
         <div class="content_container">
             <div class="menu_flex_container">
-                <div class="specs_sub_menu_item caps">Requirement Details</div>
+                <div class="specs_sub_menu_item caps" disabled="disabled">Requirement Details</div>
             </div>
         </div>
     </div>
