@@ -365,7 +365,6 @@
             var el_id = $(this)[0].id;
             $(".inner_dets_pages").hide();
             $(".multi_menu#"+el_id).addClass("active");
-            console.log("addclass", $(".multi_menu#"+el_id));
             $("#"+el_id+"_page").show();
             if($('#spec-menu-icon').hasClass("open")) {
         		$('#spec-menu-icon').toggleClass('open');
