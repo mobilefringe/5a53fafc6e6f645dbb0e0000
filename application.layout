@@ -248,7 +248,7 @@
                             <li><a href="/leasing">Leasing</a></li>
                             <li><a href="/building_spec">Building Specs</a></li>
                         </ul>  
-                        <!--<div class="margin_30 hidden_phone"></div>-->
+                        <div class="margin_30 hidden_phone" style="margin-bottom: 52px;"></div>
                         <a href="http://www.stvitalcentrespark.com/" target="_blank">
                             <div class="footer_btn">
                                 <div class="footer_btn_text">Subscribe to our Blog</div>
