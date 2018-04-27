@@ -363,6 +363,7 @@
             $(".multi_menu").removeClass('active');
             var el_id = $(this)[0].id;
             $(".inner_dets_pages").hide();
+            console.log("hiding", inner_dets_pages);
             $("#"+el_id).addClass("active");
             $("#"+el_id+"_page").show();
             
