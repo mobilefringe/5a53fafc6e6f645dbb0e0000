@@ -99,7 +99,7 @@
 </section>
 <section id="building_spec_content_container" class="margin_30 clearfix content_container">
     <div class="show_phone col-md-12"><h1 id="page_content_title"></h1></div>
-    <div class="content_container inner_dets_pages" id="unit_dir_page">
+    <div class="inner_dets_pages" id="unit_dir_page">
         <div class="margin_30"></div>
         <div class="row">
             <div class="col-sm-4"> 
@@ -142,8 +142,8 @@
         </div>
     </div>
     
-    <div class="content_container hidden_now inner_dets_pages col-md-12" id="submission_req_page"></div>
-    <div class="content_container col-md-12" id="base_build_page">
+    <div class=" hidden_now inner_dets_pages col-md-12" id="submission_req_page"></div>
+    <div class=" col-md-12" id="base_build_page">
         <div id="architectural_page" class="inner_dets_pages hidden_now"></div>
         <div id="structural_page" class="inner_dets_pages hidden_now"></div>
         <div id="mechanical_page" class="inner_dets_pages hidden_now"></div>
@@ -151,13 +151,13 @@
         <div id="site_page" class="inner_dets_pages hidden_now"></div>
         <div id="environment_green_page" class="inner_dets_pages hidden_now"></div>
     </div>
-    <div class="content_container col-md-12" id="construction_page">
+    <div class=" col-md-12" id="construction_page">
         <div id="hoarding_page" class="inner_dets_pages hidden_now"></div>
         <div id="preferred_trades_page" class="inner_dets_pages hidden_now"></div>
         <div id="before_construction_page" class="inner_dets_pages hidden_now"></div>
         <div id="during_construction_page" class="inner_dets_pages hidden_now"></div>
     </div>
-    <div class="content_container hidden_now inner_dets_pages col-md-12" id="sustainability_page"></div>
+    <div class=" hidden_now inner_dets_pages col-md-12" id="sustainability_page"></div>
 </section>
 <style>
     .map_container {
