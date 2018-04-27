@@ -97,7 +97,7 @@
         </div>
     </div>
 </section>
-<section id="building_spec_content_container" class="margin_30">
+<section id="building_spec_content_container" class="margin_30 clearfix">
     <div class="visible_phone col-md-12"><h1 id="page_content_title"></h1></div>
     <div class="content_container inner_dets_pages" id="unit_dir_page">
         <div class="margin_30"></div>
