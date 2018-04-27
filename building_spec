@@ -310,7 +310,7 @@
                     else {
                         $(".view_specs").css({"display":"inline-block"});
                         $(".view_specs").text('Download PDF Here ');
-                        $(".contact_info").hide();
+                        // $(".contact_info").hide();
                     }
                     $(".select_unit").hide();
                     //drop pin on map 
