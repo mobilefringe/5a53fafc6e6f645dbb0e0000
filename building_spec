@@ -45,7 +45,7 @@
                             <li class="dropdown_item"><div class="specs_sub_menu_item" id="during_construction">During Construction</div></li>
                         </ul>    
                     </li>
-                    <li class="menu_item"><div class="specs_menu_item" id="sustainability">Sustainability</div></li>
+                    <li class="menu_item"><div class="specs_menu_item" id="sustainability" disabled="disabled">Sustainability</div></li>
                 </ul>
             </nav>
         </div>
