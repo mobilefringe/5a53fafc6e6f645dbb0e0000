@@ -92,7 +92,7 @@
     <div class="bspec_sub_menu_container hidden_now" id="submenu_sustainability">
         <div class="content_container">
             <div class="menu_flex_container">
-                <div class="specs_sub_menu_item caps" disabled="disabled">Sustainability Criteria</div>
+                <div class="specs_sub_menu_item caps" disabled="disabled" id="sustainability">Sustainability Criteria</div>
             </div>
         </div>
     </div>
