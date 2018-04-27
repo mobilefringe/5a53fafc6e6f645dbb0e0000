@@ -89,10 +89,10 @@
             </div>
         </div>
     </div>
-    <div class="bspec_sub_menu_container hidden_now" id="submenu_sustainability">
+    <div class="bspec_sub_menu_container hidden_now" >
         <div class="content_container">
             <div class="menu_flex_container">
-                <div class="specs_sub_menu_item caps">Sustainability Criteria</div>
+                <div class="specs_sub_menu_item caps" id="submenu_sustainability">Sustainability Criteria</div>
             </div>
         </div>
     </div>
