@@ -6,11 +6,11 @@
 <div class="building_spec_menu_container">   
     <div class="content_container">
         <div class="menu_flex_container hidden_phone">
-            <div class="specs_menu_item caps active" id="unit_dir">Unit Directory</div>
-            <div class="specs_menu_item caps" id="submission_req">Submission Requirements</div>
-            <div class="specs_menu_item caps" id="base_build">Base Building</div>
-            <div class="specs_menu_item caps" id="construction">Construction</div>
-            <div class="specs_menu_item caps" id="sustainability">Sustainability</div>
+            <div class="specs_menu_item caps hvr-underline-from-center active" id="unit_dir">Unit Directory</div>
+            <div class="specs_menu_item caps hvr-underline-from-center" id="submission_req">Submission Requirements</div>
+            <div class="specs_menu_item caps hvr-underline-from-center" id="base_build">Base Building</div>
+            <div class="specs_menu_item caps hvr-underline-from-center" id="construction">Construction</div>
+            <div class="specs_menu_item caps hvr-underline-from-center" id="sustainability">Sustainability</div>
         </div>
         <div id="spec-menu-icon">
             <span></span>
