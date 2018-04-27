@@ -327,7 +327,6 @@
         $(".specs_menu_item").click(function(){
             //make the right container active
             $(".specs_menu_item").removeClass("active");
-            $(".multi_menu").removeClass('active');
             var el_id = $(this)[0].id;
             $("#"+el_id).addClass("active");
             // show the correct submenu contaienr
