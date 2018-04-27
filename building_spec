@@ -56,43 +56,43 @@
     <div class="bspec_sub_menu_container" id="submenu_unit_dir">
         <div class="content_container">
             <div class="menu_flex_container">
-                <div class="specs_sub_menu_item caps hvr-underline-reveal " id="unit_dir">Store Listing</div>
+                <div class="specs_sub_menu_item caps hvr-grow-shadow " id="unit_dir">Store Listing</div>
             </div>
         </div>
     </div>
     <div class="bspec_sub_menu_container hidden_now" id="submenu_submission_req">
         <div class="content_container">
             <div class="menu_flex_container">
-                <div class="specs_sub_menu_item caps hvr-underline-reveal" disabled="disabled" id="submission_req">Requirement Details</div>
+                <div class="specs_sub_menu_item caps hvr-grow-shadow" disabled="disabled" id="submission_req">Requirement Details</div>
             </div>
         </div>
     </div>
     <div class="bspec_sub_menu_container hidden_now" id="submenu_base_build">
         <div class="content_container">
             <div class="menu_flex_container">
-                <div class="specs_sub_menu_item caps multi_menu hvr-underline-reveal" id="architectural">Architectural</div>
-                <div class="specs_sub_menu_item caps multi_menu hvr-underline-reveal" id="structural">Structural</div>
-                <div class="specs_sub_menu_item caps multi_menu hvr-underline-reveal" id="mechanical">Mechanical</div>
-                <div class="specs_sub_menu_item caps multi_menu hvr-underline-reveal" id="electrical">Electrical</div>
-                <div class="specs_sub_menu_item caps multi_menu hvr-underline-reveal" id="site">Site</div>
-                <div class="specs_sub_menu_item caps multi_menu hvr-underline-reveal" id="environment_green">Environment Green</div>
+                <div class="specs_sub_menu_item caps multi_menu hvr-grow-shadow" id="architectural">Architectural</div>
+                <div class="specs_sub_menu_item caps multi_menu hvr-grow-shadow" id="structural">Structural</div>
+                <div class="specs_sub_menu_item caps multi_menu hvr-grow-shadow" id="mechanical">Mechanical</div>
+                <div class="specs_sub_menu_item caps multi_menu hvr-grow-shadow" id="electrical">Electrical</div>
+                <div class="specs_sub_menu_item caps multi_menu hvr-grow-shadow" id="site">Site</div>
+                <div class="specs_sub_menu_item caps multi_menu hvr-grow-shadow" id="environment_green">Environment Green</div>
             </div>
         </div>
     </div>
     <div class="bspec_sub_menu_container hidden_now" id="submenu_construction">
         <div class="content_container">
             <div class="menu_flex_container">
-                <div class="specs_sub_menu_item caps multi_menu hvr-underline-reveal" id="hoarding">Hoarding</div>
-                <div class="specs_sub_menu_item caps multi_menu hvr-underline-reveal" id="preferred_trades">Preferred Trades</div>
-                <div class="specs_sub_menu_item caps multi_menu hvr-underline-reveal" id="before_construction">Before Construction</div>
-                <div class="specs_sub_menu_item caps multi_menu hvr-underline-reveal" id="during_construction">During Construction</div>
+                <div class="specs_sub_menu_item caps multi_menu hvr-grow-shadow" id="hoarding">Hoarding</div>
+                <div class="specs_sub_menu_item caps multi_menu hvr-grow-shadow" id="preferred_trades">Preferred Trades</div>
+                <div class="specs_sub_menu_item caps multi_menu hvr-grow-shadow" id="before_construction">Before Construction</div>
+                <div class="specs_sub_menu_item caps multi_menu hvr-grow-shadow" id="during_construction">During Construction</div>
             </div>
         </div>
     </div>
     <div class="bspec_sub_menu_container hidden_now" id="submenu_sustainability">
         <div class="content_container">
             <div class="menu_flex_container">
-                <div class="specs_sub_menu_item caps hvr-underline-reveal" disabled="disabled" id="sustainability">Sustainability Criteria</div>
+                <div class="specs_sub_menu_item caps hvr-grow-shadow" disabled="disabled" id="sustainability">Sustainability Criteria</div>
             </div>
         </div>
     </div>
