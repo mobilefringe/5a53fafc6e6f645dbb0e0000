@@ -60,10 +60,10 @@
             </div>
         </div>
     </div>
-    <div class="bspec_sub_menu_container hidden_now" id="submenu_submission_req">
+    <div class="bspec_sub_menu_container hidden_now" >
         <div class="content_container">
             <div class="menu_flex_container">
-                <div class="specs_sub_menu_item caps">Requirement Details</div>
+                <div class="specs_sub_menu_item caps" id="submenu_submission_req">Requirement Details</div>
             </div>
         </div>
     </div>
