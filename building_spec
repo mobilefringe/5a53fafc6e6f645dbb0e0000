@@ -363,7 +363,7 @@
             $(".multi_menu").removeClass('active');
             var el_id = $(this)[0].id;
             $(".inner_dets_pages").hide();
-            $("#"+el_id).addClass("active");
+            $(".multi_menu#"+el_id).addClass("active");
             console.log("addclass", $("#"+el_id));
             $("#"+el_id+"_page").show();
             if($('#spec-menu-icon').hasClass("open")) {
