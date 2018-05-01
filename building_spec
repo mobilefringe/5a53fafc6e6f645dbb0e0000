@@ -285,7 +285,7 @@
                 $(".unit_name").show();
                 if(leasing_unit.no_pdf) {
                     $(".view_specs").css({"display":"inline-block"});
-                    $(".view_specs").text('No design requirement availalble.');
+                    $(".view_specs").text('No design document availalble.');
                     $(".view_specs").attr("href" , '#');
                     $(".view_specs").attr("target" , '');
                     $(".view_specs").css({"cursor":"unset"});
