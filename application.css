@@ -1570,6 +1570,14 @@ $spec_dark_blue: #7B949B;
     .contact_info {
         margin-top:20px;
     }
+    .select_unit {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 100%;
+        text-align: center;
+    }
 }
 
 /**** hover effect from hover.css ******/
