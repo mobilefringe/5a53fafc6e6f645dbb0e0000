@@ -284,7 +284,7 @@
                 $(".view_specs").attr("href" , leasing_unit.leasing_doc);
                 $(".unit_name").show();
                 
-                console.log(leasing_unit.neighbourhood)
+                console.log(leasing_unit.neighbourhood);
                 if(leasing_unit.no_pdf) {
                     $(".view_specs").css({"display":"inline-block"});
                     $(".view_specs").text('No spec document availalble.');
