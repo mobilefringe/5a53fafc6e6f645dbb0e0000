@@ -302,7 +302,7 @@
                     
                 }
                 else {
-                    leasing_unit.no_pdf = false
+                    leasing_unit.no_pdf = false;
                 }
                 if(leasing_unit.no_pdf) {
                     $(".view_specs").css({"display":"inline-block"});
