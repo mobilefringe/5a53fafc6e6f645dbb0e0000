@@ -122,7 +122,7 @@
                 </div>
                 <div class="store_unit_dets">
                     <h3 class="unit_name hidden_now"></h3>
-                    <h3 class="unit_name hidden_now"></h3>
+                    <h3 class="store_name hidden_now"></h3>
                     <a class="view_specs hidden_now" href="" target="_blank"> Download Design Requirements PDF </a>
                     <!--<p class="contact_info hidden_now">-->
                     <!--    Contact us for more info: <br/> -->
