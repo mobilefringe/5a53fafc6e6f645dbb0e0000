@@ -106,7 +106,7 @@
                 <div class="stores_list hidden_phone">
                     <ul id="store_list_building_spec">
                         <script id="store_list_template_map" type="x-tmpl-mustache/text">
-                            <li><a class="map_pin_a" href="#" data-region = "{{svgmap_region}}" data-value='{{svgmap_region}}/{{unit_number}}' data-id="{{id}}">{{name}}</a><li>
+                            <li><a class="map_pin_a" href="#" data-region = "{{svgmap_region}}" data-value='{{svgmap_region}}/{{unit_number}}' data-id="{{id}}">{{unit_number}}</a><li>
                         </script>
                     </ul>
                 </div>
@@ -253,57 +253,53 @@
         function renderAll(){
             var regions = {};
             var map = null;
-            // url = "http://svc.mallmaverickdevelopment.com/api/v4/svc/leasing_units.json";
-            // $.getJSON(url).done(function(data){
-            //     mallData = JSON.stringify(data);
-            //     var mallDataJSON = JSON.parse(mallData);
-            //     log('done fetching mallData from: ' + url);
-            //     // return mallDataJSON.leasing_units;
-            //     leasing_units = mallDataJSON.leasing_units;
-            //     renderLeasingList('#store_list_building_spec','#store_list_template_map', leasing_units, "A", "Z");
-            //     renderGeneral("#category_select", "#category_select_template", leasing_units);
-            //     $('#category_select').prepend('<li class="dropdown-item show_cat_stores" data-id="000" name="ALL" href="#">ALL</li>');
+            url = "http://svc.mallmaverickdevelopment.com/api/v4/svc/leasing_units.json";
+            $.getJSON(url).done(function(data){
+                mallData = JSON.stringify(data);
+                var mallDataJSON = JSON.parse(mallData);
+                log('done fetching mallData from: ' + url);
+                // return mallDataJSON.leasing_units;
+                leasing_units = mallDataJSON.leasing_units;
+                renderLeasingList('#store_list_building_spec','#store_list_template_map', leasing_units, "A", "Z");
+                renderGeneral("#category_select", "#category_select_template", leasing_units);
+                $('#category_select').prepend('<li class="dropdown-item show_cat_stores" data-id="000" name="ALL" href="#">ALL</li>');
                
                
-            //     // renderStoreList('#stores_container','#stores_template', stores, "A", "Z");
+                // renderStoreList('#stores_container','#stores_template', stores, "A", "Z");
                 
-                
-            // });
-            //render map
-            var stores = getStoresList(); 
-            renderLeasingList('#store_list_building_spec','#store_list_template_map', stores, "A", "Z");
-            renderGeneral("#category_select", "#category_select_template", stores);
-            renderMap(stores);
-            loadInsidePages ();
-            $('.map_pin_a').click(function(e){
-                e.preventDefault();
-                var id = $(this).attr('data-value');
-                var unit_id = $(this).attr('data-id');
-                leasing_unit = getLeasingUnitByID(unit_id);
-                $(".unit_name").text(leasing_unit.unit_number);
-                $(".view_specs").attr("href" , leasing_unit.leasing_doc);
-                $(".unit_name").show();
-                if(leasing_unit.no_pdf) {
-                    $(".view_specs").css({"display":"inline-block"});
-                    $(".view_specs").text('No spec document availalble.');
-                    $(".view_specs").attr("href" , '#');
-                    $(".view_specs").attr("target" , '');
-                    $(".view_specs").css({"cursor":"unset"});
-                    // $(".contact_info").show();
-                    if((leasing_unit.contact_email != null && leasing_unit.contact_email != undefined && leasing_unit.contact_email.length > 0) &&  (leasing_unit.contact_phone != null && leasing_unit.contact_phone != undefined && leasing_unit.contact_phone.length > 0)) {
-                        $(".contact_phone").attr("href" , "tel:"+leasing_unit.contact_phone);
-                        $(".contact_email").attr("href" , "mailto"+leasing_unit.contact_email);
+                //render map
+                renderMap(leasing_units);
+                loadInsidePages ();
+                $('.map_pin_a').click(function(e){
+                    e.preventDefault();
+                    var id = $(this).attr('data-value');
+                    var unit_id = $(this).attr('data-id');
+                    leasing_unit = getLeasingUnitByID(unit_id);
+                    $(".unit_name").text(leasing_unit.unit_number);
+                    $(".view_specs").attr("href" , leasing_unit.leasing_doc);
+                    $(".unit_name").show();
+                    if(leasing_unit.no_pdf) {
+                        $(".view_specs").css({"display":"inline-block"});
+                        $(".view_specs").text('No spec document availalble.');
+                        $(".view_specs").attr("href" , '#');
+                        $(".view_specs").attr("target" , '');
+                        $(".view_specs").css({"cursor":"unset"});
+                        // $(".contact_info").show();
+                        if((leasing_unit.contact_email != null && leasing_unit.contact_email != undefined && leasing_unit.contact_email.length > 0) &&  (leasing_unit.contact_phone != null && leasing_unit.contact_phone != undefined && leasing_unit.contact_phone.length > 0)) {
+                            $(".contact_phone").attr("href" , "tel:"+leasing_unit.contact_phone);
+                            $(".contact_email").attr("href" , "mailto"+leasing_unit.contact_email);
+                        }
                     }
-                }
-                else {
-                    $(".view_specs").css({"display":"inline-block"});
-                    $(".view_specs").text('Download Design Requirements PDF');
-                    // $(".contact_info").hide();
-                }
-                $(".select_unit").hide();
-                //drop pin on map 
-                dropPin($(this).attr('data-region'));
-            })
+                    else {
+                        $(".view_specs").css({"display":"inline-block"});
+                        $(".view_specs").text('Download Design Requirements PDF');
+                        // $(".contact_info").hide();
+                    }
+                    $(".select_unit").hide();
+                    //drop pin on map 
+                    dropPin($(this).attr('data-region'));
+                })
+            });
         }
         function getLeasingUnitByID (id) {
             return _.find(leasing_units, function(o) { return _.toNumber(o.id) === _.toNumber(id); })
