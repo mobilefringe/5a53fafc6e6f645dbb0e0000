@@ -299,7 +299,7 @@
                     console.log("has_pdf", leasing_unit);
                     $(".view_specs").css({"display":"inline-block"});
                     $(".view_specs").text('Download Design Requirements PDF');
-                    $(".view_specs").attr("target" , '');
+                    $(".mapplic-popup-link").attr("target" , '');
                 }
                 $(".select_unit").hide();
                 //drop pin on map 
