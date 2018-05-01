@@ -298,6 +298,7 @@
                 // {% endif %}
                 console.log(leasing_unit.neighbourhood);
                 repo = getRepoDetailsByName(leasing_unit.neighbourhood);
+                if(repo !== null && repo !== undefined)
                 if(leasing_unit.no_pdf) {
                     $(".view_specs").css({"display":"inline-block"});
                     $(".view_specs").text('No spec document availalble.');
