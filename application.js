@@ -820,13 +820,8 @@ function renderLeasingList(container, template, collection, type){
     var store_initial="";
     $.each(collection, function(key, val) {
         console.log(val.neighbourhood);
-        repo = getRepoDetailsByName(leasing_unit.neighbourhood);
+        repo = getRepoDetailsByName(val.neighbourhood);
         if(repo !== null && repo !== undefined) {
-            
-            $(".view_specs").css({"display":"inline-block"});
-            $(".view_specs").text('Download Design Requirements PDF');
-        }
-        if(val.leasing_doc !== null && val.leasing_doc !== undefined && val.leasing_doc.length > 0 && val.leasing_doc.indexOf('missing.png') == -1 ) {
             val.leasing_doc = "//mallmaverick.com" + val.leasing_doc;
             val.no_pdf = false;
         }
