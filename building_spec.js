@@ -135,9 +135,9 @@ function mapLoaded(map, stores) {
 function dropPin(svgmap_region) {
         map_self.showLocation(svgmap_region);
         console.log($(".view_specs").is(":visible") );
-        if(!$(".view_specs").is(":visible") ) {
-            $(".mapplic-popup-link").hide();
-        }
+        // if(!$(".view_specs").is(":visible") ) {
+        //     $(".mapplic-popup-link").hide();
+        // }
     }
     
 function loadInsidePages () {
