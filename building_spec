@@ -271,7 +271,7 @@
             // });
             //render map
             var stores = getStoresList(); 
-            renderMap(leasing_units);
+            renderMap(stores);
             loadInsidePages ();
             $('.map_pin_a').click(function(e){
                 e.preventDefault();
