@@ -271,6 +271,7 @@
                 
                 $(".view_specs").attr("href" , leasing_unit.leasing_doc);
                 $(".unit_name").show();
+                $(".store_name").show();
                 if(leasing_unit.no_pdf) {
                     $(".view_specs").css({"display":"inline-block"});
                     $(".view_specs").text('No design document availalble.');
