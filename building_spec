@@ -293,7 +293,8 @@
                 $(".select_unit").hide();
                 //drop pin on map 
                 dropPin($(this).attr('data-region'));
-            })
+            });
+            search_units();
         }
         function getLeasingUnitByID (id) {
             return _.find(stores, function(o) { return _.toNumber(o.id) === _.toNumber(id); })
