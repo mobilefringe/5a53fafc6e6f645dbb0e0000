@@ -146,6 +146,7 @@ function renderLeasingList(container, template, collection, type){
         }
         else {
             val.no_pdf = true;
+            console.log("val" val.name)
         }
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
