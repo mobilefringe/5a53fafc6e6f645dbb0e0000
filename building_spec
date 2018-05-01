@@ -104,7 +104,7 @@
         <div class="row">
             <div class="col-sm-4"> 
                 <label class="top_form_control no_margin">
-                    <input type="text" placeholder="Search" id="unit_search" class="site_search_m"/>
+                    <input type="text" placeholder="Search" id="unit_search"/>
                     <i id="search_icon" class="fa fa-search search_icon"></i>
                     <i id="close_search" class="fa fa-times-circle close_search"></i>
                 </label>
