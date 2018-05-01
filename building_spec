@@ -309,7 +309,7 @@
                     }
                     else {
                         $(".view_specs").css({"display":"inline-block"});
-                        $(".view_specs").text('Download PDF Here ');
+                        $(".view_specs").text('Download Design Requirements PDF Here');
                         // $(".contact_info").hide();
                     }
                     $(".select_unit").hide();
