@@ -299,6 +299,7 @@
                 console.log(leasing_unit.neighbourhood);
                 repo = getRepoDetailsByName(leasing_unit.neighbourhood);
                 if(repo !== null && repo !== undefined) {
+                    
                     $(".view_specs").css({"display":"inline-block"});
                     $(".view_specs").text('Download Design Requirements PDF');
                 }
