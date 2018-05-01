@@ -270,38 +270,38 @@
                 
             // });
             //render map
-                var stores = getStoresList(); 
-                renderMap(leasing_units);
-                loadInsidePages ();
-                $('.map_pin_a').click(function(e){
-                    e.preventDefault();
-                    var id = $(this).attr('data-value');
-                    var unit_id = $(this).attr('data-id');
-                    leasing_unit = getLeasingUnitByID(unit_id);
-                    $(".unit_name").text(leasing_unit.unit_number);
-                    $(".view_specs").attr("href" , leasing_unit.leasing_doc);
-                    $(".unit_name").show();
-                    if(leasing_unit.no_pdf) {
-                        $(".view_specs").css({"display":"inline-block"});
-                        $(".view_specs").text('No spec document availalble.');
-                        $(".view_specs").attr("href" , '#');
-                        $(".view_specs").attr("target" , '');
-                        $(".view_specs").css({"cursor":"unset"});
-                        // $(".contact_info").show();
-                        if((leasing_unit.contact_email != null && leasing_unit.contact_email != undefined && leasing_unit.contact_email.length > 0) &&  (leasing_unit.contact_phone != null && leasing_unit.contact_phone != undefined && leasing_unit.contact_phone.length > 0)) {
-                            $(".contact_phone").attr("href" , "tel:"+leasing_unit.contact_phone);
-                            $(".contact_email").attr("href" , "mailto"+leasing_unit.contact_email);
-                        }
+            var stores = getStoresList(); 
+            renderMap(leasing_units);
+            loadInsidePages ();
+            $('.map_pin_a').click(function(e){
+                e.preventDefault();
+                var id = $(this).attr('data-value');
+                var unit_id = $(this).attr('data-id');
+                leasing_unit = getLeasingUnitByID(unit_id);
+                $(".unit_name").text(leasing_unit.unit_number);
+                $(".view_specs").attr("href" , leasing_unit.leasing_doc);
+                $(".unit_name").show();
+                if(leasing_unit.no_pdf) {
+                    $(".view_specs").css({"display":"inline-block"});
+                    $(".view_specs").text('No spec document availalble.');
+                    $(".view_specs").attr("href" , '#');
+                    $(".view_specs").attr("target" , '');
+                    $(".view_specs").css({"cursor":"unset"});
+                    // $(".contact_info").show();
+                    if((leasing_unit.contact_email != null && leasing_unit.contact_email != undefined && leasing_unit.contact_email.length > 0) &&  (leasing_unit.contact_phone != null && leasing_unit.contact_phone != undefined && leasing_unit.contact_phone.length > 0)) {
+                        $(".contact_phone").attr("href" , "tel:"+leasing_unit.contact_phone);
+                        $(".contact_email").attr("href" , "mailto"+leasing_unit.contact_email);
                     }
-                    else {
-                        $(".view_specs").css({"display":"inline-block"});
-                        $(".view_specs").text('Download Design Requirements PDF');
-                        // $(".contact_info").hide();
-                    }
-                    $(".select_unit").hide();
-                    //drop pin on map 
-                    dropPin($(this).attr('data-region'));
-                })
+                }
+                else {
+                    $(".view_specs").css({"display":"inline-block"});
+                    $(".view_specs").text('Download Design Requirements PDF');
+                    // $(".contact_info").hide();
+                }
+                $(".select_unit").hide();
+                //drop pin on map 
+                dropPin($(this).attr('data-region'));
+            })
         }
         function getLeasingUnitByID (id) {
             return _.find(leasing_units, function(o) { return _.toNumber(o.id) === _.toNumber(id); })
