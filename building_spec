@@ -314,11 +314,11 @@
                         $(".contact_email").attr("href" , "mailto"+leasing_unit.contact_email);
                     }
                 }
-                else {
-                    $(".view_specs").css({"display":"inline-block"});
-                    $(".view_specs").text('Download Design Requirements PDF');
-                    // $(".contact_info").hide();
-                }
+                // else {
+                //     $(".view_specs").css({"display":"inline-block"});
+                //     $(".view_specs").text('Download Design Requirements PDF');
+                //     // $(".contact_info").hide();
+                // }
                 $(".select_unit").hide();
                 //drop pin on map 
                 dropPin($(this).attr('data-region'));
