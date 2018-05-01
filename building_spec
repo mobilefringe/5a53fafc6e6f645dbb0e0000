@@ -1,0 +1,363 @@
+<script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/jquery.js"></script>
+<script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/raphael.js"></script>
+<script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="/mm_svgmap.js"></script>
+<!-- Buildin Specs Main Menu -->
+<div class="building_spec_menu_container">   
+    <div class="content_container">
+        <div class="menu_flex_container hidden_phone">
+            <div class="specs_menu_item caps hvr-underline-from-center active" id="unit_dir">Unit Directory</div>
+            <div class="specs_menu_item caps hvr-underline-from-center" id="submission_req">Submission Requirements</div>
+            <div class="specs_menu_item caps hvr-underline-from-center" id="base_build">Base Building</div>
+            <div class="specs_menu_item caps hvr-underline-from-center" id="construction">Construction</div>
+            <div class="specs_menu_item caps hvr-underline-from-center" id="sustainability">Sustainability</div>
+        </div>
+        <div id="spec-menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="spec_nav_container pull-right hidden_now">
+            <nav id="primary_nav">
+                <ul class="">
+                    <!--<li class="menu_item"><a href="/">Home</a></li>-->
+                    
+                    <li class="menu_item"><div class="specs_menu_item" id="unit_dir" >Unit Directory</div></li>
+                    <li class="menu_item"><div class="specs_menu_item" id="submission_req" >Submission Requirements</div></li>
+                    <li class="menu_item">
+                        <div class="specs_menu_item" id="base_build">Base Building <i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                        <ul>
+                            <li class="dropdown_item"><div class="specs_sub_menu_item" id="architectural">Architecturale</div></li>
+                            <li class="dropdown_item"><div class="specs_sub_menu_item" id="structural">Structural</div></li>
+                            <li class="dropdown_item"><div class="specs_sub_menu_item" id="mechanical">Mechanical</div></li>
+                            <li class="dropdown_item"><div class="specs_sub_menu_item" id="electrical">Electrical</div></li>
+                            <li class="dropdown_item"><div class="specs_sub_menu_item" id="site">Site</div></li>
+                            <li class="dropdown_item"><div class="specs_sub_menu_item" id="environment_green">Environment Green</div></li>
+                        </ul> 
+                    </li>
+                    <li class="menu_item">
+                        <div class="specs_menu_item" id="construction">Construction<i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                        <ul>
+                            <li class="dropdown_item"><div class="specs_sub_menu_item" id="hoarding">Hoarding</div></li>
+                            <li class="dropdown_item"><div class="specs_sub_menu_item" id="preferred_trades">Preferred Trades</div></li>
+                            <li class="dropdown_item"><div class="specs_sub_menu_item" id="before_construction">Before Construction</div></li>
+                            <li class="dropdown_item"><div class="specs_sub_menu_item" id="during_construction">During Construction</div></li>
+                        </ul>    
+                    </li>
+                    <li class="menu_item"><div class="specs_menu_item" id="sustainability" >Sustainability</div></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+<!-- Building Specs Sub Menus-->
+<section class="hidden_phone">
+    <div class="bspec_sub_menu_container" id="submenu_unit_dir">
+        <div class="content_container">
+            <div class="menu_flex_container">
+                <div class="specs_sub_menu_item caps hvr-underline-from-center " id="unit_dir">Store Listing</div>
+            </div>
+        </div>
+    </div>
+    <div class="bspec_sub_menu_container hidden_now" id="submenu_submission_req">
+        <div class="content_container">
+            <div class="menu_flex_container">
+                <div class="specs_sub_menu_item caps hvr-underline-from-center" disabled="disabled" id="submission_req">Requirement Details</div>
+            </div>
+        </div>
+    </div>
+    <div class="bspec_sub_menu_container hidden_now" id="submenu_base_build">
+        <div class="content_container">
+            <div class="menu_flex_container">
+                <div class="specs_sub_menu_item caps multi_menu hvr-underline-from-center" id="architectural">Architectural</div>
+                <div class="specs_sub_menu_item caps multi_menu hvr-underline-from-center" id="structural">Structural</div>
+                <div class="specs_sub_menu_item caps multi_menu hvr-underline-from-center" id="mechanical">Mechanical</div>
+                <div class="specs_sub_menu_item caps multi_menu hvr-underline-from-center" id="electrical">Electrical</div>
+                <div class="specs_sub_menu_item caps multi_menu hvr-underline-from-center" id="site">Site</div>
+                <div class="specs_sub_menu_item caps multi_menu hvr-underline-from-center" id="environment_green">Environment Green</div>
+            </div>
+        </div>
+    </div>
+    <div class="bspec_sub_menu_container hidden_now" id="submenu_construction">
+        <div class="content_container">
+            <div class="menu_flex_container">
+                <div class="specs_sub_menu_item caps multi_menu hvr-underline-from-center" id="hoarding">Hoarding</div>
+                <div class="specs_sub_menu_item caps multi_menu hvr-underline-from-center" id="preferred_trades">Preferred Trades</div>
+                <div class="specs_sub_menu_item caps multi_menu hvr-underline-from-center" id="before_construction">Before Construction</div>
+                <div class="specs_sub_menu_item caps multi_menu hvr-underline-from-center" id="during_construction">During Construction</div>
+            </div>
+        </div>
+    </div>
+    <div class="bspec_sub_menu_container hidden_now" id="submenu_sustainability">
+        <div class="content_container">
+            <div class="menu_flex_container">
+                <div class="specs_sub_menu_item caps hvr-underline-from-center" disabled="disabled" id="sustainability">Sustainability Criteria</div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="building_spec_content_container" class="margin_30 clearfix content_container">
+    <div class="show_phone col-md-12"><h1 id="page_content_title"></h1></div>
+    <div class="inner_dets_pages" id="unit_dir_page">
+        <div class="margin_30"></div>
+        <div class="row">
+            <div class="col-sm-4"> 
+                <div class="stores_list hidden_phone">
+                    <ul id="store_list_building_spec">
+                        <script id="store_list_template_map" type="x-tmpl-mustache/text">
+                            <li><a class="map_pin_a" href="#" data-region = "{{svgmap_region}}" data-value='{{svgmap_region}}/{{unit_number}}' data-id="{{id}}">{{unit}} - {{name}}</a><li>
+                        </script>
+                    </ul>
+                </div>
+                <div class="dropdown show_phone">
+                    <button class="dropdown-toggle caps" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Select a Unit <i class="fa fa-angle-down" aria-hidden="true" style="margin-left: 10px;"></i>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink" id="category_select">
+                        <script id="category_select_template" type="x-tmpl-mustache/text">
+                            <li class="dropdown-item show_cat_stores map_pin_a" data-region = "{{svgmap_region}}" data-value='{{svgmap_region}}/{{unit_number}}' data-id="{{id}}" name="{{unit_number}}">{{unit_number}}</li>
+                        </script>
+                    </ul>
+                </div>
+                <div class="store_unit_dets">
+                    <h3 class="unit_name hidden_now"></h3>
+                    <a class="view_specs hidden_now" href="" target="_blank"> Download Design Requirements PDF </a>
+                    <!--<p class="contact_info hidden_now">-->
+                    <!--    Contact us for more info: <br/> -->
+                    <!--    <a class="contact_phone" href="tel:204-257-5646">204-257-5646</a>-->
+                    <!--    <a class="contact_email" href="mailto:Melissa.Marlatt@cushwake.com">Melissa.Marlatt@cushwake.com </a>-->
+                    <!--</p>-->
+                    <p class="select_unit"> Select a unit for more information. </p>
+                </div>
+            </div>
+            <div class="col-sm-8">
+                <div class="map_container leasing_map">
+    			    <div class="map">
+                        <!--<div id="mapsvg_store_detail"></div>  -->
+                        <div id="mapplic" class="mapplic"></div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+    
+    <div class=" hidden_now inner_dets_pages col-md-12" id="submission_req_page"></div>
+    <div class=" col-md-12" id="base_build_page">
+        <div id="architectural_page" class="inner_dets_pages hidden_now"></div>
+        <div id="structural_page" class="inner_dets_pages hidden_now"></div>
+        <div id="mechanical_page" class="inner_dets_pages hidden_now"></div>
+        <div id="electrical_page" class="inner_dets_pages hidden_now"></div>
+        <div id="site_page" class="inner_dets_pages hidden_now"></div>
+        <div id="environment_green_page" class="inner_dets_pages hidden_now"></div>
+    </div>
+    <div class=" col-md-12" id="construction_page">
+        <div id="hoarding_page" class="inner_dets_pages hidden_now"></div>
+        <div id="preferred_trades_page" class="inner_dets_pages hidden_now"></div>
+        <div id="before_construction_page" class="inner_dets_pages hidden_now"></div>
+        <div id="during_construction_page" class="inner_dets_pages hidden_now"></div>
+    </div>
+    <div class=" hidden_now inner_dets_pages col-md-12" id="sustainability_page"></div>
+</section>
+<style>
+    .map_container {
+        height : auto;
+    }
+    p.popover_name {
+        font-family: brandon_bold;
+        font-size: 14px;
+        margin-bottom: 0px;
+    }
+    .map_popover_content a {
+        font-size: 14px;
+    }
+    .dropdown.show_phone {
+        border: 1px #000 solid;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    @media (min-width: 769px) {
+        #mapsvg_store_detail {
+            height:600px!important;
+        }
+    }
+</style>
+<style>
+    .mapplic-pin{
+        /*background-color: transparent!important;    */
+    }
+    /* INTERACTIVE ELEMENTS */
+    /* clickable elements */
+    .mapplic-clickable:not(g),
+    g.mapplic-clickable > * {
+    	opacity: 1!important;
+    	/*fill: #b7a6bd*/;
+    }
+    /* hovered elements */
+    .mapplic-clickable:not(g):hover,
+    g.mapplic-clickable:hover > * {
+    	opacity: 1;
+    	fill: #c2cfdf;
+    }
+    
+    /* active elements */
+    .mapplic-active,
+    a.mapplic-active > path,
+    g.mapplic-active > * {
+    	fill: #c2cfdf;
+    	opacity: 1.0 !important;
+    }
+    .mapplic-coordinates {
+        visibility: hidden;
+    }
+    .mapplic-container {
+        background: #fff;
+        height: 100%!important;
+    }
+    .mapplic-zoom-buttons{
+        bottom: initial!important;
+        top: 0!important;
+        left: initial!important;
+        right: 0!important;
+    }
+    .mapplic-popup-link {
+        float: left!important;
+    }
+    .mapplic-tooltip-content {
+        overflow: hidden;
+        overflow-y: hidden !important;
+    }
+    .mapplic-hovertip {
+        opacity:1!important;
+    }
+</style>
+
+<link href="//codecloud.cdn.speedyrails.net/sites/5ae8c1fe6e6f6473fd160000/text/css/1522163605908/mapplic.css" rel="stylesheet">
+<link href="//codecloud.cdn.speedyrails.net/sites/59bac7db6e6f644f22ba0000/text/css/1485967426000/map.css" rel="stylesheet">
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+<script src="//codecloud.cdn.speedyrails.net/sites/5ae8c1fe6e6f6473fd160000/text/javascript/1520366143656/mapplic_mmsdk.js"></script>
+<script src="//codecloud.cdn.speedyrails.net/sites/59bac7db6e6f644f22ba0000/text/javascript/1484859750000/hammer.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+<script src="/building_spec.js"></script>
+<script>
+    $(document).ready(function(e){
+        init(e);
+        
+        $('#spec-menu-icon').click(function(){
+    		$(this).toggleClass('open');
+    		$('.spec_nav_container').slideToggle();
+    // 		$('body').toggleClass('no_scroll');
+    	});
+	
+        var leasing_units = null;
+        function renderAll(){
+            var regions = {};
+            var map = null;
+            // url = "http://svc.mallmaverickdevelopment.com/api/v4/svc/leasing_units.json";
+            // $.getJSON(url).done(function(data){
+            //     mallData = JSON.stringify(data);
+            //     var mallDataJSON = JSON.parse(mallData);
+            //     log('done fetching mallData from: ' + url);
+            //     // return mallDataJSON.leasing_units;
+            //     leasing_units = mallDataJSON.leasing_units;
+            //     renderLeasingList('#store_list_building_spec','#store_list_template_map', leasing_units, "A", "Z");
+            //     renderGeneral("#category_select", "#category_select_template", leasing_units);
+            //     $('#category_select').prepend('<li class="dropdown-item show_cat_stores" data-id="000" name="ALL" href="#">ALL</li>');
+               
+               
+            //     // renderStoreList('#stores_container','#stores_template', stores, "A", "Z");
+                
+                
+            // });
+            //render map
+            var stores = getStoresList(); 
+            renderLeasingList('#store_list_building_spec','#store_list_template_map', stores, "A", "Z");
+            renderGeneral("#category_select", "#category_select_template", stores);
+            renderMap(stores);
+            loadInsidePages ();
+            $('.map_pin_a').click(function(e){
+                e.preventDefault();
+                var id = $(this).attr('data-value');
+                var unit_id = $(this).attr('data-id');
+                leasing_unit = getLeasingUnitByID(unit_id);
+                $(".unit_name").text(leasing_unit.unit_number);
+                $(".view_specs").attr("href" , leasing_unit.leasing_doc);
+                $(".unit_name").show();
+                if(leasing_unit.no_pdf) {
+                    $(".view_specs").css({"display":"inline-block"});
+                    $(".view_specs").text('No spec document availalble.');
+                    $(".view_specs").attr("href" , '#');
+                    $(".view_specs").attr("target" , '');
+                    $(".view_specs").css({"cursor":"unset"});
+                    // $(".contact_info").show();
+                    if((leasing_unit.contact_email != null && leasing_unit.contact_email != undefined && leasing_unit.contact_email.length > 0) &&  (leasing_unit.contact_phone != null && leasing_unit.contact_phone != undefined && leasing_unit.contact_phone.length > 0)) {
+                        $(".contact_phone").attr("href" , "tel:"+leasing_unit.contact_phone);
+                        $(".contact_email").attr("href" , "mailto"+leasing_unit.contact_email);
+                    }
+                }
+                else {
+                    $(".view_specs").css({"display":"inline-block"});
+                    $(".view_specs").text('Download Design Requirements PDF');
+                    // $(".contact_info").hide();
+                }
+                $(".select_unit").hide();
+                //drop pin on map 
+                dropPin($(this).attr('data-region'));
+            })
+        }
+        function getLeasingUnitByID (id) {
+            return _.find(leasing_units, function(o) { return _.toNumber(o.id) === _.toNumber(id); })
+        }
+        loadMallDataCached(renderAll); 
+        
+        $(".specs_menu_item").click(function(){
+            //make the right container active
+            $(".specs_menu_item").removeClass("active");
+            var el_id = $(this)[0].id;
+            $("#"+el_id).addClass("active");
+            // show the correct submenu contaienr
+            $(".bspec_sub_menu_container").hide();
+            $("#submenu_"+el_id).show();
+            $(".inner_dets_pages").hide();
+            if (el_id == "unit_dir") {
+                $("#unit_dir_page").show();
+            }
+            else if (el_id == "submission_req") {
+                $("#submission_req_page").show();
+                
+            }
+            else if (el_id == "base_build") {
+                $("#architectural_page").show();
+                $(".multi_menu").removeClass('active');
+                $(".multi_menu#architectural").addClass("active");
+            }
+            else if (el_id == "construction") {
+                $("#hoarding_page").show();
+                $(".multi_menu").removeClass('active');
+                $(".multi_menu#hoarding").addClass("active");
+            }
+            else if (el_id == "sustainability") {
+                $("#sustainability_page").show();
+            }
+            if($('#spec-menu-icon').hasClass("open")) {
+        		$('#spec-menu-icon').toggleClass('open');
+        		$('.spec_nav_container').slideToggle();
+    		}
+    		$("#page_content_title").text($("#"+el_id).text());
+        });
+        
+        $(".specs_sub_menu_item").click(function(){
+            $(".multi_menu").removeClass('active');
+            var el_id = $(this)[0].id;
+            $(".inner_dets_pages").hide();
+            $(".multi_menu#"+el_id).addClass("active");
+            $("#"+el_id+"_page").show();
+            if($('#spec-menu-icon').hasClass("open")) {
+        		$('#spec-menu-icon').toggleClass('open');
+        		$('.spec_nav_container').slideToggle();
+    		}
+    		$("#page_content_title").text("");
+        });
+    });
+    
+</script>
