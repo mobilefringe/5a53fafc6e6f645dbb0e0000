@@ -122,7 +122,7 @@
                 </div>
                 <div class="store_unit_dets">
                     <h3 class="unit_name hidden_now"></h3>
-                    <a class="view_specs hidden_now" href="" target="_blank"> Download Design Requirements PDF Here </a>
+                    <a class="view_specs hidden_now" href="" target="_blank"> Download Design Requirements PDF </a>
                     <!--<p class="contact_info hidden_now">-->
                     <!--    Contact us for more info: <br/> -->
                     <!--    <a class="contact_phone" href="tel:204-257-5646">204-257-5646</a>-->
@@ -275,7 +275,7 @@
                             obj["popover"] = "<p class='popover_name'>"+val.unit_number+"</p>"
                         }
                         else {
-                            obj["popover"] = "<p class='popover_name'>"+val.unit_number+"</p><a href="+ val.leasing_doc + "> Download Design Requirements PDF Here </a>"
+                            obj["popover"] = "<p class='popover_name'>"+val.unit_number+"</p><a href="+ val.leasing_doc + "> Download Design Requirements PDF </a>"
                         }
                         obj["data"] = {};
                         obj["data"]["store_id"]= val.id;
@@ -309,7 +309,7 @@
                     }
                     else {
                         $(".view_specs").css({"display":"inline-block"});
-                        $(".view_specs").text('Download Design Requirements PDF Here');
+                        $(".view_specs").text('Download Design Requirements PDF');
                         // $(".contact_info").hide();
                     }
                     $(".select_unit").hide();
