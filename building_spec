@@ -252,7 +252,7 @@
         
         var stores = [];
         function renderAll(){
-            getStoresList().sortBy(function(o){ return o.unit})
+            stores = getStoresList().sortBy(function(o){ return o.unit})
             var regions = {};
             var map = null;
             // url = "http://svc.mallmaverickdevelopment.com/api/v4/svc/leasing_units.json";
