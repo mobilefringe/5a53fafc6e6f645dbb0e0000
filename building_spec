@@ -110,16 +110,16 @@
                         </script>
                     </ul>
                 </div>
-                <div class="dropdown show_phone">
-                    <button class="dropdown-toggle caps" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Select a Unit <i class="fa fa-angle-down" aria-hidden="true" style="margin-left: 10px;"></i>
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink" id="category_select">
-                        <script id="category_select_template" type="x-tmpl-mustache/text">
-                            <li class="dropdown-item show_cat_stores map_pin_a" data-region = "{{svgmap_region}}" data-value='{{svgmap_region}}/{{unit}}' data-id="{{id}}" name="{{unit}}">{{unit}} - {{name}}<li>
-                        </script>
-                    </ul>
-                </div>
+                <!--<div class="dropdown show_phone">-->
+                <!--    <button class="dropdown-toggle caps" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+                <!--        Select a Unit <i class="fa fa-angle-down" aria-hidden="true" style="margin-left: 10px;"></i>-->
+                <!--    </button>-->
+                <!--    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink" id="category_select">-->
+                <!--        <script id="category_select_template" type="x-tmpl-mustache/text">-->
+                <!--            <li class="dropdown-item show_cat_stores map_pin_a" data-region = "{{svgmap_region}}" data-value='{{svgmap_region}}/{{unit}}' data-id="{{id}}" name="{{unit}}">{{unit}} - {{name}}<li>-->
+                <!--        </script>-->
+                <!--    </ul>-->
+                <!--</div>-->
                 <div class="store_unit_dets">
                     <h3 class="unit_name hidden_now"></h3>
                     <h3 class="store_name hidden_now"></h3>
