@@ -141,7 +141,7 @@ function renderLeasingList(container, template, collection, type){
     $.each(collection, function(key, val) {
         repo = getRepoDetailsByName(val.neighbourhood);
         if(repo !== null && repo !== undefined) {
-            val.leasing_doc = val.image_url;
+            val.leasing_doc = repo.image_url;
             val.no_pdf = false;
         }
         else {
