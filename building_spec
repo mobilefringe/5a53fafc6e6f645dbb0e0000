@@ -303,8 +303,6 @@
                 }
                 else {
                     leasing_unit.no_pdf = false;
-                }
-                if(leasing_unit.no_pdf) {
                     $(".view_specs").css({"display":"inline-block"});
                     $(".view_specs").text('No spec document availalble.');
                     $(".view_specs").attr("href" , '#');
