@@ -267,7 +267,7 @@
                 var unit_id = $(this).attr('data-id');
                 leasing_unit = getLeasingUnitByID(unit_id);
                 $(".unit_name").text(leasing_unit.unit);
-                $(".store_name").text(leasing_unit.unit);
+                $(".store_name").text(leasing_unit.name);
                 
                 $(".view_specs").attr("href" , leasing_unit.leasing_doc);
                 $(".unit_name").show();
