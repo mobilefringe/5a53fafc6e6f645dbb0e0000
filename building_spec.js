@@ -132,6 +132,29 @@ function mapLoaded(map, stores) {
     }, 500);
 }
 
+function renderLeasingList(container, template, collection, type){
+    var item_list = [];
+    var item_rendered = [];
+    var template_html = $(template).html();
+    Mustache.parse(template_html);   // optional, speeds up future uses
+    var store_initial="";
+    $.each(collection, function(key, val) {
+        console.log(val.neighbourhood);
+        repo = getRepoDetailsByName(val.neighbourhood);
+        if(repo !== null && repo !== undefined) {
+            val.leasing_doc = val.image_url;
+            val.no_pdf = false;
+        }
+        else {
+            val.no_pdf = true;
+        }
+        var rendered = Mustache.render(template_html,val);
+        item_rendered.push(rendered);
+    });
+
+    $(container).html(item_rendered.join(''));
+}
+
 function dropPin(svgmap_region) {
         map_self.showLocation(svgmap_region);
         console.log($(".view_specs").is(":visible") );
