@@ -250,7 +250,7 @@
     	});
 	
         
-        var stores = getStoresList().sortBy(function(o){ return o.unit});
+        var stores = [];
         function renderAll(){
             var regions = {};
             var map = null;
