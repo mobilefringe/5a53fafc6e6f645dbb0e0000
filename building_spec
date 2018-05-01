@@ -296,7 +296,7 @@
                     }
                 }
                 else {
-                    console.log("has_pdf", leasing_unit)
+                    console.log("has_pdf", leasing_unit);
                     $(".view_specs").css({"display":"inline-block"});
                     $(".view_specs").text('Download Design Requirements PDF');
                     // $(".contact_info").hide();
