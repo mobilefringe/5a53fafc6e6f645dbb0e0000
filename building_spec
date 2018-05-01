@@ -265,22 +265,22 @@
                 $('#category_select').prepend('<li class="dropdown-item show_cat_stores" data-id="000" name="ALL" href="#">ALL</li>');
                
                 $.each( leasing_units , function( key, val ) {
-                    if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
-                        if(!val.store_front_url_abs ||  val.store_front_url_abs.indexOf('missing.png') > -1 || val.store_front_url_abs.length === 0){
-                            val.store_front_url_abs = '//codecloud.cdn.speedyrails.net/sites/55ddf3f86e6f640775000000/a22fcf023d728855c6f575ba100806d7/default.jpg'
-                        }
-                        obj = {};
-                        obj["tooltip"] = "<p class='tooltip_name'>"+val.unit_number+"</p>"
-                        if(val.no_pdf) {
-                            obj["popover"] = "<p class='popover_name'>"+val.unit_number+"</p>"
-                        }
-                        else {
-                            obj["popover"] = "<p class='popover_name'>"+val.unit_number+"</p><a href="+ val.leasing_doc + "> Download Design Requirements PDF </a>"
-                        }
-                        obj["data"] = {};
-                        obj["data"]["store_id"]= val.id;
-                        regions[val.svgmap_region] = obj
-                    }
+                    // if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
+                    //     if(!val.store_front_url_abs ||  val.store_front_url_abs.indexOf('missing.png') > -1 || val.store_front_url_abs.length === 0){
+                    //         val.store_front_url_abs = '//codecloud.cdn.speedyrails.net/sites/55ddf3f86e6f640775000000/a22fcf023d728855c6f575ba100806d7/default.jpg'
+                    //     }
+                    //     obj = {};
+                    //     obj["tooltip"] = "<p class='tooltip_name'>"+val.unit_number+"</p>"
+                    //     if(val.no_pdf) {
+                    //         obj["popover"] = "<p class='popover_name'>"+val.unit_number+"</p>"
+                    //     }
+                    //     else {
+                    //         obj["popover"] = "<p class='popover_name'>"+val.unit_number+"</p><a href="+ val.leasing_doc + "> Download Design Requirements PDF </a>"
+                    //     }
+                    //     obj["data"] = {};
+                    //     obj["data"]["store_id"]= val.id;
+                    //     regions[val.svgmap_region] = obj
+                    // }
                 });
                 // renderStoreList('#stores_container','#stores_template', stores, "A", "Z");
                 
