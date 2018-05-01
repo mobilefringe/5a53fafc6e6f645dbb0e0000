@@ -58,7 +58,7 @@ a {
     color: $font_color;
     transition: all 0.3s ease;
     &:hover {
-        color: $primary;
+        color: $primary_shade;
     }
 }
 .content_container {
