@@ -139,7 +139,6 @@ function renderLeasingList(container, template, collection, type){
     Mustache.parse(template_html);   // optional, speeds up future uses
     var store_initial="";
     $.each(collection, function(key, val) {
-        console.log(val.neighbourhood);
         repo = getRepoDetailsByName(val.neighbourhood);
         if(repo !== null && repo !== undefined) {
             val.leasing_doc = val.image_url;
