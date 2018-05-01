@@ -297,7 +297,7 @@
                 //     <i>Sorry, no design requirements are available for this unit.</i>
                 // {% endif %}
                 console.log(leasing_unit.neighbourhood);
-                repos = getRepoDetailsByName(leasing_unit.neighbourhood);
+                repo = getRepoDetailsByName(leasing_unit.neighbourhood);
                 if(leasing_unit.no_pdf) {
                     $(".view_specs").css({"display":"inline-block"});
                     $(".view_specs").text('No spec document availalble.');
