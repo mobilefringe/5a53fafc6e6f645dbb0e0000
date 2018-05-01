@@ -822,7 +822,7 @@ function renderLeasingList(container, template, collection, type){
         console.log(val.neighbourhood);
         repo = getRepoDetailsByName(val.neighbourhood);
         if(repo !== null && repo !== undefined) {
-            val.leasing_doc = "//mallmaverick.com" + val.leasing_doc;
+            val.leasing_doc = val.image_url;
             val.no_pdf = false;
         }
         else {
