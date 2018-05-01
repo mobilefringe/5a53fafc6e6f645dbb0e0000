@@ -106,7 +106,7 @@
                 <div class="stores_list hidden_phone">
                     <ul id="store_list_building_spec">
                         <script id="store_list_template_map" type="x-tmpl-mustache/text">
-                            <li><a class="map_pin_a" href="#" data-region = "{{svgmap_region}}" data-value='{{svgmap_region}}/{{unit_number}}' data-id="{{id}}">{{unit}} - {{name}}</a><li>
+                            <li><a class="map_pin_a" href="#" data-region = "{{svgmap_region}}" data-value='{{svgmap_region}}/{{unit}}' data-id="{{id}}">{{unit}} - {{name}}</a><li>
                         </script>
                     </ul>
                 </div>
@@ -116,7 +116,7 @@
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink" id="category_select">
                         <script id="category_select_template" type="x-tmpl-mustache/text">
-                            <li class="dropdown-item show_cat_stores map_pin_a" data-region = "{{svgmap_region}}" data-value='{{svgmap_region}}/{{unit_number}}' data-id="{{id}}" name="{{unit_number}}">{{unit_number}}</li>
+                            <li class="dropdown-item show_cat_stores map_pin_a" data-region = "{{svgmap_region}}" data-value='{{svgmap_region}}/{{unit}}' data-id="{{id}}" name="{{unit_number}}">{{unit_number}}</li>
                         </script>
                     </ul>
                 </div>
