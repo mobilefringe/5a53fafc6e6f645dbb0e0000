@@ -292,7 +292,7 @@
                 }
                 $(".select_unit").hide();
                 //drop pin on map 
-                dropPin($(this).attr('data-region'));
+                dropPin(leasing_unit);
             });
             search_units();
         }
