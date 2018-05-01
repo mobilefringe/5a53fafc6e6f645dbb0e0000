@@ -108,7 +108,7 @@
                     <i id="search_icon" class="fa fa-search search_icon"></i>
                     <i id="close_search" class="fa fa-times-circle close_search"></i>
                 </label>
-                <div class="site_search_results search_results_stores" id="search_results_stores"></div>
+                <div class="site_search_results search_results_units" id="search_results_stores"></div>
                 <div class="stores_list">
                     <ul id="store_list_building_spec">
                         <script id="store_list_template_map" type="x-tmpl-mustache/text">
