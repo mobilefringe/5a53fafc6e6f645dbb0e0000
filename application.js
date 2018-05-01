@@ -819,7 +819,7 @@ function renderLeasingList(container, template, collection, type){
     Mustache.parse(template_html);   // optional, speeds up future uses
     var store_initial="";
     $.each(collection, function(key, val) {
-        console.log(leasing_unit.neighbourhood);
+        console.log(val.neighbourhood);
         repo = getRepoDetailsByName(leasing_unit.neighbourhood);
         if(repo !== null && repo !== undefined) {
             
