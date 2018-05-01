@@ -132,7 +132,7 @@
                     <p class="select_unit"> Select a unit for more information. </p>
                 </div>
             </div>
-            <div class="col-sm-8">
+            <div class="col-sm-8 hidden_phone">
                 <div class="map_container leasing_map">
     			    <div class="map">
                         <!--<div id="mapsvg_store_detail"></div>  -->
