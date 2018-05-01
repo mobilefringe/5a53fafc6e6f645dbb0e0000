@@ -275,7 +275,7 @@
                             obj["popover"] = "<p class='popover_name'>"+val.unit_number+"</p>"
                         }
                         else {
-                            obj["popover"] = "<p class='popover_name'>"+val.unit_number+"</p><a href="+ val.leasing_doc + "> Download PDF Here </a>"
+                            obj["popover"] = "<p class='popover_name'>"+val.unit_number+"</p><a href="+ val.leasing_doc + "> Download Design Requirements PDF Here </a>"
                         }
                         obj["data"] = {};
                         obj["data"]["store_id"]= val.id;
