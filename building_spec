@@ -283,28 +283,7 @@
                 $(".unit_name").text(leasing_unit.unit);
                 $(".view_specs").attr("href" , leasing_unit.leasing_doc);
                 $(".unit_name").show();
-                //get design spec
-                // {% if store.neighbourhood %}
-                //     {% assign neighbourhood =  store.neighbourhood | downcase %}
-                //     {% assign repo = "svc-building-design-specs" | get_repo_by_slug %}
-                //     {% for file in repo.site_images %}
-                //         {% assign filename = file.name | downcase %}
-                //         {% if neighbourhood  == filename %}
-                //             <a href="{{file.image_url}}" target="_blank">You can click here to download these design specs as an Adobe PDF file.</a>                                                 
-                //         {% endif %}
-                //     {% endfor %}                    
-                // {% else %}
-                //     <i>Sorry, no design requirements are available for this unit.</i>
-                // {% endif %}
-                console.log(leasing_unit.neighbourhood);
-                repo = getRepoDetailsByName(leasing_unit.neighbourhood);
-                if(repo !== null && repo !== undefined) {
-                    
-                    $(".view_specs").css({"display":"inline-block"});
-                    $(".view_specs").text('Download Design Requirements PDF');
-                }
-                else {
-                    // leasing_unit.no_pdf = false;
+                if(leasing_unit.no_pdf) {
                     $(".view_specs").css({"display":"inline-block"});
                     $(".view_specs").text('No spec document availalble.');
                     $(".view_specs").attr("href" , '#');
@@ -316,11 +295,11 @@
                         $(".contact_email").attr("href" , "mailto"+leasing_unit.contact_email);
                     }
                 }
-                // else {
-                //     $(".view_specs").css({"display":"inline-block"});
-                //     $(".view_specs").text('Download Design Requirements PDF');
-                //     // $(".contact_info").hide();
-                // }
+                else {
+                    $(".view_specs").css({"display":"inline-block"});
+                    $(".view_specs").text('Download Design Requirements PDF');
+                    // $(".contact_info").hide();
+                }
                 $(".select_unit").hide();
                 //drop pin on map 
                 dropPin($(this).attr('data-region'));
