@@ -337,7 +337,9 @@
     		}
     		$("#page_content_title").text("");
         });
-        
+        $(".spec_nav_container .specs_sub_menu_item").click(function(){
+            
+        })
     });
     
 </script>
