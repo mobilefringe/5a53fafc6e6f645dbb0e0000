@@ -356,8 +356,8 @@
         $(".spec_nav_container .specs_menu_item").click(function(e){ 
             var main_tab = $(this).text();
             console.log("main tag", main_tab);
-            var current_tab = "";
-            if() {
+            var current_tab = "Unit Directory";
+            if(main_tab !== "") {
                 
             }
             else if(){
@@ -368,5 +368,10 @@
             }
             
         }
+        ></div>
+            <div class="specs_menu_item caps hvr-underline-from-center" id="submission_req">Submission Requirements</div>
+            <div class="specs_menu_item caps hvr-underline-from-center" id="base_build">Base Building</div>
+            <div class="specs_menu_item caps hvr-underline-from-center" id="construction">Construction</div>
+            <div class="specs_menu_item caps hvr-underline-from-center" id="sustainability">Sustainability</div>
     });
 </script>
