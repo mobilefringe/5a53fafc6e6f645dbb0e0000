@@ -364,7 +364,7 @@
                 current_tab = "Requirement Details";
             }
             else if(main_tab == "Sustainability"){
-                current_tab = "Store List";
+                current_tab = "Sustainability Criteria";
             }
             
         }
