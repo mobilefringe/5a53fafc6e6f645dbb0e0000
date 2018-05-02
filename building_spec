@@ -293,6 +293,7 @@
                 $(".mapplic-popup-link").hide();
             }
         }
+        
         $(".specs_menu_item").click(function(){
             //make the right container active
             $(".specs_menu_item").removeClass("active");
