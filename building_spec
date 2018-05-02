@@ -340,7 +340,7 @@
         $(".spec_nav_container .specs_sub_menu_item").click(function(e){
             console.log("this is ", $(this).text());
             var current_tab = $(this).text();
-            if($.inArray( current_tab, [ "Architecturale", "Structural", "Mechanical", "Electrical" , "" ] ))
+            if($.inArray( current_tab, [ "Architecturale", "Structural", "Mechanical", "Electrical" , "Site" ] ))
             >Architecturale</div></li>
                             <li class="dropdown_item"><div class="specs_sub_menu_item" id="structural">Structural</div></li>
                             <li class="dropdown_item"><div class="specs_sub_menu_item" id="mechanical">Mechanical</div></li>
