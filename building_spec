@@ -350,7 +350,7 @@
                 // console.log("main tag", "Construction")
                  main_tab = "Construction";
             }
-            $(".mobile_header").text("")
+            $(".mobile_header").text( main_tab + " / " + current_tab)
         })
     });
 </script>
