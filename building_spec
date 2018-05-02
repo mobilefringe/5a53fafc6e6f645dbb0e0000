@@ -368,10 +368,5 @@
             }
             
         }
-        ></div>
-            <div class="specs_menu_item caps hvr-underline-from-center" id="submission_req"></div>
-            <div class="specs_menu_item caps hvr-underline-from-center" id="base_build">Base Building</div>
-            <div class="specs_menu_item caps hvr-underline-from-center" id="construction">Construction</div>
-            <div class="specs_menu_item caps hvr-underline-from-center" id="sustainability">Sustainability</div>
     });
 </script>
