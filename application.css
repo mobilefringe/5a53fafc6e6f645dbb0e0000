@@ -1581,7 +1581,7 @@ $spec_dark_blue: #7B949B;
     }
 }
 #search_results_units {
-    
+    max-height: 300px;
 }
 /**** hover effect from hover.css ******/
 /* Underline From Center */
