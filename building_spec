@@ -356,8 +356,8 @@
         $(".spec_nav_container .specs_menu_item").click(function(e){ 
             var main_tab = $(this).text();
             console.log("main tag", main_tab);
-            var current_tab = "Unit Directory";
-            if(main_tab !== "") {
+            var current_tab = "";
+            if(main_tab !== "Unit Directory") {
                 
             }
             else if(){
