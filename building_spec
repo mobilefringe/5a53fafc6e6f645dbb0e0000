@@ -277,9 +277,9 @@
             });
         }
         
-        function getLeasingUnitByID (id) {
-            return _.find(stores, function(o) { return _.toNumber(o.id) === _.toNumber(id); })
-        }
+        // function getLeasingUnitByID (id) {
+        //     return _.find(stores, function(o) { return _.toNumber(o.id) === _.toNumber(id); })
+        // }
         loadMallDataCached(renderAll); 
         
         function dropPin(unit_id) {
