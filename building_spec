@@ -343,7 +343,9 @@
             if($.inArray( current_tab, ["Architecturale", "Structural", "Mechanical", "Electrical" , "Site", "Environment Green"]) > -1){
                 console.log("main tag", "Base Building")
             }
-            else if($.inArray( current_tab, ["Hoarding", "Preferred Trades", "Before Construction", "During Construction"]) > -1)
+            else if($.inArray( current_tab, ["Hoarding", "Preferred Trades", "Before Construction", "During Construction"]) > -1) {
+                
+            }
         })
     });
 </script>
