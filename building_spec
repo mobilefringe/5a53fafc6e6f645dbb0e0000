@@ -356,6 +356,15 @@
         $(".spec_nav_container .specs_menu_item").click(function(e){ 
             var main_tab = $(this).text();
             console.log("main tag", main_tab);
+            if() {
+                
+            }
+            else if(){
+                
+            }
+            else if(){
+                
+            }
             var current_tab = "";
         }
     });
