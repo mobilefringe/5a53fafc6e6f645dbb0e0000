@@ -340,7 +340,7 @@
         $(".spec_nav_container .specs_sub_menu_item").click(function(e){
             
             var current_tab = $(this).text();
-            if($.inArray( current_tab, [ "Architecturale", "Structural", "Mechanical", "Electrical" , "Site", "Environment Green" ] ) > -1){
+            if($.inArray( current_tab, [ "Architecturale", "Structural", "Mechanical", "Electrical" , "Site", "Environment Green"] ) > -1){
                 console.log("main tag", "Base Building")
             }
         })
