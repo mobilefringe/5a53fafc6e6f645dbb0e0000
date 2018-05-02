@@ -369,7 +369,7 @@
             else if(main_tab == "Base Building"){
                 current_tab = "Architecturale";
             }
-            else if(main_tab == "Sustainability"){
+            else if(main_tab == "Construction"){
                 current_tab = "Sustainability Criteria";
             }
             $(".mobile_header").text( main_tab + " / " + current_tab);
