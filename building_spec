@@ -347,7 +347,7 @@
                 
             }
             else if($.inArray( current_tab, ["Hoarding", "Preferred Trades", "Before Construction", "During Construction"]) > -1) {
-                console.log("main tag", "Construction")
+                // console.log("main tag", "Construction")
                  main_tab = "Construction";
             }
             $(".mobile_header").text("")
