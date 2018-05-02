@@ -253,8 +253,12 @@
         $('#spec-menu-icon').click(function(){
     		$(this).toggleClass('open');
     		$('.spec_nav_container').slideToggle();
-    		if( $('#spec-menu-icon').hasClass( "open" ))
-    		$("#spec-menu-icon .fa").removeClass('fa-chevron-up');
+    		if( $('#spec-menu-icon').hasClass( "open" )) {
+    		    $("#spec-menu-icon .fa").removeClass('fa-chevron-up');
+    		}
+    		else {
+    		    
+    		}
     	});
 	    
         
