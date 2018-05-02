@@ -253,9 +253,10 @@
         $('#spec-menu-icon').click(function(){
     		$(this).toggleClass('open');
     		$('.spec_nav_container').slideToggle();
+    		$("#spec-menu-icon .fa")
     // 		$('body').toggleClass('no_scroll');
     	});
-	
+	    
         
         var stores = [];
         function renderAll(){
