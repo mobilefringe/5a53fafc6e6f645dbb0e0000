@@ -273,7 +273,7 @@
                 e.preventDefault();
                 var id = $(this).attr('data-value');
                 var unit_id = $(this).attr('data-id');
-                leasing_unit = getLeasingUnitByID(unit_id);
+                
                 dropPin(unit_id);
             });
         }
