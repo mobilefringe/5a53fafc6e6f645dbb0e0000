@@ -105,10 +105,10 @@
             <div class="col-sm-4"> 
                 <div class="building_spec_search">
                     <label class="top_form_control no_margin">
-                    <input type="text" placeholder="Search" id="unit_search"/>
-                    <i id="search_icon" class="fa fa-search search_icon"></i>
-                    <i id="close_search" class="fa fa-times-circle close_search"></i>
-                </label>
+                        <input type="text" placeholder="Search" id="unit_search"/>
+                        <i id="search_icon" class="fa fa-search search_icon"></i>
+                        <i id="close_search" class="fa fa-times-circle close_search"></i>
+                    </label>
                 </div>
                 
                 <div class="site_search_results search_results_units" id="search_results_units"></div>
