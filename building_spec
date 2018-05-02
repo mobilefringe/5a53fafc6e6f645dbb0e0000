@@ -338,8 +338,9 @@
     		$("#page_content_title").text("");
         });
         $(".spec_nav_container .specs_sub_menu_item").click(function(e){
-            console.log("this is ", $(this).text(), $.inArray( current_tab, [ "Architecturale", "Structural", "Mechanical", "Electrical" , "Site", "Environment Green" ] ));
+            
             var current_tab = $(this).text();
+            console.log("this is ", $(this).text(), $.inArray( current_tab, [ "Architecturale", "Structural", "Mechanical", "Electrical" , "Site", "Environment Green" ] ));
             if($.inArray( current_tab, [ "Architecturale", "Structural", "Mechanical", "Electrical" , "Site", "Environment Green" ] )){
                 console.log("main tag", "Base Building")
             }
