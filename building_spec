@@ -256,11 +256,11 @@
     		console.log($('#spec-menu-icon').hasClass( "open" ));
     		if( $('#spec-menu-icon').hasClass( "open" )) {
     		    $("#spec-menu-icon .fa").removeClass('fa-chevron-down');
-    		    $("#spec-menu-icon .fa").removeClass('fa-chevron-down');
+    		    $("#spec-menu-icon .fa").addClass('fa-chevron-up');
     		}
     		else {
     		    $("#spec-menu-icon .fa").removeClass('fa-chevron-up');
-    		    $("#spec-menu-icon .fa").removeClass('fa-chevron-down');
+    		    $("#spec-menu-icon .fa").addClass('fa-chevron-down');
     		}
     	});
 	    
