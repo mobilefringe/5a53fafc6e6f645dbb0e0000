@@ -1580,7 +1580,9 @@ $spec_dark_blue: #7B949B;
         text-align: center;
     }
 }
-
+#search_results_units {
+    
+}
 /**** hover effect from hover.css ******/
 /* Underline From Center */
 .hvr-underline-from-center {
