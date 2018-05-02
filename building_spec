@@ -367,7 +367,7 @@
                 current_tab = "Sustainability Criteria";
             }
             else if(main_tab == "Base Building"){
-                current_tab = "Sustainability Criteria";
+                current_tab = "Architecturale";
             }
             else if(main_tab == "Sustainability"){
                 current_tab = "Sustainability Criteria";
