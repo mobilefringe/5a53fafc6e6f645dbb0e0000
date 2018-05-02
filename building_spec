@@ -275,7 +275,6 @@
                 var unit_id = $(this).attr('data-id');
                 leasing_unit = getLeasingUnitByID(unit_id);
                 $(".select_unit").hide();
-                //drop pin on map 
                 dropPin(leasing_unit);
             });
         }
