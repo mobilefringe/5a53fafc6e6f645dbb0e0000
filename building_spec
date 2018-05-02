@@ -271,7 +271,6 @@
             
             $('.map_pin_a').click(function(e){
                 e.preventDefault();
-                var id = $(this).attr('data-value');
                 var unit_id = $(this).attr('data-id');
                 
                 dropPin(unit_id);
