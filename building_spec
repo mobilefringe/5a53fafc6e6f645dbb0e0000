@@ -365,7 +365,7 @@
             else if(){
                 
             }
-            var current_tab = "";
+            
         }
     });
 </script>
