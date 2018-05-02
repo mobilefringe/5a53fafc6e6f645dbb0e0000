@@ -355,7 +355,7 @@
         
         $(".spec_nav_container .specs_menu_item").click(function(e){ 
             var current_tab = $(this).text();
-            console.log("main tag", )
+            console.log("main tag", current_tab);
             var main_tab = "";
         }
     });
