@@ -366,6 +366,12 @@
             else if(main_tab == "Sustainability"){
                 current_tab = "Sustainability Criteria";
             }
+            else if (){
+                
+            }
+            else if () {
+                
+            }
             $(".mobile_header").text( main_tab + " / " + current_tab);
         });
     });
