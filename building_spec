@@ -273,7 +273,7 @@
                 e.preventDefault();
                 var unit_id = $(this).attr('data-id');
                 var no_pdf = $(this).attr('data-pdf');
-                dropPin(unit_id);
+                dropPin(unit_id, no_pdf);
             });
         }
         
