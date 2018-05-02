@@ -351,6 +351,9 @@
                  main_tab = "Construction";
             }
             $(".mobile_header").text( main_tab + " / " + current_tab);
-        })
+        });
+        
+         $(".spec_nav_container .specs_sub_menu_item").click(function(e){ 
+         }
     });
 </script>
