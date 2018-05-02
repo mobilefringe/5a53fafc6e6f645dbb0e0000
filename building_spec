@@ -353,8 +353,8 @@
             $(".mobile_header").text( main_tab + " / " + current_tab);
         });
         
-         $(".spec_nav_container .specs_menu_item").click(function(e){ 
-             
-         }
+        $(".spec_nav_container .specs_menu_item").click(function(e){ 
+         
+        }
     });
 </script>
