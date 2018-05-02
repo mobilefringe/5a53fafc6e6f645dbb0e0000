@@ -254,7 +254,6 @@
     		$(this).toggleClass('open');
     		$('.spec_nav_container').slideToggle();
     		$("#spec-menu-icon .fa").removeClass('fa-chevron');
-    // 		$('body').toggleClass('no_scroll');
     	});
 	    
         
