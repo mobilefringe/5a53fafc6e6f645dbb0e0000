@@ -367,6 +367,6 @@
                 current_tab = "Sustainability Criteria";
             }
             $(".mobile_header").text( main_tab + " / " + current_tab);
-        }
+        });
     });
 </script>
