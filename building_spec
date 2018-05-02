@@ -366,10 +366,10 @@
             else if(main_tab == "Sustainability"){
                 current_tab = "Sustainability Criteria";
             }
-            else if (){
+            else if(main_tab == "Sustainability"){
                 
             }
-            else if () {
+            else if(main_tab == "Sustainability"){
                 
             }
             $(".mobile_header").text( main_tab + " / " + current_tab);
