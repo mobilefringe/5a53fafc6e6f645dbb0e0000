@@ -358,7 +358,7 @@
             console.log("main tag", main_tab);
             var current_tab = "";
             if(main_tab == "Unit Directory") {
-                current_tab = "Store Listing";
+                current_tab = "Store Listi";
             }
             else if(main_tab == "Submission Requirements"){
                 
