@@ -344,11 +344,12 @@
             if($.inArray( current_tab, ["Architecturale", "Structural", "Mechanical", "Electrical" , "Site", "Environment Green"]) > -1){
                 // console.log("main tag", "Base Building");
                 main_tab = "Base Building";
-                $(".mobile_header").text("")
+                
             }
             else if($.inArray( current_tab, ["Hoarding", "Preferred Trades", "Before Construction", "During Construction"]) > -1) {
                 console.log("main tag", "Construction")
             }
+            $(".mobile_header").text("")
         })
     });
 </script>
