@@ -108,7 +108,7 @@
                         <input type="text" placeholder="Search" id="unit_search"/>
                         <i id="search_icon" class="fa fa-search search_icon"></i>
                         <i id="close_search" class="fa fa-times-circle close_search"></i>
-                    <div class="site_search_results search_results_units" id="search_results_units"></div>
+                        <div class="site_search_results search_results_units" id="search_results_units"></div>
                     </div>
                 </div>
                 
