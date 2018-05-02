@@ -361,10 +361,10 @@
                 current_tab = "Store List";
             }
             else if(main_tab == "Submission Requirements"){
-                
+                current_tab = "Store List";
             }
             else if(main_tab == "Sustainability"){
-                
+                current_tab = "Store List";
             }
             
         }
