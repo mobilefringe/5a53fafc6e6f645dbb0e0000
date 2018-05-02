@@ -261,6 +261,7 @@
             var map = null;
             //render map
             renderLeasingList('#store_list_building_spec','#store_list_template_map', stores, "A", "Z");
+            renderLeasingList('#store_list_building_spec_m','#store_list_template_map_m', stores, "A", "Z");
             renderGeneral("#category_select", "#category_select_template", stores);
             renderMap(stores);
             loadInsidePages ();
