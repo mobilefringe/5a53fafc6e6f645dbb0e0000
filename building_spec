@@ -266,7 +266,6 @@
             renderGeneral("#category_select", "#category_select_template", stores);
             renderMap(stores);
             loadInsidePages ();
-            
             search_units();
         }
         function getLeasingUnitByID (id) {
