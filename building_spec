@@ -149,7 +149,7 @@
             </div> 
         </div>
     </div>
-    
+    <div class="margin_30 hidden_phone"></div>
     <div class=" hidden_now inner_dets_pages col-md-12" id="submission_req_page"></div>
     <div class=" col-md-12" id="base_build_page">
         <div id="architectural_page" class="inner_dets_pages hidden_now"></div>
