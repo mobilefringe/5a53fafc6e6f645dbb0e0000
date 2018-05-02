@@ -341,7 +341,7 @@
             console.log("this is ", $(this).text());
             var current_tab = $(this).text();
             if($.inArray( current_tab, [ "Architecturale", "Structural", "Mechanical", "Electrical" , "Site", "Environment Green" ] )){
-                
+                console.log("main tag")
             }
         })
     });
