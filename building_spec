@@ -345,8 +345,5 @@
             }
             else if($.inArray( current_tab, ["Hoarding", "Preferred Trades", "Before Construction", "During Construction" , "Site", "Environment Green"]) > -1)
         })
-    });</div>
-                <div class="specs_sub_menu_item caps multi_menu hvr-underline-from-center" id="before_construction"></div>
-                <div class="specs_sub_menu_item caps multi_menu hvr-underline-from-center" id="during_construction"></div>
-    
+    });
 </script>
