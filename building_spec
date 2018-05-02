@@ -277,21 +277,8 @@
             });
         }
         
-        // function getLeasingUnitByID (id) {
-        //     return _.find(stores, function(o) { return _.toNumber(o.id) === _.toNumber(id); })
-        // }
         loadMallDataCached(renderAll); 
         
-        // function dropPin(unit_id) {
-        //     console.log("droppin", unit_id);
-        //     leasing_unit = getLeasingUnitByID(unit_id);
-        //     if(leasing_unit.svgmap_region !== null)
-        //         map_self.showLocation(leasing_unit.svgmap_region);
-        //     // console.log(leasing_unit.svgmap_region );
-        //     if(leasing_unit.no_pdf) {
-        //         $(".mapplic-popup-link").hide();
-        //     }
-        // }
         
         $(".specs_menu_item").click(function(){
             //make the right container active
