@@ -318,6 +318,39 @@
     		}
     		$("#page_content_title").text("");
         });
+        $('.map_pin_a').click(function(e){
+                e.preventDefault();
+                var id = $(this).attr('data-value');
+                var unit_id = $(this).attr('data-id');
+                leasing_unit = getLeasingUnitByID(unit_id);
+                console.log("leasing_unit", leasing_unit);
+                $(".unit_name").text(leasing_unit.unit);
+                $(".store_name").text(leasing_unit.name);
+                
+                $(".view_specs").attr("href" , leasing_unit.leasing_doc);
+                $(".unit_name").show();
+                $(".store_name").show();
+                if(leasing_unit.no_pdf) {
+                    $(".view_specs").css({"display":"inline-block"});
+                    $(".view_specs").text('No design document availalble.');
+                    $(".view_specs").attr("href" , '#');
+                    $(".view_specs").attr("target" , '');
+                    $(".view_specs").css({"cursor":"unset"});
+                    // $(".contact_info").show();
+                    if((leasing_unit.contact_email != null && leasing_unit.contact_email != undefined && leasing_unit.contact_email.length > 0) &&  (leasing_unit.contact_phone != null && leasing_unit.contact_phone != undefined && leasing_unit.contact_phone.length > 0)) {
+                        $(".contact_phone").attr("href" , "tel:"+leasing_unit.contact_phone);
+                        $(".contact_email").attr("href" , "mailto"+leasing_unit.contact_email);
+                    }
+                }
+                else {
+                    $(".view_specs").css({"display":"inline-block"});
+                    $(".view_specs").text('Download Design Requirements PDF');
+                    $(".mapplic-popup-link").attr("target" , '_blank');
+                }
+                $(".select_unit").hide();
+                //drop pin on map 
+                dropPin(leasing_unit);
+            });
     });
     
 </script>
