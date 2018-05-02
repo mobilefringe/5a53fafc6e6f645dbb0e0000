@@ -257,7 +257,7 @@
     		    $("#spec-menu-icon .fa").removeClass('fa-chevron-up');
     		}
     		else {
-    		    $("#spec-menu-icon .fa").removeClass('fa-chevron-up');
+    		    $("#spec-menu-icon .fa").removeClass('fa-chevron-down');
     		}
     	});
 	    
