@@ -363,7 +363,7 @@
             else if(main_tab == "Submission Requirements"){
                 
             }
-            else if(){
+            else if(main_tab ==  "Sustainability"){
                 
             }
             
