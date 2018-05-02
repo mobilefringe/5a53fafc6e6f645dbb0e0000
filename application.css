@@ -1583,6 +1583,11 @@ $spec_dark_blue: #7B949B;
 #search_results_units {
     max-height: 300px;
 }
+.building_spec_search {
+        background: #F0F0F0;
+    padding: 20px;
+    margin: 10px auto;
+}
 /**** hover effect from hover.css ******/
 /* Underline From Center */
 .hvr-underline-from-center {
