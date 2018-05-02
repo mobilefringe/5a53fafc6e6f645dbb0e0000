@@ -104,7 +104,7 @@
         <div class="row">
             <div class="col-sm-4"> 
                 <div class="building_spec_search">
-                    <div>
+                    <div class="position-relative">
                         <input type="text" placeholder="Search" id="unit_search"/>
                         <i id="search_icon" class="fa fa-search search_icon"></i>
                         <i id="close_search" class="fa fa-times-circle close_search"></i>
