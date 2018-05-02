@@ -103,6 +103,9 @@
         <div class="margin_30"></div>
         <div class="row">
             <div class="col-sm-4"> 
+                <div class="building_spec_search">
+                    
+                </div>
                 <label class="top_form_control no_margin">
                     <input type="text" placeholder="Search" id="unit_search"/>
                     <i id="search_icon" class="fa fa-search search_icon"></i>
