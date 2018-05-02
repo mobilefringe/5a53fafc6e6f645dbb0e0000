@@ -13,10 +13,11 @@
             <div class="specs_menu_item caps hvr-underline-from-center" id="sustainability">Sustainability</div>
         </div>
         <div id="spec-menu-icon">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
+            <!--<span></span>-->
+            <!--<span></span>-->
+            <!--<span></span>-->
+            <!--<span></span>-->
+            <i></i>
         </div>
         <div class="spec_nav_container pull-right hidden_now">
             <nav id="primary_nav">
