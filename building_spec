@@ -126,7 +126,6 @@
             <div class="col-sm-8 hidden_phone">
                 <div class="map_container leasing_map">
     			    <div class="map">
-                        <!--<div id="mapsvg_store_detail"></div>  -->
                         <div id="mapplic" class="mapplic"></div>
                     </div>
                 </div>
