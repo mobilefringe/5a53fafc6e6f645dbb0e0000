@@ -250,7 +250,7 @@
 <script>
     $(document).ready(function(e){
         init(e);
-        $(".mobile_header").text( "Unit Directory" + "Store List";);
+        $(".mobile_header").text( "Unit Directory / Store List";);
         $('#spec-menu-icon').click(function(){
     		$(this).toggleClass('open');
     		$('.spec_nav_container').slideToggle();
