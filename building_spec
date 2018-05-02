@@ -255,7 +255,7 @@
     		$('.spec_nav_container').slideToggle();
     		console.log($('#spec-menu-icon').hasClass( "open" ));
     		if( $('#spec-menu-icon').hasClass( "open" )) {
-    		    $("#spec-menu-icon .fa").removeClass('fa-chevron-up');
+    		    $("#spec-menu-icon .fa").removeClass('fa-chevron-down');
     		}
     		else {
     		    $("#spec-menu-icon .fa").removeClass('fa-chevron-down');
