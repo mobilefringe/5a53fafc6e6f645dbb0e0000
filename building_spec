@@ -122,7 +122,7 @@
                 </div>
                 <div class="stores_list show_phone">
                     <ul id="store_list_building_spec">
-                        <script id="store_list_template_map" type="x-tmpl-mustache/text">
+                        <script id="store_list_template_map_m" type="x-tmpl-mustache/text">
                             <li><a href="/building_spec/{{slug}}">{{unit}} - {{name}}</a><li>
                         </script>
                     </ul>
