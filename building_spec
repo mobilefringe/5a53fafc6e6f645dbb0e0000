@@ -343,10 +343,10 @@
             if($.inArray( current_tab, ["Architecturale", "Structural", "Mechanical", "Electrical" , "Site", "Environment Green"]) > -1){
                 console.log("main tag", "Base Building")
             }
-            else if($.inArray( current_tab, ["Hoarding", "Preferred Trades", "Before Construction", "Electrical" , "Site", "Environment Green"]) > -1)
+            else if($.inArray( current_tab, ["Hoarding", "Preferred Trades", "Before Construction", "During Construction" , "Site", "Environment Green"]) > -1)
         })
     });</div>
                 <div class="specs_sub_menu_item caps multi_menu hvr-underline-from-center" id="before_construction"></div>
-                <div class="specs_sub_menu_item caps multi_menu hvr-underline-from-center" id="during_construction">During Construction</div>
+                <div class="specs_sub_menu_item caps multi_menu hvr-underline-from-center" id="during_construction"></div>
     
 </script>
