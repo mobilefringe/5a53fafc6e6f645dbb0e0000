@@ -120,6 +120,13 @@
                         </script>
                     </ul>
                 </div>
+                <div class="stores_list">
+                    <ul id="store_list_building_spec">
+                        <script id="store_list_template_map" type="x-tmpl-mustache/text">
+                            <li><a class="map_pin_a" href="#" data-region = "{{svgmap_region}}" data-id="{{id}}">{{unit}} - {{name}}</a><li>
+                        </script>
+                    </ul>
+                </div>
             </div>
             <div class="col-sm-8 hidden_phone">
                 <div class="map_container leasing_map">
