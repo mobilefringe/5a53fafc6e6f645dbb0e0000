@@ -240,7 +240,7 @@
         $(".mobile_header").text( "Unit Directory / Unit List");
         $(".search_overlay").click(function(){
             $(".building_spec_search #close_search").addClass("red_bg");
-            console.log("")
+            console.log("clicked on overlay")
         });
         $('#spec-menu-icon').click(function(){
     		$(this).toggleClass('open');
