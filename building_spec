@@ -222,7 +222,7 @@
     .mapplic-hovertip {
         opacity:1!important;
     }
-    .mapplic-map-image *[id^=nopointer] {
+    .mapplic-map-image *[id^=nopointer] text{
         font-family: Brandon;
     }
 </style>
