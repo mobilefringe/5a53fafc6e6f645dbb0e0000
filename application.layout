@@ -31,7 +31,6 @@
     <!--CSS-->
     <link href="//cdnjs.cloudflare.com/ajax/libs/flexslider/2.5.0/flexslider.css" rel="stylesheet">
     <link href="//codecloud.cdn.speedyrails.net/sites/59282acb6e6f647d8d520100/text/css/1438916432000/ihover.css" rel="stylesheet">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="//cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.2.0/ekko-lightbox.min.css" rel="stylesheet">
     <link href="/application.css" rel="stylesheet">
     <link href="/custom_popup.css" rel="stylesheet">
