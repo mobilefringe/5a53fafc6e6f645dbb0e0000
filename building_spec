@@ -95,6 +95,9 @@
 <!--        </div>-->
 <!--    </div>-->
 <!--</section>-->
+<div>
+    <i class="fa fa-chevron-left"></i>
+</div>
 <section id="building_spec_content_container" class="margin_30 clearfix content_container">
     <!--<div class="show_phone col-md-12"><h1 id="page_content_title"></h1></div>-->
     <div class="inner_dets_pages" id="unit_dir_page">
