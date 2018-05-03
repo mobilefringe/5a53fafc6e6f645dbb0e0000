@@ -50,51 +50,51 @@
     </div>
 </div>
 <!-- Building Specs Sub Menus-->
-<section class="hidden_phone">
-    <div class="bspec_sub_menu_container" id="submenu_unit_dir">
-        <div class="content_container">
-            <div class="menu_flex_container">
-                <div class="specs_sub_menu_item caps hvr-underline-from-center " id="unit_dir">Store Listing</div>
-            </div>
-        </div>
-    </div>
-    <div class="bspec_sub_menu_container hidden_now" id="submenu_submission_req">
-        <div class="content_container">
-            <div class="menu_flex_container">
-                <div class="specs_sub_menu_item caps hvr-underline-from-center" disabled="disabled" id="submission_req">Requirement Details</div>
-            </div>
-        </div>
-    </div>
-    <div class="bspec_sub_menu_container hidden_now" id="submenu_base_build">
-        <div class="content_container">
-            <div class="menu_flex_container">
-                <div class="specs_sub_menu_item caps multi_menu hvr-underline-from-center" id="architectural">Architectural</div>
-                <div class="specs_sub_menu_item caps multi_menu hvr-underline-from-center" id="structural">Structural</div>
-                <div class="specs_sub_menu_item caps multi_menu hvr-underline-from-center" id="mechanical">Mechanical</div>
-                <div class="specs_sub_menu_item caps multi_menu hvr-underline-from-center" id="electrical">Electrical</div>
-                <div class="specs_sub_menu_item caps multi_menu hvr-underline-from-center" id="site">Site</div>
-                <div class="specs_sub_menu_item caps multi_menu hvr-underline-from-center" id="environment_green">Environment Green</div>
-            </div>
-        </div>
-    </div>
-    <div class="bspec_sub_menu_container hidden_now" id="submenu_construction">
-        <div class="content_container">
-            <div class="menu_flex_container">
-                <div class="specs_sub_menu_item caps multi_menu hvr-underline-from-center" id="hoarding">Hoarding</div>
-                <div class="specs_sub_menu_item caps multi_menu hvr-underline-from-center" id="preferred_trades">Preferred Trades</div>
-                <div class="specs_sub_menu_item caps multi_menu hvr-underline-from-center" id="before_construction">Before Construction</div>
-                <div class="specs_sub_menu_item caps multi_menu hvr-underline-from-center" id="during_construction">During Construction</div>
-            </div>
-        </div>
-    </div>
-    <div class="bspec_sub_menu_container hidden_now" id="submenu_sustainability">
-        <div class="content_container">
-            <div class="menu_flex_container">
-                <div class="specs_sub_menu_item caps hvr-underline-from-center" disabled="disabled" id="sustainability">Sustainability Criteria</div>
-            </div>
-        </div>
-    </div>
-</section>
+<!--<section class="hidden_phone">-->
+<!--    <div class="bspec_sub_menu_container" id="submenu_unit_dir">-->
+<!--        <div class="content_container">-->
+<!--            <div class="menu_flex_container">-->
+<!--                <div class="specs_sub_menu_item caps hvr-underline-from-center " id="unit_dir">Store Listing</div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="bspec_sub_menu_container hidden_now" id="submenu_submission_req">-->
+<!--        <div class="content_container">-->
+<!--            <div class="menu_flex_container">-->
+<!--                <div class="specs_sub_menu_item caps hvr-underline-from-center" disabled="disabled" id="submission_req">Requirement Details</div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="bspec_sub_menu_container hidden_now" id="submenu_base_build">-->
+<!--        <div class="content_container">-->
+<!--            <div class="menu_flex_container">-->
+<!--                <div class="specs_sub_menu_item caps multi_menu hvr-underline-from-center" id="architectural">Architectural</div>-->
+<!--                <div class="specs_sub_menu_item caps multi_menu hvr-underline-from-center" id="structural">Structural</div>-->
+<!--                <div class="specs_sub_menu_item caps multi_menu hvr-underline-from-center" id="mechanical">Mechanical</div>-->
+<!--                <div class="specs_sub_menu_item caps multi_menu hvr-underline-from-center" id="electrical">Electrical</div>-->
+<!--                <div class="specs_sub_menu_item caps multi_menu hvr-underline-from-center" id="site">Site</div>-->
+<!--                <div class="specs_sub_menu_item caps multi_menu hvr-underline-from-center" id="environment_green">Environment Green</div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="bspec_sub_menu_container hidden_now" id="submenu_construction">-->
+<!--        <div class="content_container">-->
+<!--            <div class="menu_flex_container">-->
+<!--                <div class="specs_sub_menu_item caps multi_menu hvr-underline-from-center" id="hoarding">Hoarding</div>-->
+<!--                <div class="specs_sub_menu_item caps multi_menu hvr-underline-from-center" id="preferred_trades">Preferred Trades</div>-->
+<!--                <div class="specs_sub_menu_item caps multi_menu hvr-underline-from-center" id="before_construction">Before Construction</div>-->
+<!--                <div class="specs_sub_menu_item caps multi_menu hvr-underline-from-center" id="during_construction">During Construction</div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="bspec_sub_menu_container hidden_now" id="submenu_sustainability">-->
+<!--        <div class="content_container">-->
+<!--            <div class="menu_flex_container">-->
+<!--                <div class="specs_sub_menu_item caps hvr-underline-from-center" disabled="disabled" id="sustainability">Sustainability Criteria</div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
 <section id="building_spec_content_container" class="margin_30 clearfix content_container">
     <!--<div class="show_phone col-md-12"><h1 id="page_content_title"></h1></div>-->
     <div class="inner_dets_pages" id="unit_dir_page">
