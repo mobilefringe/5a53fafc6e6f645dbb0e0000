@@ -5,99 +5,96 @@
 <!-- Buildin Specs Main Menu -->
 <div class="building_spec_menu_container">   
     <div class="content_container">
-        <!--<div class="menu_flex_container hidden_phone">-->
-        <!--    <div class="specs_menu_item caps hvr-underline-from-center active" id="unit_dir">Unit Directory</div>-->
-        <!--    <div class="specs_menu_item caps hvr-underline-from-center" id="submission_req">Submission Requirements</div>-->
-        <!--    <div class="specs_menu_item caps hvr-underline-from-center" id="base_build">Base Building</div>-->
-        <!--    <div class="specs_menu_item caps hvr-underline-from-center" id="construction">Construction</div>-->
-        <!--    <div class="specs_menu_item caps hvr-underline-from-center" id="sustainability">Sustainability</div>-->
-        <!--</div>-->
-        <!--<div id="spec-menu-icon">-->
-        <!--    <i class="fa fa-chevron-down"></i>-->
-        <!--</div>-->
+        <div class="menu_flex_container hidden_phone">
+            <div class="specs_menu_item caps hvr-underline-from-center active" id="unit_dir">Unit Directory</div>
+            <div class="specs_menu_item caps hvr-underline-from-center" id="submission_req">Submission Requirements</div>
+            <div class="specs_menu_item caps hvr-underline-from-center" id="base_build">Base Building</div>
+            <div class="specs_menu_item caps hvr-underline-from-center" id="construction">Construction</div>
+            <div class="specs_menu_item caps hvr-underline-from-center" id="sustainability">Sustainability</div>
+        </div>
+        <div id="spec-menu-icon">
+            <i class="fa fa-chevron-down"></i>
+        </div>
         <div class="mobile_header show_phone"></div>
-        <!--<div class="spec_nav_container pull-right hidden_now">-->
-        <!--    <nav id="primary_nav">-->
-        <!--        <ul class="">-->
+        <div class="spec_nav_container pull-right hidden_now">
+            <nav id="primary_nav">
+                <ul class="">
                     <!--<li class="menu_item"><a href="/">Home</a></li>-->
                     
-        <!--            <li class="menu_item"><div class="specs_menu_item" id="unit_dir" >Unit Directory</div></li>-->
-        <!--            <li class="menu_item"><div class="specs_menu_item" id="submission_req" >Submission Requirements</div></li>-->
-        <!--            <li class="menu_item">-->
-        <!--                <div class="specs_menu_item" id="base_build">Base Building <i class="fa fa-angle-down" aria-hidden="true"></i></div>-->
-        <!--                <ul>-->
-        <!--                    <li class="dropdown_item"><div class="specs_sub_menu_item" id="architectural">Architecturale</div></li>-->
-        <!--                    <li class="dropdown_item"><div class="specs_sub_menu_item" id="structural">Structural</div></li>-->
-        <!--                    <li class="dropdown_item"><div class="specs_sub_menu_item" id="mechanical">Mechanical</div></li>-->
-        <!--                    <li class="dropdown_item"><div class="specs_sub_menu_item" id="electrical">Electrical</div></li>-->
-        <!--                    <li class="dropdown_item"><div class="specs_sub_menu_item" id="site">Site</div></li>-->
-        <!--                    <li class="dropdown_item"><div class="specs_sub_menu_item" id="environment_green">Environment Green</div></li>-->
-        <!--                </ul> -->
-        <!--            </li>-->
-        <!--            <li class="menu_item">-->
-        <!--                <div class="specs_menu_item" id="construction">Construction<i class="fa fa-angle-down" aria-hidden="true"></i></div>-->
-        <!--                <ul>-->
-        <!--                    <li class="dropdown_item"><div class="specs_sub_menu_item" id="hoarding">Hoarding</div></li>-->
-        <!--                    <li class="dropdown_item"><div class="specs_sub_menu_item" id="preferred_trades">Preferred Trades</div></li>-->
-        <!--                    <li class="dropdown_item"><div class="specs_sub_menu_item" id="before_construction">Before Construction</div></li>-->
-        <!--                    <li class="dropdown_item"><div class="specs_sub_menu_item" id="during_construction">During Construction</div></li>-->
-        <!--                </ul>    -->
-        <!--            </li>-->
-        <!--            <li class="menu_item"><div class="specs_menu_item" id="sustainability" >Sustainability</div></li>-->
-        <!--        </ul>-->
-        <!--    </nav>-->
-        <!--</div>-->
+                    <li class="menu_item"><div class="specs_menu_item" id="unit_dir" >Unit Directory</div></li>
+                    <li class="menu_item"><div class="specs_menu_item" id="submission_req" >Submission Requirements</div></li>
+                    <li class="menu_item">
+                        <div class="specs_menu_item" id="base_build">Base Building <i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                        <ul>
+                            <li class="dropdown_item"><div class="specs_sub_menu_item" id="architectural">Architecturale</div></li>
+                            <li class="dropdown_item"><div class="specs_sub_menu_item" id="structural">Structural</div></li>
+                            <li class="dropdown_item"><div class="specs_sub_menu_item" id="mechanical">Mechanical</div></li>
+                            <li class="dropdown_item"><div class="specs_sub_menu_item" id="electrical">Electrical</div></li>
+                            <li class="dropdown_item"><div class="specs_sub_menu_item" id="site">Site</div></li>
+                            <li class="dropdown_item"><div class="specs_sub_menu_item" id="environment_green">Environment Green</div></li>
+                        </ul> 
+                    </li>
+                    <li class="menu_item">
+                        <div class="specs_menu_item" id="construction">Construction<i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                        <ul>
+                            <li class="dropdown_item"><div class="specs_sub_menu_item" id="hoarding">Hoarding</div></li>
+                            <li class="dropdown_item"><div class="specs_sub_menu_item" id="preferred_trades">Preferred Trades</div></li>
+                            <li class="dropdown_item"><div class="specs_sub_menu_item" id="before_construction">Before Construction</div></li>
+                            <li class="dropdown_item"><div class="specs_sub_menu_item" id="during_construction">During Construction</div></li>
+                        </ul>    
+                    </li>
+                    <li class="menu_item"><div class="specs_menu_item" id="sustainability" >Sustainability</div></li>
+                </ul>
+            </nav>
+        </div>
     </div>
 </div>
 <!-- Building Specs Sub Menus-->
-<!--<section class="hidden_phone">-->
-<!--    <div class="bspec_sub_menu_container" id="submenu_unit_dir">-->
-<!--        <div class="content_container">-->
-<!--            <div class="menu_flex_container">-->
-<!--                <div class="specs_sub_menu_item caps hvr-underline-from-center " id="unit_dir">Store Listing</div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--    <div class="bspec_sub_menu_container hidden_now" id="submenu_submission_req">-->
-<!--        <div class="content_container">-->
-<!--            <div class="menu_flex_container">-->
-<!--                <div class="specs_sub_menu_item caps hvr-underline-from-center" disabled="disabled" id="submission_req">Requirement Details</div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--    <div class="bspec_sub_menu_container hidden_now" id="submenu_base_build">-->
-<!--        <div class="content_container">-->
-<!--            <div class="menu_flex_container">-->
-<!--                <div class="specs_sub_menu_item caps multi_menu hvr-underline-from-center" id="architectural">Architectural</div>-->
-<!--                <div class="specs_sub_menu_item caps multi_menu hvr-underline-from-center" id="structural">Structural</div>-->
-<!--                <div class="specs_sub_menu_item caps multi_menu hvr-underline-from-center" id="mechanical">Mechanical</div>-->
-<!--                <div class="specs_sub_menu_item caps multi_menu hvr-underline-from-center" id="electrical">Electrical</div>-->
-<!--                <div class="specs_sub_menu_item caps multi_menu hvr-underline-from-center" id="site">Site</div>-->
-<!--                <div class="specs_sub_menu_item caps multi_menu hvr-underline-from-center" id="environment_green">Environment Green</div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--    <div class="bspec_sub_menu_container hidden_now" id="submenu_construction">-->
-<!--        <div class="content_container">-->
-<!--            <div class="menu_flex_container">-->
-<!--                <div class="specs_sub_menu_item caps multi_menu hvr-underline-from-center" id="hoarding">Hoarding</div>-->
-<!--                <div class="specs_sub_menu_item caps multi_menu hvr-underline-from-center" id="preferred_trades">Preferred Trades</div>-->
-<!--                <div class="specs_sub_menu_item caps multi_menu hvr-underline-from-center" id="before_construction">Before Construction</div>-->
-<!--                <div class="specs_sub_menu_item caps multi_menu hvr-underline-from-center" id="during_construction">During Construction</div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--    <div class="bspec_sub_menu_container hidden_now" id="submenu_sustainability">-->
-<!--        <div class="content_container">-->
-<!--            <div class="menu_flex_container">-->
-<!--                <div class="specs_sub_menu_item caps hvr-underline-from-center" disabled="disabled" id="sustainability">Sustainability Criteria</div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</section>-->
-<div>
-    <i class="fa fa-chevron-left"></i> Back to Store Listing
-</div>
+<section class="hidden_phone">
+    <div class="bspec_sub_menu_container" id="submenu_unit_dir">
+        <div class="content_container">
+            <div class="menu_flex_container">
+                <div class="specs_sub_menu_item caps hvr-underline-from-center " id="unit_dir">Store Listing</div>
+            </div>
+        </div>
+    </div>
+    <div class="bspec_sub_menu_container hidden_now" id="submenu_submission_req">
+        <div class="content_container">
+            <div class="menu_flex_container">
+                <div class="specs_sub_menu_item caps hvr-underline-from-center" disabled="disabled" id="submission_req">Requirement Details</div>
+            </div>
+        </div>
+    </div>
+    <div class="bspec_sub_menu_container hidden_now" id="submenu_base_build">
+        <div class="content_container">
+            <div class="menu_flex_container">
+                <div class="specs_sub_menu_item caps multi_menu hvr-underline-from-center" id="architectural">Architectural</div>
+                <div class="specs_sub_menu_item caps multi_menu hvr-underline-from-center" id="structural">Structural</div>
+                <div class="specs_sub_menu_item caps multi_menu hvr-underline-from-center" id="mechanical">Mechanical</div>
+                <div class="specs_sub_menu_item caps multi_menu hvr-underline-from-center" id="electrical">Electrical</div>
+                <div class="specs_sub_menu_item caps multi_menu hvr-underline-from-center" id="site">Site</div>
+                <div class="specs_sub_menu_item caps multi_menu hvr-underline-from-center" id="environment_green">Environment Green</div>
+            </div>
+        </div>
+    </div>
+    <div class="bspec_sub_menu_container hidden_now" id="submenu_construction">
+        <div class="content_container">
+            <div class="menu_flex_container">
+                <div class="specs_sub_menu_item caps multi_menu hvr-underline-from-center" id="hoarding">Hoarding</div>
+                <div class="specs_sub_menu_item caps multi_menu hvr-underline-from-center" id="preferred_trades">Preferred Trades</div>
+                <div class="specs_sub_menu_item caps multi_menu hvr-underline-from-center" id="before_construction">Before Construction</div>
+                <div class="specs_sub_menu_item caps multi_menu hvr-underline-from-center" id="during_construction">During Construction</div>
+            </div>
+        </div>
+    </div>
+    <div class="bspec_sub_menu_container hidden_now" id="submenu_sustainability">
+        <div class="content_container">
+            <div class="menu_flex_container">
+                <div class="specs_sub_menu_item caps hvr-underline-from-center" disabled="disabled" id="sustainability">Sustainability Criteria</div>
+            </div>
+        </div>
+    </div>
+</section>
 <section id="building_spec_content_container" class="margin_30 clearfix content_container">
     <!--<div class="show_phone col-md-12"><h1 id="page_content_title"></h1></div>-->
     <div class="inner_dets_pages" id="unit_dir_page">
@@ -238,19 +235,19 @@
     $(document).ready(function(e){
         init(e);
         $(".mobile_header").text( "Unit Directory / Store List");
-    //     $('#spec-menu-icon').click(function(){
-    // 		$(this).toggleClass('open');
-    // 		$('.spec_nav_container').slideToggle();
-    // 		console.log($('#spec-menu-icon').hasClass( "open" ));
-    // 		if( $('#spec-menu-icon').hasClass( "open" )) {
-    // 		    $("#spec-menu-icon .fa").removeClass('fa-chevron-down');
-    // 		    $("#spec-menu-icon .fa").addClass('fa-chevron-up');
-    // 		}
-    // 		else {
-    // 		    $("#spec-menu-icon .fa").removeClass('fa-chevron-up');
-    // 		    $("#spec-menu-icon .fa").addClass('fa-chevron-down');
-    // 		}
-    // 	});
+        $('#spec-menu-icon').click(function(){
+    		$(this).toggleClass('open');
+    		$('.spec_nav_container').slideToggle();
+    		console.log($('#spec-menu-icon').hasClass( "open" ));
+    		if( $('#spec-menu-icon').hasClass( "open" )) {
+    		    $("#spec-menu-icon .fa").removeClass('fa-chevron-down');
+    		    $("#spec-menu-icon .fa").addClass('fa-chevron-up');
+    		}
+    		else {
+    		    $("#spec-menu-icon .fa").removeClass('fa-chevron-up');
+    		    $("#spec-menu-icon .fa").addClass('fa-chevron-down');
+    		}
+    	});
 	    
         
         var stores = [];
@@ -277,90 +274,90 @@
         loadMallDataCached(renderAll); 
         
         
-    //     $(".specs_menu_item").click(function(){
-    //         //make the right container active
-    //         $(".specs_menu_item").removeClass("active");
-    //         var el_id = $(this)[0].id;
-    //         $("#"+el_id).addClass("active");
-    //         // show the correct submenu contaienr
-    //         $(".bspec_sub_menu_container").hide();
-    //         $("#submenu_"+el_id).show();
-    //         $(".inner_dets_pages").hide();
-    //         if (el_id == "unit_dir") {
-    //             $("#unit_dir_page").show();
-    //         }
-    //         else if (el_id == "submission_req") {
-    //             $("#submission_req_page").show();
+        $(".specs_menu_item").click(function(){
+            //make the right container active
+            $(".specs_menu_item").removeClass("active");
+            var el_id = $(this)[0].id;
+            $("#"+el_id).addClass("active");
+            // show the correct submenu contaienr
+            $(".bspec_sub_menu_container").hide();
+            $("#submenu_"+el_id).show();
+            $(".inner_dets_pages").hide();
+            if (el_id == "unit_dir") {
+                $("#unit_dir_page").show();
+            }
+            else if (el_id == "submission_req") {
+                $("#submission_req_page").show();
                 
-    //         }
-    //         else if (el_id == "base_build") {
-    //             $("#architectural_page").show();
-    //             $(".multi_menu").removeClass('active');
-    //             $(".multi_menu#architectural").addClass("active");
-    //         }
-    //         else if (el_id == "construction") {
-    //             $("#hoarding_page").show();
-    //             $(".multi_menu").removeClass('active');
-    //             $(".multi_menu#hoarding").addClass("active");
-    //         }
-    //         else if (el_id == "sustainability") {
-    //             $("#sustainability_page").show();
-    //         }
-    //         if($('#spec-menu-icon').hasClass("open")) {
-    //     		$('#spec-menu-icon').toggleClass('open');
-    //     		$('.spec_nav_container').slideToggle();
-    // 		}
-    // 		$("#page_content_title").text($("#"+el_id).text());
-    //     });
+            }
+            else if (el_id == "base_build") {
+                $("#architectural_page").show();
+                $(".multi_menu").removeClass('active');
+                $(".multi_menu#architectural").addClass("active");
+            }
+            else if (el_id == "construction") {
+                $("#hoarding_page").show();
+                $(".multi_menu").removeClass('active');
+                $(".multi_menu#hoarding").addClass("active");
+            }
+            else if (el_id == "sustainability") {
+                $("#sustainability_page").show();
+            }
+            if($('#spec-menu-icon').hasClass("open")) {
+        		$('#spec-menu-icon').toggleClass('open');
+        		$('.spec_nav_container').slideToggle();
+    		}
+    		$("#page_content_title").text($("#"+el_id).text());
+        });
         
-    //     $(".specs_sub_menu_item").click(function(){
-    //         $(".multi_menu").removeClass('active');
-    //         var el_id = $(this)[0].id;
-    //         $(".inner_dets_pages").hide();
-    //         $(".multi_menu#"+el_id).addClass("active");
-    //         $("#"+el_id+"_page").show();
-    //         if($('#spec-menu-icon').hasClass("open")) {
-    //     		$('#spec-menu-icon').toggleClass('open');
-    //     		$('.spec_nav_container').slideToggle();
-    // 		}
-    // 		$("#page_content_title").text("");
-    //     });
-    //     $(".spec_nav_container .specs_sub_menu_item").click(function(e){
+        $(".specs_sub_menu_item").click(function(){
+            $(".multi_menu").removeClass('active');
+            var el_id = $(this)[0].id;
+            $(".inner_dets_pages").hide();
+            $(".multi_menu#"+el_id).addClass("active");
+            $("#"+el_id+"_page").show();
+            if($('#spec-menu-icon').hasClass("open")) {
+        		$('#spec-menu-icon').toggleClass('open');
+        		$('.spec_nav_container').slideToggle();
+    		}
+    		$("#page_content_title").text("");
+        });
+        $(".spec_nav_container .specs_sub_menu_item").click(function(e){
             
-    //         var current_tab = $(this).text();
-    //         var main_tab = "";
-    //         if($.inArray( current_tab, ["Architecturale", "Structural", "Mechanical", "Electrical" , "Site", "Environment Green"]) > -1){
-    //             // console.log("main tag", "Base Building");
-    //             main_tab = "Base Building";
+            var current_tab = $(this).text();
+            var main_tab = "";
+            if($.inArray( current_tab, ["Architecturale", "Structural", "Mechanical", "Electrical" , "Site", "Environment Green"]) > -1){
+                // console.log("main tag", "Base Building");
+                main_tab = "Base Building";
                 
-    //         }
-    //         else if($.inArray( current_tab, ["Hoarding", "Preferred Trades", "Before Construction", "During Construction"]) > -1) {
-    //             // console.log("main tag", "Construction")
-    //              main_tab = "Construction";
-    //         }
-    //         $(".mobile_header").text( main_tab + " / " + current_tab);
-    //     });
+            }
+            else if($.inArray( current_tab, ["Hoarding", "Preferred Trades", "Before Construction", "During Construction"]) > -1) {
+                // console.log("main tag", "Construction")
+                 main_tab = "Construction";
+            }
+            $(".mobile_header").text( main_tab + " / " + current_tab);
+        });
         
-    //     $(".spec_nav_container .specs_menu_item").click(function(e){ 
-    //         var main_tab = $(this).text();
-    //         // console.log("main tag", main_tab);
-    //         var current_tab = "";
-    //         if(main_tab == "Unit Directory") {
-    //             current_tab = "Store List";
-    //         }
-    //         else if(main_tab == "Submission Requirements"){
-    //             current_tab = "Requirement Details";
-    //         }
-    //         else if(main_tab == "Sustainability"){
-    //             current_tab = "Sustainability Criteria";
-    //         }
-    //         else if(main_tab == "Base Building"){
-    //             current_tab = "Architecturale";
-    //         }
-    //         else if(main_tab == "Construction"){
-    //             current_tab = "Hoarding";
-    //         }
-            
-    //     });
+        $(".spec_nav_container .specs_menu_item").click(function(e){ 
+            var main_tab = $(this).text();
+            // console.log("main tag", main_tab);
+            var current_tab = "";
+            if(main_tab == "Unit Directory") {
+                current_tab = "Store List";
+            }
+            else if(main_tab == "Submission Requirements"){
+                current_tab = "Requirement Details";
+            }
+            else if(main_tab == "Sustainability"){
+                current_tab = "Sustainability Criteria";
+            }
+            else if(main_tab == "Base Building"){
+                current_tab = "Architecturale";
+            }
+            else if(main_tab == "Construction"){
+                current_tab = "Hoarding";
+            }
+            $(".mobile_header").text( main_tab + " / " + current_tab);
+        });
     });
 </script>
