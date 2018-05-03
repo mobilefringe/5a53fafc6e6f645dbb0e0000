@@ -5,52 +5,48 @@
 <!-- Buildin Specs Main Menu -->
 <div class="building_spec_menu_container">   
     <div class="content_container">
-        <div class="menu_flex_container hidden_phone">
-            <div class="specs_menu_item caps hvr-underline-from-center active" id="unit_dir">Unit Directory</div>
-            <div class="specs_menu_item caps hvr-underline-from-center" id="submission_req">Submission Requirements</div>
-            <div class="specs_menu_item caps hvr-underline-from-center" id="base_build">Base Building</div>
-            <div class="specs_menu_item caps hvr-underline-from-center" id="construction">Construction</div>
-            <div class="specs_menu_item caps hvr-underline-from-center" id="sustainability">Sustainability</div>
-        </div>
-        <div id="spec-menu-icon">
-            <!--<span></span>-->
-            <!--<span></span>-->
-            <!--<span></span>-->
-            <!--<span></span>-->
-            <i class="fa fa-chevron-down"></i>
-        </div>
+        <!--<div class="menu_flex_container hidden_phone">-->
+        <!--    <div class="specs_menu_item caps hvr-underline-from-center active" id="unit_dir">Unit Directory</div>-->
+        <!--    <div class="specs_menu_item caps hvr-underline-from-center" id="submission_req">Submission Requirements</div>-->
+        <!--    <div class="specs_menu_item caps hvr-underline-from-center" id="base_build">Base Building</div>-->
+        <!--    <div class="specs_menu_item caps hvr-underline-from-center" id="construction">Construction</div>-->
+        <!--    <div class="specs_menu_item caps hvr-underline-from-center" id="sustainability">Sustainability</div>-->
+        <!--</div>-->
+        <!--<div id="spec-menu-icon">-->
+        <!--    <i class="fa fa-chevron-down"></i>-->
+        <!--</div>-->
         <div class="mobile_header show_phone"></div>
-        <div class="spec_nav_container pull-right hidden_now">
-            <nav id="primary_nav">
-                <ul class="">
+        <!--<div class="spec_nav_container pull-right hidden_now">-->
+        <!--    <nav id="primary_nav">-->
+        <!--        <ul class="">-->
                     <!--<li class="menu_item"><a href="/">Home</a></li>-->
                     
-                    <li class="menu_item"><div class="specs_menu_item" id="unit_dir" >Unit Directory</div></li>
-                    <li class="menu_item"><div class="specs_menu_item" id="submission_req" >Submission Requirements</div></li>
-                    <li class="menu_item">
-                        <div class="specs_menu_item" id="base_build">Base Building <i class="fa fa-angle-down" aria-hidden="true"></i></div>
-                        <ul>
-                            <li class="dropdown_item"><div class="specs_sub_menu_item" id="architectural">Architecturale</div></li>
-                            <li class="dropdown_item"><div class="specs_sub_menu_item" id="structural">Structural</div></li>
-                            <li class="dropdown_item"><div class="specs_sub_menu_item" id="mechanical">Mechanical</div></li>
-                            <li class="dropdown_item"><div class="specs_sub_menu_item" id="electrical">Electrical</div></li>
-                            <li class="dropdown_item"><div class="specs_sub_menu_item" id="site">Site</div></li>
-                            <li class="dropdown_item"><div class="specs_sub_menu_item" id="environment_green">Environment Green</div></li>
-                        </ul> 
-                    </li>
-                    <li class="menu_item">
-                        <div class="specs_menu_item" id="construction">Construction<i class="fa fa-angle-down" aria-hidden="true"></i></div>
-                        <ul>
-                            <li class="dropdown_item"><div class="specs_sub_menu_item" id="hoarding">Hoarding</div></li>
-                            <li class="dropdown_item"><div class="specs_sub_menu_item" id="preferred_trades">Preferred Trades</div></li>
-                            <li class="dropdown_item"><div class="specs_sub_menu_item" id="before_construction">Before Construction</div></li>
-                            <li class="dropdown_item"><div class="specs_sub_menu_item" id="during_construction">During Construction</div></li>
-                        </ul>    
-                    </li>
-                    <li class="menu_item"><div class="specs_menu_item" id="sustainability" >Sustainability</div></li>
-                </ul>
-            </nav>
-        </div>
+        <!--            <li class="menu_item"><div class="specs_menu_item" id="unit_dir" >Unit Directory</div></li>-->
+        <!--            <li class="menu_item"><div class="specs_menu_item" id="submission_req" >Submission Requirements</div></li>-->
+        <!--            <li class="menu_item">-->
+        <!--                <div class="specs_menu_item" id="base_build">Base Building <i class="fa fa-angle-down" aria-hidden="true"></i></div>-->
+        <!--                <ul>-->
+        <!--                    <li class="dropdown_item"><div class="specs_sub_menu_item" id="architectural">Architecturale</div></li>-->
+        <!--                    <li class="dropdown_item"><div class="specs_sub_menu_item" id="structural">Structural</div></li>-->
+        <!--                    <li class="dropdown_item"><div class="specs_sub_menu_item" id="mechanical">Mechanical</div></li>-->
+        <!--                    <li class="dropdown_item"><div class="specs_sub_menu_item" id="electrical">Electrical</div></li>-->
+        <!--                    <li class="dropdown_item"><div class="specs_sub_menu_item" id="site">Site</div></li>-->
+        <!--                    <li class="dropdown_item"><div class="specs_sub_menu_item" id="environment_green">Environment Green</div></li>-->
+        <!--                </ul> -->
+        <!--            </li>-->
+        <!--            <li class="menu_item">-->
+        <!--                <div class="specs_menu_item" id="construction">Construction<i class="fa fa-angle-down" aria-hidden="true"></i></div>-->
+        <!--                <ul>-->
+        <!--                    <li class="dropdown_item"><div class="specs_sub_menu_item" id="hoarding">Hoarding</div></li>-->
+        <!--                    <li class="dropdown_item"><div class="specs_sub_menu_item" id="preferred_trades">Preferred Trades</div></li>-->
+        <!--                    <li class="dropdown_item"><div class="specs_sub_menu_item" id="before_construction">Before Construction</div></li>-->
+        <!--                    <li class="dropdown_item"><div class="specs_sub_menu_item" id="during_construction">During Construction</div></li>-->
+        <!--                </ul>    -->
+        <!--            </li>-->
+        <!--            <li class="menu_item"><div class="specs_menu_item" id="sustainability" >Sustainability</div></li>-->
+        <!--        </ul>-->
+        <!--    </nav>-->
+        <!--</div>-->
     </div>
 </div>
 <!-- Building Specs Sub Menus-->
