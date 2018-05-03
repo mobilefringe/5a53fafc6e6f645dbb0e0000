@@ -235,6 +235,9 @@
     $(document).ready(function(e){
         init(e);
         $(".mobile_header").text( "Unit Directory / Unit List");
+        $(".search_overlay").click(function(){
+        $("#close_search").addClass("red_bg");
+    })
         $('#spec-menu-icon').click(function(){
     		$(this).toggleClass('open');
     		$('.spec_nav_container').slideToggle();
