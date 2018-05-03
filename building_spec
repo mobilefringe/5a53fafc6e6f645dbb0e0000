@@ -263,7 +263,7 @@
             renderLeasingList('#store_list_building_spec','#store_list_template_map', stores, "A", "Z");
             renderLeasingList('#store_list_building_spec_m','#store_list_template_map_m', stores, "A", "Z");
             renderGeneral("#category_select", "#category_select_template", stores);
-            renderMap(stores, 600);
+            renderMap(stores, 600, null);
             loadInsidePages ();
             search_units();
             
