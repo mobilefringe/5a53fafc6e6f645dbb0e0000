@@ -239,7 +239,8 @@
         init(e);
         $(".mobile_header").text( "Unit Directory / Unit List");
         $(".search_overlay").click(function(){
-            $("#close_search").addClass("red_bg");
+            $(".building_spec_search #close_search").addClass("red_bg");
+            console.log("")
         });
         $('#spec-menu-icon').click(function(){
     		$(this).toggleClass('open');
