@@ -274,90 +274,90 @@
         loadMallDataCached(renderAll); 
         
         
-        $(".specs_menu_item").click(function(){
-            //make the right container active
-            $(".specs_menu_item").removeClass("active");
-            var el_id = $(this)[0].id;
-            $("#"+el_id).addClass("active");
-            // show the correct submenu contaienr
-            $(".bspec_sub_menu_container").hide();
-            $("#submenu_"+el_id).show();
-            $(".inner_dets_pages").hide();
-            if (el_id == "unit_dir") {
-                $("#unit_dir_page").show();
-            }
-            else if (el_id == "submission_req") {
-                $("#submission_req_page").show();
+    //     $(".specs_menu_item").click(function(){
+    //         //make the right container active
+    //         $(".specs_menu_item").removeClass("active");
+    //         var el_id = $(this)[0].id;
+    //         $("#"+el_id).addClass("active");
+    //         // show the correct submenu contaienr
+    //         $(".bspec_sub_menu_container").hide();
+    //         $("#submenu_"+el_id).show();
+    //         $(".inner_dets_pages").hide();
+    //         if (el_id == "unit_dir") {
+    //             $("#unit_dir_page").show();
+    //         }
+    //         else if (el_id == "submission_req") {
+    //             $("#submission_req_page").show();
                 
-            }
-            else if (el_id == "base_build") {
-                $("#architectural_page").show();
-                $(".multi_menu").removeClass('active');
-                $(".multi_menu#architectural").addClass("active");
-            }
-            else if (el_id == "construction") {
-                $("#hoarding_page").show();
-                $(".multi_menu").removeClass('active');
-                $(".multi_menu#hoarding").addClass("active");
-            }
-            else if (el_id == "sustainability") {
-                $("#sustainability_page").show();
-            }
-            if($('#spec-menu-icon').hasClass("open")) {
-        		$('#spec-menu-icon').toggleClass('open');
-        		$('.spec_nav_container').slideToggle();
-    		}
-    		$("#page_content_title").text($("#"+el_id).text());
-        });
+    //         }
+    //         else if (el_id == "base_build") {
+    //             $("#architectural_page").show();
+    //             $(".multi_menu").removeClass('active');
+    //             $(".multi_menu#architectural").addClass("active");
+    //         }
+    //         else if (el_id == "construction") {
+    //             $("#hoarding_page").show();
+    //             $(".multi_menu").removeClass('active');
+    //             $(".multi_menu#hoarding").addClass("active");
+    //         }
+    //         else if (el_id == "sustainability") {
+    //             $("#sustainability_page").show();
+    //         }
+    //         if($('#spec-menu-icon').hasClass("open")) {
+    //     		$('#spec-menu-icon').toggleClass('open');
+    //     		$('.spec_nav_container').slideToggle();
+    // 		}
+    // 		$("#page_content_title").text($("#"+el_id).text());
+    //     });
         
-        $(".specs_sub_menu_item").click(function(){
-            $(".multi_menu").removeClass('active');
-            var el_id = $(this)[0].id;
-            $(".inner_dets_pages").hide();
-            $(".multi_menu#"+el_id).addClass("active");
-            $("#"+el_id+"_page").show();
-            if($('#spec-menu-icon').hasClass("open")) {
-        		$('#spec-menu-icon').toggleClass('open');
-        		$('.spec_nav_container').slideToggle();
-    		}
-    		$("#page_content_title").text("");
-        });
-        $(".spec_nav_container .specs_sub_menu_item").click(function(e){
+    //     $(".specs_sub_menu_item").click(function(){
+    //         $(".multi_menu").removeClass('active');
+    //         var el_id = $(this)[0].id;
+    //         $(".inner_dets_pages").hide();
+    //         $(".multi_menu#"+el_id).addClass("active");
+    //         $("#"+el_id+"_page").show();
+    //         if($('#spec-menu-icon').hasClass("open")) {
+    //     		$('#spec-menu-icon').toggleClass('open');
+    //     		$('.spec_nav_container').slideToggle();
+    // 		}
+    // 		$("#page_content_title").text("");
+    //     });
+    //     $(".spec_nav_container .specs_sub_menu_item").click(function(e){
             
-            var current_tab = $(this).text();
-            var main_tab = "";
-            if($.inArray( current_tab, ["Architecturale", "Structural", "Mechanical", "Electrical" , "Site", "Environment Green"]) > -1){
-                // console.log("main tag", "Base Building");
-                main_tab = "Base Building";
+    //         var current_tab = $(this).text();
+    //         var main_tab = "";
+    //         if($.inArray( current_tab, ["Architecturale", "Structural", "Mechanical", "Electrical" , "Site", "Environment Green"]) > -1){
+    //             // console.log("main tag", "Base Building");
+    //             main_tab = "Base Building";
                 
-            }
-            else if($.inArray( current_tab, ["Hoarding", "Preferred Trades", "Before Construction", "During Construction"]) > -1) {
-                // console.log("main tag", "Construction")
-                 main_tab = "Construction";
-            }
-            $(".mobile_header").text( main_tab + " / " + current_tab);
-        });
+    //         }
+    //         else if($.inArray( current_tab, ["Hoarding", "Preferred Trades", "Before Construction", "During Construction"]) > -1) {
+    //             // console.log("main tag", "Construction")
+    //              main_tab = "Construction";
+    //         }
+    //         $(".mobile_header").text( main_tab + " / " + current_tab);
+    //     });
         
-        $(".spec_nav_container .specs_menu_item").click(function(e){ 
-            var main_tab = $(this).text();
-            // console.log("main tag", main_tab);
-            var current_tab = "";
-            if(main_tab == "Unit Directory") {
-                current_tab = "Store List";
-            }
-            else if(main_tab == "Submission Requirements"){
-                current_tab = "Requirement Details";
-            }
-            else if(main_tab == "Sustainability"){
-                current_tab = "Sustainability Criteria";
-            }
-            else if(main_tab == "Base Building"){
-                current_tab = "Architecturale";
-            }
-            else if(main_tab == "Construction"){
-                current_tab = "Hoarding";
-            }
-            $(".mobile_header").text( main_tab + " / " + current_tab);
-        });
+    //     $(".spec_nav_container .specs_menu_item").click(function(e){ 
+    //         var main_tab = $(this).text();
+    //         // console.log("main tag", main_tab);
+    //         var current_tab = "";
+    //         if(main_tab == "Unit Directory") {
+    //             current_tab = "Store List";
+    //         }
+    //         else if(main_tab == "Submission Requirements"){
+    //             current_tab = "Requirement Details";
+    //         }
+    //         else if(main_tab == "Sustainability"){
+    //             current_tab = "Sustainability Criteria";
+    //         }
+    //         else if(main_tab == "Base Building"){
+    //             current_tab = "Architecturale";
+    //         }
+    //         else if(main_tab == "Construction"){
+    //             current_tab = "Hoarding";
+    //         }
+            
+    //     });
     });
 </script>
