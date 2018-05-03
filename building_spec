@@ -223,7 +223,7 @@
         opacity:1!important;
     }
     .mapplic-map-image *[id^=nopointer] {
-        
+        font-family: Brandon;
     }
 </style>
 
