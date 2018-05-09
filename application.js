@@ -501,6 +501,7 @@ function renderPromotions(container, template, collection){
     var item_rendered = [];
     var template_html = $(template).html();
     Mustache.parse(template_html); 
+    var timezone = getPropertyTimeZone();
     $.each( collection , function( key, val ) {
         if(val.type === "Event") {
             
