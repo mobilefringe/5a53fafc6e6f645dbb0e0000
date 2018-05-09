@@ -140,6 +140,6 @@
             show_content();
             show_cat_stores();
         }
-        loadMallData(renderAll); 
+        loadMallDataCached(renderAll); 
     })
 </script>
