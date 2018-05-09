@@ -31,10 +31,7 @@ function init() {
         e.preventDefault();
         $('.stores_table').show()
     });
-    //dynamically changing copyright year
-    var current_year = moment().year();
-    $("#current_year").text(current_year);
-    get_instagram("//svc.mallmaverick.com/api/v4/svc/social.json", 9, 'thumbnail', render_instagram)//need to change to cornwall
+    
 }
 
 // function render_instagram(data){
