@@ -136,7 +136,6 @@
                 category_list.push(category_id)
             });
 
-            // var store_list = getStoresList();
             var all_stores = getStoresList();
             if(all_stores.length > 0){
                 renderStoreList('#store_list_container','#store_list_template', all_stores, "stores");
