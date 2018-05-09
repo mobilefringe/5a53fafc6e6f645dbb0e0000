@@ -243,7 +243,34 @@
             show_content();
         }
         loadMallDataCached(renderAll); 
-        
+        var blogs = [];
+        $.ajax({
+            type: "GET",
+            url: "https://www.mallmaverick.com/system/site_images/photos/000/036/024/original/temp_svc_blog.rss?1521579821",
+            dataType: "xml",
+            success: function (xml) {
+                
+                console.log(xml);
+                 $title = $(xml).find( "item" ); 
+                 $(xml).find("item").each(function () { // or "item" or whatever suits your feed
+                    var el = $(this);
+                    var item = {};
+                    item.title = el.find("title").text();
+                    item.link = el.find("link").text();
+                    item.permalink =  el.find("guid").text();
+                    item.publish_date =  el.find("pubDate").text();
+                    item.body =  el.find("description").text();
+                    item.image_url = el.find("img").text();
+                    if(blogs.length < 4) {
+                        blogs.push(item);
+                    }
+                });
+                 
+                blogs[0].latest_post = "/ NEW POST!";
+                renderPosts('#home_blog_container','#home_blog_template', blogs);
+                renderPosts('#home_mblog_container','#home_mblog_template', blogs);
+            }
+        });
         $("#newsletterSignupBtn").click(function(e){
             e.preventDefault();
              document.location.href = '/newsletter?name='+$("#fieldEmail").val();
