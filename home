@@ -3,7 +3,7 @@
         <ul class="slides" id="home_banner">
             <li>
                 <a href="http://www.stvitalcentrespark.com/" target="_blank">
-                    <div class="banner_img" style="background-image: url('//codecloud.cdn.speedyrails.net/sites/5ae8c1fe6e6f6473fd160000/image/jpeg/1525879403119/11479_STV_homepage_banner.jpg');"></div>
+                    <div class="banner_img" style="background-image: url('//codecloud.cdn.speedyrails.net/sites/5ae8c1fe6e6f6473fd160000/image/jpeg/1525900084259/hero-banner1.jpg');"></div>
                 </a>
             </li>
         </ul>
@@ -66,7 +66,7 @@
         <!--</div>-->
         <div class="col-sm-6 text-center">
             <a href="/pages/svc-giftcard">
-                <img src="//codecloud.cdn.speedyrails.net/sites/5ae8c1fe6e6f6473fd160000/image/jpeg/1525879404696/11479_STV_website_Giftcard_promo.jpg" class="" alt="">
+                <img src="//codecloud.cdn.speedyrails.net/sites/5ae8c1fe6e6f6473fd160000/image/jpeg/1525900079454/feature1.jpg" class="" alt="">
             </a>
         </div>
         <div class="col-sm-6 col-xs-12">
@@ -116,7 +116,7 @@
         <!--</div>-->
         <div class="col-sm-6 col-xs-12 text-center">
             <a href="http://www.stvitalcentrespark.com/" target="_blank">
-                <img src="//codecloud.cdn.speedyrails.net/sites/5ae8c1fe6e6f6473fd160000/image/jpeg/1525879404002/11479_STV_feature_image_Spark.jpg" class="" alt="">
+                <img src="//codecloud.cdn.speedyrails.net/sites/5ae8c1fe6e6f6473fd160000/image/jpeg/1525900082084/feature2.jpg" class="" alt="">
             </a>
         </div>
         <div class="col-sm-6 col-xs-12 show_phone">
