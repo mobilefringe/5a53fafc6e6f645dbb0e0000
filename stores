@@ -115,8 +115,6 @@
             
             var categories = getStoreCategories().sortBy(function(o){ return o.name});
             
-            // $('#category_select').prepend('<li class="dropdown-item show_cat_stores" data-id="000" name="ALL" href="#">ALL</li>');
-            // var categories = getStoreCategories().sortBy(function(o){ return o.name});
             var stores_list = [];
             $.each(categories, function(key, val){
                 var category_id = val.id;
