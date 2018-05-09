@@ -205,7 +205,7 @@
             var blogs = [];
             $.ajax({
                 type: "GET",
-                url: "https://www.mallmaverick.com/system/site_images/photos/000/036/024/original/temp_svc_blog.rss?1521579821",
+                url: "https://www.mallmaverick.com/system/site_images/photos/000/036/024/original/temp_blog.rss?1525900551",
                 dataType: "xml",
                 success: function (xml) {
                      $title = $(xml).find( "item" ); 
