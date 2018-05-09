@@ -1,0 +1,280 @@
+<div class="home_banner">   
+    <div class="flexslider">
+        <ul class="slides" id="home_banner">
+            <li>
+                <a href="http://www.stvitalcentrespark.com/" target="_blank">
+                    <div class="banner_img" style="background-image: url('//codecloud.cdn.speedyrails.net/sites/5ae8c1fe6e6f6473fd160000/image/jpeg/1525879403119/11479_STV_homepage_banner.jpg');"></div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!--<div class="home_banner">   -->
+<!--    <div class="flexslider">-->
+<!--        <ul class="slides" id="home_banner">-->
+<!--            <script id="banner_template" type="x-tmpl-mustache/text">-->
+<!--                <li>-->
+<!--                    <a href="{{url}}" {{css}} onclick="{{noLink}}">-->
+<!--                        <div class="banner_img" style="background-image: url({{image_url}});"></div>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--            </script>-->
+<!--        </ul>-->
+<!--    </div>-->
+<!--</div>-->
+<div class="feature_container">
+    <div class="content_container">
+        <!--<div class="flex_container">-->
+        <!--    <div id="feature_container">-->
+        <!--        <script id="feature_template" type="x-tmpl-mustache/text">-->
+        <!--            <div class="width_30">-->
+        <!--                <a href="{{url}}">-->
+        <!--                    <img src="{{image_url}}" alt="{{name}}"/>-->
+        <!--                </a>-->
+        <!--            </div>-->
+        <!--        </script>-->
+        <!--    </div>-->
+        <!--</div>-->
+        <div class="flex_container">
+            <div class="width_30">
+                <a href="/stores">
+                    <img src="//codecloud.cdn.speedyrails.net/sites/5ae8c1fe6e6f6473fd160000/image/png/1517934913000/directory.png" alt="Stores"/>
+                </a>
+            </div>
+            <div class="width_30">
+                <a href="/promotions">
+                    <img src="//codecloud.cdn.speedyrails.net/sites/5ae8c1fe6e6f6473fd160000/image/png/1517934913000/tag.png" alt="Sales & Promotions"/>
+                </a>
+            </div>
+            <div class="width_30">
+                <a href="/hours">
+                    <img src="//codecloud.cdn.speedyrails.net/sites/5ae8c1fe6e6f6473fd160000/image/png/1517934913000/hours.png" alt="Location"/>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content_container">
+    <div class="promo_blog_container">
+        <!--<div id="giftcard_feature_container" class="col-sm-6 text-center">-->
+        <!--    <script id="giftcard_feature_template" type="x-tmpl-mustache/text">-->
+        <!--        <a href="{{url}}" class="">-->
+        <!--            <img src="{{image_url}}" alt="Promotional Image">-->
+        <!--        </a>-->
+        <!--    </script>-->
+        <!--</div>-->
+        <div class="col-sm-6 text-center">
+            <a href="/pages/svc-giftcard">
+                <img src="//codecloud.cdn.speedyrails.net/sites/5ae8c1fe6e6f6473fd160000/image/jpeg/1525879404696/11479_STV_website_Giftcard_promo.jpg" class="" alt="">
+            </a>
+        </div>
+        <div class="col-sm-6 col-xs-12">
+            <div class="home_promos">
+                <h2 class="details_title ">Sales & Promotions</h2>
+                <div id="home_promo_container" class="dine_container margin_20">
+                    <script id="home_promo_template" type="x-tmpl-mustache/text">
+                        <div class="margin_30">
+                            <div class="" style="position:relative;display: inline-block;">
+                                <h3 class="home_store_name"> {{store_name}} </h3>
+                            </div>
+                            
+                            <h2 class="home_promo_name"> {{name}} </h2>
+                            <p class="home_promo_dates"> {{dates }} <span style="color:#e18c7d;"> {{days_left}}</span></p>
+                            <a class="home_read_more" href="/promotions/{{slug}}"><p>Read More</p></a>
+                        </div>
+                    </script>
+                </div>
+                <p class="home_see_all"><a href="/promotions">See all sales & promotions </a> <i class="fa fa-angle-right" aria-hidden="true"></i></p>
+            </div>
+        </div>
+    </div>
+    <div class="promo_blog_container">
+        <div class="col-sm-6 hidden_phone">
+            <div class="home_promos ">
+                <h2 class="details_title">Life. Style. Blog.</h2>
+                <div id="home_blog_container" class="dine_container margin_20">
+                    <script id="home_blog_template" type="x-tmpl-mustache/text">
+                        <div class="margin_30">
+                            <div style="position:relative;">
+                                <h2 class="home_promo_name"> {{title}} </h2>
+                            </div>
+                            <p class="home_promo_dates"> {{publish_date}} <span style="color:#e18c7d;"> {{latest_post}}</span></p>
+                            <a class="home_read_more" href="{{link}}"><p>Read More</p></a>
+                        </div>
+                    </script>
+                </div>
+                <!--<p class="home_see_all"><a href="http://www.stvitalcentrespark.com/"  target="_blank">See all news articles </a> <i class="fa fa-angle-right" aria-hidden="true"></i></p>-->
+            </div>
+        </div>
+        <!--<div id="blog_feature_container" class="col-sm-6 text-center">-->
+        <!--    <script id="blog_feature_template" type="x-tmpl-mustache/text">-->
+        <!--        <a href="{{url}}" class="">-->
+        <!--            <img src="{{image_url}}" alt="Promotional Image">-->
+        <!--        </a>-->
+        <!--    </script>-->
+        <!--</div>-->
+        <div class="col-sm-6 col-xs-12 text-center">
+            <a href="http://www.stvitalcentrespark.com/" target="_blank">
+                <img src="//codecloud.cdn.speedyrails.net/sites/5ae8c1fe6e6f6473fd160000/image/jpeg/1525879404002/11479_STV_feature_image_Spark.jpg" class="" alt="">
+            </a>
+        </div>
+        <div class="col-sm-6 col-xs-12 show_phone">
+            <div class="home_promos ">
+                <div id="home_mblog_container" class="dine_container margin_20">
+                    <script id="home_mblog_template" type="x-tmpl-mustache/text">
+                        <div class="margin_30">
+                            <div style="position:relative;">
+                            <h2 class="home_promo_name"> {{title}} </h2>
+                            </div>
+                            <p class="home_promo_dates"> {{publish_date}} <span style="color:#ff5455;"> {{latest_post}}</span></p>
+                            <a class="home_read_more" href="{{link}}"><p>Read Full Article</p></a>
+                        </div>
+                    </script>
+                </div>
+                <p class="home_see_all"><a href="http://www.stvitalcentrespark.com/">See all news articles </a> <i class="fa fa-angle-right" aria-hidden="true"></i></p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="feature_container">
+    <div class="logo_scroll">
+        <div id="slider_container">
+            <!-- Slides Container -->
+            <div id="logo_container" class="logo_slides" u="slides">
+                <script id="logo_template" type="x-tmpl-mustache/text">
+                    <div><img u="image" alt="amazon" src="{{store_logo}}" /></div>
+                </script>
+            </div>
+        </div>
+    </div> 
+</div>
+
+<div class="home_subscription">
+    <!--<div class=" content_container">-->
+         <a href="/kids_club"><div class="col-sm-6 kids_club"  style="background-image: url('//codecloud.cdn.speedyrails.net/sites/5ae8c1fe6e6f6473fd160000/image/jpeg/1522164293401/kids-bg.jpg');">
+          <img src="//codecloud.cdn.speedyrails.net/sites/5ae8c1fe6e6f6473fd160000/image/png/1522164309548/kids-text.png" class="" alt="">
+        </div>
+         </a>
+        <div class="col-sm-6 subscribeBlog">
+            <h1>Sign up for our e-blast</h1> 
+            <br>
+            <form id="newsletterBlogForm">
+                <label for="fieldEmail" style="display:none"></label>
+                <input id="fieldEmail" name="cm-jukin-jukin" class="form-control" type="email" value="" placeholder="Email Address" required/> 
+                <button class="contact_btn" data-i18n="general.submit" id="newsletterSignupBtn">Sign Up</button>
+                
+            </form>
+            <div id="success_subscribe" class="hidden_now">Thank you for subscribing to our newsletter.</div>
+        </div>
+         
+    <!--</div>-->
+</div>
+
+<script>
+    $(document).ready(function(e) {
+        init(e);
+        function renderAll (){
+            // renderPopup();
+            
+            // var banners = getBanners();
+            // renderBanner('#banner_template','#home_banner', banners);
+            
+            var all_feature_items = getFeatureList();
+            // var three_items = all_feature_items.slice(0, 3);
+            var giftcard_image = all_feature_items[0];
+            var blog_image = all_feature_items[1];
+            // console.log("giftcard_image", giftcard_image, "blog_image", blog_image);
+            // renderGeneral('#feature_container','#feature_template', three_items);
+            renderSingleItem('#giftcard_feature_container','#giftcard_feature_template', giftcard_image);
+            renderSingleItem('#blog_feature_container','#blog_feature_template', blog_image);
+
+            var promotions = getPromotionsList().sortBy(function(o){ return o.end_date });
+            var published_promos = [];
+            $.each(promotions, function(key, val){
+                today = moment();
+                webDate = moment(val.show_on_web_date)
+                if (today.tz(getPropertyTimeZone()) >= webDate.tz(getPropertyTimeZone())) {
+                    published_promos.push(val);
+                }
+            });
+            // if(published_promos.length > 0){
+            //     renderPromotions("#promo_container","#promo_template", published_promos);
+            // }
+            // http://www.stvitalcentrespark.com/index,article.rss
+            var blogs = [];
+            $.ajax({
+                type: "GET",
+                url: "https://www.mallmaverick.com/system/site_images/photos/000/036/024/original/temp_svc_blog.rss?1521579821",
+                dataType: "xml",
+                success: function (xml) {
+                    
+                    console.log(xml);
+                     $title = $(xml).find( "item" ); 
+                     $(xml).find("item").each(function () { // or "item" or whatever suits your feed
+                        var el = $(this);
+                        var item = {};
+                        item.title = el.find("title").text();
+                        item.link = el.find("link").text();
+                        item.permalink =  el.find("guid").text();
+                        item.publish_date =  el.find("pubDate").text();
+                        item.body =  el.find("description").text();
+                        item.image_url = el.find("img").text();
+                        if(blogs.length < 4) {
+                            blogs.push(item);
+                        }
+                    });
+                     
+                    blogs[0].latest_post = "/ NEW POST!";
+                    renderPosts('#home_blog_container','#home_blog_template', blogs);
+                    renderPosts('#home_mblog_container','#home_mblog_template', blogs);
+                }
+            });
+             
+            renderPromotions('#home_promo_container','#home_promo_template', published_promos);
+            
+            // LOGO SCROLL //
+            var stores = getStoresList();
+            // var store_list = getStoresList();
+            stores = stores.filter(function( val, index ) {
+                // console.log($.isNumeric(val.name[0]), val.name[0]);
+                return !$.isNumeric(val.name[0]);
+            });
+            renderLogoScroll('#logo_container','#logo_template', stores);
+
+            
+            
+            $('.flexslider').flexslider({
+                animation: "slide",
+            });
+            
+            var logo_options = {
+                $AutoPlay: true,
+                $AutoPlaySteps: 1,                                 
+                $AutoPlayInterval: 0,                            
+                $PauseOnHover: 4,                               
+                $ArrowKeyNavigation: true,   			            
+                $SlideEasing: $JssorEasing$.$EaseLinear,          
+                $SlideDuration: 3000,                                
+                $MinDragOffsetToSlide: 20,                          
+                $SlideWidth: 160,                                                                  
+                $SlideSpacing: 50, 					                
+                $DisplayPieces: 10,                                 
+                $ParkingPosition: 0,                              
+                $UISearchMode: 1,                                  
+                $PlayOrientation: 1,                                
+                $DragOrientation: 1                               
+            };
+
+            var logo_slider = new $JssorSlider$("slider_container", logo_options);
+            show_content();
+        }
+        loadMallDataCached(renderAll); 
+        
+        $("#newsletterSignupBtn").click(function(e){
+            e.preventDefault();
+             document.location.href = '/newsletter?name='+$("#fieldEmail").val();
+        })
+        
+    });
+</script>
