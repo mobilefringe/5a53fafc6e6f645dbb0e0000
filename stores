@@ -129,7 +129,7 @@
             });
 
             var all_stores = getStoresList();
-            store_list = store_list.filter(function( val, index ) {
+            all_stores = all_stores.filter(function( val, index ) {
                 return !$.isNumeric(val.name[0]);
             });
             if(all_stores.length > 0){
