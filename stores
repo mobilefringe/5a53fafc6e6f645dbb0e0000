@@ -1,0 +1,164 @@
+<div class="inside_banner">   
+    <div class="content_container">
+        <div class="inside_banner_content">
+            <div class="row">
+                <div class="col-md-6">    
+                    <h1>Directory</h1>
+                </div>
+                <div class="col-md-6 hidden_phone">
+                    <h4 class="pull-right">Stores <i class="fa fa-angle-right" aria-hidden="true"></i> Directory</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content_container margin_30">
+    <div class="margin_30"></div>
+    <div class="row">
+        <div class="col-md-12 center">
+            <div class="directory_btn caps active">Stores</div>
+            <a href="/map"><div class="directory_btn caps">Centre Map</div></a>
+            <div class="dropdown directory_btn category_select">
+                <button class="dropdown-toggle caps" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Categories <i class="fa fa-angle-down" aria-hidden="true"></i>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink" id="category_select">
+                    <script id="category_select_template" type="x-tmpl-mustache/text">
+                        <li class="dropdown-item show_cat_stores" data-id="{{id}}" name="{{name}}">{{name}}</li>
+                    </script>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="alpha_list_container">
+                <hr>
+                <div class="alpha_list">
+                    <a href="#7">#</a>
+                    <a href="#A">A</a>
+                    <a href="#B">B</a>
+                    <a href="#C">C</a>
+                    <a href="#D">D</a>
+                    <a href="#E">E</a>
+                    <a href="#F">F</a>
+                    <a href="#G">G</a>
+                    <a href="#H">H</a>
+                    <a href="#I">I</a>
+                    <a href="#J">J</a>
+                    <a href="#K">K</a>
+                    <a href="#L">L</a>
+                    <a href="#M">M</a>
+                    <a href="#N">N</a>
+                    <a href="#O">O</a>
+                    <a href="#P">P</a>
+                    <a href="#Q">Q</a>
+                    <a href="#R">R</a>
+                    <a href="#S">S</a>
+                    <a href="#T">T</a>
+                    <a href="#U">U</a>
+                    <a href="#V">V</a>
+                    <a href="#W">W</a>
+                    <a href="#X">X</a>
+                    <a href="#Y">Y</a>
+                    <a href="#Z">Z</a>
+                </div>
+                <hr>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div id="store_list_container">
+            <script id="store_list_template" type="x-tmpl-mustache/text">
+                <div class="col-xs-6 col-sm-3 col-md-2 cats_row store_initial" id="{{initial}}" value="{{initial}}" data-cat="{{cat_list}}" style="{{show}}">
+                	<div class="store_initial_container">
+                		<p class="">{{initial}}</p>
+                	</div>
+                </div>
+                <div class="col-xs-6 col-sm-3 col-md-2 cats_row" data-cat="{{cat_list}}">
+                	<div>
+                		<div class="store_logo_container" id="{{initial}}">
+                			<a href="/stores/{{slug}}">
+                				<img class="store_img" style="{{initial_img}} {{hide_img}}" src="{{store_front_url_abs}}"/>
+                				<div style="width: 100%;height: 100%;position: relative; {{show_storename}}">
+                					<h3 style="margin: 0;text-align: center;position: absolute;left: 50%;top: 50%;transform: translate(-50%, -50%);width: 100%;font-size: 28px;font-weight: bold;">{{name}}</h3>
+                				</div>
+                				<div class="store_coming_soon" style="{{new_store}}">
+                					<div class="new_store">New Store</div>
+                				</div>
+                				<div class="store_coming_soon" style="{{coming_soon_store}}">
+                					<div class="new_store">Coming Soon</div>
+                				</div>
+                			</a>
+                		</div>
+                		<div class="store_list_promos">
+                			<span class="phone_exist" style="{{phone_exist}}"><img src="//codecloud.cdn.speedyrails.net/sites/59d3dc256e6f6459f8960000/image/png/1507214350000/phone.png" class="" alt="">{{phone}}</span>
+                			<span class="promo_exist" style="{{job_exist}}"><img src="//codecloud.cdn.speedyrails.net/sites/58bdb9106e6f644783090000/image/png/1489000358000/jobs.png" class="" alt="">{{job_list}}</span>
+                			<span class="promo_exist" style="{{promotion_exist}}"><img src="//codecloud.cdn.speedyrails.net/sites/58bdb9106e6f644783090000/image/png/1489000371000/promotions.png" class="" alt="">{{promotion_list}}</span>
+                		</div>
+                		</div
+                	</div>
+                </div>
+            </script>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function(e){
+        init(e);
+        function renderAll(){
+            // var repo = getRepoDetailsByName("Store Directory Banner");
+            // if (repo != undefined) {
+            //     var banner = getImageURL(repo.images[0].photo_url);
+            //     $(".inside_banner").css({backgroundImage: "url(" + banner + ")"});
+            // }
+            
+            var categories = getStoreCategories().sortBy(function(o){ return o.name});
+            
+            // $('#category_select').prepend('<li class="dropdown-item show_cat_stores" data-id="000" name="ALL" href="#">ALL</li>');
+            // var categories = getStoreCategories().sortBy(function(o){ return o.name});
+            var stores_list = [];
+            $.each(categories, function(key, val){
+                var category_id = val.id;
+                if(category_id != 5174 && category_id != 5175 && category_id != 5176 && category_id != 5177){
+                    stores_list.push(val);
+                }
+            });
+            
+            if(stores_list.length > 0){
+                renderGeneral("#category_select", "#category_select_template", categories);
+                $('#category_select').prepend('<li class="dropdown-item show_cat_stores" data-id="000" name="All">ALL</li>');
+            }
+            
+            var category_list = [];
+            $.each(stores_list, function(key, val){
+                var category_id = parseInt(val.id, 10);
+                category_list.push(category_id)
+            });
+
+            // var store_list = getStoresList();
+            var all_stores = getStoresList();
+            // var shops = [];
+            // $.each(all_stores, function(key, val){
+            //     if(val.categories != null){
+            //         var store_categories = val.categories;
+            //         if(findOne(store_categories, category_list)){
+            //             shops.push(val)
+            //         }
+            //     }
+            // });
+            
+            // var store_list = _.uniq(all_stores, function(o){ return o.name; });
+            if(all_stores.length > 0){
+                renderStoreList('#store_list_container','#store_list_template', all_stores, "stores");
+            }
+            
+            show_content();
+            show_cat_stores();
+            
+            show_content();
+            show_cat_stores();
+        }
+        loadMallData(renderAll); 
+    })
+</script>
