@@ -268,7 +268,7 @@
 
             var logo_slider = new $JssorSlider$("slider_container", logo_options);
             
-        show_content();
+            show_content();
         }
         loadMallDataCached(renderAll); 
         $("#newsletterSignupBtn").click(function(e){
