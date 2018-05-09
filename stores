@@ -129,6 +129,9 @@
             });
 
             var all_stores = getStoresList();
+            store_list = store_list.filter(function( val, index ) {
+                return !$.isNumeric(val.name[0]);
+            });
             if(all_stores.length > 0){
                 renderStoreList('#store_list_container','#store_list_template', all_stores, "stores");
             }
