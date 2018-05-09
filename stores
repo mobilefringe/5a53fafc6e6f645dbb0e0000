@@ -153,8 +153,6 @@
                 renderStoreList('#store_list_container','#store_list_template', all_stores, "stores");
             }
             
-            show_content();
-            show_cat_stores();
             
             show_content();
             show_cat_stores();
