@@ -267,10 +267,10 @@
             };
 
             var logo_slider = new $JssorSlider$("slider_container", logo_options);
-            // 
+            
+        show_content();
         }
         loadMallDataCached(renderAll); 
-        show_content();
         $("#newsletterSignupBtn").click(function(e){
             e.preventDefault();
              document.location.href = '/newsletter?name='+$("#fieldEmail").val();
