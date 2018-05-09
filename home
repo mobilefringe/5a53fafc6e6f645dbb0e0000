@@ -208,8 +208,6 @@
                 url: "https://www.mallmaverick.com/system/site_images/photos/000/036/024/original/temp_svc_blog.rss?1521579821",
                 dataType: "xml",
                 success: function (xml) {
-                    
-                    console.log(xml);
                      $title = $(xml).find( "item" ); 
                      $(xml).find("item").each(function () { // or "item" or whatever suits your feed
                         var el = $(this);
