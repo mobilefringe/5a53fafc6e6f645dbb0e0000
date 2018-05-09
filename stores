@@ -138,17 +138,6 @@
 
             // var store_list = getStoresList();
             var all_stores = getStoresList();
-            // var shops = [];
-            // $.each(all_stores, function(key, val){
-            //     if(val.categories != null){
-            //         var store_categories = val.categories;
-            //         if(findOne(store_categories, category_list)){
-            //             shops.push(val)
-            //         }
-            //     }
-            // });
-            
-            // var store_list = _.uniq(all_stores, function(o){ return o.name; });
             if(all_stores.length > 0){
                 renderStoreList('#store_list_container','#store_list_template', all_stores, "stores");
             }
