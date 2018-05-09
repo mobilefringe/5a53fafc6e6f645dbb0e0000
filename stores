@@ -107,12 +107,6 @@
     $(document).ready(function(e){
         init(e);
         function renderAll(){
-            // var repo = getRepoDetailsByName("Store Directory Banner");
-            // if (repo != undefined) {
-            //     var banner = getImageURL(repo.images[0].photo_url);
-            //     $(".inside_banner").css({backgroundImage: "url(" + banner + ")"});
-            // }
-            
             var categories = getStoreCategories().sortBy(function(o){ return o.name});
             
             var stores_list = [];
