@@ -1,0 +1,91 @@
+<div class="inside_banner">   
+    <div class="content_container">
+        <div class="inside_banner_content">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>Hours</h1>
+                </div>
+                <div class="col-md-6 hidden_phone">
+                    <h4 class="pull-right">Hours</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content_container margin_30">
+    <div class="margin_30"></div>
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Regular Hours</h2>
+            <div id="reg_hours_container">
+                <script id="reg_hours_template" type="x-tmpl-mustache/text">
+                    <div class="hours_div">
+                        <div class="day">{{day}}:</div>
+                        <div class="time">{{h}}</div>
+                    </div>
+                </script>
+            </div>
+            <div class="margin_30"></div>
+            <!--<p>Please see individual store listing for store hours.</p>-->
+            <hr class="horizontal_div show_phone">
+        </div>
+        
+        <div class="col-md-6 border_left">
+            <h2 class="holiday_hours">Holiday Hours</h2>
+            <div id="holiday_hours_container" style="overflow:hidden;">
+                <script id="holiday_hours_template" type="x-tmpl-mustache/text">
+                    <div class="holiday_hours_div">
+                        <div class="day"> {{holiday_name}} </div>
+                        <div class="time"> {{h}}</div>
+                    </div>
+                </script>
+            </div>
+            <h2 class="holiday_closure">Holiday Closure</h2>
+            <div id="holiday_hours_closure_container">
+                <script id="holiday_hours_closure_template" type="x-tmpl-mustache/text">
+                    <div class="holiday_hours_div">
+                        <div class="day"> {{holiday_name}} </div>
+                        <div class="time"> {{h}} ({{formatted_date}}) </div>
+                    </div>
+                </script>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function(e){
+        init(e);
+        function renderAll(){
+            // var repo = getRepoDetailsByName("Promotions Banner");
+            // if (repo != undefined) {
+            //     var banner = getImageURL(repo.images[0].photo_url);
+            //     $(".page_header").css({backgroundImage: "url(" + banner + ")"});
+            // }
+            
+            var hours = getPropertyRegularHours();
+            renderHours('#reg_hours_container','#reg_hours_template', hours, 'reg_hours');
+            var holiday_hours = getPropertyHolidayHours().filter(function(o){ return !o.is_closed}).sortBy(function(o){ return o.holiday_date});
+            console.log(holiday_hours);
+            var holiday_hours_closures = getPropertyHolidayHours().filter(function(o){ return o.is_closed }).sortBy(function(o){ return o.holiday_date});
+            console.log(holiday_hours_closures);
+            
+            if(holiday_hours.length > 0) {
+                renderHours('#holiday_hours_container','#holiday_hours_template', holiday_hours, 'holiday_hours');
+            }
+            else {
+                $("#holiday_hours_container").hide();
+                $(".holiday_hours").hide();
+            }
+            if(holiday_hours_closures.length > 0) {
+                renderHours('#holiday_hours_closure_container','#holiday_hours_closure_template', holiday_hours_closures, 'holiday_hours');
+            }
+            else {
+                $("#holiday_hours_closure_container").hide();
+                $(".holiday_closure").hide();
+            }
+
+            show_content();
+        }
+        loadMallDataCached(renderAll); 
+    });
+</script>
