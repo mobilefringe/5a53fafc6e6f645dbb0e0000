@@ -157,7 +157,7 @@
         </div>
          </a>
         <div class="col-sm-6 subscribeBlog">
-            <h1>Sign up for our e-blast</h1> 
+            <h1>Sign up for our e-newsletter</h1> 
             <br>
             <form id="newsletterBlogForm">
                 <label for="fieldEmail" style="display:none"></label>
