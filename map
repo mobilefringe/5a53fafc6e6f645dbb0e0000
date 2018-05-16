@@ -191,7 +191,6 @@
             floor_1.z_index = 1;
             floor_1.show = true;
             floor_list.push(floor_1);
-            console.log("getSVGMapURL", getSVGMapURL());
             return floor_list;
         }
         function svgList () {
