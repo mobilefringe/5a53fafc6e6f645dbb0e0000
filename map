@@ -219,17 +219,13 @@
                         var viewport_center_y = 0;
                         viewport_center_x = (_.toNumber(elBBox.left) + _.toNumber(elBBox.right) )/2;
                         viewport_center_y = (_.toNumber(elBBox.top) + _.toNumber(elBBox.bottom) )/2;
-                        // console.log("viewport_x",viewport_center_x,viewport_center_y);
                         pt = svg.createSVGPoint();
                         pt.x = viewport_center_x;
                         pt.y = viewport_center_y;
-                        // console.log("pt", pt.x, pt.y)
                         var svgP = pt.matrixTransform(svg.getScreenCTM().inverse());
-                        // console.log("svg points", svgP.x,svgP.y);
                         var new_x = svgP.x/ 2500;
                         var new_y = svgP.y/ 2500;
                         var location = self.getLocationData(val);
-                        // console.log("nex_x, y", new_x, new_y)
                         if(location !== null && location.el){
                             location.x = new_x;
                             location.y =  new_y;
