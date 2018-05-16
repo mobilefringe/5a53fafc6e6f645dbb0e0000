@@ -238,7 +238,6 @@
                     }
                 }
             });
-            // console.log("self", vm.self);
             //find which levels need to be hidden
             hidden_level = _.filter(self.data.levels , function (o){ 
                 // console.log (o); 
