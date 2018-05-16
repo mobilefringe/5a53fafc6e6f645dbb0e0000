@@ -92,6 +92,9 @@
     .mapplic-hovertip {
         opacity:1!important;
     }
+    #nopointer-unitnumbers {
+        display:none!important;
+    }
 </style>
 
 <link href="//codecloud.cdn.speedyrails.net/sites/5ae8c1fe6e6f6473fd160000/text/css/1522163605908/mapplic.css" rel="stylesheet">
