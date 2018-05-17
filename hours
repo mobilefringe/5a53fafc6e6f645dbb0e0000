@@ -45,6 +45,7 @@
                 <script id="holiday_hours_closure_template" type="x-tmpl-mustache/text">
                     <div class="holiday_hours_div">
                         <!-- <div class="day"> {{holiday_name}} </div>-->
+                        <!-- <div class="day"> {{holiday_name}} </div>-->
                         <div class="time">{{formatted_date}}: {{h}}</div>
                     </div>
                 </script>
