@@ -121,7 +121,7 @@
             all_stores = all_stores.filter(function( val, index ) {
                 return !$.isNumeric(val.name[0]);
             });
-            renderStoreList('#store_list_container_map','#store_list_template_map', stores, "A", "Z");
+            renderStoreList('#store_list_container_map','#store_list_template_map', all_stores, "A", "Z");
             var mall_json = {};
             var landmarks = {};
             mall_json.mapwidth = "1000";
