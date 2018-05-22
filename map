@@ -264,7 +264,7 @@
         // https://www.mallmaverick.com/system/site_images/photos/000/037/939/original/St.Vital_-_Map_-_Mar-21-2018.svg?1521739249
     });
     function dropPin() {
-        var svgmap_region = "";
+        var svgmap_region = $(this).attr('store_x_coordinate');;
         console.log(svgmap_region)
         self = map.data('mapplic');
         self.showLocation(svgmap_region);
