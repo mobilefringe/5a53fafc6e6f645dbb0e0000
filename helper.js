@@ -420,3 +420,23 @@ function submit_form_data(data) {
     $('#submit_btn').prop( "disabled", false );
     
 }
+function getAssetURL(id){
+    var store_id = id;
+    var store_assets = "https://cornwall.mallmaverick.com/api/v4/cornwall/stores/" + store_id + "/store_files.json"
+    var store_front_image_url = "";    
+    $.ajax({
+        url: store_assets,
+        dataType: 'json',
+        async: false,
+        success: function(data) {
+            if(data.store_files.length > 0){
+                store_front_image_url = data.store_files[0].url;
+            }
+        },
+        error: function (data){
+            store_front_image_url = "";
+        }
+    });
+    
+    return store_front_image_url;
+}
