@@ -260,6 +260,7 @@
             $('.map_pin_a').click(function(e){
                 console.log("in map_pin_a");
                 e.preventDefault();
+                var svgmap_region = $(this).attr('data-svg');
                 add_landmark(store_x_coordinate, store_y_coordinate, pin_id, store_name);
             });
             setTimeout(function() {
