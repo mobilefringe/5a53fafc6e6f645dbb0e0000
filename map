@@ -267,5 +267,6 @@
         console.log(svgmap_region)
         self = map.data('mapplic');
         self.showLocation(svgmap_region);
+        $('.stores_table').hide();
     }
 </script>
