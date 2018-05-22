@@ -26,7 +26,7 @@
     <div class="margin_30"></div>
     <div class="row">
         <div class="col-md-12">
-            <a href="#" class="dropPin">Locate store <i class="fa fa-search"></i></a>
+            <a href="#" class="locate_store">Locate store <i class="fa fa-search"></i></a>
             <!--<div class="stores_table">-->
             <!--    <ul id="store_list_container_map">-->
             <!--        <script id="store_list_template_map" type="x-tmpl-mustache/text">-->
@@ -37,7 +37,7 @@
             <div class="stores_table">
                 <ul id="store_list_container_map">
                     <script id="store_list_template_map" type="x-tmpl-mustache/text">
-                        <li><a class="map_pin_a" href="#" store_id="{{id}}" store_name="{{name}}" store_x_coordinate="{{x_coordinate}}" store_y_coordinate="{{y_coordinate}}">{{name}}</a><li>
+                        <li><a class="dropPin" href="#" store_id="{{id}}" store_name="{{name}}" store_x_coordinate="{{x_coordinate}}" store_y_coordinate="{{y_coordinate}}">{{name}}</a><li>
                     </script>
                 </ul>
             </div>
