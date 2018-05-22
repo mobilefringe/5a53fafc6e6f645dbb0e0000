@@ -37,7 +37,7 @@
             <div class="stores_table">
                 <ul id="store_list_container_map">
                     <script id="store_list_template_map" type="x-tmpl-mustache/text">
-                        <li><a class="map_pin_a" href="#" store_id="{{id}}" store_name="{{name}}" store_x_coordinate="{{x_coordinate}}" store_y_coordinate="{{y_coordinate}}" onClick="dropPin()">{{name}}</a><li>
+                        <li><a class="map_pin_a" href="#" store_id="{{id}}" store_name="{{name}}" store_x_coordinate="{{x_coordinate}}" store_y_coordinate="{{y_coordinate}}" onClick="dropPin()" data-svg="{{svgmap_region}}">{{name}}</a><li>
                     </script>
                 </ul>
             </div>
