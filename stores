@@ -79,7 +79,8 @@
                 	<div>
                 		<div class="store_logo_container" id="{{initial}}">
                 			<a href="/stores/{{slug}}">
-                				<img class="store_img" style="{{initial_img}} {{hide_img}}" src="{{store_front_url_abs}}"/>
+                				<img class="store_img" style="{{initial_img}}" src="{{store_front_url_abs}}"/>
+                                <img class="store_hover" style="{{initial_img}}" src="{{hover_img}}"/>
                 				<div style="width: 100%;height: 100%;position: relative; {{show_storename}}">
                 					<h3 style="margin: 0;text-align: center;position: absolute;left: 50%;top: 50%;transform: translate(-50%, -50%);width: 100%;font-size: 28px;font-weight: bold;">{{name}}</h3>
                 				</div>
