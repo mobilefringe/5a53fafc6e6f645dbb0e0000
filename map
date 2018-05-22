@@ -261,7 +261,7 @@
                 console.log("in map_pin_a");
                 e.preventDefault();
                 var svgmap_region = $(this).attr('data-svg');
-                add_landmark(store_x_coordinate, store_y_coordinate, pin_id, store_name);
+                dropPin(svgmap_region);
             });
             setTimeout(function() {
                 show_content();
