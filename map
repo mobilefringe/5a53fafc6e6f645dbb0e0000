@@ -260,16 +260,6 @@
             $('.map_pin_a').click(function(e){
                 console.log("in map_pin_a");
                 e.preventDefault();
-                var store_x_coordinate = $(this).attr('store_x_coordinate');
-        		var store_y_coordinate = $(this).attr('store_y_coordinate');
-                var pin_id = $(this).attr('store_id');
-                var store_name = $(this).attr('store_name');
-    
-                $('.show_pin').hide();
-                $('.no_pin').show();
-                $('#show_pin_store_' + pin_id).show();
-                $('#no_pin_store_' + pin_id).hide();
-                $('.stores_table').hide();
                 add_landmark(store_x_coordinate, store_y_coordinate, pin_id, store_name);
             });
             setTimeout(function() {
