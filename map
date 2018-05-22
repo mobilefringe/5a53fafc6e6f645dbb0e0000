@@ -258,7 +258,6 @@
             });
             
             $('.map_pin_a').click(function(e){
-                console.log("in map_pin_a");
                 e.preventDefault();
                 var svgmap_region = $(this).attr('data-svg');
                 dropPin(svgmap_region);
