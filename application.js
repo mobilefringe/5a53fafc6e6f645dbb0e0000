@@ -192,7 +192,8 @@ function renderHomeHours(container, template, collection){
             val.open_now = "Closed"
             val.open_color = "#ac0a22"
         }
-        console.log();
+        console.log(var open_time = moment(val.open_time).tz(getPropertyTimeZone());
+            var close_time = moment(val.close_time).tz(getPropertyTimeZone()););
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
     });
