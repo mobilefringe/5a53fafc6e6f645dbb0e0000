@@ -265,7 +265,7 @@
     });
     function dropPin() {
         var svgmap_region = $(this).attr('data-svg');;
-        console.log(svgmap_region)
+        console.log(this,svgmap_region)
         self = map.data('mapplic');
         self.showLocation(svgmap_region);
         $('.stores_table').hide();
