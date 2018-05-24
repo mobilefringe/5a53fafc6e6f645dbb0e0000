@@ -196,7 +196,7 @@
                 // console.log($.isNumeric(val.name[0]), val.name[0]);
                 return !$.isNumeric(val.name[0]);
             });
-            // renderLogoScroll('#logo_container','#logo_template', stores);
+            renderLogoScroll('#logo_container','#logo_template', stores);
 
             
             
