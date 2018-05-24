@@ -177,8 +177,8 @@
         function renderAll (){
             // renderPopup();
             
-            // var banners = getBanners();
-            // renderBanner('#banner_template','#home_banner', banners);
+            var banners = getBanners();
+            renderBanner('#banner_template','#home_banner', banners);
             
             var all_feature_items = getFeatureList();
             var three_items = all_feature_items.slice(0, 3);
