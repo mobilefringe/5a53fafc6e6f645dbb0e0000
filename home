@@ -25,8 +25,8 @@
 </div>
 <div class="feature_container">
     <div class="content_container">
-        <div class="flex_container">
-            <div id="feature_container">
+        <div class="flex_container" id="feature_container">
+            <div >
                 <script id="feature_template" type="x-tmpl-mustache/text">
                     <div class="width_30">
                         <a href="{{url}}">
