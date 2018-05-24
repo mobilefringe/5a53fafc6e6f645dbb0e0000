@@ -26,7 +26,7 @@
 <div class="feature_container">
     <div class="content_container">
         <div class="flex_container" id="feature_container">
-            <div >
+            <!--<div >-->
                 <script id="feature_template" type="x-tmpl-mustache/text">
                     <div class="width_30">
                         <a href="{{url}}">
@@ -34,7 +34,7 @@
                         </a>
                     </div>
                 </script>
-            </div>
+            <!--</div>-->
         </div>
         <!--<div class="flex_container">-->
         <!--    <div class="width_30">-->
