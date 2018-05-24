@@ -1,15 +1,3 @@
-<!--<div class="home_banner">   -->
-<!--    <div class="flexslider">-->
-<!--        <ul class="slides" id="home_banner">-->
-<!--            <li>-->
-<!--                <a href="http://www.stvitalcentrespark.com/" target="_blank">-->
-<!--                    <div class="banner_img" style="background-image: url('//codecloud.cdn.speedyrails.net/sites/5ae8c1fe6e6f6473fd160000/image/jpeg/1525900084259/hero-banner1.jpg');"></div>-->
-<!--                </a>-->
-<!--            </li>-->
-<!--        </ul>-->
-<!--    </div>-->
-<!--</div>-->
-
 <div class="home_banner">   
     <div class="flexslider">
         <ul class="slides" id="home_banner">
@@ -26,7 +14,6 @@
 <div class="feature_container">
     <div class="content_container">
         <div class="flex_container" id="feature_container">
-            <!--<div >-->
                 <script id="feature_template" type="x-tmpl-mustache/text">
                     <div class="width_30">
                         <a href="{{url}}">
@@ -34,25 +21,7 @@
                         </a>
                     </div>
                 </script>
-            <!--</div>-->
         </div>
-        <!--<div class="flex_container">-->
-        <!--    <div class="width_30">-->
-        <!--        <a href="/stores">-->
-        <!--            <img src="//codecloud.cdn.speedyrails.net/sites/5ae8c1fe6e6f6473fd160000/image/png/1517934913000/directory.png" alt="Stores"/>-->
-        <!--        </a>-->
-        <!--    </div>-->
-        <!--    <div class="width_30">-->
-        <!--        <a href="/promotions">-->
-        <!--            <img src="//codecloud.cdn.speedyrails.net/sites/5ae8c1fe6e6f6473fd160000/image/png/1517934913000/tag.png" alt="Sales & Promotions"/>-->
-        <!--        </a>-->
-        <!--    </div>-->
-        <!--    <div class="width_30">-->
-        <!--        <a href="/hours">-->
-        <!--            <img src="//codecloud.cdn.speedyrails.net/sites/5ae8c1fe6e6f6473fd160000/image/png/1517934913000/hours.png" alt="Location"/>-->
-        <!--        </a>-->
-        <!--    </div>-->
-        <!--</div>-->
     </div>
 </div>
 <div class="content_container">
@@ -64,11 +33,6 @@
                 </a>
             </script>
         </div>
-        <!--<div class="col-sm-6 text-center">-->
-        <!--    <a href="/pages/svc-giftcard">-->
-        <!--        <img src="//codecloud.cdn.speedyrails.net/sites/5ae8c1fe6e6f6473fd160000/image/jpeg/1527014306934/Giftcard_promo.jpg" class="" alt="">-->
-        <!--    </a>-->
-        <!--</div>-->
         <div class="col-sm-6 col-xs-12">
             <div class="home_promos">
                 <h2 class="details_title ">Sales & Promotions</h2>
@@ -104,7 +68,6 @@
                         </div>
                     </script>
                 </div>
-                <!--<p class="home_see_all"><a href="http://www.stvitalcentrespark.com/"  target="_blank">See all news articles </a> <i class="fa fa-angle-right" aria-hidden="true"></i></p>-->
             </div>
         </div>
         <div id="blog_feature_container" class="col-sm-6 text-center">
@@ -114,11 +77,6 @@
                 </a>
             </script>
         </div>
-        <!--<div class="col-sm-6 col-xs-12 text-center">-->
-        <!--    <a href="http://www.stvitalcentrespark.com/" target="_blank">-->
-        <!--        <img src="//codecloud.cdn.speedyrails.net/sites/5ae8c1fe6e6f6473fd160000/image/jpeg/1527014309546/feature_image_Spark.jpg" class="" alt="">-->
-        <!--    </a>-->
-        <!--</div>-->
         <div class="col-sm-6 col-xs-12 show_phone">
             <div class="home_promos ">
                 <div id="home_mblog_container" class="dine_container margin_20">
