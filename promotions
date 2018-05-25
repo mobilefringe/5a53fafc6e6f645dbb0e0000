@@ -23,7 +23,7 @@
         <div id="promo_container">
             <script id="promo_template" type="x-tmpl-mustache/text">
                 <div class="col-sm-6 col-md-4">
-                    <div class="promo_img_container" style="background-image: url({{promo_image_url_abs}})"></div>
+                    <div class="promo_img_container" style="background-image: url({{image_url}})"></div>
                     <div class="promo_content">
                         <h2 class="promo_name"> {{name}} </h2>
                         <h4 class="promo_dates"> {{dates}} </h4>
