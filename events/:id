@@ -1,0 +1,54 @@
+<div class="inside_banner">   
+    <div class="content_container">
+        <div class="inside_banner_content">
+            <div class="row">
+                <div id="promo_header_container">
+                    <script id="promo_header_template" type="x-tmpl-mustache/text">
+                        <div class="col-md-8">    
+                            <h1>Events</h1>
+                        </div>
+                        <div class="col-md-4 hidden_phone">
+                            <h4 class="pull-right"><a href="/events">Events</a> <i class="fa fa-angle-right" aria-hidden="true"></i> St Vital Centre Event</h4>
+                        </div>
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content_container margin_30">
+    <div class="margin_30"></div>
+    <div class="row">
+        <div class="col-md-12" id="promo_details_container">
+            <script id="promo_details_template" type="x-tmpl-mustache/text">
+                <h2 class="promo_details_name"> {{name}} </h2>
+                <h4 class="promo_details_dates"> {{dates}} </h4>
+                <img class="promo_details_img" src="{{image_url}}"/>
+                <hr class="horizontal_div">
+                <p class="promo_details_desc"> {{{rich_description}}} </p>
+            </script>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function(e){
+        init(e);
+        function renderAll(){
+            // var repo = getRepoDetailsByName("Events Banner");
+            // if (repo != undefined) {
+            //     var banner = getImageURL(repo.images[0].photo_url);
+            //     $(".inside_banner").css({backgroundImage: "url(" + banner + ")"});
+            // }
+            
+            var pathArray = window.location.pathname.split( '/' );
+            var slug = pathArray[pathArray.length-1];
+            event_details = getEventDetailsBySlug(slug);
+            
+            renderEventDetails('#promo_header_container', '#promo_header_template', event_details)
+            renderEventDetails('#promo_details_container', '#promo_details_template', event_details)
+            
+            show_content();
+        }
+        loadMallDataCached(renderAll); 
+    });
+</script>
