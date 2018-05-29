@@ -1,0 +1,109 @@
+<!-- begin #page - the container for everything but header -->
+<div id="page">	
+	<!--notice how sliders are outside the this main content div-->
+	<div class="sparkNow">
+		<div class="container clearfix">	
+			<!-- begin equalHeights columns 3 -->
+			<h3 class="short_headline sparkNowTitle"><span>The Latest</span></h3>
+                <div class="row-fluid equalHero equalHeights" id="main-content">
+				         <center><img alt="loading" style="width:100px; height:100px;" src="//codecloud.cdn.speedyrails.net/sites/5757295d6e6f647a06080000/image/gif/1488389451000/loading.gif"></center>
+				</div>
+                    <script id="blog_tile_template" type="x-tmpl-mustache">
+            			<div class="span6 sparkNowTile">
+            				<div class="sparkNowTileTop" style="background: url({{image_url}}) no-repeat center center">
+            				    {{#tag_first}}
+            				        <a href="/posts/{{slug}}" class="sparkNowTileTag">{{.}}</a>
+                                {{/tag_first}}
+            					<a href="/posts/{{slug}}" class="sparkNowTileImg">
+            					</a>
+            				</div>
+            				<div class="sparkNowTileTitle">
+            				    <a href="/posts/{{slug}}"><h3>{{ title }}</h3></a>
+            				    {{#video_link}}
+            				        <img src="//kodekloud.s3.amazonaws.com/sites/5512e0606e6f64112d000000/29a93cc9dd3b7f858a31366f54bbc07b/video_icon.png" class="" alt="">
+            				    {{/video_link}}
+            				</div>
+            				<a class="sparkNowTileRead" href="/posts/{{slug}}">READ <i class="fa fa-caret-right fa-lg"></i></a>
+            			</div>
+				    </script>
+	   		<div class="sparkNowMore">
+				<a href="javascript:void(0);" onclick="renderPageData();">SEE MORE</a>
+				<i class="fa fa-caret-down fa-lg"></i>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<script>
+$(document).ready(function() {
+    function renderPageData(){
+        var pathArray = window.location.pathname.split( '/' );
+        var keyword = pathArray[pathArray.length-1];
+        keyword = keyword.replace("%20"," ");
+
+        renderPostTileTemplate('#blog_tile_template', '#main-content',getPostsByKeyword(keyword));
+    }
+    
+    loadMallData(renderPageData);
+});
+var interval = 4;
+var totalPosts;
+var showingPosts;
+
+function checkSeeMoreButton(){
+    if(totalPosts > showingPosts){
+        $('.sparkNowMore').fadeIn();
+    }else{
+        $('.sparkNowMore').fadeOut();
+    }
+}
+
+function renderPostTileTemplate(blog_template, blog_block, post){
+
+    var item_list = [];
+    var item_rendered = [];
+    var blog_template_html = $(blog_template).html();
+    Mustache.parse(blog_template_html);   // optional, speeds up future uses
+    
+    totalPosts = post.length;
+    showingPosts = $('.sparkNowTile').length + interval;
+
+
+    $.each( post , function( key, val ) {
+        item_list.push(val);
+    });
+
+    $.each( item_list , function(key,val){
+        if(val.tag !== null && val.tag.length != 0){
+            val.tag_first = val.tag[0];
+        }
+    });
+    item_list.sort(function(a, b){
+        if(a.publish_date > b.publish_date) return -1;
+        if(a.publish_date < b.publish_date) return 1;
+        return 0;
+    });
+
+    $.each( item_list , function( index, val ) {
+        if (index >= showingPosts) {return false;};
+        
+        var blog_rendered = Mustache.render(blog_template_html,val);
+        item_rendered.push(blog_rendered);
+    });
+    $(blog_block).html(item_rendered.join(''));
+    checkSeeMoreButton();
+}
+
+</script>
+
+
+
+
+<style>
+    .sparkNow{
+        margin-top:3%;
+        margin-bottom:3%;
+    }
+</style>
