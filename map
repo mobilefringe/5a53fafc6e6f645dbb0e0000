@@ -24,9 +24,9 @@
         </div>
     </div>
     <div class="margin_30"></div>
-    <p>
-                <a href="https://www.mallmaverick.com/system/site_images/photos/000/037/813/original/11645_STV_Directory_Feb2018_BW_4.pdf?1521557893" target="_blank"> Download Printable version of directory (PDF)</a>
-            </p>
+    <p class="hidden_phone">
+        <a href="https://www.mallmaverick.com/system/site_images/photos/000/037/813/original/11645_STV_Directory_Feb2018_BW_4.pdf?1521557893" target="_blank"> Download Printable version of directory (PDF)</a>
+    </p>
     <div class="row">
         <div class="col-md-12">
             <a href="#" class="locate_store">Locate store <i class="fa fa-search"></i></a>
