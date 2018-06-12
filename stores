@@ -145,6 +145,7 @@
             if (window_width > 769) {
                 
                 $(".store_logo_container").hover(function() {
+                    console.log("store logo name", $('#store_name_logo'))
                     $(".store_img", this).hide();
                     $(".store_hover", this).show();
                 }, function() {
