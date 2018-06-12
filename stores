@@ -147,8 +147,8 @@
                 $(".store_logo_container").hover(function() {
                     console.log("store logo name", $('#store_name_logo',this).is(":visible"))
                     if (!$('#store_name_logo',this).is(":visible")){
-                    $(".store_img", this).hide();
-                    $(".store_hover", this).show();
+                        $(".store_img", this).hide();
+                        $(".store_hover", this).show();
                     }
                 }, function() {
                     $(".store_img", this).show();
