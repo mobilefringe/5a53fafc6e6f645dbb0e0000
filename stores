@@ -152,11 +152,10 @@
                     }
                 }, function() {
                     if (!$('#store_name_logo',this).is(":visible")){
-                        $(".store_img", this).hide();
-                        $(".store_hover", this).show();
-                    }
-                    $(".store_img", this).show();
+                        $(".store_img", this).show();
                     $(".store_hover", this).hide();
+                    }
+                    
                 });
             }
         }
