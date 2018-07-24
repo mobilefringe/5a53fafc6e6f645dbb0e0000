@@ -45,11 +45,6 @@
                 <span id="success_subscribe" class="hidden_now">Thank you for subscribing to our newsletter.</span>
             </form>
             <form action="http://app.emediatemail.com/t/r/s/tkzwh/" method="post">
-            <!--             <p>
-                <img class="newsletter-icon" src="http://cdn.mallmaverick.com/system/site_images/photos/000/008/148/original/icon_name.png?1428346803">
-                <input id="fieldName" name="cm-name" type="text" placeholder="ENTER
-  YOUR NAME HERE!" align="top"/>
-              </p> -->
             <p>
                 <img alt="newsletter" class="newsletter-icon" src="http://cdn.mallmaverick.com/system/site_images/photos/000/008/150/original/icon_email.png?1428346803">
                 <input title="email" id="fieldEmail" name="cm-tkzwh-tkzwh" type="email" placeholder="ENTER YOUR EMAIL HERE!" required />
