@@ -105,9 +105,9 @@
                 </div>
             </form>
             <form id="kids_agency_form" action="http://app.emediatemail.com/t/r/s/jtoujj/" method="post" style="display:none">
-        <input id="fieldName_kids_agency" name="cm-name" type="text" align="top"/>
-        <input id="fieldEmail_kids_agency" name="cm-jtoujj-jtoujj" type="email"/>
-    </form>
+                <input id="fieldName_kids_agency" name="cm-name" type="text" align="top"/>
+                <input id="fieldEmail_kids_agency" name="cm-jtoujj-jtoujj" type="email"/>
+            </form>
         </div>
     </div>
     <div class="row">
