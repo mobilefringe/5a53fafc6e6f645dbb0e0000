@@ -86,18 +86,19 @@
                 e.preventDefault();
                 agency_newsletter ();
                 
-                $.getJSON(
-                    this.action + "?callback=?",
-                    $(this).serialize(),
-                    function (data) {
-                        if (data.Status === 400) {
-                            alert("Please try again later.");
-                        } else { // 200
-                            $('#subForm').trigger('reset');
-                            // agency_newsletter();
+                // $.getJSON(
+                //     this.action + "?callback=?",
+                //     $(this).serialize(),
+                //     function (data) {
+                //         if (data.Status === 400) {
+                //             alert("Please try again later.");
+                //         } else { // 200
+                //             $('#subForm').trigger('reset');
+                //             // agency_newsletter();
                             
-                        }
-                    });
+                //         }
+                //     });
+                return truel
             });
             function agency_newsletter () {
                 $('#fieldName_kids_agency').val($("#loyalty_parent_name_first").val() + " " + $("#loyalty_parent_name_last").val());
