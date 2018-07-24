@@ -233,7 +233,7 @@
                 data["custom_email_body"] = email_body;
                 
                 $.ajax({
-                    url: "/add_loyalty",
+                    url: getPrefix() + "/add_loyalty",
                     type: "POST",
                     data: data,
                 	success: function(response){     
