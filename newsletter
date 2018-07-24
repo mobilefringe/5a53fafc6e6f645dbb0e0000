@@ -91,6 +91,18 @@
                         if (data.Status === 400) {
                             alert("Please try again later.");
                         } else { // 200
+                    	   // window.location.href = "/pages/svc-thanks"
+                    	   console.log("success");
+                    	   $("#success_subscribe").fadeIn();
+                        }
+                });
+                $.getJSON(
+                    this.action + "?callback=?",
+                    $(this).serialize(),
+                    function (data) {
+                        if (data.Status === 400) {
+                            alert("Please try again later.");
+                        } else { // 200
                             $('#subForm').trigger('reset');
                             agency_newsletter();
                             
