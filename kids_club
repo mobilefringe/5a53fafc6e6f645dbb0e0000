@@ -51,7 +51,7 @@
                     </div>
                     <div class="col-sm-6 ">
                         <label for="first_name">Parent's First Name</label>  <span style="color:red"> *</span>
-                        <input class="form-control" id="loyalty_parent_name" name="contest[first_name]" type="text" required data-validation="required" tabindex="8"/>
+                        <input class="form-control" id="loyalty_parent_name_first" name="contest[first_name]" type="text" required data-validation="required" tabindex="8"/>
                     </div>
                     <div class="col-sm-6 ">
                         <label for="last_name">Parent's Last Name</label>  <span style="color:red"> *</span>
