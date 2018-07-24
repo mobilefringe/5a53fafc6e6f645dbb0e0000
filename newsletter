@@ -103,7 +103,7 @@
             function agency_newsletter () {
                 $('#fieldName_kids_agency').val($("#loyalty_parent_name_first").val() + " " + $("#loyalty_parent_name_last").val());
                 $('#fieldEmail_kids_agency').val($("#loyalty_email").val());
-                $('form#kids_agency_form').submit();
+                $('form#newsletter_agency_form').submit();
             }
             $('form#newsletter_agency_form').submit(function (e) {
                 e.preventDefault();
