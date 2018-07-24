@@ -78,11 +78,11 @@
                 //         return false;
                 //     }
                 // })
-                if ($("#agree_terms").prop("checked") != true){
-                    alert("Please agree to the term and conditions.");
-                    $("#agree_terms").focus();
-                    return false;
-                }
+                // if ($("#agree_terms").prop("checked") != true){
+                //     alert("Please agree to the term and conditions.");
+                //     $("#agree_terms").focus();
+                //     return false;
+                // }
                 e.preventDefault();
                 $.getJSON(
                     this.action + "?callback=?",
