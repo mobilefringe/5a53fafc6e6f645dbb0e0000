@@ -47,7 +47,7 @@
                     </div>
                     <div class="col-sm-6">
                         <label for="birthday">Child's Birthday (yyyy-mm-dd) </label>  <span style="color:red"> *</span>
-                        <input class="form-control" id="loyalty_birthda" name="contest[birthday]" type="text" required data-validation="required" tabindex="7"/>    
+                        <input class="form-control" id="loyalty_birthday" name="contest[birthday]" type="text" required data-validation="required" tabindex="7"/>    
                     </div>
                     <div class="col-sm-6 ">
                         <label for="first_name">Parent's First Name</label>  <span style="color:red"> *</span>
