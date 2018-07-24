@@ -241,7 +241,7 @@
                             signup_kids_club_agency();
                 	    }
                         else{
-                            window.location.href = "/pages/svc-thanks"
+                            // window.location.href = "/pages/svc-thanks"
                         }
         			},
                     error: function(xhr, ajaxOptions, thrownError){
