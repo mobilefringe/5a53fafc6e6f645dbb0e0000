@@ -99,7 +99,6 @@
                 return true;
             });
             function agency_newsletter () {
-                $('#fieldName_kids_agency').val($("#loyalty_parent_name_first").val() + " " + $("#loyalty_parent_name_last").val());
                 $('#fieldEmail_EM').val($("#fieldEmail").val());
                 $('form#newsletter_agency_form').submit();
             }
