@@ -180,24 +180,24 @@
                 
             }
            
-           $.validate();
-         var contest_details = getContestBySlug('svc-kids-club'); 
-         var property = getPropertyDetails ();
-         console.log(contest_details, property);
-         $('#contest_id').val(contest_details.id);
-         $('#property_id').val(property.id);
-        $('#contest_form').submit(function(e){
-            
-            e.preventDefault();
-            
-            $('.contest_btn').prop('disabled', true);
-            var child_name = $("#child_lname").val()  + " " + $("#child_fname").val();
-            var notes= "Child's name: " + child_name + " . Heard about it through: " + $("#reason").val();
-            $("#notes").val(notes);
-            console.log($("#notes").val());
-            submit_form_data($(this).serialize());
-            // $('html, body').animate({scrollBottom : 0},800);
-        });
+            $.validate();
+            var contest_details = getContestBySlug('svc-kids-club'); 
+            var property = getPropertyDetails ();
+            console.log(contest_details, property);
+            $('#contest_id').val(contest_details.id);
+            $('#property_id').val(property.id);
+            $('#contest_form').submit(function(e){
+                
+                e.preventDefault();
+                
+                $('.contest_btn').prop('disabled', true);
+                var child_name = $("#child_lname").val()  + " " + $("#child_fname").val();
+                var notes= "Child's name: " + child_name + " . Heard about it through: " + $("#reason").val();
+                $("#notes").val(notes);
+                console.log($("#notes").val());
+                submit_form_data($(this).serialize());
+                // $('html, body').animate({scrollBottom : 0},800);
+            });
             show_content();
         }
         function signup_kids_club(){
