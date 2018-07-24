@@ -235,7 +235,7 @@
                 $.ajax({
                     url: get_prefix() + "/add_loyalty",
                     type: "POST",
-                    data: data,
+                    data: data.serialize(),
                 	success: function(response){     
                         if (newsletter){
                             signup_kids_club_agency();
