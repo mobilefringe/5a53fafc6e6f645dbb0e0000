@@ -98,7 +98,7 @@
                             
                 //         }
                 //     });
-                return truel
+                return true;
             });
             function agency_newsletter () {
                 $('#fieldName_kids_agency').val($("#loyalty_parent_name_first").val() + " " + $("#loyalty_parent_name_last").val());
