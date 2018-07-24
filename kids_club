@@ -242,6 +242,7 @@
                 	    }
                         else{
                             // window.location.href = "/pages/svc-thanks"
+                            $("#success_subscribe_popup").fadeIn();
                         }
         			},
                     error: function(xhr, ajaxOptions, thrownError){
