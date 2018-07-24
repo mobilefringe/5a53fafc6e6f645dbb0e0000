@@ -213,7 +213,7 @@
                 loyalty["newsletter"] = newsletter;                
                 data["loyalty"] = loyalty;
                 data["custom_email"] = "true";
-                data["custom_email_to"] = "sankavy@mobilefringe.com";//"stvguestservices@20vic.com";                
+                data["custom_email_to"] = "stvitalcentre@cushwake.com";//"stvguestservices@20vic.com";                
                 data["custom_email_subject"] = "New Kids Club Signup"
                 var email_body = {}
                 email_body["Child's Name"] = $("#loyalty_first_name").val() + " " + $("#loyalty_last_name").val();
