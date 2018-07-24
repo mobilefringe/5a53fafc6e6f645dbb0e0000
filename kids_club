@@ -228,7 +228,7 @@
                 email_body["Address_And_Postal_Code"] = $("#loyalty_address").val() + " - " + $("#loyalty_postal_code").val();
                 email_body["Phone_Number"] = $("#loyalty_phone").val();
                 email_body["Birthday"] = $("#loyalty_birthday").val();
-                email_body["Parents_Name"] = $("#loyalty_parent_name").val();
+                email_body["Parents_Name"] = $("#loyalty_parent_name_first").val() + " " + $("#loyalty_parent_name_last").val();
                 email_body["Parents_Email"] = $("#loyalty_email").val();
                 data["custom_email_body"] = email_body;
                 
