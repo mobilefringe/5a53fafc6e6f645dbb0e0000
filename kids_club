@@ -200,6 +200,24 @@
         });
             show_content();
         }
+        function signup_kids_club_agency(){
+            $('#fieldName_kids_agency').val($("#loyalty_parent_name").val());
+            $('#fieldEmail_kids_agency').val($("#loyalty_email").val());
+            $('form#kids_agency_form').submit();
+        }
+        $('form#kids_agency_form').submit(function (e) {
+            e.preventDefault();
+            $.getJSON(
+                this.action + "?callback=?",
+                $(this).serialize(),
+                function (data) {
+                    if (data.Status === 400) {
+                        alert("Please try again later.");
+                    } else { // 200
+                	    window.location.href = "/pages/svc-thanks"
+                    }
+            });
+        });
         loadMallDataCached(renderAll); 
     })
 </script>
