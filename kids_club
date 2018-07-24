@@ -200,7 +200,7 @@
                 
                 var data = {}
                 var loyalty = {}
-                loyalty["property_id"] = property.id;
+                loyalty["property_id"] = getPropertyDetails ().id;
                 loyalty["first_name"] = $("#loyalty_first_name").val();
                 loyalty["last_name"] = $("#loyalty_last_name").val();
                 loyalty["address"] = $("#loyalty_address").val();
