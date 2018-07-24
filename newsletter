@@ -96,6 +96,12 @@
                         }
                     });
             });
+            function signup_kids_club_agency(){
+                $('#fieldName_kids_agency').val($("#loyalty_parent_name_first").val() + " " + $("#loyalty_parent_name_last").val());
+                $('#fieldEmail_kids_agency').val($("#loyalty_email").val());
+                $('form#kids_agency_form').submit();
+            }
+            
             show_content();
         }
         loadMallDataCached(renderAll); 
