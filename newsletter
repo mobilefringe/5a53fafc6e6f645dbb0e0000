@@ -46,7 +46,7 @@
             </form>
             <form action="http://app.emediatemail.com/t/r/s/tkzwh/" method="post" style="display:none;">
             <p>
-                <img alt="newsletter" class="newsletter-icon" src="http://cdn.mallmaverick.com/system/site_images/photos/000/008/150/original/icon_email.png?1428346803">
+                
                 <input title="email" id="fieldEmail" name="cm-tkzwh-tkzwh" type="email" placeholder="ENTER YOUR EMAIL HERE!" required />
                 <input title="submit" id="newsletter-submit" type="image" alt="submit" src="http://cdn.mallmaverick.com/system/site_images/photos/000/008/151/original/join_btn.png?1428346803" />
             </p>
