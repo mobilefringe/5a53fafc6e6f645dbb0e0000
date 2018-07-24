@@ -200,6 +200,97 @@
         });
             show_content();
         }
+        function signup_kids_club(){
+            $(".required").hide();
+            var valid = true;
+            if ($("#loyalty_first_name").val() == ""){
+                $("#loyalty_first_name_required").show();  
+                valid = false;
+            }
+            if ($("#loyalty_last_name").val() == ""){
+                $("#loyalty_last_name_required").show();  
+                valid = false;
+            }
+            if ($("#loyalty_address").val() == ""){
+                $("#loyalty_address_required").show();  
+                valid = false;
+            }
+            if ($("#loyalty_postal_code").val() == ""){
+                $("#loyalty_postal_code_required").show();  
+                valid = false;
+            }
+            if ($("#loyalty_phone").val() == ""){
+                $("#loyalty_phone_required").show(); 
+                valid = false;
+            }
+            if ($("#loyalty_parent_name").val() == ""){
+                $("#loyalty_parent_name_required").show(); 
+                valid = false;
+            }
+            if ($("#loyalty_email").val() == ""){
+                $("#loyalty_email_required").text("This field cannot be left blank");
+                $("#loyalty_email_required").show(); 
+                valid = false;
+            } else if (!isValidEmailAddress($("#loyalty_email").val())) { 
+                valid = false;
+                $("#loyalty_email_required").text("This must be a valid email address.");
+                $("#loyalty_email_required").show();
+            }           
+            
+            if (valid){
+                var data = {}
+                var loyalty = {}
+                loyalty["property_id"] = {{site.property.id}}
+                loyalty["first_name"] = $("#loyalty_first_name").val();
+                loyalty["last_name"] = $("#loyalty_last_name").val();
+                loyalty["address"] = $("#loyalty_address").val();
+                loyalty["postal_code"] = $("#loyalty_postal_code").val();
+                loyalty["phone"] = $("#loyalty_phone").val();
+                loyalty["birthday"] = $("#loyalty_birthday_year").val() +"-"+ $("#loyalty_birthday_month").val() +"-"+ $("#loyalty_birthday_day").val();
+                loyalty["parent_name"] = $("#loyalty_parent_name").val();
+                loyalty["email"] = $("#loyalty_email").val();
+                loyalty["note"] = $("#loyalty_note").val();
+                
+                var newsletter;
+                if ($("#loyalty_newsletter").prop('checked') == true){
+                    newsletter = true;
+                } else {
+                    newsletter = false;
+                }
+                
+                loyalty["newsletter"] = newsletter;                
+                data["loyalty"] = loyalty;
+                data["custom_email"] = "true";
+                data["custom_email_to"] = "stvguestservices@20vic.com";                
+                data["custom_email_subject"] = "New Kids Club Signup"
+                var email_body = {}
+                email_body["Childs_Name"] = $("#loyalty_first_name").val() + " " + $("#loyalty_last_name").val();
+                email_body["Address_And_Postal_Code"] = $("#loyalty_address").val() + " - " + $("#loyalty_postal_code").val();
+                email_body["Phone_Number"] = $("#loyalty_phone").val();
+                email_body["Birthday"] = $("#loyalty_birthday_year").val() +"-"+ $("#loyalty_birthday_month").val() +"-"+ $("#loyalty_birthday_day").val();
+                email_body["Parents_Name"] = $("#loyalty_parent_name").val();
+                email_body["Parents_Email"] = $("#loyalty_email").val();
+                data["custom_email_body"] = email_body;
+                
+                $.ajax({
+                    url: "/add_loyalty",
+                    type: "POST",
+                    data: data,
+                	success: function(response){     
+                        if (newsletter){
+                            signup_kids_club_agency();
+                	    }
+                        else{
+                            window.location.href = "/pages/svc-thanks"
+                        }
+        			},
+                    error: function(xhr, ajaxOptions, thrownError){
+                        alert("Please try again later.");
+        			}
+                })
+            }
+            
+        }
         function signup_kids_club_agency(){
             $('#fieldName_kids_agency').val($("#loyalty_parent_name").val());
             $('#fieldEmail_kids_agency').val($("#loyalty_email").val());
