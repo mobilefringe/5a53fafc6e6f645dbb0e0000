@@ -306,6 +306,7 @@
                             alert("Please try again later.");
                         } else { // 200
                     	   // window.location.href = "/pages/svc-thanks"
+                    	   console.log("success")
                         }
                 });
             });
