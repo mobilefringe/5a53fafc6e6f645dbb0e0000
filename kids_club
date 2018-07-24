@@ -39,7 +39,7 @@
                     </div>
                     <div class="col-sm-6">
                         <label for="postal_code">Postal Code</label>  <span style="color:red"> *</span>
-                        <input class="form-control" id="postal_code" name="contest[postal_code]" type="text" required data-validation="required" tabindex="5"/>
+                        <input class="form-control" id="loyalty_postal_code" name="contest[postal_code]" type="text" required data-validation="required" tabindex="5"/>
                     </div>
                     <div class="col-sm-6 ">
                         <label for="phone">Phone Number</label>  <span style="color:red"> *</span>
