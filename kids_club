@@ -77,7 +77,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <label class="agree">
-                            <input id="agree_to_conditions" required type="checkbox" tabindex="12" /> 
+                            <input id="loyalty_newsletter" type="checkbox" tabindex="12" /> 
                                 I would like to receive communications from St. Vital Centre on specials and events for the kids club. I have read and understood the privacy policy.*
                         </label>
                         
