@@ -84,7 +84,8 @@
                 //     return false;
                 // }
                 e.preventDefault();
-                agency_newsletter ()
+                agency_newsletter ();
+                
                 $.getJSON(
                     this.action + "?callback=?",
                     $(this).serialize(),
