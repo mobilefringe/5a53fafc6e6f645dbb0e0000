@@ -210,7 +210,7 @@
                 loyalty["parent_name"] = $("#loyalty_parent_name_first").val() + " " + $("#loyalty_parent_name_last").val();
                 loyalty["email"] = $("#loyalty_email").val();
                 loyalty["note"] = $("#loyalty_note").val();
-                
+                console.log("loyalty", loyalty)
                 var newsletter;
                 if ($("#loyalty_newsletter").prop('checked') == true){
                     newsletter = true;
