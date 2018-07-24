@@ -59,7 +59,7 @@
                     </div>
                     <div class="col-sm-6">
                         <label for="email">Parent's Email</label> <span style="color:red"> *</span>
-                        <input class="form-control" id="email" name="contest[email]" type="email" required data-validation-regexp="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-validation-error-msg="Please enter a valid email address" data-validation="custom" tabindex="10"/>
+                        <input class="form-control" id="loyalty_email" name="contest[email]" type="email" required data-validation-regexp="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-validation-error-msg="Please enter a valid email address" data-validation="custom" tabindex="10"/>
                     </div>
                      <div class="col-sm-6">
                         <label for="reason">How did you hear about the St Vital Centre Kids Centre?</label>  <span style="color:red"> *</span>
