@@ -43,7 +43,7 @@
                     </div>
                     <div class="col-sm-6 ">
                         <label for="phone">Phone Number</label>  <span style="color:red"> *</span>
-                        <input class="form-control" id="phone" name="contest[phone]" type="text" required data-validation="required" tabindex="6"/>    
+                        <input class="form-control" id="loyalty_phone" name="contest[phone]" type="text" required data-validation="required" tabindex="6"/>    
                     </div>
                     <div class="col-sm-6">
                         <label for="birthday">Child's Birthday (yyyy-mm-dd) </label>  <span style="color:red"> *</span>
