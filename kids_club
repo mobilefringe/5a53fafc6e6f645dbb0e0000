@@ -238,7 +238,7 @@
                     data: data,
                 	success: function(response){     
                         if (newsletter){
-                            // signup_kids_club_agency();
+                            signup_kids_club_agency();
                 	    }
                         else{
                             // window.location.href = "/pages/svc-thanks"
