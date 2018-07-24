@@ -31,7 +31,7 @@
                     </div>
                     <div class="col-sm-6">
                         <label for="notes">Child's Last Name</label> <span style="color:red"> *</span>
-                        <input class="form-control" id="child_fname"  type="text" required data-validation="required" tabindex="3"/>
+                        <input class="form-control" id="loyalty_last_name"  type="text" required data-validation="required" tabindex="3"/>
                     </div>
                     <div class="col-sm-6">
                         <label for="address">Street Address</label>  <span style="color:red"> *</span>
