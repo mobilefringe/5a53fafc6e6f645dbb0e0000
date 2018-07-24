@@ -102,22 +102,22 @@
                 $('#fieldEmail_EM').val($("#fieldEmail").val());
                 $('form#newsletter_agency_form').submit();
             }
-            $('form#newsletter_agency_form').submit(function (e) {
-                e.preventDefault();
-                $.getJSON(
-                    this.action + "?callback=?",
-                    $(this).serialize(),
-                    function (data) {
-                        if (data.Status === 400) {
-                            alert("Please try again later.");
-                        } else { // 200
-                    	   // window.location.href = "/pages/svc-thanks"
-                    	   console.log("success");
-                    	   //$("#success_subscribe").fadeIn();
-                    	   return true;
-                        }
-                });
-            });
+            // $('form#newsletter_agency_form').submit(function (e) {
+            //     e.preventDefault();
+            //     $.getJSON(
+            //         this.action + "?callback=?",
+            //         $(this).serialize(),
+            //         function (data) {
+            //             if (data.Status === 400) {
+            //                 alert("Please try again later.");
+            //             } else { // 200
+            //         	   // window.location.href = "/pages/svc-thanks"
+            //         	   console.log("success");
+            //         	   //$("#success_subscribe").fadeIn();
+            //         	   return true;
+            //             }
+            //     });
+            // });
             show_content();
         }
         loadMallDataCached(renderAll); 
