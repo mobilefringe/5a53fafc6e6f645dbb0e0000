@@ -85,7 +85,7 @@
                 // }
                 e.preventDefault();
                 agency_newsletter ();
-                $('#subForm').submit();
+                
                 // $.getJSON(
                 //     this.action + "?callback=?",
                 //     $(this).serialize(),
