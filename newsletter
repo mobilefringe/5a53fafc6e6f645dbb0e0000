@@ -70,14 +70,14 @@
             
             $.validate();
             $('#subForm').submit(function (e) {
-                data = {"g-recaptcha-response": $('#subForm .g-recaptcha-response').val()}
-                $.post("https://svc.mallmaverick.com/verify_captcha", data, function(response){
-                    if(response.success == false){
-                        grecaptcha.reset(widgetId1);
-                        alert("Please validate captcha");
-                        return false;
-                    }
-                })
+                // data = {"g-recaptcha-response": $('#subForm .g-recaptcha-response').val()}
+                // $.post("https://svc.mallmaverick.com/verify_captcha", data, function(response){
+                //     if(response.success == false){
+                //         grecaptcha.reset(widgetId1);
+                //         alert("Please validate captcha");
+                //         return false;
+                //     }
+                // })
                 if ($("#agree_terms").prop("checked") != true){
                     alert("Please agree to the term and conditions.");
                     $("#agree_terms").focus();
