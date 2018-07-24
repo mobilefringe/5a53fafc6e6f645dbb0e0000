@@ -200,7 +200,7 @@
                 
                 var data = {}
                 var loyalty = {}
-                loyalty["property_id"] = getPropertyDetails().id;
+                loyalty["property_id"] = getPropertyID();
                 loyalty["first_name"] = $("#loyalty_first_name").val();
                 loyalty["last_name"] = $("#loyalty_last_name").val();
                 loyalty["address"] = $("#loyalty_address").val();
@@ -210,7 +210,7 @@
                 loyalty["parent_name"] = $("#loyalty_parent_name_first").val() + " " + $("#loyalty_parent_name_last").val();
                 loyalty["email"] = $("#loyalty_email").val();
                 loyalty["note"] = $("#loyalty_note").val();
-                console.log("loyalty", loyalty)
+                console.log("loyalty", loyalty);
                 var newsletter;
                 if ($("#loyalty_newsletter").prop('checked') == true){
                     newsletter = true;
