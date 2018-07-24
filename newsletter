@@ -96,6 +96,8 @@
                             
                 //         }
                 //     });
+                $('#fieldEmail_EM').val($("#fieldEmail").val());
+                $('form#newsletter_agency_form').submit();
                 return true;
             });
             function agency_newsletter () {
