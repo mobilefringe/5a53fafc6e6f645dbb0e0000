@@ -94,7 +94,7 @@
                             alert("Please try again later.");
                         } else { // 200
                             $('#subForm').trigger('reset');
-                            agency_newsletter();
+                            // agency_newsletter();
                             
                         }
                     });
