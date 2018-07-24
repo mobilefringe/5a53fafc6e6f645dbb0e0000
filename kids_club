@@ -1,0 +1,205 @@
+<div class="inside_banner">   
+    <div class="content_container">
+        <div class="inside_banner_content">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 id="mm_page_title"></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content_container margin_30 kids_club_container">
+    <div class="margin_30"></div>
+    <div class="row">
+        <div class="col-md-12">
+            <div id="mm_page_content"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <h3>Kids Club Registration</h3>
+            <form id="contest_form">
+                <input id="property_id" name="contest[property_id]" type="hidden" value="{{property_id}}"/>
+                <input id="contest_id" name="contest[contest_id]" type="hidden"  value="{{id}}" />
+                <input class="form-control" id="notes" name="contest[notes]" type="hidden"  required data-validation="required" tabindex="1"/>
+                <input type="hidden" name="cm-name" id="cm-name" />
+                <div class="row">
+                    <div class="col-sm-6">
+                        <label for="notes">Child's First Name</label> <span style="color:red"> *</span>
+                        <input class="form-control" id="child_lname" type="text" required data-validation="required" tabindex="2"/>
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="notes">Child's Last Name</label> <span style="color:red"> *</span>
+                        <input class="form-control" id="child_fname"  type="text" required data-validation="required" tabindex="3"/>
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="address">Street Address</label>  <span style="color:red"> *</span>
+                        <input class="form-control" id="address" name="contest[mailing_address]" type="text" required data-validation="required" tabindex="4"/>    
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="postal_code">Postal Code</label>  <span style="color:red"> *</span>
+                        <input class="form-control" id="postal_code" name="contest[postal_code]" type="text" required data-validation="required" tabindex="5"/>
+                    </div>
+                    <div class="col-sm-6 ">
+                        <label for="phone">Phone Number</label>  <span style="color:red"> *</span>
+                        <input class="form-control" id="phone" name="contest[phone]" type="text" required data-validation="required" tabindex="6"/>    
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="birthday">Child's Birthday (yyyy-mm-dd) </label>  <span style="color:red"> *</span>
+                        <input class="form-control" id="birthday" name="contest[birthday]" type="text" required data-validation="required" tabindex="7"/>    
+                    </div>
+                    <div class="col-sm-6 ">
+                        <label for="first_name">Parent's First Name</label>  <span style="color:red"> *</span>
+                        <input class="form-control" id="first_name" name="contest[first_name]" type="text" required data-validation="required" tabindex="8"/>
+                    </div>
+                    <div class="col-sm-6 ">
+                        <label for="last_name">Parent's Last Name</label>  <span style="color:red"> *</span>
+                        <input class="form-control" id="last_name" name="contest[last_name]" type="text" required data-validation="required" tabindex="9"/>
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="email">Parent's Email</label> <span style="color:red"> *</span>
+                        <input class="form-control" id="email" name="contest[email]" type="email" required data-validation-regexp="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-validation-error-msg="Please enter a valid email address" data-validation="custom" tabindex="10"/>
+                    </div>
+                     <div class="col-sm-6">
+                        <label for="reason">How did you hear about the St Vital Centre Kids Centre?</label>  <span style="color:red"> *</span>
+                        <select id="reason" class="form-control" tabindex="11">
+                            <option value="" disabled selected>Select One</option>
+                        	<option value="In St Vital Centre">In St Vital Centre</option>
+                        	<option value="St Vital Centre website">St Vital Centre website</option>
+                        	<option value="From a friend">From a friend</option>
+                        	<option value="At a Kids Club event">At a Kids Club event</option>
+                        	<option value="Other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-12">
+                        <label class="agree">
+                            <input id="agree_to_conditions" required type="checkbox" tabindex="12" /> 
+                                I would like to receive communications from St. Vital Centre on specials and events for the kids club. I have read and understood the privacy policy.*
+                        </label>
+                        
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12" style="float: none;">
+                        <!--<br/><br/>-->
+                        <button class="contact_btn" tabindex="13" style="float:left;">Submit</button>
+                        <!--<br/><br/>-->
+                    </div>
+                    <div id="success_subscribe_popup" class="hidden_now">
+                        <div class="alert alert-success fade in" style="margin-top:18px;">
+                            <a href="#" class="close" data-dismiss="alert" aria-label="close" title="close">×</a>
+                            <strong>Success!</strong> Thank you, your entry has been received.
+                        </div>
+                    </div>
+                    <div id="error_subscribe_popup" class="hidden_now">
+                        <div class="alert alert-error fade in" style="margin-top:12px;">
+                            <a href="#" class="close" data-dismiss="alert" aria-label="close" title="close">×</a>
+                            <strong>Sorry!</strong> There was a problem submiting your request. Please try again later!
+                        </div>
+                    </div>
+                    <br/><br/>
+                </div>
+            </form>
+            <form id="kids_agency_form" action="http://app.emediatemail.com/t/r/s/jtoujj/" method="post" style="display:none">
+        <input id="fieldName_kids_agency" name="cm-name" type="text" align="top"/>
+        <input id="fieldEmail_kids_agency" name="cm-jtoujj-jtoujj" type="email"/>
+    </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <h3>Kids Club Discount</h3>
+            <ul id="discount_container" class="info-list wide">
+                <script id="discount_template" type="x-tmpl-mustache/text">
+                <li>
+                    <strong><a href="{{url}}">{{name}}</a></strong>
+        			<span>{{description}}</span>
+        		</li>
+                </script>
+            </ul>
+        </div>
+    </div>
+</div>
+<style>
+    .info-list li {
+        border-bottom: 1px dotted #777777;
+        clear: both;
+        display: block;
+        line-height: 1;
+        margin-bottom: 10px;
+        position: relative;
+    }
+    .info-list li strong {
+        padding: 0 2px 2px 0;
+    }
+    .info-list li strong, .info-list li span {
+        background: none repeat scroll 0 0 #FFFFFF;
+        display: inline-block;
+        margin-bottom: 0;
+        position: relative;
+        top: 6px;
+    }
+    .info-list.wide span {
+        line-height: normal;
+        margin-bottom: 10px;
+        width: 50%;
+    }
+    .info-list li span {
+        float: right;
+        padding: 0 0 2px 2px;
+    }
+</style>
+<script>
+    $(document).ready(function(e){
+        init(e);
+        function renderAll(){
+            // var pathArray = window.location.pathname.split( '/' );
+            // var slug = pathArray[pathArray.length-1];
+            prefix = get_prefix();
+            var pages_json = prefix + "/pages/svc-kids-club.json"
+            $.getJSON(pages_json).done(function(data) {
+                $('#mm_page_title').html(data.title.toUpperCase());
+                $('#mm_page_content').html(data.body);
+            }).fail(function(jqXHR) {
+                if (jqXHR.status == 404) {
+                    $("#404_msg").fadeIn("fast");
+                }
+            }); 
+             // kids club discounts
+            var repo = getRepoDetailsByName("kids club discounts");
+            if (repo != undefined) {
+                // var banner = getImageURL(repo.images[0].photo_url);
+                // $(".inside_banner").css({backgroundImage: "url(" + banner + ")"});
+                var discounts = repo.images;
+                renderGeneral("#discount_container","#discount_template",discounts);
+                console.log("repo",discounts);
+                
+            }
+           
+           $.validate();
+         var contest_details = getContestBySlug('svc-kids-club'); 
+         var property = getPropertyDetails ();
+         console.log(contest_details, property);
+         $('#contest_id').val(contest_details.id);
+         $('#property_id').val(property.id);
+        $('#contest_form').submit(function(e){
+            
+            e.preventDefault();
+            
+            $('.contest_btn').prop('disabled', true);
+            var child_name = $("#child_lname").val()  + " " + $("#child_fname").val();
+            var notes= "Child's name: " + child_name + " . Heard about it through: " + $("#reason").val();
+            $("#notes").val(notes);
+            console.log($("#notes").val());
+            submit_form_data($(this).serialize());
+            // $('html, body').animate({scrollBottom : 0},800);
+        });
+            show_content();
+        }
+        loadMallDataCached(renderAll); 
+    })
+</script>
