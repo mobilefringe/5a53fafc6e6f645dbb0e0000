@@ -116,7 +116,7 @@
                     	   // window.location.href = "/pages/svc-thanks"
                     	   console.log("success");
                     	   //$("#success_subscribe").fadeIn();
-                    	   return truel
+                    	   return true;
                         }
                 });
             });
