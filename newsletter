@@ -102,7 +102,7 @@
                 $('#fieldEmail_kids_agency').val($("#loyalty_email").val());
                 $('form#kids_agency_form').submit();
             }
-            $('form#newlsetter_agency_form').submit(function (e) {
+            $('form#news;etter_agency_form').submit(function (e) {
                 e.preventDefault();
                 $.getJSON(
                     this.action + "?callback=?",
