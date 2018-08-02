@@ -265,6 +265,7 @@
         $("#current_year").text(current_year);
         get_instagram("//svc.mallmaverick.com/api/v4/svc/social.json", 9, 'thumbnail', render_instagram)//need to change to cornwall
     </script>
+    <img src="//clickserv.basis.net/conv/44815a16808b75b6" width="1" height="1" style="position: absolute; left: -150px;" />
 </body>
 
 </html>
