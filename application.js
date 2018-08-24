@@ -29,6 +29,7 @@ function renderBanner(banner_template,home_banner,banners){
             var b =  url.substring(a);
             var c = url.replace(b,"");
             url = c;
+            console.log("url", url);
         }
     });
 
