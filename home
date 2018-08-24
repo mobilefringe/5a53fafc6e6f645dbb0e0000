@@ -164,8 +164,8 @@
             var blogs = [];
             $.ajax({
                 type: "GET",
-                 url: "//www.stvitalcentrespark.com/index,article.rss",
-                // url: "https://www.mallmaverick.com/system/site_images/photos/000/036/024/original/temp_blog.rss?1525900551",
+                url: "//www.stvitalcentrespark.com/index,article.rss",
+                cache: true,
                 dataType: "xml",
                 success: function (xml) {
                      $title = $(xml).find( "item" ); 
