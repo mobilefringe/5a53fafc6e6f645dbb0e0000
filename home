@@ -165,7 +165,7 @@
             $.ajax({
                 type: "GET",
                 url: "//www.stvitalcentrespark.com/index,article.rss",
-                'cache': true,
+                cache: true,
                 dataType: "xml",
                 success: function (xml) {
                      $title = $(xml).find( "item" ); 
