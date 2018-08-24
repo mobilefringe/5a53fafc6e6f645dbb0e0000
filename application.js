@@ -23,7 +23,7 @@ function renderBanner(banner_template,home_banner,banners){
             }
         }
         if(val.image_url.indexOf('?') > -1){
-             
+            
             var url = window.location.href;
             var a = url.indexOf("?");
             var b =  url.substring(a);
