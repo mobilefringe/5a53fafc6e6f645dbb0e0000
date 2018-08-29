@@ -194,6 +194,7 @@
             // LOGO SCROLL //
             var stores = getStoresList();
             // var store_list = getStoresList();
+            var counter = 0;
             stores = stores.filter(function( val, index ) {
                 // console.log($.isNumeric(val.name[0]), val.name[0]);
                 console.log(index)
