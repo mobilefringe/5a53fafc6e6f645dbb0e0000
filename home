@@ -194,12 +194,9 @@
             // LOGO SCROLL //
             var stores = getStoresList();
             // var store_list = getStoresList();
-            var counter = 0;
             stores = stores.filter(function( val, index ) {
-                if(counter < 10) {
-                    counter++;
-                    return (!$.isNumeric(val.name[0])) && !(val.store_front_url_abs.indexOf('missing') > -1);
-                }
+                // console.log($.isNumeric(val.name[0]), val.name[0]);
+                return (!$.isNumeric(val.name[0])) && !(val.store_front_url_abs.indexOf('missing') > -1);
             });
             renderLogoScroll('#logo_container','#logo_template', stores);
 
