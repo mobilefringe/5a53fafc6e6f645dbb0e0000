@@ -197,6 +197,7 @@
             var counter = 0;
             stores = stores.filter(function( val, index ) {
                 if(counter < 10) {
+                    counter++;
                     return (!$.isNumeric(val.name[0])) && !(val.store_front_url_abs.indexOf('missing') > -1);
                 }
             });
