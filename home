@@ -200,8 +200,6 @@
             });
             renderLogoScroll('#logo_container','#logo_template', stores);
 
-            
-            
             $('.flexslider').flexslider({
                 animation: "slide",
             });
