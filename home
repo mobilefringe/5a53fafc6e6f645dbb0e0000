@@ -196,9 +196,10 @@
             console.log("stores", stores)
             // var store_list = getStoresList();
             stores = stores.filter(function( val, index ) {
-                // if (val.tags)
-                // console.log($.isNumeric(val.name[0]), val.name[0]);
-                return (!$.isNumeric(val.name[0])) && !(val.store_front_url_abs.indexOf('missing') > -1);
+                if (val.tags != null && _.includes(val.tags, 'featured')) {
+                    // console.log($.isNumeric(val.name[0]), val.name[0]);
+                    return (!$.isNumeric(val.name[0])) && !(val.store_front_url_abs.indexOf('missing') > -1);
+                }
             });
             // stores = stores.slice(0,10)
             renderLogoScroll('#logo_container','#logo_template', stores);
