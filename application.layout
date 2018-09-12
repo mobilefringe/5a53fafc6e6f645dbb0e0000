@@ -84,7 +84,6 @@
                             <div class="social_container">
                                 <a href="https://www.facebook.com/StVitalCentre" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                                 <a href="https://twitter.com/StVitalCentre" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                <!--<a href="" target="_blank"><i class="fa fa-snapchat-ghost" aria-hidden="true"></i></a>-->
                                 <a href="https://www.instagram.com/StVitalCentre" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                                 <a href="https://www.youtube.com/StVitalCentre" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>
                                 <div class="site_search show_phone">
@@ -128,7 +127,6 @@
                     <div class="nav_container pull-right">
                         <nav id="primary_nav">
                             <ul class="">
-                                <!--<li class="menu_item"><a href="/">Home</a></li>-->
                                 <li class="menu_item">
                                     <a href="#">Stores <i class="fa fa-angle-down" aria-hidden="true"></i></a>
                                     <ul>
@@ -167,23 +165,6 @@
                     <div class="col-md-4 footer_center">
                         <h3 class="footer_nav_title caps"  style="padding-left:30px;">Centre Hours</h3>
                         <div class="margin_30 hidden_phone"></div>
-                        <!--<div class="footer_address">-->
-                        <!--    <p class="caps">Twin Pines Mall</p>-->
-                        <!--    <p class="">216 Chrislea Road<br>Vaughan, ON L4L 8S5</p>-->
-                        <!--</div>-->
-                        <!--<div class="footer_logo">-->
-                        <!--    <a href="//www.mallmaverick.com" target="_blank">-->
-                        <!--        <img src="//codecloud.cdn.speedyrails.net/sites/5a3820a06e6f6441880e0000/image/png/1513700491203/cornwall_logo.png" alt="Bentall Kennedy Logo">-->
-                        <!--    </a>-->
-                        <!--</div>-->
-                        <!--<a href="/">-->
-                        <!--    <div class="footer_btn">-->
-                        <!--        <div class="footer_btn_text caps">Enter Our Contest</div>-->
-                        <!--        <div class="footer_btn_icon">-->
-                        <!--            <i class="fa fa-trophy" aria-hidden="true"></i>-->
-                        <!--        </div>-->
-                        <!--    </div>-->
-                        <!--</a>-->
                         <div id="home_reg_hours_container"   style="padding-left:30px;">
                             <script id="home_reg_hours_template" type="x-tmpl-mustache/text">
                                 <div class="hours_div">
@@ -197,7 +178,6 @@
                             <div class="footer_btn">
                                 <div class="footer_btn_text">Directory</div>
                                 <div class="footer_btn_icon">
-                                    <!--<i class="fa fa-map-o" aria-hidden="true"></i>-->
                                     <img src="//codecloud.cdn.speedyrails.net/sites/5b8018fd6e6f643f872a0000/image/png/1518452746969/Dir Icon.png" class="" alt="">
                                 </div>
                             </div>
@@ -211,10 +191,8 @@
                             <li><a href="/map">Map</a></li>
                             <li><a href="/promotions">Sales & Promotions</a></li>
                             <li><a href="/events">Events</a></li>
-                            
                         </ul>
                         <ul class="footer_menu footer_menu_right">
-                            <!--<li><a href="/find_us">Location</a></li>-->
                             <li><a href="/contact_us">Contact Us</a></li>
                             <li><a href="/jobs">Jobs</a></li>
                             <li><a href="/leasing">Leasing</a></li>
@@ -225,7 +203,6 @@
                             <div class="footer_btn">
                                 <div class="footer_btn_text">Subscribe to our Blog</div>
                                 <div class="footer_btn_icon">
-                                    <!--<i class="fa fa-envelope-o" aria-hidden="true"></i>-->
                                     <img src="//codecloud.cdn.speedyrails.net/sites/5b8018fd6e6f643f872a0000/image/png/1518452737403/Spark.png" class="" alt="">
                                 </div>
                             </div>
@@ -235,8 +212,7 @@
                     <div class="col-md-4 footer_center">
                         <h3 class="footer_nav_title caps">Instagram</h3>
                         <div class="margin_20 visible-sm-block visible-xs-block"></div>
-                        <a target="_blank" href="//www.instagram.com/StVitalCentre/">
-                        </a>
+                        <a target="_blank" href="//www.instagram.com/StVitalCentre/"></a>
                         <div>
                             <div id="instafeed"></div>
                         </div>
