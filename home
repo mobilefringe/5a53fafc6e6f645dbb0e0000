@@ -15,13 +15,13 @@
     <div class="feature_container">
         <div class="content_container">
             <div class="flex_container" id="feature_container">
-                    <script id="feature_template" type="x-tmpl-mustache/text">
-                        <div class="width_30">
-                            <a href="{{url}}">
-                                <img src="{{image_url}}" alt="{{name}}"/>
-                            </a>
-                        </div>
-                    </script>
+                <script id="feature_template" type="x-tmpl-mustache/text">
+                    <div class="width_30">
+                        <a href="{{url}}">
+                            <img src="{{image_url}}" alt="{{name}}"/>
+                        </a>
+                    </div>
+                </script>
             </div>
         </div>
     </div>
@@ -193,12 +193,14 @@
             
             // LOGO SCROLL //
             var stores = getStoresList();
+            console.log("stores", stores)
             // var store_list = getStoresList();
             stores = stores.filter(function( val, index ) {
+                // if (val.tags)
                 // console.log($.isNumeric(val.name[0]), val.name[0]);
                 return (!$.isNumeric(val.name[0])) && !(val.store_front_url_abs.indexOf('missing') > -1);
             });
-            stores = stores.slice(0,10)
+            // stores = stores.slice(0,10)
             renderLogoScroll('#logo_container','#logo_template', stores);
 
             
