@@ -184,7 +184,7 @@
 
                 /* HOURS */
                 var hour_ids = store_details.store_hours;
-                if (hour_ids != null) {
+                if (hour_ids != null || hour_ids != undefined) {
                     var hours = getHoursForStoreSlug(store_details.slug).sortBy(function(o) {
                         return o.day_of_week
                     });
