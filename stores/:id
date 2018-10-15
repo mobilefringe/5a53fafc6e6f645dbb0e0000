@@ -184,13 +184,17 @@
 
                 /* HOURS */
                 if (store_details.store_hours) {
-                    var hour_ids = store_details.store_hours;
-                    if (hour_ids != null || hour_ids != undefined) {
-                        var hours = getHoursForStoreSlug(store_details.slug).sortBy(function(o) {
-                            return o.day_of_week
-                        });
-                        renderStoreDetailsHours('#hours_container', '#hours_template', hours, 'reg_hours');
-                        $('#hours').show();
+                    try {
+                        var hour_ids = store_details.store_hours;
+                        if (hour_ids != null || hour_ids != undefined) {
+                            var hours = getHoursForStoreSlug(store_details.slug).sortBy(function(o) {
+                                return o.day_of_week
+                            });
+                            renderStoreDetailsHours('#hours_container', '#hours_template', hours, 'reg_hours');
+                            $('#hours').show();
+                        }
+                    } catch(e) {
+                        
                     }
                 }
 
