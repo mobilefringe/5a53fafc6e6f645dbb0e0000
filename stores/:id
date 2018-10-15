@@ -1,0 +1,407 @@
+<div class="inside_banner">   
+    <div class="content_container">
+        <div class="inside_banner_content">
+            <div class="row">
+                <div id="store_header_container">
+                    <script id="store_header_template" type="x-tmpl-mustache/text">
+                        <div class="col-sm-6">    
+                            <h1> {{name}} </h1>
+                        </div>
+                        <div class="col-sm-6 hidden_phone">
+                            <h4 class="pull-right">Stores <i class="fa fa-angle-right" aria-hidden="true"></i> <a href="/stores">Store Directory</a> <i class="fa fa-angle-right" aria-hidden="true"></i> {{name}}</h4>
+                        </div>
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content_container margin_30">
+    <div class="margin_30"></div>
+    <div class="row store_dets_dir_btns">
+        <div class="col-sm-12 center">
+            <a href="/stores"><div class="directory_btn caps ">Stores</div></a>
+            <a href="/map"><div class="directory_btn caps">Centre Map</div></a>
+        </div>
+    </div>
+    <div class="margin_30"></div>
+    <div class="row">
+        <div class="col-sm-6">
+            <!-- MAP -->
+            <div class="store_map_container">
+                <div id="mapView">
+                    
+                </div>
+            	<div id="mapsvg_store_detail" class="mobile_padding"></div>
+            </div>
+        </div>
+        <div class="col-sm-6 border_left">
+            <div id="store_details_container">
+                <script id="store_details_template" type="x-tmpl-mustache/text">
+                    <div class="store_details_logo">
+                        <img src="{{store_logo}}" style="{{hide_img}}"/>
+                        <div style="width: 100%;height: 100%;position: relative; {{show_storename}}" id="store_name_logo">
+        					<h3 style="margin: 0;text-align: center;position: absolute;left: 50%;top: 50%;transform: translate(-50%, -50%);width: 100%;font-size: 28px;font-weight: bold;">{{name}}</h3>
+        				</div>
+                    </div>
+                    <p class="center" style="{{show_phone}}"><span class="store_detail_highlight">Phone:</span> {{phone}}</p>
+                    <p class="center" style="{{show_website}}"><a href="{{website}}" target="_blank"><span class="store_detail_highlight">Website</span></a></p>
+                    <p class="center" style="{{show_category}}"><span class="store_detail_highlight">Category:</span> {{store_categories}}</p>
+                    <div class="store_description">
+                        <p >{{{rich_description}}}</p>
+                    </div>
+                </script>
+            </div>
+            <div id="hours" class="grey_line hidden_now">
+                <h2 class="details_title">Store Hours</h2>
+                <div id="hours_container" class="store_hours_container">
+                    <script id="hours_template" type="x-tmpl-mustache/text">
+                        <div class="row">
+                            <div class="col-xs-5">
+                                <span>{{day}}</span>
+                            </div>
+                            <div class="col-xs-7">
+                                <span class="pull-right">{{hour_string}}</span>
+                            </div>
+                        </div>
+                    </script>
+                </div>
+            </div>
+            <div id="promotions" class="grey_line hidden_now">
+                <h2 class="details_title">Sales & Promotions</h2>
+                <div id="promo_container">
+                    <script id="promo_template" type="x-tmpl-mustache/text">
+                        <div class="promo_img_container" style="background-image: url({{image_url}})"></div>
+                        <div class="promo_content">
+                            <h2 class="promo_name"> {{name}} </h2>
+                            <h4 class="promo_dates"> {{dates}} </h4>
+                            <a class="read_more" href="/promotions/{{slug}}">Read More</a>
+                        </div>
+                    </script>
+                </div>
+            </div>
+            <div id="jobs" class="grey_line hidden_now">
+                <h2 class="details_title">Job Opportunities</h2>
+                <div id="jobs_container">
+                    <script id="jobs_template" type="x-tmpl-mustache/text">
+                        <div class="promo_content">
+                            <h2 class="promo_name">{{name}}</h2>
+                            <h4 class="promo_dates"> {{dates}} </h4>
+                            <a class="read_more" href="/jobs/{{slug}}"><p>Read More</p></a>
+                        </div>
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .mapplic-pin{
+        /*background-color: transparent!important;    */
+    }
+    /* INTERACTIVE ELEMENTS */
+    /* clickable elements */
+    .mapplic-clickable:not(g),
+    g.mapplic-clickable > * {
+    	opacity: 1!important;
+    	/*fill: #b7a6bd*/;
+    }
+    /* hovered elements */
+    .mapplic-clickable:not(g):hover,
+    g.mapplic-clickable:hover > * {
+    	opacity: 1;
+    	fill: #343F4B;
+    }
+    
+    /* active elements */
+    .mapplic-active,
+    a.mapplic-active > path,
+    g.mapplic-active > * {
+    	fill: #343F4B;
+    	opacity: 1.0 !important;
+    }
+    .mapplic-coordinates {
+        visibility: hidden;
+    }
+    .mapplic-container {
+        background: #fff;
+        height: 100%!important;
+    }
+    .mapplic-zoom-buttons{
+        bottom: initial!important;
+        top: 0!important;
+        left: initial!important;
+        right: 0!important;
+    }
+    .mapplic-pin.black-pin {
+    	background-image: url(' //codecloud.cdn.speedyrails.net/sites/587659fb6e6f641648010000/image/png/1484850466000/show_pin.png');
+        background-size: 40px 60px;
+        width: 40px;
+        height: 60px;
+    	margin-top: -55px;
+    	margin-left: -20px;
+    }
+    .mapplic-tooltip-content {
+        overflow: hidden;
+        overflow-y: hidden !important;
+    }
+    .mapplic-hovertip {
+        opacity:1!important;
+    }
+    #nopointer-unitnumbers {
+        display:none!important;
+    }
+</style>
+
+<link href="//codecloud.cdn.speedyrails.net/sites/5b8018fd6e6f643f872a0000/text/css/1522163605908/mapplic.css" rel="stylesheet">
+<link href="//codecloud.cdn.speedyrails.net/sites/59bac7db6e6f644f22ba0000/text/css/1485967426000/map.css" rel="stylesheet">
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+<script src="//codecloud.cdn.speedyrails.net/sites/5a9eeaa46e6f6405fb150000/text/javascript/1520365246170/mapplic_mmsdk.js"></script>
+<script src="//codecloud.cdn.speedyrails.net/sites/59bac7db6e6f644f22ba0000/text/javascript/1484859750000/hammer.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+
+<script>
+    $(document).ready(function(e) {
+        init(e);
+        // initMappedin();
+        function renderAll() {
+            // var repo = getRepoDetailsByName("Store Directory Banner");
+            // if (repo != undefined) {
+            //     var banner = getImageURL(repo.images[0].photo_url);
+            //     $(".inside_banner").css({backgroundImage: "url(" + banner + ")"});
+            // }
+
+            var pathArray = window.location.pathname.split('/');
+            var slug = pathArray[pathArray.length - 1];
+            var store_details = getStoreDetailsBySlug(slug);
+            console.log("store_details", store_details)
+            // if (store_details === undefined) {
+            //     window.location = "/";
+            // } else {
+                renderStoreDetails('#store_header_container', '#store_header_template', store_details);
+                renderStoreDetails("#store_details_container", "#store_details_template", store_details, slug);
+
+                /* HOURS */
+                var hour_ids = store_details.store_hours;
+                if (hour_ids != null) {
+                    var hours = getHoursForStoreSlug(store_details.slug).sortBy(function(o) {
+                        return o.day_of_week
+                    });
+                    renderStoreDetailsHours('#hours_container', '#hours_template', hours, 'reg_hours');
+                    $('#hours').show();
+                }
+
+                /* MAP */
+                // var name = store_details.name;
+                // setTimeout(function(){
+                //     hightlightStore(name)
+                // }, 3000);
+
+                /* PROMOS */
+                var store_promo_ids = store_details.promotions
+                if (store_promo_ids != null) {
+                    var store_promos = getPromotionsForIds(store_promo_ids).sortBy(function(o) {
+                        return o.start_date
+                    });
+                    var published_promos = [];
+                    $.each(store_promos, function(key, val) {
+                        today = moment();
+                        webDate = moment(val.show_on_web_date)
+                        if (today.tz(getPropertyTimeZone()) >= webDate.tz(getPropertyTimeZone())) {
+                            published_promos.push(val);
+                        }
+                    });
+                    if (published_promos.length > 0) {
+                        renderPromotions("#promo_container", "#promo_template", published_promos);
+                        $('#promotions').show();
+                    }
+                }
+
+                /* JOBS */
+                var store_job_ids = store_details.jobs
+                if (store_job_ids != null) {
+                    var store_jobs = getJobsForIds(store_job_ids).sortBy(function(o) {
+                        return o.start_date
+                    });
+                    var published_jobs = [];
+                    $.each(store_jobs, function(key, val) {
+                        today = moment();
+                        webDate = moment(val.show_on_web_date)
+                        if (today.tz(getPropertyTimeZone()) >= webDate.tz(getPropertyTimeZone())) {
+                            published_jobs.push(val);
+                        }
+                    });
+                    if (published_jobs.length > 0) {
+                        renderJobs('#jobs_container', '#jobs_template', published_jobs);
+                        $('#jobs').show();
+                    }
+                }
+            }
+            var stores = getStoresList();
+            var mall_json = {};
+            var landmarks = {};
+            mall_json.mapwidth = "1000";
+            mall_json.mapheight = "1000";
+            mall_json.categories = [];
+            mall_json.levels = [];
+
+            // need to add the following for each floor we want to configure.
+            _.forEach(floorList(), function(value, key) {
+                var floor_1 = {};
+                floor_1.id = value.id;
+                floor_1.title = value.title;
+                floor_1.map = value.map;
+
+                floor_1.show = value.show;
+                floor_1.locations = [];
+                var stores_on_floors = _.filter(stores, function(o) {
+                    return value.z_index === o.z_coordinate;
+                }); // ['z_coordinate', value.z_index]);
+                _.forEach(stores_on_floors, function(val, key) {
+                    //for testing limiting the store numbers to vm
+                    var temp_val = {};
+                    temp_val.id = val.svgmap_region;
+                    temp_val.title = val.name;
+                    temp_val.about = val.description.substring(0, 200);
+                    if (val.categories != null) {
+                        if (val.categories.length > 1) {
+                            temp_val.category = val.categories[1];
+                        } else {
+                            temp_val.category = val.categories[0];
+                        }
+                    }
+                    temp_val.link = "/stores/" + val.slug;
+                    temp_val.pin = "hidden";
+
+
+                    //get svg's wifth/height by checking the map
+                    var svg_width = 2500;
+                    var svg_height = 2500;
+                    temp_val.x = val.x_coordinate / svg_width;
+                    temp_val.y = val.y_coordinate / svg_height;
+                    
+                    // temp_val.zoom = "5";
+                    floor_1.locations.push(temp_val);
+                });
+                mall_json.levels.push(floor_1);
+            });
+
+            map = $('#mapsvg_store_detail').mapplic({
+                source: mall_json,
+                height: 400,
+                landmark: true,
+                mapfill: true,
+                minimap: false,
+                sidebar: false,
+                hovertip: true,
+                developer: false,
+                fullscreen: false,
+                clearbutton: false,
+                deeplinking: false,
+                fillcolor: "none",
+                maxscale: 1,
+                skin: 'mapplic-dark',
+                action: "none"
+            });
+
+            map.on('mapready', function(e, self) {
+                setTimeout(function(){mapLoaded(map);},700)
+            });
+            
+        }
+        
+        function floorList() {
+            var floor_list = [];
+    
+            var floor_1 = {};
+            floor_1.id = "first-floor";
+            floor_1.title = "Level One";
+            floor_1.map =  getSVGMapURL().split("?")[0]; //"https://www.mallmaverick.com/system/site_images/photos/000/039/355/original/St.Vital_-_Leasing_Map_-_May-09-2018.svg"; 
+            floor_1.z_index = 1;
+            floor_1.show = true;
+            floor_list.push(floor_1);
+            return floor_list;
+        }
+    
+        function svgList() {
+            return _.map(getStoresList(), 'svgmap_region');
+        }
+    
+        function mapLoaded(map) {
+            var pathArray = window.location.pathname.split('/');
+            var slug = pathArray[pathArray.length - 1];
+            var store_details = getStoreDetailsBySlug(slug);
+            self = map.data('mapplic');
+            var svg = document.getElementById('Layer_1');
+            // console.log("svg", svg);
+    
+            //get floors to be visible 
+            $(".mapplic-layer").show();
+            //go through all the regions and recalculat the locations
+            _.forEach(svgList(), function(val, key) {
+                
+                if (val !== null) {
+                    var element = document.getElementById(val);
+                    if (element) {
+                        // console.log(val, element);
+                        elBBox = element.getBoundingClientRect();
+                        // console.log(elBBox);
+    
+                        var viewport_center_x = 0;
+                        var viewport_center_y = 0;
+                        viewport_center_x = (_.toNumber(elBBox.left) + _.toNumber(elBBox.right)) / 2;
+                        viewport_center_y = (_.toNumber(elBBox.top) + _.toNumber(elBBox.bottom)) / 2;
+                        // console.log("viewport_x",viewport_center_x,viewport_center_y);
+                        pt = svg.createSVGPoint();
+                        pt.x = viewport_center_x;
+                        pt.y = viewport_center_y;
+                        // console.log("pt", pt.x, pt.y)
+                        var svgP = pt.matrixTransform(svg.getScreenCTM().inverse());
+                        // console.log("svg points", svgP.x,svgP.y);
+                        var new_x = svgP.x / 2500;
+                        var new_y = svgP.y / 2500;
+                        
+                        var location = self.getLocationData(val);
+                        // console.log("nex_x, y", new_x, new_y)
+                        if (location !== null && location.el) {
+                            location.x = new_x;
+                            location.y = new_y;
+                            // self.updateLocation(val);
+                            
+                            if (store_details.svgmap_region == val) {
+                                location.pin = "black-pin";
+                            }
+                            self.updateLocation(val);
+                            // var location1 = vm.self.getLocationData(val);
+                            // console.log("location1",  location1.x ,location1.y);
+                            if (store_details.svgmap_region == val) {
+                                self.showLocation(val);
+                                self.addPin(val);
+                            }
+                        }
+                    }
+                }
+            });
+            // console.log("self", vm.self);
+            //find which levels need to be hidden
+            hidden_level = _.filter(self.data.levels, function(o) {
+                // console.log (o); 
+                return o.show !== true;
+            });
+            //doing it in a loop for future cases where there are more than two floors
+            _.forEach(hidden_level, function(val, key) {
+                $(".mapplic-layer[data-floor='" + val.id + "']").hide();
+            });
+
+        }
+
+        loadMallDataCached(renderAll);
+        setTimeout(function(){show_content();},500);
+    });
+
+    function dropPin(svgmap_region) {
+        self = map.data('mapplic');
+        self.showLocation(svgmap_region);
+    }
+</script>
