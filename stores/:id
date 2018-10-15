@@ -237,7 +237,7 @@
                         $('#jobs').show();
                     }
                 }
-            }
+            // }
             var stores = getStoresList();
             var mall_json = {};
             var landmarks = {};
