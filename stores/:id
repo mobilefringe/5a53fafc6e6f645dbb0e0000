@@ -176,9 +176,9 @@
             var slug = pathArray[pathArray.length - 1];
             var store_details = getStoreDetailsBySlug(slug);
             console.log("store_details", store_details)
-            // if (store_details === undefined) {
-            //     window.location = "/";
-            // } else {
+            if (store_details === undefined) {
+                window.location = "/";
+            } else {
                 renderStoreDetails('#store_header_container', '#store_header_template', store_details);
                 renderStoreDetails("#store_details_container", "#store_details_template", store_details, slug);
 
@@ -237,7 +237,7 @@
                         $('#jobs').show();
                     }
                 }
-            // }
+            }
             var stores = getStoresList();
             var mall_json = {};
             var landmarks = {};
