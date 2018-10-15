@@ -183,7 +183,7 @@
                 renderStoreDetails("#store_details_container", "#store_details_template", store_details, slug);
 
                 /* HOURS */
-                if (store_details.store_hours) {
+                if (store_details.store_hours != undefined) {
                     try {
                         var hour_ids = store_details.store_hours;
                         if (hour_ids != null || hour_ids != undefined) {
