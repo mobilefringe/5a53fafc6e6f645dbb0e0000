@@ -33,7 +33,7 @@
             </script>
         </div>
     </div>
-    <div id="behind_closed_doors">
+    <div id="behind_closed_doors" class="hidden_now">
         <img src="//clickserv.basis.net/conv/1dad5ddd8bfd5d84" width="1" height="1" style="position: absolute; left: -150px;" />
     </div>
 </div>
