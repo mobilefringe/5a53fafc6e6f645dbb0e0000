@@ -1,0 +1,69 @@
+<div class="inside_banner">   
+    <div class="content_container">
+        <div class="inside_banner_content">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>Events</h1>
+                </div>
+                <div class="col-md-6 hidden_phone">
+                    <h4 class="pull-right">Events</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content_container margin_30">
+    <div class="margin_30"></div>
+    <div class="row">
+        <div class="col-md-12">
+            <p id="no_events" class="hidden_now">There are no Events at this time. Please check back soon.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div id="promo_container">
+            <script id="promo_template" type="x-tmpl-mustache/text">
+                <div class="col-sm-6 col-md-4">
+                    <div class="promo_img_container" style="background-image: url({{image_url}})"></div>
+                    <div class="promo_content">
+                        <h2 class="promo_name"> {{name}} </h2>
+                        <h4 class="promo_dates"> {{dates}} </h4>
+                        <a class="promo_read_more" href="/events/{{slug}}"><p>Read More</p></a>
+                    </div>
+                </div>
+            </script>
+        </div>
+    </div>
+    <div id="behind_closed_doors">
+        <img src="//clickserv.basis.net/conv/1dad5ddd8bfd5d84" width="1" height="1" style="position: absolute; left: -150px;" />
+    </div>
+</div>
+<script>
+    $(document).ready(function(e){
+        init(e);
+        function renderAll(){
+            // var repo = getRepoDetailsByName("Events Banner");
+            // if (repo != undefined) {
+            //     var banner = getImageURL(repo.images[0].photo_url);
+            //     $(".inside_banner").css({backgroundImage: "url(" + banner + ")"});
+            // }
+            
+            var events = getEventsList().sortBy(function(o){ return o.end_date });
+            var published_events = [];
+            $.each(events, function(key, val){
+                today = moment();
+                webDate = moment(val.show_on_web_date)
+                if (today.tz(getPropertyTimeZone()) >= webDate.tz(getPropertyTimeZone())) {
+                    published_events.push(val);
+                }
+            });
+            if(published_events.length > 0){
+                renderEvents("#promo_container","#promo_template", published_events);
+            } else {
+                $('#no_events').show();
+            }
+            
+            show_content();
+        }
+        loadMallDataCached(renderAll); 
+    });
+</script>
