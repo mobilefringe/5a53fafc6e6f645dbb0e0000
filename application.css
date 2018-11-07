@@ -1168,14 +1168,14 @@ a {
     height: 140px;
     max-height: 140px;
     .promo_store_name {
-        margin: 10px 0;
+        margin: 0 0 10px 0;
         color: $primary;
     }
     .promo_name {
-        margin: 0;
+        margin: 0 0 5px 0;
     }
     .promo_dates {
-        margin: 10px 0;
+        margin: 0;
         color: $primary;
     }
     .promo_desc {
