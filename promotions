@@ -28,7 +28,7 @@
                         {{#store_detail_btn}}
                         <a href="/stores/{{store_detail_btn}}">
                         {{/store_detail_btn}}
-                            <h4 class="promo_dates"> {{store_name}} </h4>
+                            <h4 class="promo_store_name"> {{store_name}} </h4>
                         </a>
                         <h2 class="promo_name"> {{name}} </h2>
                         <h4 class="promo_dates"> {{dates}} </h4>
