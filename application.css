@@ -1167,6 +1167,10 @@ a {
     margin: 20px 0 40px 0;
     height: 140px;
     max-height: 140px;
+    .promo_store_name {
+        margin: 10px 0;
+        color: $primary;
+    }
     .promo_name {
         margin: 0;
     }
