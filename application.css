@@ -1164,9 +1164,9 @@ a {
     }
 }
 .promo_content {
-    margin: 20px 0 40px 0;
-    height: 140px;
-    max-height: 140px;
+    margin: 10px 0 30px 0;
+    height: 120px;
+    max-height: 120px;
     .promo_store_name {
         margin: 0 0 10px 0;
         color: $primary;
