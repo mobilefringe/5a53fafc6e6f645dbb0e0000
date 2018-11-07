@@ -1,0 +1,76 @@
+<div class="inside_banner">   
+    <div class="content_container">
+        <div class="inside_banner_content">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>Sales & Promotions</h1>
+                </div>
+                <div class="col-md-6 hidden_phone">
+                    <h4 class="pull-right">Promotions</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content_container margin_30">
+    <div class="margin_30"></div>
+    <div class="row">
+        <div class="col-md-12">
+            <p id="no_promos" class="hidden_now">There are no Promotions at this time. Please check back soon.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div id="promo_container">
+            <script id="promo_template" type="x-tmpl-mustache/text">
+                <div class="col-sm-6 col-md-4">
+                    <div class="promo_img_container" style="background-image: url({{image_url}})"></div>
+                    <div class="promo_content">
+                        <h4 class="promo_dates"> {{store_name}} </h4>
+                        <h2 class="promo_name"> {{name}} </h2>
+                        <h4 class="promo_dates"> {{dates}} </h4>
+                        <a class="promo_read_more" href="{{promo_slug}}"><p>Read More</p></a>
+                    </div>
+                </div>
+            </script>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function(e){
+        init(e);
+        function renderAll(){
+            // var repo = getRepoDetailsByName("Events Banner");
+            // if (repo != undefined) {
+            //     var banner = getImageURL(repo.images[0].photo_url);
+            //     $(".inside_banner").css({backgroundImage: "url(" + banner + ")"});
+            // }
+            
+            var promotions = getPromotionsList().sortBy(function(o){ return o.end_date });
+            // $.map( promotions, function( val, i ) {
+            //     val.type = "Promotion";
+            // });
+            // var events = getEventsList().sortBy(function(o){ return o.end_date });
+            // $.map( events, function( val, i ) {
+            //     val.type = "Event";
+            // });
+            // var combined_list = $.merge(promotions, events).sortBy(function(o){ return o.end_date });
+            // console.log(combined_list);
+            var published_promos = [];
+            $.each(promotions, function(key, val){
+                today = moment();
+                webDate = moment(val.show_on_web_date)
+                if (today.tz(getPropertyTimeZone()) >= webDate.tz(getPropertyTimeZone())) {
+                    published_promos.push(val);
+                }
+            });
+            if(published_promos.length > 0){
+                renderPromotions("#promo_container","#promo_template", published_promos);
+            } else {
+                $('#no_promos').show();
+            }
+            
+            show_content();
+        }
+        loadMallDataCached(renderAll); 
+    });
+</script>
