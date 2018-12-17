@@ -53,7 +53,7 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
     <!--<script src="//s3.amazonaws.com/kodekloud/sites/59d3dc256e6f6459f8960000/text/javascript/1410850608000/jssor.core.js"></script>-->
     <!--<script src="//s3.amazonaws.com/kodekloud/sites/59d3dc256e6f6459f8960000/text/javascript/1410850608000/jssor.utils.js"></script>-->
-    <script src="//codecloud.cdn.speedyrails.net/sites/5b8018fd6e6f643f872a0000/text/javascript/1535832204000/jssor.slider.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jssor-slider/27.5.0/jssor.slider.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/lodash@4.17.5/lodash.min.js"></script>
     
     <!--MallMaverick SDK-->
