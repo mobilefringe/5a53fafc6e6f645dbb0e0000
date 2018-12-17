@@ -51,8 +51,8 @@
     <script src="//codecloud.cdn.speedyrails.net/sites/5438407c6e6f64462d020000/601617fe9ab691b1b62a66ac3ca3e8b7/jquery.cookie.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
-    <script src="//s3.amazonaws.com/kodekloud/sites/59d3dc256e6f6459f8960000/text/javascript/1410850608000/jssor.core.js"></script>
-    <script src="//s3.amazonaws.com/kodekloud/sites/59d3dc256e6f6459f8960000/text/javascript/1410850608000/jssor.utils.js"></script>
+    <!--<script src="//s3.amazonaws.com/kodekloud/sites/59d3dc256e6f6459f8960000/text/javascript/1410850608000/jssor.core.js"></script>-->
+    <!--<script src="//s3.amazonaws.com/kodekloud/sites/59d3dc256e6f6459f8960000/text/javascript/1410850608000/jssor.utils.js"></script>-->
     <script src="//codecloud.cdn.speedyrails.net/sites/5b8018fd6e6f643f872a0000/text/javascript/1535832204000/jssor.slider.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/lodash@4.17.5/lodash.min.js"></script>
     
