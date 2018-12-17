@@ -210,7 +210,7 @@
                 $AutoPlayInterval: 0,                            
                 $PauseOnHover: 4,                               
                 $ArrowKeyNavigation: true,   			            
-                $SlideEasing: $JssorEasing$.$EaseLinear,          
+                $SlideEasing: $JssorEasing$.$Linear,          
                 $SlideDuration: 3000,                                
                 $MinDragOffsetToSlide: 20,                          
                 $SlideWidth: 160,                                                                  
@@ -221,7 +221,15 @@
                 $PlayOrientation: 1,                                
                 $DragOrientation: 1                               
             };
-
+            // var jssor_1_options = {
+            //   $AutoPlay: 1,
+            //   $Idle: 0,
+            //   $SlideDuration: 5000,
+            //   $SlideEasing: $Jease$.$Linear,
+            //   $PauseOnHover: 4,
+            //   $SlideWidth: 140,
+            //   $Align: 0
+            // };
             var logo_slider = new $JssorSlider$("slider_container", logo_options);
             
             show_content();
