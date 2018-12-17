@@ -210,7 +210,7 @@
                 $AutoPlayInterval: 0,                            
                 $PauseOnHover: 4,                               
                 $ArrowKeyNavigation: true,   			            
-                $SlideEasing: $JssorEasing$.$Linear,          
+                $SlideEasing: $Jease$.$Linear,          
                 $SlideDuration: 3000,                                
                 $MinDragOffsetToSlide: 20,                          
                 $SlideWidth: 160,                                                                  
