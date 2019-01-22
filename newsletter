@@ -32,7 +32,7 @@
         <div class="col-md-6">
             <form action="https://mobilefringe.createsend.com/t/d/s/jukin/" method="post" id="subForm">
                 <label for="fieldEmail" style="display:none"></label>
-                <input id="fieldEmail" name="cm-jukin-jukin" type="email" class="form-control"  placeholder="Your Email" required />
+                <input id="fieldEmail_CM" name="cm-jukin-jukin" type="email" class="form-control"  placeholder="Your Email" required />
                 <!--<input id="fieldEmail" name="cm-jukin-jukin" class="form-control" type="text" value="" placeholder="Your Email" required /> -->
                 
                 <label for="agree_terms">
@@ -47,7 +47,7 @@
             </form>
             <form id="newsletter_agency_form" action="http://app.emediatemail.com/t/r/s/tkzwh/" method="post" > <!-- style="display:none;" -->
                 <p>
-                    <input title="email" id="fieldEmail_EM" name="cm-tkzwh-tkzwh" type="email"  />
+                    <input title="email" id="fieldEmail" name="cm-tkzwh-tkzwh" type="email"  />
                 </p>
             </form>
         </div>
@@ -65,8 +65,8 @@
                 $("#fieldEmail").val(search_tag);
             }
             
-            $('#fieldEmail').change(function() {
-                $('#fieldEmail_EM').val($(this).val());
+            $('#fieldEmail_CM').change(function() {
+                $('#fieldEmail').val($(this).val());
             });
 
             $('#subForm').submit(function (e) {
