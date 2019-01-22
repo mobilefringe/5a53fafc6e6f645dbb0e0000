@@ -50,6 +50,12 @@
                     <input title="email" id="fieldEmail_EM" name="cm-tkzwh-tkzwh" type="email"  />
                 </p>
             </form>
+            
+            <form action="http://app.emediatemail.com/t/r/s/tkzwh/" method="post">
+                <p>
+                    <input title="email" id="fieldEmail" name="cm-tkzwh-tkzwh" type="email" />
+                </p>
+            </form>
         </div>
     </div>
 </div>
@@ -65,60 +71,33 @@
                 $("#fieldEmail").val(search_tag);
             }
             
-            // $.validate();
-            // $('#subForm').submit(function (e) {
-            //     // data = {"g-recaptcha-response": $('#subForm .g-recaptcha-response').val()}
-            //     // $.post("https://svc.mallmaverick.com/verify_captcha", data, function(response){
-            //     //     if(response.success == false){
-            //     //         grecaptcha.reset(widgetId1);
-            //     //         alert("Please validate captcha");
-            //     //         return false;
-            //     //     }
-            //     // })
-            //     // if ($("#agree_terms").prop("checked") != true){
-            //     //     alert("Please agree to the term and conditions.");
-            //     //     $("#agree_terms").focus();
-            //     //     return false;
-            //     // }
-            //     e.preventDefault();
-            //     agency_newsletter ();
+            $('#subForm').submit(function (e) {
+                e.preventDefault();
+                agency_newsletter ();
                 
-            //     // $.getJSON(
-            //     //     this.action + "?callback=?",
-            //     //     $(this).serialize(),
-            //     //     function (data) {
-            //     //         if (data.Status === 400) {
-            //     //             alert("Please try again later.");
-            //     //         } else { // 200
-            //     //             $('#subForm').trigger('reset');
-            //     //             // agency_newsletter();
+                // $.getJSON(
+                //     this.action + "?callback=?",
+                //     $(this).serialize(),
+                //     function (data) {
+                //         if (data.Status === 400) {
+                //             alert("Please try again later.");
+                //         } else { // 200
+                //             $('#subForm').trigger('reset');
+                //             // agency_newsletter();
                             
-            //     //         }
-            //     //     });
-            //     $('#fieldEmail_EM').val($("#fieldEmail").val());
-            //     $('form#newsletter_agency_form').submit();
-            //     return true;
-            // });
+                //         }
+                //     });
+                // $('#fieldEmail_EM').val($("#fieldEmail").val());
+                // $('form#newsletter_agency_form').submit();
+                // return true;
+            });
+            
             function agency_newsletter () {
                 $('#fieldEmail_EM').val($("#fieldEmail").val());
                 $('form#newsletter_agency_form').submit();
+                return true;
             }
-            // $('form#newsletter_agency_form').submit(function (e) {
-            //     e.preventDefault();
-            //     $.getJSON(
-            //         this.action + "?callback=?",
-            //         $(this).serialize(),
-            //         function (data) {
-            //             if (data.Status === 400) {
-            //                 alert("Please try again later.");
-            //             } else { // 200
-            //         	   // window.location.href = "/pages/svc-thanks"
-            //         	   console.log("success");
-            //         	   //$("#success_subscribe").fadeIn();
-            //         	   return true;
-            //             }
-            //     });
-            // });
+
             show_content();
         }
         loadMallDataCached(renderAll); 
