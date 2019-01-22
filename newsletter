@@ -45,11 +45,11 @@
                 <br>
                 <span id="success_subscribe" class="hidden_now">Thank you for subscribing to our newsletter.</span>
             </form>
-        <!--    <form id="newsletter_agency_form" action="http://app.emediatemail.com/t/r/s/tkzwh/" method="post" style="display:none;">-->
-        <!--    <p>-->
-        <!--        <input title="email" id="fieldEmail_EM" name="cm-tkzwh-tkzwh" type="email"  />-->
-        <!--    </p>-->
-        <!--</form>-->
+            <form id="newsletter_agency_form" action="http://app.emediatemail.com/t/r/s/tkzwh/" method="post" style="display:none;">
+                <p>
+                    <input title="email" id="fieldEmail_EM" name="cm-tkzwh-tkzwh" type="email"  />
+                </p>
+            </form>
         </div>
     </div>
 </div>
@@ -83,7 +83,7 @@
                 //     return false;
                 // }
                 e.preventDefault();
-                // agency_newsletter ();
+                agency_newsletter ();
                 
                 // $.getJSON(
                 //     this.action + "?callback=?",
