@@ -71,7 +71,8 @@
 
             $('#subForm').submit(function (e) {
                 e.preventDefault();
-                agency_newsletter ();
+                $('#newsletter_agency_form').submit();
+                // agency_newsletter ();
                 
                 // $.getJSON(
                 //     this.action + "?callback=?",
@@ -87,7 +88,7 @@
                 //     });
                 // $('#fieldEmail_EM').val($("#fieldEmail").val());
                 // $('form#newsletter_agency_form').submit();
-                // return true;
+                return true;
             });
             
             function agency_newsletter () {
