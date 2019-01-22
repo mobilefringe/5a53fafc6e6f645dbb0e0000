@@ -45,15 +45,9 @@
                 <br>
                 <span id="success_subscribe" class="hidden_now">Thank you for subscribing to our newsletter.</span>
             </form>
-            <form id="newsletter_agency_form" action="http://app.emediatemail.com/t/r/s/tkzwh/" method="post" style="display:none;">
+            <form id="newsletter_agency_form" action="http://app.emediatemail.com/t/r/s/tkzwh/" method="post" > <!-- style="display:none;" -->
                 <p>
                     <input title="email" id="fieldEmail_EM" name="cm-tkzwh-tkzwh" type="email"  />
-                </p>
-            </form>
-            
-            <form action="http://app.emediatemail.com/t/r/s/tkzwh/" method="post">
-                <p>
-                    <input title="email" id="fieldEmail" name="cm-tkzwh-tkzwh" type="email" />
                 </p>
             </form>
         </div>
@@ -71,6 +65,10 @@
                 $("#fieldEmail").val(search_tag);
             }
             
+            $('#fieldEmail').change(function() {
+                $('#fieldEmail_EM').val($(this).val());
+            });
+
             $('#subForm').submit(function (e) {
                 e.preventDefault();
                 agency_newsletter ();
