@@ -45,11 +45,11 @@
                 <br>
                 <span id="success_subscribe" class="hidden_now">Thank you for subscribing to our newsletter.</span>
             </form>
-            <form id="newsletter_agency_form" action="http://app.emediatemail.com/t/r/s/tkzwh/" method="post" > <!-- style="display:none;" -->
-                <p>
-                    <input title="email" id="fieldEmail" name="cm-tkzwh-tkzwh" type="email"  />
-                </p>
-            </form>
+            <!--<form id="newsletter_agency_form" action="http://app.emediatemail.com/t/r/s/tkzwh/" method="post" style="display:none;" >-->
+            <!--    <p>-->
+            <!--        <input title="email" id="fieldEmail" name="cm-tkzwh-tkzwh" type="email"  />-->
+            <!--    </p>-->
+            <!--</form>-->
         </div>
     </div>
 </div>
@@ -69,27 +69,27 @@
                 $('#fieldEmail').val($(this).val());
             });
 
-            $('#subForm').submit(function (e) {
-                e.preventDefault();
-                $('#newsletter_agency_form').submit();
-                // agency_newsletter ();
+            // $('#subForm').submit(function (e) {
+            //     e.preventDefault();
+            //     $('#newsletter_agency_form').submit();
+            //     // agency_newsletter ();
                 
-                // $.getJSON(
-                //     this.action + "?callback=?",
-                //     $(this).serialize(),
-                //     function (data) {
-                //         if (data.Status === 400) {
-                //             alert("Please try again later.");
-                //         } else { // 200
-                //             $('#subForm').trigger('reset');
-                //             // agency_newsletter();
+            //     // $.getJSON(
+            //     //     this.action + "?callback=?",
+            //     //     $(this).serialize(),
+            //     //     function (data) {
+            //     //         if (data.Status === 400) {
+            //     //             alert("Please try again later.");
+            //     //         } else { // 200
+            //     //             $('#subForm').trigger('reset');
+            //     //             // agency_newsletter();
                             
-                //         }
-                //     });
-                // $('#fieldEmail_EM').val($("#fieldEmail").val());
-                // $('form#newsletter_agency_form').submit();
-                return true;
-            });
+            //     //         }
+            //     //     });
+            //     // $('#fieldEmail_EM').val($("#fieldEmail").val());
+            //     // $('form#newsletter_agency_form').submit();
+            //     return true;
+            // });
             
             function agency_newsletter () {
                 $('#fieldEmail_EM').val($("#fieldEmail").val());
