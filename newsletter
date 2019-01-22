@@ -57,50 +57,48 @@
     $(document).ready(function(e){
         init(e);
         function renderAll(){
-            
             //add in email from
             var query = window.location.search;
             if(query !== "") {
-                
                 var search_part = query.split('?')[1];
                 var search_tag = search_part.split('=')[1];
                 $("#fieldEmail").val(search_tag);
             }
             
-            $.validate();
-            $('#subForm').submit(function (e) {
-                // data = {"g-recaptcha-response": $('#subForm .g-recaptcha-response').val()}
-                // $.post("https://svc.mallmaverick.com/verify_captcha", data, function(response){
-                //     if(response.success == false){
-                //         grecaptcha.reset(widgetId1);
-                //         alert("Please validate captcha");
-                //         return false;
-                //     }
-                // })
-                // if ($("#agree_terms").prop("checked") != true){
-                //     alert("Please agree to the term and conditions.");
-                //     $("#agree_terms").focus();
-                //     return false;
-                // }
-                e.preventDefault();
-                agency_newsletter ();
+            // $.validate();
+            // $('#subForm').submit(function (e) {
+            //     // data = {"g-recaptcha-response": $('#subForm .g-recaptcha-response').val()}
+            //     // $.post("https://svc.mallmaverick.com/verify_captcha", data, function(response){
+            //     //     if(response.success == false){
+            //     //         grecaptcha.reset(widgetId1);
+            //     //         alert("Please validate captcha");
+            //     //         return false;
+            //     //     }
+            //     // })
+            //     // if ($("#agree_terms").prop("checked") != true){
+            //     //     alert("Please agree to the term and conditions.");
+            //     //     $("#agree_terms").focus();
+            //     //     return false;
+            //     // }
+            //     e.preventDefault();
+            //     agency_newsletter ();
                 
-                // $.getJSON(
-                //     this.action + "?callback=?",
-                //     $(this).serialize(),
-                //     function (data) {
-                //         if (data.Status === 400) {
-                //             alert("Please try again later.");
-                //         } else { // 200
-                //             $('#subForm').trigger('reset');
-                //             // agency_newsletter();
+            //     // $.getJSON(
+            //     //     this.action + "?callback=?",
+            //     //     $(this).serialize(),
+            //     //     function (data) {
+            //     //         if (data.Status === 400) {
+            //     //             alert("Please try again later.");
+            //     //         } else { // 200
+            //     //             $('#subForm').trigger('reset');
+            //     //             // agency_newsletter();
                             
-                //         }
-                //     });
-                $('#fieldEmail_EM').val($("#fieldEmail").val());
-                $('form#newsletter_agency_form').submit();
-                return true;
-            });
+            //     //         }
+            //     //     });
+            //     $('#fieldEmail_EM').val($("#fieldEmail").val());
+            //     $('form#newsletter_agency_form').submit();
+            //     return true;
+            // });
             function agency_newsletter () {
                 $('#fieldEmail_EM').val($("#fieldEmail").val());
                 $('form#newsletter_agency_form').submit();
