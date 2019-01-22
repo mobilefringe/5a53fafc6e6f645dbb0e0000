@@ -1,0 +1,127 @@
+<div class="inside_banner">   
+    <div class="content_container">
+        <div class="inside_banner_content">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>Newsletter</h1>
+                </div>
+                <div class="col-md-6 hidden_phone">
+                    <h4 class="pull-right">Newsletter</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content_container margin_30">
+    <div class="margin_30"></div>
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Sign Up to Connect</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="margin_30 hidden_phone"></div>
+            <!--<p class="">Join our list and stay connected to be the first to hear about special sales & exclusive events!</p>-->
+            <p>Enter your email address to receive St. Vital Centre's 
+                newsletter containing news, updates, and promotions.
+                You can withdraw your consent at any time. Please refer
+                to our <a href="/pages/svc-privacy-policy-contest-rules" class="italic">privacy policy</a> or contact us for more details.</p>
+            <hr class="horizontal_div show_phone">
+        </div> 
+        <div class="col-md-6">
+            <form action="https://mobilefringe.createsend.com/t/d/s/jukin/" method="post" id="subForm">
+                <label for="fieldEmail" style="display:none"></label>
+                <input id="fieldEmail" name="cm-jukin-jukin" class="form-control" type="text" value="" placeholder="Your Email" required /> 
+                
+                <label for="agree_terms">
+                    <input type="checkbox" class="info_check" id="agree_terms" required />
+                    I agree to receive emails from St. Vital Centre <!--Change to Mall Name -->
+                </label>
+                <div id="RecaptchaField1"></div>
+                <br>
+                <button class="contact_btn" data-i18n="general.submit">SUBMIT</button>
+                <br>
+                <span id="success_subscribe" class="hidden_now">Thank you for subscribing to our newsletter.</span>
+            </form>
+            <form id="newsletter_agency_form" action="http://app.emediatemail.com/t/r/s/tkzwh/" method="post" style="display:none;">
+            <p>
+                <input title="email" id="fieldEmail_EM" name="cm-tkzwh-tkzwh" type="email"  />
+            </p>
+        </form>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function(e){
+        init(e);
+        function renderAll(){
+            
+            //add in email from
+            var query = window.location.search;
+            if(query !== "") {
+                
+                var search_part = query.split('?')[1];
+                var search_tag = search_part.split('=')[1];
+                $("#fieldEmail").val(search_tag);
+            }
+            
+            $.validate();
+            $('#subForm').submit(function (e) {
+                // data = {"g-recaptcha-response": $('#subForm .g-recaptcha-response').val()}
+                // $.post("https://svc.mallmaverick.com/verify_captcha", data, function(response){
+                //     if(response.success == false){
+                //         grecaptcha.reset(widgetId1);
+                //         alert("Please validate captcha");
+                //         return false;
+                //     }
+                // })
+                // if ($("#agree_terms").prop("checked") != true){
+                //     alert("Please agree to the term and conditions.");
+                //     $("#agree_terms").focus();
+                //     return false;
+                // }
+                e.preventDefault();
+                agency_newsletter ();
+                
+                // $.getJSON(
+                //     this.action + "?callback=?",
+                //     $(this).serialize(),
+                //     function (data) {
+                //         if (data.Status === 400) {
+                //             alert("Please try again later.");
+                //         } else { // 200
+                //             $('#subForm').trigger('reset');
+                //             // agency_newsletter();
+                            
+                //         }
+                //     });
+                $('#fieldEmail_EM').val($("#fieldEmail").val());
+                $('form#newsletter_agency_form').submit();
+                return true;
+            });
+            function agency_newsletter () {
+                $('#fieldEmail_EM').val($("#fieldEmail").val());
+                $('form#newsletter_agency_form').submit();
+            }
+            // $('form#newsletter_agency_form').submit(function (e) {
+            //     e.preventDefault();
+            //     $.getJSON(
+            //         this.action + "?callback=?",
+            //         $(this).serialize(),
+            //         function (data) {
+            //             if (data.Status === 400) {
+            //                 alert("Please try again later.");
+            //             } else { // 200
+            //         	   // window.location.href = "/pages/svc-thanks"
+            //         	   console.log("success");
+            //         	   //$("#success_subscribe").fadeIn();
+            //         	   return true;
+            //             }
+            //     });
+            // });
+            show_content();
+        }
+        loadMallDataCached(renderAll); 
+    });
+</script>
