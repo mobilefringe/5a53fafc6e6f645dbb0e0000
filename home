@@ -108,26 +108,22 @@
             </div>
         </div> 
     </div>
-    
     <div class="home_subscription">
-        <!--<div class=" content_container">-->
-             <a href="/kids_club"><div class="col-sm-6 kids_club"  style="background-image: url('//codecloud.cdn.speedyrails.net/sites/5b8018fd6e6f643f872a0000/image/jpeg/1535487585219/kids-bg-compressor.jpg');">
-              <img src="//codecloud.cdn.speedyrails.net/sites/5b8018fd6e6f643f872a0000/image/png/1522164309548/kids-text.png" class="" alt="">
+        <a href="/kids_club">
+            <div class="col-sm-6 kids_club"  style="background-image: url('//codecloud.cdn.speedyrails.net/sites/5b8018fd6e6f643f872a0000/image/jpeg/1535487585219/kids-bg-compressor.jpg');">
+                <img src="//codecloud.cdn.speedyrails.net/sites/5b8018fd6e6f643f872a0000/image/png/1522164309548/kids-text.png" class="" alt="">
             </div>
-             </a>
-            <div class="col-sm-6 subscribeBlog">
-                <h1>Sign up for our e-newsletter</h1> 
-                <br>
-                <form id="newsletterBlogForm">
-                    <label for="fieldEmail" style="display:none"></label>
-                    <input id="fieldEmail" name="cm-jukin-jukin" class="form-control" type="email" value="" placeholder="Email Address" required/> 
-                    <button class="contact_btn" data-i18n="general.submit" id="newsletterSignupBtn">Sign Up</button>
-                    
-                </form>
-                <div id="success_subscribe" class="hidden_now">Thank you for subscribing to our newsletter.</div>
-            </div>
-             
-        <!--</div>-->
+        </a>
+        <div class="col-sm-6 subscribeBlog">
+            <h1>Sign up for our e-newsletter</h1> 
+            <br>
+            <form id="newsletterBlogForm">
+                <label for="fieldEmail" style="display:none"></label>
+                <input id="fieldEmail" name="cm-jukin-jukin" class="form-control" type="email" value="" placeholder="Email Address" required/> 
+                <button class="contact_btn" data-i18n="general.submit" id="newsletterSignupBtn">Sign Up</button>
+            </form>
+            <div id="success_subscribe" class="hidden_now">Thank you for subscribing to our newsletter.</div>
+        </div>
     </div>
     <img src="//clickserv.basis.net/conv/44815a16808b75b6" width="1" height="1" style="position: absolute; left: -150px;" />
 </div>
@@ -135,8 +131,6 @@
     $(document).ready(function(e) {
         init(e);
         function renderAll (){
-            // renderPopup();
-            
             var banners = getBanners();
             renderBanner('#banner_template','#home_banner', banners);
             
@@ -157,10 +151,7 @@
                     published_promos.push(val);
                 }
             });
-            // if(published_promos.length > 0){
-            //     renderPromotions("#promo_container","#promo_template", published_promos);
-            // }
-            // http://www.stvitalcentrespark.com/index,article.rss
+           
             var blogs = [];
             $.ajax({
                 type: "GET",
@@ -221,24 +212,15 @@
                 $PlayOrientation: 1,                                
                 $DragOrientation: 1                               
             };
-            // var jssor_1_options = {
-            //   $AutoPlay: 1,
-            //   $Idle: 0,
-            //   $SlideDuration: 5000,
-            //   $SlideEasing: $Jease$.$Linear,
-            //   $PauseOnHover: 4,
-            //   $SlideWidth: 140,
-            //   $Align: 0
-            // };
             var logo_slider = new $JssorSlider$("slider_container", logo_options);
             
             show_content();
         }
         loadMallDataCached(renderAll); 
+        
         $("#newsletterSignupBtn").click(function(e){
             e.preventDefault();
              document.location.href = '/newsletter?name='+$("#fieldEmail").val();
-        })
-        
+        });
     });
 </script>
