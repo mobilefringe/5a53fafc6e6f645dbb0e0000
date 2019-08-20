@@ -47,7 +47,6 @@
     <script src="//codecloud.cdn.speedyrails.net/sites/5b8018fd6e6f643f872a0000/text/javascript/1566312927621/instafeed.min.js"></script>
     <script src="//codecloud.cdn.speedyrails.net/sites/5b8018fd6e6f643f872a0000/text/javascript/1565977735005/moment.min.js"></script>
     <script src="//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/application/x-javascript/1468507661000/moment-timezone-with-data.min.js"></script>
-    <script src="//codecloud.cdn.speedyrails.net/sites/5b8018fd6e6f643f872a0000/text/javascript/1566244334794/jquery.cookie.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jssor-slider/27.5.0/jssor.slider.min.js"></script>
