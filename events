@@ -47,7 +47,7 @@
                     published_events.push(val);
                 }
             });
-            if(published_events.length > 0){
+            if (published_events.length > 0) {
                 renderEvents("#promo_container","#promo_template", published_events);
             } else {
                 $('#no_events').show();
