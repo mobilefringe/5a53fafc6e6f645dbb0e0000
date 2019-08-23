@@ -38,12 +38,6 @@
     $(document).ready(function(e){
         init(e);
         function renderAll(){
-            // var repo = getRepoDetailsByName("Events Banner");
-            // if (repo != undefined) {
-            //     var banner = getImageURL(repo.images[0].photo_url);
-            //     $(".inside_banner").css({backgroundImage: "url(" + banner + ")"});
-            // }
-            
             var events = getEventsList().sortBy(function(o){ return o.end_date });
             var published_events = [];
             $.each(events, function(key, val){
