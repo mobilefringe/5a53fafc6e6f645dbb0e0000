@@ -242,8 +242,7 @@
     		if( $('#spec-menu-icon').hasClass( "open" )) {
     		    $("#spec-menu-icon .fa").removeClass('fa-chevron-down');
     		    $("#spec-menu-icon .fa").addClass('fa-chevron-up');
-    		}
-    		else {
+    		} else {
     		    $("#spec-menu-icon .fa").removeClass('fa-chevron-up');
     		    $("#spec-menu-icon .fa").addClass('fa-chevron-down');
     		}
@@ -253,7 +252,6 @@
         var stores = [];
         function renderAll(){
             stores = getStoresList().sortBy(function(o){ return o.unit})
-            console.log("stores", stores)
             var regions = {};
             var map = null;
             //render map
@@ -263,7 +261,6 @@
             renderMap(stores, 600, null);
             loadInsidePages ();
             search_units();
-            
             
             $('.map_pin_a').click(function(e){
                 e.preventDefault();
