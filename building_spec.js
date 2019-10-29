@@ -138,7 +138,6 @@ function mapLoaded(map, stores) {
 }
 
 function renderLeasingList(container, template, collection, type){
-    console.log("collection", collection)
     var item_list = [];
     var item_rendered = [];
     var template_html = $(template).html();
