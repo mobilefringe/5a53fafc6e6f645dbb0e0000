@@ -147,12 +147,10 @@ function renderLeasingList(container, template, collection, type){
     //get all pdfs
     var temp_repo = getRepoDetailsByName("Building Design Specs");
     var specs_repo = [];
-    if(temp_repo !== null && temp_repo !== undefined) {
+    if (temp_repo !== null && temp_repo !== undefined) {
         specs_repo = temp_repo.images;
     }
-    // filtered_list  = specs_repo.filter(function(o){
-    //     o.name == val.neighbourhood
-    // });
+
     $.each(collection, function(key, val) {
         filtered_list  = specs_repo.filter(function(o){
            return o.name == val.store_service
@@ -160,8 +158,7 @@ function renderLeasingList(container, template, collection, type){
         if(filtered_list !== null && filtered_list !== undefined && filtered_list.length > 0) {
             val.leasing_doc = filtered_list[0].image_url;
             val.no_pdf = false;
-        }
-        else {
+        } else {
             val.no_pdf = true;
         }
         var rendered = Mustache.render(template_html,val);
