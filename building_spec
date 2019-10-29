@@ -14,7 +14,6 @@
         <div class="mobile_header show_phone"></div>
         <div class="spec_nav_container pull-right hidden_now">
             <nav id="primary_nav">
-                <ul class="">
                     <li class="menu_item"><div class="specs_menu_item" id="unit_dir" >Unit Directory</div></li>
                     <li class="menu_item"><div class="specs_menu_item" id="submission_req" >Submission Requirements</div></li>
                     <li class="menu_item">
@@ -242,7 +241,8 @@
     		if( $('#spec-menu-icon').hasClass( "open" )) {
     		    $("#spec-menu-icon .fa").removeClass('fa-chevron-down');
     		    $("#spec-menu-icon .fa").addClass('fa-chevron-up');
-    		} else {
+    		}
+    		else {
     		    $("#spec-menu-icon .fa").removeClass('fa-chevron-up');
     		    $("#spec-menu-icon .fa").addClass('fa-chevron-down');
     		}
@@ -262,10 +262,10 @@
             loadInsidePages ();
             search_units();
             
+            
             $('.map_pin_a').click(function(e){
                 e.preventDefault();
                 var unit_id = $(this).attr('data-id');
-                console.log("unit_id", unit_id)
                 dropPin(unit_id);
             });
         }
