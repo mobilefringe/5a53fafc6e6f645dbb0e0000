@@ -154,7 +154,7 @@ function renderLeasingList(container, template, collection, type){
         filtered_list  = specs_repo.filter(function(o){
            return o.name == val.store_service
         });
-        if(filtered_list !== null && filtered_list !== undefined && filtered_list.length > 0) {
+        if (filtered_list !== null && filtered_list !== undefined && filtered_list.length > 0) {
             val.leasing_doc = filtered_list[0].image_url;
             val.no_pdf = false;
         } else {
