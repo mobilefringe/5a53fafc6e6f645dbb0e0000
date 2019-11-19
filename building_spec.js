@@ -83,7 +83,7 @@ function svgList(stores) {
 
 function mapLoaded(map, stores) {
     self = map.data('mapplic');
-    var svg = document.getElementById('Layer_1');
+    var svg = document.getElementById('landmarks-1');
     // console.log("svg", svg);
 
     //get floors to be visible 
