@@ -151,6 +151,8 @@
                     published_promos.push(val);
                 }
             });
+            //renderPopup
+            renderPopup();
            
             var blogs = [];
             $.ajax({
