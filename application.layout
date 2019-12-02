@@ -51,6 +51,7 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jssor-slider/27.5.0/jssor.slider.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/lodash@4.17.5/lodash.min.js"></script>
+    <script src="//codecloud.cdn.speedyrails.net/sites/5d77aa996e6f646316020000/text/javascript/1567541283554/jquery.cookie.min.js"></script>
     
     <!--MallMaverick SDK-->
     <script src="//mallmaverick.codecloudapp.com/mallmaverick_v4.js"></script>
