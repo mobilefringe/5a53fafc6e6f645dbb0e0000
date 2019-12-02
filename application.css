@@ -2402,6 +2402,11 @@ a {
     //  #content {
     //     margin-top: 109px;
     // }
+    .popup_home {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
 }
 
 @media (max-width: 320px) {
