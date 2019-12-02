@@ -604,6 +604,48 @@ a {
         }
     }
 }
+/*** popup *****/ 
+.popup {
+    text-align: center;
+    border-radius: 6px;
+    background: none repeat scroll 0 0 #000000;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 200px;
+    border: solid;
+    border-color: #808080;
+    border-width: 1px;
+    -moz-box-shadow: -1px 1px 4px 1px #000;
+    -webkit-box-shadow: -1px 1px 4px 1px #000;
+    box-shadow: -1px 1px 4px 1px #000;
+}
+.popup_home{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 9999;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.popup_home img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.close_popup{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    padding: 2px 5px;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: #fff;
+}
 .insta_container{
     width:33.33%;
     padding:4px;
