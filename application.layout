@@ -170,6 +170,11 @@
     <section id="content">
         {{yield}}
     </section>
+    <div class="trim_screen">
+        <a id="track_link" href="https://www.wires.org.au/" target="_blank">
+            <img class="center-block bc_banner" src="THE_IMG_SRC" alt=""/>
+        </a>
+    </div>
     <footer>
         <div class="footer_nav">
             <div class="content_container">
