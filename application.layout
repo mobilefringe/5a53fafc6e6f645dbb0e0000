@@ -257,10 +257,10 @@
     <img src="//pixel-a.basis.net/iap/437d58a1741daa66" width="1" height="1" style="position: absolute; left: -150px;" />
     <!--pixel code-->
     <script>
-    $("#track_link").click( function() {
-        trackOutboundLink('https://www.wires.org.au/');
-    });
-</script>
+        $("#track_link").click( function() {
+            trackOutboundLink('https://www.wires.org.au/');
+        });
+    </script>
     
 </body>
 
