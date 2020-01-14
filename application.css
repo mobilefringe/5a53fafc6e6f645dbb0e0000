@@ -982,6 +982,9 @@ a {
 }
         
 /* *** INSIDE PAGES *** */
+.charity_banner {
+    max-width: 100%;
+}
 .inside_banner {
     margin: 0 auto;
     height: 250px;
