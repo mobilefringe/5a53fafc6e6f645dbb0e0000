@@ -328,11 +328,12 @@
         }
     
         function mapLoaded(map) {
-            // var pathArray = window.location.pathname.split('/');
-            // var slug = pathArray[pathArray.length - 1];
-            // var store_details = getStoreDetailsBySlug(slug);
+            var pathArray = window.location.pathname.split('/');
+            var slug = pathArray[pathArray.length - 1];
+            var store_details = getStoreDetailsBySlug(slug);
             self = map.data('mapplic');
             var svg = document.getElementById('landmarks-1');
+            // console.log("svg", svg);
     
             //get floors to be visible 
             $(".mapplic-layer").show();
@@ -342,9 +343,9 @@
                 if (val !== null) {
                     var element = document.getElementById(val);
                     if (element) {
-    
+                        // console.log(val, element);
                         elBBox = element.getBoundingClientRect();
-                  
+                        // console.log(elBBox);
     
                         var viewport_center_x = 0;
                         var viewport_center_y = 0;
@@ -391,15 +392,6 @@
             _.forEach(hidden_level, function(val, key) {
                 $(".mapplic-layer[data-floor='" + val.id + "']").hide();
             });
-            
-            $('.map_pin_a').click(function(e){
-                e.preventDefault();
-                var svgmap_region = $(this).attr('data-svg');
-                dropPin(svgmap_region);
-            });
-            setTimeout(function() {
-                show_content();
-            }, 500);
 
         }
 
